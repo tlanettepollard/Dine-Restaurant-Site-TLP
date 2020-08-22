@@ -9,30 +9,75 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
     <title> Dine Website Home </title>
+    <link rel="stylesheet" href="dist/css/main.css">
 </head>
 
 <body>
+    <main>
+        <section class="home__hero">
+            <picture>
+                <source srcset="images/homepage/hero-bg-tablet.jpg 1x,
+                images/homepage/hero-bg-tablet@2x.jpg 2x"
+                media="(max-width: 1200px) and (min-width: 700px)" />
+                <source srcset="images/homepage/hero-bg-mobile.jpg 1x, 
+                images/homepage/hero-bg-mobile@2x.jpg 2x"
+                media="(max-width: 700px)" />
+                <img srcset="images/homepage/hero-bg-desktop.jpg 1x,
+                images/homepage/hero-bg-desktop@2x.jpg 2x"
+                src="images/homepage/hero-bg-desktop.jpg" class="home__hero-bg" alt="Home Hero background" />
 
-    Exquisite dining since 1989
+            </picture>
+            <div class="home__hero-container">
+                <a href="/"> 
+                    <img src="images/logo.svg" alt="Dine logo" class="logo home__hero-logo" /></a><!--.logo-->
+                <div class="home__hero-content">
+                    <h1>Exquisite dining since 1989</h1>
+                    <p>Experience our seasonal menu in beautiful country surroundings. Eat the freshest produce from
+                    the comfort of our farmhouse.</p>
+                </div><!--.home__hero-content-->
+                <a href="booking_dine.html" class="btn btn-dark home__hero-btn">Book a table</a>
+                <!--.booking-btn-->
+            </div>
+        </section>
+        <!-- End Home Hero Section -->
 
-    Experience our seasonal menu in beautiful country surroundings. Eat the freshest produce from
-    the comfort of our farmhouse.
+        <section class="rs__features">
+            <div class="features__content features__content-left">
+                <div class="features__image-container">
+                    <picture></picture>
+                </div>
+                <div class="features__info">
+                    Pattern
+                    <h2>Enjoyable place for all the family</h2>
+                    <p class="paragraph">Our relaxed surroundings make dining with us a great experience for everyone.
+                    We can even arrange
+                    a tour of the farm before your meal.</p>
+                </div>
+            </div><!--.features__content-left-->
 
-    Book a table
+            <div class="features__content features__content-right">
+                <div class="features__image-container">
+                    <picture></picture>
+                </div>
+                <div class="features__info">
+                    Pattern
+                    <h2>The most locally sourced food</h2>
+                    <p class="paragraph">All our ingredients come directly from our farm or local fishery. So you can be sure that you’re
+                    eating the freshest, most sustainable food.</p>
+                </div>
+            </div><!--.features__content-right-->
+        </section>
 
+        <section class="rs__highlights">
+            
+        </section>
 
+        <section class="rs__slider"></section>
+        <section class="rs__cta"></section>
+    </main>
+    <footer class="footer">
 
-    Enjoyable place for all the family
-
-    Our relaxed surroundings make dining with us a great experience for everyone. We can even arrange
-    a tour of the farm before your meal.
-
-    The most locally sourced food
-
-    All our ingredients come directly from our farm or local fishery. So you can be sure that you’re
-    eating the freshest, most sustainable food.
-
-
+    </footer>
 
     A few highlights from our menu
 
