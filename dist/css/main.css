@@ -182,4 +182,19 @@
 }
 
 /* Google Font */
+/* Variables */
+/* Primary Colors */
+/* Neutral */
+/* Font Weights */
+/* Attribution */
+.attribution {
+  background-color: #9e7f67;
+  font-size: 11px;
+  text-align: center;
+  color: white;
+}
+
+.attribution a {
+  color: white;
+}
 /*# sourceMappingURL=main.css.map */
