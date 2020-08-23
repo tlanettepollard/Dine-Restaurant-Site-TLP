@@ -186,6 +186,66 @@
 /* Primary Colors */
 /* Neutral */
 /* Font Weights */
+/* Breakpoints */
+* {
+  margin: 0;
+  padding: 0;
+  outline: 1px solid black;
+}
+
+*::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #121212;
+  font-family: "Spartan", sans-serif;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Typography */
+.heading1 {
+  font-weight: 300;
+  color: #ffffff;
+}
+
+@media (max-width: 767px) {
+  .heading1 {
+    font-size: 3.2rem;
+    line-height: 1.25;
+    letter-spacing: -0.4px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .heading1 {
+    font-size: 4.8rem;
+    line-height: 1.333;
+    letter-spacing: -0.6px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .heading1 {
+    font-size: 6.4rem;
+    line-height: 1.125;
+    letter-spacing: -0.8px;
+  }
+}
+
+.heading2-enjoyable, .heading2-locally {
+  font-weight: 700;
+  color: #242b38;
+}
+
 /* Attribution */
 .attribution {
   background-color: #9e7f67;
