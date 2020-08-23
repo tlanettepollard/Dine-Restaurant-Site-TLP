@@ -207,7 +207,8 @@ html {
 body {
   background-color: #121212;
   font-family: "Spartan", sans-serif;
-  min-height: 100vh;
+  min-height: 100%;
+  min-width: 375px;
   overflow-x: hidden;
 }
 
@@ -268,6 +269,119 @@ body {
     line-height: 1.4;
     letter-spacing: -0.4px;
   }
+}
+
+.header3 {
+  font-size: 1.8rem;
+  line-height: 1.556;
+  letter-spacing: -0.22px;
+}
+
+.header3-white {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+/* Paragraphs */
+.paragraph1 {
+  line-height: 1.667;
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 767px) {
+  .paragraph1 {
+    font-size: 1.5rem;
+    letter-spacing: -0.19px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .paragraph1 {
+    font-size: 1.8rem;
+    letter-spacing: -0.22px;
+  }
+}
+
+.paragraph1-white {
+  color: #ffffff;
+}
+
+.paragraph1-black {
+  color: #242b38;
+}
+
+.paragraph2 {
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.867;
+  letter-spacing: -0.19px;
+}
+
+.paragraph2-white {
+  color: #ffffff;
+}
+
+.paragraph2-black {
+  color: #242b38;
+}
+
+/* Mobile First Design */
+.hero {
+  width: 100%;
+  height: 74.8rem;
+  text-align: center;
+  padding-top: 23.2rem;
+  padding-right: 2.4rem;
+  padding-left: 2.4rem;
+  background-image: url("../../images/homepage/hero-bg-mobile@2x.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero {
+    height: 99.2rem;
+    padding-top: 37.5rem;
+    background-image: url("../../images/homepage/hero-bg-tablet@2x.jpg");
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .hero {
+    height: 82rem;
+    padding-top: 6.5rem;
+    padding-left: 16.5rem;
+    text-align: left;
+    background-image: url("../../images/homepage/hero-bg-desktop@2x.jpg");
+  }
+}
+
+.hero__container {
+  height: 41.5rem;
+  margin-top: 4.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+@media only screen and (min-width: 1200px) {
+  .hero__container {
+    max-width: 144rem;
+    margin: 0 auto;
+  }
+}
+
+.hero__title {
+  width: 25.7rem;
+  margin: auto;
 }
 
 /* Attribution */
