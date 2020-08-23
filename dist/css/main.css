@@ -212,38 +212,62 @@ body {
 }
 
 /* Typography */
-.heading1 {
+/* Headings */
+.header1 {
   font-weight: 300;
   color: #ffffff;
 }
 
-@media (max-width: 767px) {
-  .heading1 {
+@media only screen and (max-width: 767px) {
+  .header1 {
     font-size: 3.2rem;
     line-height: 1.25;
     letter-spacing: -0.4px;
   }
 }
 
-@media (min-width: 768px) and (max-width: 1199px) {
-  .heading1 {
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .header1 {
     font-size: 4.8rem;
     line-height: 1.333;
     letter-spacing: -0.6px;
   }
 }
 
-@media (min-width: 1200px) {
-  .heading1 {
+@media only screen and (min-width: 1200px) {
+  .header1 {
     font-size: 6.4rem;
     line-height: 1.125;
     letter-spacing: -0.8px;
   }
 }
 
-.heading2-enjoyable, .heading2-locally {
+.header2 {
   font-weight: 700;
+}
+
+.header2-black {
   color: #242b38;
+}
+
+.header2-white {
+  color: #ffffff;
+}
+
+@media only screen and (max-width: 767px) {
+  .header2 {
+    font-size: 3.2rem;
+    line-height: 1.25;
+    letter-spacing: -0.5px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .header2 {
+    font-size: 4rem;
+    line-height: 1.4;
+    letter-spacing: -0.4px;
+  }
 }
 
 /* Attribution */
