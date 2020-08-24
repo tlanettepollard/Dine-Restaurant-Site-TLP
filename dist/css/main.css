@@ -186,6 +186,7 @@
 /* Primary Colors */
 /* Neutral */
 /* Font Weights */
+/* Design Elements */
 /* Breakpoints */
 * {
   margin: 0;
@@ -207,43 +208,259 @@ html {
 body {
   background-color: #121212;
   font-family: "Spartan", sans-serif;
-  min-height: 100vh;
+  min-height: 100%;
+  min-width: 375px;
   overflow-x: hidden;
 }
 
 /* Typography */
-.heading1 {
+/* Headings */
+.header1 {
   font-weight: 300;
   color: #ffffff;
 }
 
-@media (max-width: 767px) {
-  .heading1 {
+@media only screen and (max-width: 767px) {
+  .header1 {
     font-size: 3.2rem;
     line-height: 1.25;
     letter-spacing: -0.4px;
   }
 }
 
-@media (min-width: 768px) and (max-width: 1199px) {
-  .heading1 {
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .header1 {
     font-size: 4.8rem;
     line-height: 1.333;
     letter-spacing: -0.6px;
   }
 }
 
-@media (min-width: 1200px) {
-  .heading1 {
-    font-size: 6.4rem;
+@media only screen and (min-width: 1200px) {
+  .header1 {
+    font-size: 6.2rem;
     line-height: 1.125;
     letter-spacing: -0.8px;
   }
 }
 
-.heading2-enjoyable, .heading2-locally {
+.header2 {
   font-weight: 700;
+}
+
+.header2-black {
   color: #242b38;
+}
+
+.header2-white {
+  color: #ffffff;
+}
+
+@media only screen and (max-width: 767px) {
+  .header2 {
+    font-size: 3.2rem;
+    line-height: 1.25;
+    letter-spacing: -0.5px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .header2 {
+    font-size: 4rem;
+    line-height: 1.4;
+    letter-spacing: -0.4px;
+  }
+}
+
+.header3 {
+  font-size: 1.8rem;
+  line-height: 1.556;
+  letter-spacing: -0.22px;
+}
+
+.header3-white {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+/* Paragraphs */
+.paragraph1 {
+  line-height: 1.667;
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 767px) {
+  .paragraph1 {
+    font-size: 1.5rem;
+    letter-spacing: -0.19px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .paragraph1 {
+    font-size: 1.8rem;
+    letter-spacing: -0.22px;
+  }
+}
+
+.paragraph1-white {
+  color: #ffffff;
+}
+
+.paragraph1-black {
+  color: #242b38;
+}
+
+.paragraph2 {
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.867;
+  letter-spacing: -0.19px;
+}
+
+.paragraph2-white {
+  color: #ffffff;
+}
+
+.paragraph2-black {
+  color: #242b38;
+}
+
+a .btn {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.btn {
+  display: inline-block;
+  background: none;
+  font-family: inherit;
+  font-size: 1.4rem;
+  line-height: 1.143;
+  letter-spacing: 2px;
+  padding: 2.3rem 5.3rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.btn-dark {
+  color: #ffffff;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+}
+
+.btn-dark:hover {
+  background-color: #ffffff;
+  color: #121212;
+}
+
+/* Mobile First Design */
+.hero {
+  width: 100%;
+  height: 74.8rem;
+  padding-top: 23.2rem;
+  padding-right: 2.4rem;
+  padding-left: 2.4rem;
+  background-image: url("../../images/homepage/hero-bg-mobile@2x.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero {
+    height: 99.2rem;
+    padding-top: 37.5rem;
+    background-image: url("../../images/homepage/hero-bg-tablet@2x.jpg");
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .hero {
+    height: 82rem;
+    padding-top: 6.5rem;
+    padding-left: 16.5rem;
+    text-align: left;
+    background-image: url("../../images/homepage/hero-bg-desktop@2x.jpg");
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .hero__logo {
+    margin-left: -220px;
+  }
+}
+
+.hero__container {
+  height: 36.4rem;
+  margin: 4.2rem auto 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero__container {
+    width: 68.9rem;
+    margin: 8.5rem auto 0;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .hero__container {
+    width: 72.6rem;
+    text-align: left;
+    margin-left: -165px;
+  }
+}
+
+.hero__title {
+  width: 25.7rem;
+  margin: -10px auto 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero__title {
+    margin: 4.3rem auto 0;
+    width: 38.5rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .hero__title {
+    width: 50.5rem;
+    margin-top: 10.5rem;
+    text-align: left;
+  }
+}
+
+.hero__paragraph {
+  width: 34rem;
+  margin: 10px auto 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero__paragraph {
+    width: 59.3rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .hero__paragraph {
+    width: 46.5rem;
+    margin-right: 150px;
+  }
 }
 
 /* Attribution */
