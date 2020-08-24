@@ -326,6 +326,34 @@ body {
   color: #242b38;
 }
 
+a .btn {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.btn {
+  display: inline-block;
+  background: none;
+  font-family: inherit;
+  font-size: 1.4rem;
+  line-height: 1.143;
+  letter-spacing: 2px;
+  padding: 2.3rem 5.3rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.btn-dark {
+  color: #ffffff;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+}
+
+.btn-dark:hover {
+  background-color: #ffffff;
+  color: #121212;
+}
+
 /* Mobile First Design */
 .hero {
   width: 100%;

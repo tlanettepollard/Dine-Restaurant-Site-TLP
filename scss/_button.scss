@@ -1,3 +1,29 @@
 
+a .btn {
+    color: $color-white;
+    text-decoration: none;
+}
+.btn {
+    display: inline-block;
+    background: none;
+    font-family: inherit;
+    font-size: 1.4rem;
+    line-height: 1.143;
+    letter-spacing: 2px;
+    padding: 2.3rem 5.3rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    
+    &-dark {
+        color: $color-white;
+        background-color: transparent;
+        border: 1px solid $color-white;
+        &:hover {
+            background-color: $color-white;
+            color: $primary-cod-gray;
+        }
+    }
+    
+}
 
 
