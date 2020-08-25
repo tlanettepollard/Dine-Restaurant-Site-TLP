@@ -357,6 +357,7 @@ a .btn {
 /* Mobile First Design */
 .hero {
   width: 100%;
+  min-width: 375px;
   height: 74.8rem;
   padding-top: 23.2rem;
   padding-right: 2.4rem;
@@ -427,7 +428,7 @@ a .btn {
 
 .hero__title {
   width: 25.7rem;
-  margin: -10px auto 0;
+  margin: 15px auto 0;
 }
 
 @media only screen and (min-width: 768px) {
