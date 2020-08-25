@@ -343,6 +343,10 @@ a .btn {
   cursor: pointer;
 }
 
+.btn:visited {
+  text-decoration: none;
+}
+
 .btn-dark {
   color: #ffffff;
   background-color: transparent;
@@ -354,6 +358,37 @@ a .btn {
   color: #121212;
 }
 
+.btn-light {
+  background-color: #121212;
+  color: #ffffff;
+  border: 1px solid transparent;
+}
+
+.btn-light:hover {
+  background-color: transparent;
+  color: #121212;
+  border-color: #121212;
+}
+
+@media only screen and (max-width: 767px) {
+  .hero-btn {
+    margin-top: 3.2rem;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero-btn {
+    margin-top: 2.5rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .hero-btn {
+    margin-top: 4.1rem;
+  }
+}
+
+/* Form Buttons */
 /* Mobile First Design */
 .hero {
   width: 100%;

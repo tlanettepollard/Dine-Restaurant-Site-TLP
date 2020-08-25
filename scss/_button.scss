@@ -13,6 +13,10 @@ a .btn {
     padding: 2.3rem 5.3rem;
     text-transform: uppercase;
     cursor: pointer;
+
+    &:visited {
+        text-decoration: none;
+    }
     
     &-dark {
         color: $color-white;
@@ -23,7 +27,32 @@ a .btn {
             color: $primary-cod-gray;
         }
     }
+    &-light {
+        background-color: $primary-cod-gray;
+        color: $color-white;
+        border: 1px solid transparent;
+        
+        &:hover {
+            background-color: transparent;
+            color: $primary-cod-gray;
+            border-color: $primary-cod-gray;
+        }
+    }
     
 }
+
+.hero-btn {
+    @media only screen and (max-width: $bp-mobile-end) {
+        margin-top: 3.2rem;
+    }
+    @media only screen and (min-width: $bp-tablet-begin) and (max-width: $bp-tablet-end) {
+        margin-top: 2.5rem;
+    }
+    @media only screen and (min-width: $bp-desktop-begin) {
+        margin-top: 4.1rem;
+    }
+}
+
+/* Form Buttons */
 
 
