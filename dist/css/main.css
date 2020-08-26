@@ -343,6 +343,10 @@ a .btn {
   cursor: pointer;
 }
 
+.btn:visited {
+  text-decoration: none;
+}
+
 .btn-dark {
   color: #ffffff;
   background-color: transparent;
@@ -354,6 +358,37 @@ a .btn {
   color: #121212;
 }
 
+.btn-light {
+  background-color: #121212;
+  color: #ffffff;
+  border: 1px solid transparent;
+}
+
+.btn-light:hover {
+  background-color: transparent;
+  color: #121212;
+  border-color: #121212;
+}
+
+@media only screen and (max-width: 767px) {
+  .hero-btn {
+    margin-top: 3.2rem;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero-btn {
+    margin-top: 2.5rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .hero-btn {
+    margin-top: 4.1rem;
+  }
+}
+
+/* Form Buttons */
 /* Mobile First Design */
 .hero {
   width: 100%;
@@ -370,6 +405,7 @@ a .btn {
 
 @media only screen and (min-width: 768px) {
   .hero {
+    min-width: 768px;
     height: 99.2rem;
     padding-top: 37.5rem;
     background-image: url("../../images/homepage/hero-bg-tablet@2x.jpg");
@@ -378,6 +414,7 @@ a .btn {
 
 @media only screen and (min-width: 1200px) {
   .hero {
+    min-width: 1200px;
     height: 82rem;
     padding-top: 6.5rem;
     padding-left: 16.5rem;
@@ -461,6 +498,33 @@ a .btn {
   .hero__paragraph {
     width: 46.5rem;
     margin-right: 150px;
+  }
+}
+
+.features {
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 1199px) {
+  .features {
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .features {
+    background-position-y: 10rem, bottom;
+    background-position-x: -67vw, 52vw;
+    background-image: url("../../images/patterns/pattern-curve-top-right.svg"), url("../../images/patterns/pattern-curve-top-left.svg");
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .features {
+    background-image: url("../../images/patterns/pattern-curve-top-right.svg"), url("../../images/patterns/pattern-curve-top-left.svg");
+    background-position-y: 24.2rem, bottom;
+    background-position-x: left, right;
   }
 }
 

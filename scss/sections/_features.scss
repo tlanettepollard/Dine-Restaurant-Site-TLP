@@ -1,0 +1,23 @@
+
+.features {
+    background-color: $color-white;
+    @media only screen and (max-width: $bp-tablet-end) {
+        text-align: center;
+    }
+    background-repeat: no-repeat;
+    @media only screen and (min-width: $bp-tablet-begin) and (max-width: $bp-tablet-end) {
+        background-position-y: 10rem, bottom;
+        background-position-x: -67vw, 52vw;
+        background-image: url("../../images/patterns/pattern-curve-top-right.svg"), url("../../images/patterns/pattern-curve-top-left.svg");
+    }
+
+    @media only screen and (min-width: $bp-desktop-begin) {
+        background-image: url("../../images/patterns/pattern-curve-top-right.svg"), url("../../images/patterns/pattern-curve-top-left.svg");
+        background-position-y: 24.2rem, bottom;
+        background-position-x: left, right;
+    }
+}
+
+.feature__enjoyable {
+    
+}
