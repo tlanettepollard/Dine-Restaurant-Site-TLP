@@ -1,80 +1,87 @@
 /* Mobile First Design */
 .hero {
-    width: 100%;
-    min-width: 375px;
-    height: 74.8rem;
-    padding-top: 23.2rem;
-    padding-right: 2.4rem;
-    padding-left: 2.4rem;
-    background-image: url("../../images/homepage/hero-bg-mobile@2x.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top center;
+    position: relative;
+    text-align: center;
+    background-color: $primary-cod-gray;
+    height: 67.6rem;
 
-    @media only screen and (min-width: $bp-tablet-begin) {
-        min-width: 768px;
+    @media only screen and  (min-width: $bp-tablet-begin) {
         height: 99.2rem;
-        padding-top: 37.5rem;
-        background-image: url("../../images/homepage/hero-bg-tablet@2x.jpg");
-        
     }
-    @media only screen and (min-width: $bp-desktop-begin){
-        min-width: 1200px;
-        height: 82rem;
-        padding-top: 6.5rem;
-        padding-left: 16.5rem;
-        text-align: left;
-        background-image: url("../../images/homepage/hero-bg-desktop@2x.jpg");
+    @media only screen and (min-width: $bp-tablet-end) {
+        height: 62rem;
     }
+    
     &__logo {
-        @media only screen and (min-width: $bp-desktop-begin) {
-            margin-left: -220px;
+        width: 8.3rem;
+        @media only screen and (min-width: $bp-tablet-end) {
+            margin-left: -55rem;   
         }
     }
-    &__container {
-        height: 36.4rem;
-        margin: 4.2rem auto 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        text-align: center;
+
+    &__btn {
+        @media only screen and (min-width: $bp-tablet-end){
+            margin-left: -55rem;
+        }   
+    }
+
+    &__bg {
+        width: 100%;
+        max-width: 37.5rem;
 
         @media only screen and (min-width: $bp-tablet-begin) {
-           width: 68.9rem;
-           margin: 8.5rem auto 0;
+            max-width: 76.8rem;
         }
-
-        @media only screen and (min-width: $bp-desktop-begin) {
-            width: 72.6rem;
-            text-align: left;
-            margin-left: -165px;
-        } 
     }
+
+    &__container  {
+        position: absolute;
+        top: 23rem;
+        left: 6.4vw;
+        right: 6.4vw;
+
+        @media screen and (min-width: $bp-tablet-begin) {
+            top: 39rem;
+            left: 9.8vw;
+            right: 9.8vw;
+        }
+        @media only screen and (min-width: 1024px) {
+            left: 17.8rem;
+            right: 17.8rem;
+        }
+        @media only screen and (min-width: $bp-tablet-end){
+            top: 6.5rem;
+            left: 11vw;
+        }  
+    }
+
+    &__content {
+        width: 32.7rem;
+        margin: 3.2rem auto 6rem;
+
+        @media only screen and (min-width: $bp-tablet-begin) {
+            width: 100%;
+            max-width: 57.3rem;
+        }
+        @media only screen and (min-width: $bp-tablet-end) {
+            margin: 14.1rem 0 5rem;
+            width: 53rem;
+
+        }
+    }
+
     &__title {
-        width: 25.7rem;
-        margin: 15px auto 0;
-        
-        @media only screen and (min-width: $bp-tablet-begin) {
-            margin: 4.3rem auto 0;
-            width: 38.5rem;
-        }
-        @media only screen and (min-width: $bp-desktop-begin) {
-            width: 50.5rem;
-            margin-top: 10.5rem;
+        @media only screen and (min-width: $bp-tablet-end) {
+            margin-bottom: 3.2rem;
+            text-align: left;
+        }   
+    }
+
+    &__paragraph {
+        width: 100%;
+        @media only screen and (min-width: $bp-tablet-end) {
+            width: 85%;
             text-align: left;
         }
     }
-    &__paragraph {
-        width: 34rem;
-        margin: 10px auto 0;
-        @media only screen and (min-width: $bp-tablet-begin) {
-            width: 59.3rem;
-        }
-        @media only screen and (min-width: $bp-desktop-begin){
-            width: 46.5rem;
-            margin-right: 150px;
-        }
-    }
-
 }

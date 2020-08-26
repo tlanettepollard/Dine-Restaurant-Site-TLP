@@ -56,10 +56,9 @@ html {
 }
 
 body {
-    background-color: $primary-cod-gray;
+    /*background-color: $primary-cod-gray;*/
     font-family: "Spartan", sans-serif;
-    min-height: 100%;
-    min-width: 375px;
+    min-height: 100vh;
     overflow-x: hidden;
 }
 
