@@ -2,14 +2,6 @@
 .features {
     background-color: $color-white;
     background-repeat: no-repeat;
-     
-    &__content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        position: relative;
-    }
     
     @media only screen and (max-width: $bp-tablet-end) {
         text-align: center;
@@ -25,6 +17,21 @@
         background-image: url("../../images/patterns/pattern-curve-top-right.svg"), url("../../images/patterns/pattern-curve-top-left.svg");
         background-position-y: 24.2rem, bottom;
         background-position-x: left, right;
+    }
+}
+
+.feature__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 6.4vw;
+    position: relative;
+
+    @media only screen and {min-width: $bp-tablet-begin} {
+        padding: 0 9.8vw;
+        
+        
     }
 }
 

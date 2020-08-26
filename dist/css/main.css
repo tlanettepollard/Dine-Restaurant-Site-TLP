@@ -402,13 +402,25 @@ a .btn {
   }
 }
 
+@media only screen and (min-width: 1199px) {
+  .hero {
+    height: 62rem;
+  }
+}
+
 .hero__logo {
   width: 8.3rem;
 }
 
 @media only screen and (min-width: 1199px) {
   .hero__logo {
-    margin-left: -52rem;
+    margin-left: -55rem;
+  }
+}
+
+@media only screen and (min-width: 1199px) {
+  .hero__btn {
+    margin-left: -55rem;
   }
 }
 
@@ -447,7 +459,7 @@ a .btn {
 
 @media only screen and (min-width: 1199px) {
   .hero__container {
-    top: -6.5rem;
+    top: 6.5rem;
     left: 11vw;
   }
 }
@@ -466,8 +478,26 @@ a .btn {
 
 @media only screen and (min-width: 1199px) {
   .hero__content {
-    margin: 12rem 0 5rem;
+    margin: 14.1rem 0 5rem;
     width: 53rem;
+  }
+}
+
+@media only screen and (min-width: 1199px) {
+  .hero__title {
+    margin-bottom: 3.2rem;
+    text-align: left;
+  }
+}
+
+.hero__paragraph {
+  width: 100%;
+}
+
+@media only screen and (min-width: 1199px) {
+  .hero__paragraph {
+    width: 85%;
+    text-align: left;
   }
 }
 
@@ -475,23 +505,6 @@ a .btn {
   background-color: #ffffff;
   background-repeat: no-repeat;
   background-repeat: no-repeat;
-}
-
-.features__content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  position: relative;
 }
 
 @media only screen and (max-width: 1199px) {
@@ -514,6 +527,24 @@ a .btn {
     background-position-y: 24.2rem, bottom;
     background-position-x: left, right;
   }
+}
+
+.feature__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 6.4vw;
+  position: relative;
 }
 
 @media only screen and (max-width: 767px) {

@@ -8,13 +8,21 @@
     @media only screen and  (min-width: $bp-tablet-begin) {
         height: 99.2rem;
     }
+    @media only screen and (min-width: $bp-tablet-end) {
+        height: 62rem;
+    }
     
     &__logo {
         width: 8.3rem;
         @media only screen and (min-width: $bp-tablet-end) {
-            margin-left: -52rem;
-            
+            margin-left: -55rem;   
         }
+    }
+
+    &__btn {
+        @media only screen and (min-width: $bp-tablet-end){
+            margin-left: -55rem;
+        }   
     }
 
     &__bg {
@@ -42,7 +50,7 @@
             right: 17.8rem;
         }
         @media only screen and (min-width: $bp-tablet-end){
-            top: -6.5rem;
+            top: 6.5rem;
             left: 11vw;
         }  
     }
@@ -56,9 +64,24 @@
             max-width: 57.3rem;
         }
         @media only screen and (min-width: $bp-tablet-end) {
-            margin: 12rem 0 5rem;
+            margin: 14.1rem 0 5rem;
             width: 53rem;
 
+        }
+    }
+
+    &__title {
+        @media only screen and (min-width: $bp-tablet-end) {
+            margin-bottom: 3.2rem;
+            text-align: left;
+        }   
+    }
+
+    &__paragraph {
+        width: 100%;
+        @media only screen and (min-width: $bp-tablet-end) {
+            width: 85%;
+            text-align: left;
         }
     }
 }
