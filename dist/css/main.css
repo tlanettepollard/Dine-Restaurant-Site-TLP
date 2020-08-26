@@ -206,10 +206,9 @@ html {
 }
 
 body {
-  background-color: #121212;
+  /*background-color: $primary-cod-gray;*/
   font-family: "Spartan", sans-serif;
-  min-height: 100%;
-  min-width: 375px;
+  min-height: 100vh;
   overflow-x: hidden;
 }
 
@@ -391,47 +390,94 @@ a .btn {
 /* Form Buttons */
 /* Mobile First Design */
 .hero {
-  width: 100%;
-  min-width: 375px;
-  height: 74.8rem;
-  padding-top: 23.2rem;
-  padding-right: 2.4rem;
-  padding-left: 2.4rem;
-  background-image: url("../../images/homepage/hero-bg-mobile@2x.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top center;
+  position: relative;
+  text-align: center;
+  background-color: #121212;
+  height: 67.6rem;
 }
 
 @media only screen and (min-width: 768px) {
   .hero {
-    min-width: 768px;
     height: 99.2rem;
-    padding-top: 37.5rem;
-    background-image: url("../../images/homepage/hero-bg-tablet@2x.jpg");
   }
 }
 
-@media only screen and (min-width: 1200px) {
-  .hero {
-    min-width: 1200px;
-    height: 82rem;
-    padding-top: 6.5rem;
-    padding-left: 16.5rem;
-    text-align: left;
-    background-image: url("../../images/homepage/hero-bg-desktop@2x.jpg");
-  }
+.hero__logo {
+  width: 8.3rem;
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1199px) {
   .hero__logo {
-    margin-left: -220px;
+    margin-left: -52rem;
+  }
+}
+
+.hero__bg {
+  width: 100%;
+  max-width: 37.5rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero__bg {
+    max-width: 76.8rem;
   }
 }
 
 .hero__container {
-  height: 36.4rem;
-  margin: 4.2rem auto 0;
+  position: absolute;
+  top: 23rem;
+  left: 6.4vw;
+  right: 6.4vw;
+}
+
+@media screen and (min-width: 768px) {
+  .hero__container {
+    top: 39rem;
+    left: 9.8vw;
+    right: 9.8vw;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .hero__container {
+    left: 17.8rem;
+    right: 17.8rem;
+  }
+}
+
+@media only screen and (min-width: 1199px) {
+  .hero__container {
+    top: -6.5rem;
+    left: 11vw;
+  }
+}
+
+.hero__content {
+  width: 32.7rem;
+  margin: 3.2rem auto 6rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero__content {
+    width: 100%;
+    max-width: 57.3rem;
+  }
+}
+
+@media only screen and (min-width: 1199px) {
+  .hero__content {
+    margin: 12rem 0 5rem;
+    width: 53rem;
+  }
+}
+
+.features {
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-repeat: no-repeat;
+}
+
+.features__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -439,71 +485,13 @@ a .btn {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-align: center;
-}
-
-@media only screen and (min-width: 768px) {
-  .hero__container {
-    width: 68.9rem;
-    margin: 8.5rem auto 0;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  .hero__container {
-    width: 72.6rem;
-    text-align: left;
-    margin-left: -165px;
-  }
-}
-
-.hero__title {
-  width: 25.7rem;
-  margin: 15px auto 0;
-}
-
-@media only screen and (min-width: 768px) {
-  .hero__title {
-    margin: 4.3rem auto 0;
-    width: 38.5rem;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  .hero__title {
-    width: 50.5rem;
-    margin-top: 10.5rem;
-    text-align: left;
-  }
-}
-
-.hero__paragraph {
-  width: 34rem;
-  margin: 10px auto 0;
-}
-
-@media only screen and (min-width: 768px) {
-  .hero__paragraph {
-    width: 59.3rem;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  .hero__paragraph {
-    width: 46.5rem;
-    margin-right: 150px;
-  }
-}
-
-.features {
-  background-color: #ffffff;
-  background-repeat: no-repeat;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
 }
 
 @media only screen and (max-width: 1199px) {
@@ -525,6 +513,12 @@ a .btn {
     background-image: url("../../images/patterns/pattern-curve-top-right.svg"), url("../../images/patterns/pattern-curve-top-left.svg");
     background-position-y: 24.2rem, bottom;
     background-position-x: left, right;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .feature__enjoyable {
+    margin-bottom: 0.8rem;
   }
 }
 

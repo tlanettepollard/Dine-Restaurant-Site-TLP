@@ -1,6 +1,16 @@
 
 .features {
     background-color: $color-white;
+    background-repeat: no-repeat;
+     
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+    }
+    
     @media only screen and (max-width: $bp-tablet-end) {
         text-align: center;
     }
@@ -19,5 +29,8 @@
 }
 
 .feature__enjoyable {
+    @media only screen and (max-width: $bp-mobile-end) {
+        margin-bottom: 0.8rem;
+    }
     
 }

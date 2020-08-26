@@ -96,3 +96,13 @@ A massive thank you to our community sponsors!
                 src="images/homepage/hero-bg-mobile.jpg" class="hero-bg" alt="Home Hero background" />
 
             </picture> -->
+
+            $color-error: #b54949;
+
+$padding-side-desktop: 11vw;
+$padding-side-tablet-lg: 12.6vw;
+$padding-side-tablet-sm: 5.1vw;
+$padding-side-mobile: 6.4vw;
+
+$bshadow-1: 0 7.5rem 10rem -5rem rgba(56, 66, 85, 0.5);
+$bshadow-2: 0 1.5rem 2.5rem 0 rgba(56, 66, 85, 0.25);
