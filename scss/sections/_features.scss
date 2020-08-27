@@ -17,6 +17,11 @@
         background-image: url("../../images/patterns/pattern-curve-top-right.svg"), url("../../images/patterns/pattern-curve-top-left.svg");
         background-position-y: 24.2rem, bottom;
         background-position-x: left, right;
+    } 
+    
+    &__content {
+        margin-top: 20px;
+        
     }
     
 }
