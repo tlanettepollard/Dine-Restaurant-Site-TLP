@@ -393,12 +393,13 @@ a .btn {
   position: relative;
   text-align: center;
   background-color: #121212;
-  height: 67.6rem;
+  height: 74.9rem;
 }
 
 @media only screen and (min-width: 768px) {
   .hero {
     height: 99.2rem;
+    background-color: #121212;
   }
 }
 
@@ -504,7 +505,6 @@ a .btn {
 .features {
   background-color: #ffffff;
   background-repeat: no-repeat;
-  background-repeat: no-repeat;
 }
 
 @media only screen and (max-width: 1199px) {
@@ -529,7 +529,7 @@ a .btn {
   }
 }
 
-.feature__content {
+.features__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -537,20 +537,14 @@ a .btn {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 0 6.4vw;
   position: relative;
-}
-
-@media only screen and (max-width: 767px) {
-  .feature__enjoyable {
-    margin-bottom: 0.8rem;
-  }
 }
 
 /* Attribution */
