@@ -411,8 +411,24 @@ a .btn {
   background-size: cover;
 }
 
+@media only screen and (min-width: 768px) {
+  .hero {
+    background-image: url("/images/homepage/hero-bg-tablet@2x.jpg");
+    height: 99rem;
+  }
+}
+
+@media only screen and (min-width: 1199px) {
+  .hero {
+    background-image: url("/images/homepage/hero-bg-desktop@2x.jpg");
+    height: 81.8rem;
+  }
+}
+
 .hero__container {
   margin-top: 5rem;
+  padding: 0 5.1vw;
+  height: 36.4rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -420,13 +436,66 @@ a .btn {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero__container {
+    margin-top: 12.5rem;
+    padding: 0 12rem;
+  }
+}
+
+@media only screen and (min-width: 920px) {
+  .hero__container {
+    margin-top: 22.5rem;
+  }
+}
+
+@media only screen and (min-width: 1199px) {
+  .hero__container {
+    width: 52.3rem;
+    text-align: left;
+    margin-top: -40rem;
+    margin-left: -50rem;
+  }
+}
+
+.hero__logo {
+  margin: 3rem 0;
+}
+
+@media only screen and (min-width: 1199px) {
+  .hero__logo {
+    margin-left: -30rem;
+    margin-bottom: 14.1rem;
+  }
+}
+
+@media only screen and (min-width: 1199px) {
+  .hero__content {
+    margin-left: -40px;
+  }
+}
+
+.hero__title {
+  margin-bottom: 3rem;
+}
+
+.hero__paragraph {
+  margin-bottom: 3rem;
+}
+
+@media only screen and (min-width: 1199px) {
+  .hero__btn {
+    margin-left: -300px;
+  }
 }
 
 /* Attribution */
