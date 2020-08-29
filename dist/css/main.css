@@ -502,6 +502,19 @@ a .btn {
 .features {
   position: relative;
   min-height: 144.9rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
   color: #242b38;
   background-repeat: no-repeat;
@@ -524,12 +537,39 @@ a .btn {
   }
 }
 
-.features__locally-floating-pattern {
+.features .floating-pattern {
   display: none;
 }
 
-.features__content {
-  margin-bottom: 6.5rem;
+.features__card {
+  border: 1px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.features picture {
+  margin-bottom: 4.1rem;
+}
+
+.features .img-enjoyable {
+  margin-top: -7.2rem;
+  z-index: 1;
+}
+
+.features .img-locally {
+  margin-top: 8rem;
+}
+
+.features__header2 {
+  margin: 4rem 0;
 }
 
 /* Attribution */

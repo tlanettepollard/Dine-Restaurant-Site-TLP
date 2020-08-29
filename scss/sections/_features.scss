@@ -2,6 +2,10 @@
 .features {
     position: relative;
     min-height: 144.9rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
     text-align: center;
     color: $neutral-ebony-clay;
     background-repeat: no-repeat;
@@ -16,12 +20,30 @@
         background-position-x: left, right;
         text-align: left;
     }
-    &__locally-floating-pattern {
+    .floating-pattern {
         display: none;
     }
-    &__content {
-        margin-bottom: 6.5rem;
+    &__card {
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
     }
+    picture {
+        margin-bottom: 4.1rem;
+    }
+
+    .img-enjoyable {
+        margin-top: -7.2rem;
+        z-index: 1;
+    }
+    .img-locally {
+        margin-top: 8rem;
+    }
+    &__header2 {
+        margin: 4rem 0;
+    }
+    
    
     
 }
