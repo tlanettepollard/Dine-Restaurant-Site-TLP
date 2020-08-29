@@ -502,6 +502,7 @@ a .btn {
 .features {
   position: relative;
   min-height: 144.9rem;
+  margin-bottom: 8rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -516,7 +517,7 @@ a .btn {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  color: #242b38;
+  /*color: $neutral-ebony-clay;*/
   background-repeat: no-repeat;
 }
 
@@ -555,8 +556,14 @@ a .btn {
           justify-content: space-evenly;
 }
 
+.features__info {
+  padding: 0 8vw;
+}
+
 .features picture {
   margin-bottom: 4.1rem;
+  -webkit-box-shadow: 0 7.5rem 10rem -5rem rgba(56, 66, 85, 0.5);
+          box-shadow: 0 7.5rem 10rem -5rem rgba(56, 66, 85, 0.5);
 }
 
 .features .img-enjoyable {
@@ -570,6 +577,10 @@ a .btn {
 
 .features__header2 {
   margin: 4rem 0;
+}
+
+.highlights {
+  background-color: #121212;
 }
 
 /* Attribution */
