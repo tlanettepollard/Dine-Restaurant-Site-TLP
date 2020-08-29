@@ -391,6 +391,7 @@ a .btn {
 /* Mobile First Design */
 .hero {
   position: relative;
+  z-index: 1;
   height: 74.8rem;
   background-color: #121212;
   display: -webkit-box;
@@ -496,6 +497,39 @@ a .btn {
   .hero__btn {
     margin-left: -300px;
   }
+}
+
+.features {
+  position: relative;
+  min-height: 144.9rem;
+  text-align: center;
+  color: #242b38;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .features {
+    background-image: url("/images/patterns/pattern-curve-top-right.svg"), url("/images/patterns/pattern-curve-top-left.svg");
+    background-position-y: 10rem, bottom;
+    background-position-x: -67rem, 52vw;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .features {
+    background-image: url("/images/patterns/pattern-curve-top-right.svg"), url("/images/patterns/pattern-curve-top-left.svg");
+    background-position-y: 24.2rem, bottom;
+    background-position-x: left, right;
+    text-align: left;
+  }
+}
+
+.features__locally-floating-pattern {
+  display: none;
+}
+
+.features__content {
+  margin-bottom: 6.5rem;
 }
 
 /* Attribution */
