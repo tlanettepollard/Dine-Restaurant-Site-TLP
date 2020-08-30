@@ -102,6 +102,9 @@ body {
         line-height: 1.4;
         letter-spacing: -0.4px;
     }
+    @media only screen and (min-width: $bp-desktop-begin) {
+        font-size: 4rem;
+    }
     //stays same for screen-size above
 }
 

@@ -40,11 +40,26 @@
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
+
+        @media only screen and (min-width: $bp-desktop-begin) {
+            flex-direction: row;
+        }
+    }
+    .card-right {
+        display: flex;
+        flex-direction: row-reverse;
     }
     &__info {
         padding: 0 8vw;
     }
+    .info-enjoyable {
+        @media only screen and (min-width: $bp-desktop-begin) {
+            margin-top: 17.7rem;
+        }
+    }
+
     picture {
+        width: auto;
         margin-bottom: 4.1rem;
         box-shadow: 0 1.5rem 2.5rem 0 rgba(56, 66, 85, 0.25);
     }
@@ -52,6 +67,7 @@
     .img-enjoyable {
         margin-top: -7.2rem;
         z-index: 1;
+
         @media only screen and (min-width: $bp-tablet-begin) {
             margin-top: -8.6rem;
         }
@@ -68,6 +84,9 @@
         @media only screen and (min-width: $bp-tablet-begin) {
             margin: 3.9rem auto 0 auto;
             width:  37.8rem;
+        }
+        @media only screen and (min-width: $bp-desktop-begin) {
+            margin-left: -1px;
         }
     }
     &__paragraph {
