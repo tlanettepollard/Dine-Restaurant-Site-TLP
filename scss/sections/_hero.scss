@@ -1,6 +1,7 @@
 /* Mobile First Design */
 .hero {
     position: relative;
+    z-index: 1;
     height: 74.8rem;
     background-color: $primary-cod-gray;
     display: flex;
@@ -10,13 +11,59 @@
     background-image: url("/images/homepage/hero-bg-mobile@2x.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    @media only screen and (min-width: $bp-tablet-begin) {
+        background-image: url("/images/homepage/hero-bg-tablet@2x.jpg");
+        height: 99rem;
+    }
+    @media only screen and (min-width: $bp-tablet-end) {
+        background-image: url("/images/homepage/hero-bg-desktop@2x.jpg");
+        height: 81.8rem;
+    }
     &__container {
         margin-top: 5rem;
+        padding: 0 5.1vw;
+        height: 36.4rem;
         display: flex;
         flex-direction: column;
-        justify-content: center;  
+        justify-content: flex-start;  
         align-items: center;
         text-align: center;
+        @media only screen and (min-width: $bp-tablet-begin) {
+            margin-top: 12.5rem;
+            padding: 0 12rem;
+        }
+        @media only screen and (min-width: 920px) {
+            margin-top: 22.5rem;
+        }
+        @media only screen and (min-width: $bp-tablet-end) {
+            width: 52.3rem;
+            text-align: left;
+            margin-top: -40rem;
+            margin-left: -50rem;
+        }
+    }
+    &__logo {
+        margin: 3rem 0;
+        @media only screen and (min-width: $bp-tablet-end) { 
+            margin-left: -30rem; 
+            margin-bottom: 14.1rem; 
+        }
+    }
+    &__content {
+        @media only screen and (min-width: $bp-tablet-end) {
+            margin-left: -40px;
+        }
+    }
+    &__title {
+        margin-bottom: 3rem;
+    }
+    &__paragraph {
+        margin-bottom: 3rem;
+    }
+    &__btn {
+        @media only screen and (min-width: $bp-tablet-end) {
+            margin-left: -300px;
+        }
     }
     
     
