@@ -523,9 +523,11 @@ a .btn {
 
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
   .features {
+    min-height: 151rem;
     background-image: url("/images/patterns/pattern-curve-top-right.svg"), url("/images/patterns/pattern-curve-top-left.svg");
     background-position-y: 10rem, bottom;
-    background-position-x: -67rem, 52vw;
+    background-position-x: -51rem, 52vw;
+    text-align: center;
   }
 }
 
@@ -540,6 +542,18 @@ a .btn {
 
 .features .floating-pattern {
   display: none;
+  z-index: 1;
+  position: absolute;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .features .floating-pattern {
+    display: block;
+    right: 0;
+    top: 95rem;
+    -webkit-transform: translateX(-2.8rem);
+            transform: translateX(-2.8rem);
+  }
 }
 
 .features__card {
@@ -562,8 +576,8 @@ a .btn {
 
 .features picture {
   margin-bottom: 4.1rem;
-  -webkit-box-shadow: 0 7.5rem 10rem -5rem rgba(56, 66, 85, 0.5);
-          box-shadow: 0 7.5rem 10rem -5rem rgba(56, 66, 85, 0.5);
+  -webkit-box-shadow: 0 1.5rem 2.5rem 0 rgba(56, 66, 85, 0.25);
+          box-shadow: 0 1.5rem 2.5rem 0 rgba(56, 66, 85, 0.25);
 }
 
 .features .img-enjoyable {
@@ -571,12 +585,38 @@ a .btn {
   z-index: 1;
 }
 
+@media only screen and (min-width: 768px) {
+  .features .img-enjoyable {
+    margin-top: -8.6rem;
+  }
+}
+
 .features .img-locally {
   margin-top: 8rem;
 }
 
+@media only screen and (min-width: 768px) {
+  .features .img-locally {
+    margin-top: 10rem;
+  }
+}
+
 .features__header2 {
   margin: 4rem 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .features__header2 {
+    margin: 3.9rem auto 0 auto;
+    width: 37.8rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .features__paragraph {
+    width: 46.4rem;
+    margin-top: 3.9rem;
+  }
 }
 
 .highlights {
