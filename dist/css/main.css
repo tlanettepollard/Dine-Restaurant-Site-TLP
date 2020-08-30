@@ -539,6 +539,7 @@ a .btn {
 
 @media only screen and (min-width: 1200px) {
   .features {
+    min-height: 141.2rem;
     background-image: url("/images/patterns/pattern-curve-top-right.svg"), url("/images/patterns/pattern-curve-top-left.svg");
     background-position-y: 24.2rem, bottom;
     background-position-x: left, right;
@@ -599,11 +600,19 @@ a .btn {
 
 .features__info {
   padding: 0 8vw;
+  position: relative;
 }
 
 @media only screen and (min-width: 1200px) {
   .features .info-enjoyable {
     margin-top: 17.7rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .features .info-locally {
+    margin-top: 21.1rem;
+    position: relative;
   }
 }
 
@@ -625,6 +634,12 @@ a .btn {
   }
 }
 
+@media only screen and (min-width: 1200px) {
+  .features .img-enjoyable {
+    margin-bottom: -10rem;
+  }
+}
+
 .features .img-locally {
   position: relative;
   margin-top: 8rem;
@@ -633,6 +648,16 @@ a .btn {
 @media only screen and (min-width: 768px) {
   .features .img-locally {
     margin-top: 10rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .features .img-locally {
+    position: relative;
+    margin-top: -12rem;
+    left: -11rem;
+    bottom: -30rem;
+    z-index: 2;
   }
 }
 
@@ -660,8 +685,21 @@ a .btn {
   }
 }
 
+@media only screen and (min-width: 1200px) {
+  .features__paragraph {
+    width: 44.5rem;
+  }
+}
+
 .highlights {
+  position: relative;
+  margin-top: -12rem;
+  z-index: 1;
   background-color: #121212;
+}
+
+.highlights__menu-container {
+  margin-top: 20rem;
 }
 
 /* Attribution */

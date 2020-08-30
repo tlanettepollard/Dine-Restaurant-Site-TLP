@@ -18,6 +18,7 @@
         text-align: center;
     }
     @media only screen and (min-width: $bp-desktop-begin) {
+        min-height: 141.2rem;
         background-image: url("/images/patterns/pattern-curve-top-right.svg"), url("/images/patterns/pattern-curve-top-left.svg");
         background-position-y: 24.2rem, bottom;
         background-position-x: left, right;
@@ -48,13 +49,21 @@
     .card-right {
         display: flex;
         flex-direction: row-reverse;
+       
     }
     &__info {
         padding: 0 8vw;
+        position: relative;
     }
     .info-enjoyable {
         @media only screen and (min-width: $bp-desktop-begin) {
             margin-top: 17.7rem;
+        }
+    }
+    .info-locally {
+        @media only screen and (min-width: $bp-desktop-begin) {
+            margin-top: 21.1rem;
+            position: relative;
         }
     }
 
@@ -71,12 +80,22 @@
         @media only screen and (min-width: $bp-tablet-begin) {
             margin-top: -8.6rem;
         }
+        @media only screen and (min-width: $bp-desktop-begin) {
+            margin-bottom: -10rem;
+        }
     }
     .img-locally {
         position: relative;
         margin-top: 8rem;
         @media only screen and (min-width: $bp-tablet-begin) {
             margin-top: 10rem;
+        }
+        @media only screen and (min-width: $bp-desktop-begin){
+            position: relative;
+            margin-top: -12rem;
+            left: -11rem;
+            bottom: -30rem;
+            z-index: 2;
         }
     }
     &__header2 {
@@ -93,6 +112,9 @@
         @media only screen and (min-width: $bp-tablet-begin) {
             width: 46.4rem;
             margin-top: 3.9rem;
+        }
+        @media only screen and (min-width: $bp-desktop-begin) {
+            width: 44.5rem;
         }
     }
     
