@@ -18,6 +18,7 @@
         text-align: center;
     }
     @media only screen and (min-width: $bp-desktop-begin) {
+        min-height: 141.2rem;
         background-image: url("/images/patterns/pattern-curve-top-right.svg"), url("/images/patterns/pattern-curve-top-left.svg");
         background-position-y: 24.2rem, bottom;
         background-position-x: left, right;
@@ -25,25 +26,49 @@
     }
     .floating-pattern {
         display: none;
-        z-index: 1;
-        position: absolute;
-        @media only screen and (min-width: $bp-tablet-begin) and (max-width: $bp-tablet-end) {
+    
+        @media only screen and (min-width: $bp-tablet-begin) {
             display: block;
-            right: 0;
-            top: 95rem;
-            transform: translateX(-2.8rem);
+            width: 16rem;
+            position: absolute;
+            right: 6rem;  
+        }
+        @media only screen and (min-width: 1024px) {
+            right: 18rem;
         }
     }
     &__card {
-        border: 1px solid black;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
+
+        @media only screen and (min-width: $bp-desktop-begin) {
+            flex-direction: row;
+        }
+    }
+    .card-right {
+        display: flex;
+        flex-direction: row-reverse;
+       
     }
     &__info {
         padding: 0 8vw;
+        position: relative;
     }
+    .info-enjoyable {
+        @media only screen and (min-width: $bp-desktop-begin) {
+            margin-top: 17.7rem;
+        }
+    }
+    .info-locally {
+        @media only screen and (min-width: $bp-desktop-begin) {
+            margin-top: 21.1rem;
+            position: relative;
+        }
+    }
+
     picture {
+        width: auto;
         margin-bottom: 4.1rem;
         box-shadow: 0 1.5rem 2.5rem 0 rgba(56, 66, 85, 0.25);
     }
@@ -51,8 +76,12 @@
     .img-enjoyable {
         margin-top: -7.2rem;
         z-index: 1;
+
         @media only screen and (min-width: $bp-tablet-begin) {
             margin-top: -8.6rem;
+        }
+        @media only screen and (min-width: $bp-desktop-begin) {
+            margin-bottom: -10rem;
         }
     }
     .img-locally {
@@ -61,6 +90,13 @@
         @media only screen and (min-width: $bp-tablet-begin) {
             margin-top: 10rem;
         }
+        @media only screen and (min-width: $bp-desktop-begin){
+            position: relative;
+            margin-top: -12rem;
+            left: -11rem;
+            bottom: -30rem;
+            z-index: 2;
+        }
     }
     &__header2 {
         margin: 4rem 0;
@@ -68,11 +104,17 @@
             margin: 3.9rem auto 0 auto;
             width:  37.8rem;
         }
+        @media only screen and (min-width: $bp-desktop-begin) {
+            margin-left: -1px;
+        }
     }
     &__paragraph {
         @media only screen and (min-width: $bp-tablet-begin) {
             width: 46.4rem;
             margin-top: 3.9rem;
+        }
+        @media only screen and (min-width: $bp-desktop-begin) {
+            width: 44.5rem;
         }
     }
     

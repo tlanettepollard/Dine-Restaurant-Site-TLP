@@ -1,4 +1,12 @@
 
 .highlights {
+    position: relative;
+    margin-top: -12rem;
+    z-index: 1;
     background-color: $primary-cod-gray;
+    
+    &__menu-container {
+        margin-top: 20rem;
+       
+    }
 }

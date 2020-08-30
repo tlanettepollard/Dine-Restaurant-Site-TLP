@@ -106,3 +106,5 @@ $padding-side-mobile: 6.4vw;
 
 $bshadow-1: 0 7.5rem 10rem -5rem rgba(56, 66, 85, 0.5);
 $bshadow-2: 0 1.5rem 2.5rem 0 rgba(56, 66, 85, 0.25);
+
+media-lg 1024px
