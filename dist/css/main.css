@@ -542,22 +542,24 @@ a .btn {
 
 .features .floating-pattern {
   display: none;
-  z-index: 1;
-  position: absolute;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1199px) {
+@media only screen and (min-width: 768px) {
   .features .floating-pattern {
     display: block;
-    right: 0;
-    top: 95rem;
-    -webkit-transform: translateX(-2.8rem);
-            transform: translateX(-2.8rem);
+    width: 16rem;
+    position: absolute;
+    right: 6rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .features .floating-pattern {
+    right: 18rem;
   }
 }
 
 .features__card {
-  border: 1px solid black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
