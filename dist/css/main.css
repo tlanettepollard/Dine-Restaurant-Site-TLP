@@ -1,6 +1,13 @@
-@use "scss/base";
-@use "scss/button";
-@use "scss/form";
-@use "scss/pglayout";
-@use "scss/picture";
+@use "abstracts/variables";
+@use "base/base";
+@use "base/typography";
+@use "components/button";
+@use "components/cta";
+@use "layout/features";
+@use "layout/footer";
+@use "layout/highlights";
+@use "layout/intro";
+@use "layout/slider";
+@use "pages/home";
+@use "pages/booking";
 /*# sourceMappingURL=main.css.map */
