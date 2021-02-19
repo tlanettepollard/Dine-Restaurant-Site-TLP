@@ -21,11 +21,10 @@ $weight-semi-bold: 600;
 $weight-bold: 700;
 
 // Breakpoints 
-$xs: 0;
-$sm: 576px;
-$md: 768px;
-$lg: 992px;
-$xl: 1200px;
+$layout-breakpoint-sm: 576px;
+$layout-breakpoint-md: 768px;
+$layout-breakpoint-lg: 992px;
+/*$layout-breakpoint-xl: 1200px;*/
 
 /* Design Elements 
 $transition: all 0.2s;
