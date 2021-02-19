@@ -1,14 +1,8 @@
 /* Mobile First Design */
 
 .intro {
+    min-width: 37.5rem;
+    min-height: 74.8rem;
     background: $secondary-mirage;
-    background-image: url(/images/homepage/hero-bg-mobile.jpg);
-    background-image: image-set(
-        url(/images/homepage/hero-bg-mobile.jpg) 1x, 
-        url(/images/homepage/hero-bg-mobile@2x.jpg) 2x
-    );
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 74.3rem;
+    
 }
