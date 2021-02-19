@@ -20,6 +20,21 @@ $weight-regular: 400;
 $weight-semi-bold: 600;
 $weight-bold: 700;
 
+// Breakpoints 
+$xs: 0;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+
 /* Design Elements 
-$transition: 300ms ease-in-out;
+$transition: all 0.2s;
 */
+
+// Typography 
+
+// Spartan Google Font
+@import url('https://fonts.googleapis.com/css?family=Spartan:100,200,300,400,500,600,700,800,900&display=swap');
+
+// Spartan font family
+$spartan: 'Spartan', sans-serif;

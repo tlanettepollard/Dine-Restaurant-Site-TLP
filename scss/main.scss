@@ -1,24 +1,24 @@
 // Variables
-@use "abstracts/variables";
+@import "abstracts/variables";
 
 // Base 
-@use "base/base";
-@use "base/typography";
+@import "base/base";
+@import "base/typography";
 
 // Components
-@use "components/button";
-@use "components/cta";
+@import "components/button";
+@import "components/cta";
 
 // Layout
-@use "layout/features";
-@use "layout/footer";
-@use "layout/highlights";
-@use "layout/intro";
-@use "layout/slider";
+@import "layout/features";
+@import "layout/footer";
+@import "layout/highlights";
+@import 'layout/intro';
+@import "layout/slider";
 
 // Pages 
-@use "pages/home";
-@use "pages/booking"; 
+@import "pages/home";
+@import "pages/booking";
 
 
 
