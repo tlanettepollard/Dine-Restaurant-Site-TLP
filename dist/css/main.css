@@ -2,6 +2,7 @@
 /* Primary Colors */
 /* Secondary Colors */
 /* Font Weights */
+/*$layout-breakpoint-xl: 1200px;*/
 /* Design Elements 
 $transition: all 0.2s;
 */
@@ -58,6 +59,47 @@ p {
   margin: 0 auto;
 }
 
+/* Base Styles */
+h1, h2, h3, body {
+  font-family: "Spartan", sans-serif;
+}
+
+h1 {
+  font-size: 6.4rem;
+  line-height: 7.2rem;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 4.0rem;
+  line-height: 5.6rem;
+  font-weight: 700;
+}
+
+h3 .light {
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  font-weight: 700;
+}
+
+h3 .semi-bold {
+  font-size: 1.4rem;
+  line-height: 2.8rem;
+  font-weight: 600;
+}
+
+body .body-1 {
+  font-size: 1.8rem;
+  line-height: 3.0rem;
+  font-weight: 400;
+}
+
+body .body-2 {
+  font-size: 1.5rem;
+  line-height: 2.8rem;
+  font-weight: 400;
+}
+
 /* Form Buttons */
 /* Attribution */
 .attribution {
@@ -73,14 +115,55 @@ p {
 
 /* Mobile First Design */
 .intro {
+  min-width: 37.5rem;
+  min-height: 74.8rem;
   background: #17192b;
   background-image: url(/images/homepage/hero-bg-mobile.jpg);
   background-image: -webkit-image-set(url(/images/homepage/hero-bg-mobile.jpg) 1x, url(/images/homepage/hero-bg-mobile@2x.jpg) 2x);
   background-image: image-set(url(/images/homepage/hero-bg-mobile.jpg) 1x, url(/images/homepage/hero-bg-mobile@2x.jpg) 2x);
-  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 74.3rem;
+  background-position: top;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .intro {
+    background-image: url(/images/homepage/hero-bg-tablet.jpg);
+    background-image: -webkit-image-set(url(/images/homepage/hero-bg-tablet.jpg) 1x, url(/images/homepage/hero-bg-tablet@2x.jpg) 2x);
+    background-image: image-set(url(/images/homepage/hero-bg-tablet.jpg) 1x, url(/images/homepage/hero-bg-tablet@2x.jpg) 2x);
+    min-height: 99.2rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .intro {
+    background-image: url(/images/homepage/hero-bg-desktop.jpg);
+    background-image: -webkit-image-set(url(/images/homepage/hero-bg-desktop.jpg) 1x, url(/images/homepage/hero-bg-desktop@2x.jpg) 2x);
+    background-image: image-set(url(/images/homepage/hero-bg-desktop.jpg) 1x, url(/images/homepage/hero-bg-desktop@2x.jpg) 2x);
+    min-height: 82.4rem;
+    text-align: left;
+  }
+}
+
+.intro__column {
+  width: 90%;
+  height: 38.5rem;
+  position: relative;
+  top: 24.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 /* Glide */
