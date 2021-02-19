@@ -1,13 +1,89 @@
-@use "abstracts/variables";
-@use "base/base";
-@use "base/typography";
-@use "components/button";
-@use "components/cta";
-@use "layout/features";
-@use "layout/footer";
-@use "layout/highlights";
-@use "layout/intro";
-@use "layout/slider";
-@use "pages/home";
-@use "pages/booking";
+/* Variables */
+/* Primary Colors */
+/* Secondary Colors */
+/* Font Weights */
+/* Design Elements 
+$transition: all 0.2s;
+*/
+@import url("https://fonts.googleapis.com/css?family=Spartan:100,200,300,400,500,600,700,800,900&display=swap");
+/* Condensed Universal Reset */
+* {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  vertical-align: baseline;
+  font-weight: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  border: 0 none;
+  padding: 0;
+  margin: 0;
+}
+
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+/* Additional Reset */
+html {
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+html,
+body {
+  min-height: 100vh;
+  width: 100%;
+  font-family: "Spartan", sans-serif;
+  display: -ms-grid;
+  display: grid;
+  outline: 1px solid black;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+/* Helpers */
+.container {
+  width: 87%;
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+/* Form Buttons */
+/* Attribution */
+.attribution {
+  background-color: #9e7f67;
+  font-size: 11px;
+  text-align: center;
+  color: white;
+}
+
+.attribution a {
+  color: white;
+}
+
+/* Mobile First Design */
+.intro {
+  background: #17192b;
+  background-image: url(/images/homepage/hero-bg-mobile.jpg);
+  background-image: -webkit-image-set(url(/images/homepage/hero-bg-mobile.jpg) 1x, url(/images/homepage/hero-bg-mobile@2x.jpg) 2x);
+  background-image: image-set(url(/images/homepage/hero-bg-mobile.jpg) 1x, url(/images/homepage/hero-bg-mobile@2x.jpg) 2x);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 74.3rem;
+}
+
+/* Glide */
+/*@import "../node_modules/@glidejs/glide/src/assets/sass/glide.core.scss";
+@import "../node_modules/@glidejs/glide/src/assets/sass/glide.theme.scss"; */
 /*# sourceMappingURL=main.css.map */
