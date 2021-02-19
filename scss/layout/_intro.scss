@@ -32,6 +32,13 @@
         min-height: 82.4rem;
         text-align: left;
     }
-    
+
+    &__column {
+        width: 90%;
+        height: 38.5rem;
+        position: relative;
+        top: 24.5rem;
+        @include flex(column, space-between);
+    }
     
 }
