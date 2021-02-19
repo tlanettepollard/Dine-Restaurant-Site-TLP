@@ -41,8 +41,13 @@
         top: 24.5rem;
         @include flex(column, space-between);
     }
+    &__logo {
+        margin-top: 3.6rem;
+        
+    }
     &__title {
         color: $color-white;
+        font-size: 4rem; 
     }
     &__text {
         color: $color-white;

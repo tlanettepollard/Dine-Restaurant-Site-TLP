@@ -167,8 +167,13 @@ body .body-2 {
           align-items: center;
 }
 
+.intro__logo {
+  margin-top: 3.6rem;
+}
+
 .intro__title {
   color: #ffffff;
+  font-size: 4rem;
 }
 
 .intro__text {
