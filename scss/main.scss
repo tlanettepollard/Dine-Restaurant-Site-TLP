@@ -1,7 +1,24 @@
-@import "../scss/base";
-@import "../scss/button";
-@import "../scss/form";
-@import "../scss/pglayout";
-@import "../scss/picture";
+// Variables
+@use "abstracts/variables";
+
+// Base 
+@use "base/base";
+@use "base/typography";
+
+// Components
+@use "components/button";
+@use "components/cta";
+
+// Layout
+@use "layout/features";
+@use "layout/footer";
+@use "layout/highlights";
+@use "layout/intro";
+@use "layout/slider";
+
+// Pages 
+@use "pages/home";
+@use "pages/booking"; 
+
 
 
