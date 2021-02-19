@@ -35,10 +35,17 @@
 
     &__column {
         width: 90%;
+        max-width: 35rem;
         height: 38.5rem;
         position: relative;
         top: 24.5rem;
         @include flex(column, space-between);
+    }
+    &__title {
+        color: $color-white;
+    }
+    &__text {
+        color: $color-white;
     }
     
 }

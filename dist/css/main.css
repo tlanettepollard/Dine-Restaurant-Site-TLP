@@ -148,6 +148,7 @@ body .body-2 {
 
 .intro__column {
   width: 90%;
+  max-width: 35rem;
   height: 38.5rem;
   position: relative;
   top: 24.5rem;
@@ -164,6 +165,14 @@ body .body-2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.intro__title {
+  color: #ffffff;
+}
+
+.intro__text {
+  color: #ffffff;
 }
 
 /* Glide */
