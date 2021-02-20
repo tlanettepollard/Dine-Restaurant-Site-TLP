@@ -19,6 +19,7 @@
                 <a class="intro__logo-link" href="./dine_index.html">
                     <img class="intro__logo logo" src="./images/logo.svg" alt="Dine logo" />
                 </a>
+                
                 <h1 class="intro__title">
                 Exquisite dining since 1989 
                 </h1> 
@@ -30,21 +31,121 @@
         </header><!-- .intro -->
 
         <section class="features">
-            <picture class="features__picture">
-                <source srcset="./images/homepage/enjoyable-place-desktop.jpg 1x, ./images/homepage/enjoyable-place-desktop@2x.jpg 2x" media="(min-width: 1024px)"/>
-                <source srcset="./images/homepage/enjoyable-place-tablet.jpg 1x, ./images/homepage/enjoyable-place-tablet@2x.jpg 2x" media="(min-width: 768px)"/>
-                <source srcset="./images/homepage/enjoyable-place-mobile.jpg 1x, ./images/homepage/enjoyable-place-mobile.jpg@2x.jpg 2x" media="(min-width: 300px)"/>
-                <img class="features__photo-enjoyable" src="./images/homepage/enjoyable-place-mobile.jpg" alt="Enjoyable place"/>
-            </picture>
-            <div>
+            <div class="features__area">
+                <picture class="features__picture">
+                    <source srcset="./images/homepage/enjoyable-place-desktop.jpg 1x, 
+                    ./images/homepage/enjoyable-place-desktop@2x.jpg 2x" media="(min-width: 1024px)"/>
+
+                    <source srcset="./images/homepage/enjoyable-place-tablet.jpg 1x, 
+                    ./images/homepage/enjoyable-place-tablet@2x.jpg 2x" media="(min-width: 768px)"/>
+
+                    <source srcset="./images/homepage/enjoyable-place-mobile.jpg 1x, 
+                    ./images/homepage/enjoyable-place-mobile@2x.jpg 2x" media="(min-width: 300px)" />
+
+                    <img class="features__photo-enjoyable" src="./images/homepage/enjoyable-place-mobile.jpg" alt="Enjoyable place"/>
+                </picture>
+                <div>
+                    <img class="pattern" src="./images/patterns/pattern-divide.svg" alt="divide pattern"/>
+                    
+                    <h2 class="features__title title-one">Enjoyable place for all the family</h2>
+                    <p class="features__text body-2">
+                        Our relaxed surroundings make dining with us a great experience for everyone. We can even arrange a tour of the farm before your meal.
+                    </p> 
+                </div>
+                <img class="curve-right curve" src="./images/patterns/pattern-curve-top-right.svg" alt="Curve top right" />
+            </div><!-- .features__area -->
+
+            <div class="features__area">
+                <picture class="features__picture">
+                    <source srcset="./images/homepage/locally-sourced-desktop.jpg 1x, 
+                    ./images/homepage/locally-sourced-desktop@2x.jpg 2x" media="(min-width: 1024px)"/>
+
+                    <source srcset="./images/homepage/locally-sourced-tablet.jpg 1x, 
+                    ./images/homepage/locally-sourced-tablet@2x.jpg 2x" media="(min-width: 768px)"/>
+
+                    <source srcset="./images/homepage/locally-sourced-mobile.jpg 1x, 
+                    ./images/homepage/locally-sourced-mobile@2x.jpg 2x" media="(min-width: 300px)"/>
+
+                    <img class="features__photo-locally" src="./images/homepage/locally-sourced-mobile.jpg" alt="Locally sourced"/>
+                </picture>
+                <div>
+                    <img class="pattern" src="./images/patterns/pattern-divide.svg" alt="divide pattern"/>
+                    
+                    <h2 class="features__title">The most locally sourced food</h2>
+                    <p class="features__text body-2">
+                        All our ingredients come directly from our farm or local fishery. So you can be sure that you’re eating the freshest, most sustainable food.
+                    </p> 
+                </div>
+                <img class="curve-left curve" src="./images/patterns/pattern-curve-top-left.svg" alt="Curve top left" />
+                <img class="lines" src="./images/patterns/pattern-lines.svg" alt="lines" />
+            </div><!-- .features__area -->      
+        </section><!-- .features -->
+
+        <section class="highlights">
+            <div class="highlights__container">
+                <div class="highlights__header">
+                    <img class="pattern" src="./images/patterns/pattern-divide.svg" alt="divide pattern" />
+                    <h2 class="highlights__title title-two">
+                        A few highlights from our menu
+                    </h2>
+                    <p class="highlights__text body-2">
+                        We cater for all dietary requirements, but here’s a glimpse at some of our diner’s favourites. Our menu is revamped every season.
+                    </p>
+                </div><!-- .highlights__header -->
+                <div class="highlights__area">
+                    <div class="food-items">
+                        <picture class="highlights__picture">
+                            <source srcset="./images/homepage/salmon-desktop-tablet.jpg 1x, 
+                            ./images/homepage/salmon-desktop-tablet@2x.jpg 2x" media="(min-width: 768px)"/>
+
+                            <source srcset="./images/homepage/salmon-mobile.jpg 1x, 
+                            ./images/homepage/      salmon-mobile@2x.jpg 2x" media="(min-width: 300px)"/>
+
+                            <img class="highlights__photo-salmon" src="./images/homepage/salmon-mobile.jpg" alt="Salmon"/>
+                        </picture>
+                        <div class="food-text">
+                            <h3 class="bold">Seared Salmon Fillet</h3>
+                            <p>Our locally sourced salmon served with a refreshing buckwheat summer salad.</p>
+                        </div><!-- .food-text -->
+                    </div><!-- .food-items -->
+                    <div class="food-items">
+                        <picture class="highlights__picture">
+                            <source srcset="./images/homepage/beef-desktop-tablet.jpg 1x, 
+                            ./images/homepage/beef-desktop-tablet@2x.jpg 2x" media="(min-width: 768px)"/>
+
+                            <source srcset="./images/homepage/beef-mobile.jpg 1x, 
+                            ./images/homepage/      beef-mobile@2x.jpg 2x" media="(min-width: 300px)"/>
+
+                            <img class="highlights__photo-beef" src="./images/homepage/beef-mobile.jpg" alt="Beef"/>
+                        </picture>
+                        <div class="food-text">
+                            <h3 class="bold">Rosemary Filet Mignon</h3>
+                            <p>Our prime beef served to your taste with a delicious choice of seasonal sides.</p>
+                        </div><!-- .food-text -->
+                    </div><!-- .food-items -->
+                    <div class="food-items">
+                        <picture class="highlights__picture">
+                            <source srcset="./images/homepage/chocolate-desktop-tablet.jpg 1x, 
+                            ./images/homepage/chocolate-desktop-tablet@2x.jpg 2x" media="(min-width: 768px)"/>
+
+                            <source srcset="./images/homepage/chocolate-mobile.jpg 1x, 
+                            ./images/homepage/      chocolate-mobile@2x.jpg 2x" media="(min-width: 300px)"/>
+
+                            <img class="highlights__photo-chocolate" src="./images/homepage/chocolate-mobile.jpg" alt="Chocolate"/>
+                        </picture>
+                        <div class="food-text">
+                            <h3 class="bold">Summer Fruit Chocolate Mousse</h3>
+                            <p>Creamy mousse combined with summer fruits and dark chocolate shavings.</p>
+                        </div><!-- .food-text -->
+                    </div><!-- .food-items -->
+                </div><!-- .highlights__area -->
+            </div><!-- .highlighs__container -->         
+        </section><!-- .highlights -->
+
+        <section class="glide slider">
+            <div class="slider__container">
 
             </div>
-            Enjoyable place for all the family Our relaxed surroundings make dining with us a great experience for everyone. We can even arrange a tour of the farm before your meal. The most locally sourced food All our ingredients come directly from our farm or local fishery. So you can be sure that you’re eating the freshest, most sustainable food.
-        </section><!-- .features -->
-        <section class="highlights">
-            A few highlights from our menu We cater for all dietary requirements, but here’s a glimpse at some of our diner’s favourites. Our menu is revamped every season. Seared Salmon Fillet Our locally sourced salmon served with a refreshing buckwheat summer salad. Rosemary Filet Mignon Our prime beef served to your taste with a delicious choice of seasonal sides. Summer Fruit Chocolate Mousse Creamy mousse combined with summer fruits and dark chocolate shavings.
-        </section><!-- .highlights -->
-        <section class="slider">
             Family Gathering Special Events Social Events Family Gathering We love catering for entire families. So please bring everyone along for a special meal with your loved ones. We’ll provide a memorable experience for all. Special Events Whether it’s a romantic dinner or special date you’re celebrating with others we’ll look after you. We’ll be sure to mark your special date with an unforgettable meal. Social Events Are you looking to have a larger social event? No problem! We’re more than happy to cater for big parties. We’ll work with you to make your event a hit with everyone. Book a table
         </section><!-- .slider -->
         <section class="cta">

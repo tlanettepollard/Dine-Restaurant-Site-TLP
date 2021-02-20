@@ -76,7 +76,7 @@ h2 {
   font-weight: 700;
 }
 
-h3 .light {
+h3 .bold {
   font-size: 1.8rem;
   line-height: 2.8rem;
   font-weight: 700;
@@ -113,11 +113,18 @@ body .body-2 {
   color: white;
 }
 
+.highlights {
+  min-width: 37.5rem;
+  min-height: 172.0rem;
+  background: #121212;
+  color: #ffffff;
+}
+
 /* Mobile First Design */
 .intro {
   min-width: 37.5rem;
   min-height: 74.8rem;
-  background: #17192b;
+  background: #121212;
   background-image: url(/images/homepage/hero-bg-mobile.jpg);
   background-image: -webkit-image-set(url(/images/homepage/hero-bg-mobile.jpg) 1x, url(/images/homepage/hero-bg-mobile@2x.jpg) 2x);
   background-image: image-set(url(/images/homepage/hero-bg-mobile.jpg) 1x, url(/images/homepage/hero-bg-mobile@2x.jpg) 2x);
@@ -148,6 +155,7 @@ body .body-2 {
 
 .intro__column {
   width: 90%;
+  max-width: 35rem;
   height: 38.5rem;
   position: relative;
   top: 24.5rem;
@@ -166,7 +174,28 @@ body .body-2 {
           align-items: center;
 }
 
+.intro__logo {
+  margin-top: 3.6rem;
+}
+
+.intro__title {
+  color: #ffffff;
+  font-size: 4rem;
+}
+
+.intro__text {
+  color: #ffffff;
+}
+
 /* Glide */
 /*@import "../node_modules/@glidejs/glide/src/assets/sass/glide.core.scss";
 @import "../node_modules/@glidejs/glide/src/assets/sass/glide.theme.scss"; */
+.slider {
+  min-width: 37.5rem;
+  min-height: 104.5rem;
+}
+
+.slider__container {
+  min-height: 8.4rem;
+}
 /*# sourceMappingURL=main.css.map */
