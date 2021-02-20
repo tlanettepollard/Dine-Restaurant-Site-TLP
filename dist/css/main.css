@@ -76,7 +76,7 @@ h2 {
   font-weight: 700;
 }
 
-h3 .light {
+h3 .bold {
   font-size: 1.8rem;
   line-height: 2.8rem;
   font-weight: 700;
@@ -117,6 +117,7 @@ body .body-2 {
   min-width: 37.5rem;
   min-height: 172.0rem;
   background: #121212;
+  color: #ffffff;
 }
 
 /* Mobile First Design */
