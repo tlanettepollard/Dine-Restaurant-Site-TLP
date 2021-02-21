@@ -236,4 +236,8 @@ body .body-2 {
   margin: 0 auto;
   padding: 0;
 }
+
+.event__content li {
+  list-style-type: none;
+}
 /*# sourceMappingURL=main.css.map */

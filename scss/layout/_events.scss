@@ -30,4 +30,7 @@
         margin: 0 auto;
         padding: 0;
     }
+    &__content li {
+        list-style-type: none;
+    }
 }
