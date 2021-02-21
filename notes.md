@@ -9,3 +9,5 @@ Resolution and bandwidth differ by device and network access. The image-set() fu
 
 
 Learned about Mixins and using values for flex mix in. You set the values based on what you want to do. 
+02/21/2021
+learned not to make certain tasks over difficult; My events section doesn't need a slideshow. I just need to remove and add classes
