@@ -9,6 +9,7 @@
     border: 0 none;
     padding: 0;
     margin: 0;
+    outline: 1px solid black;
 }
 
 *::before,
@@ -51,6 +52,9 @@ p {
 }
 
 /* Base Styles */
-
+.curve-left, .curve-right, .lines {
+    @include sm-breakpoint;
+    visibility: hidden;
+}
 
 

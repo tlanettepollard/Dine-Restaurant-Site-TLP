@@ -142,18 +142,92 @@
             </div><!-- .highlighs__container -->         
         </section><!-- .highlights -->
 
-        <section class="glide slider">
-            <div class="slider__container">
+        <section class="event">
+            <div class="event__container">
+                <img class="curve-left curve" src="./images/patterns/pattern-curve-top-left.svg" alt="Curve top left" />
+                <img class="lines" src="./images/patterns/pattern-lines.svg" alt="lines" />
+                <div class="photos">
+                    <picture class="event__photos event__photos--active" id="photo-1">
+                        <source srcset="./images/homepage/family-gathering-desktop.jpg 1x,
+                        ./images/homepage/family-gathering-desktop@2x.jpg 2x" media="(min-width: 1024px)">
+                        <source srcset="./images/homepage/family-gathering-tablet.jpg 1x, 
+                        ./images/homepage/family-gathering-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                        <source srcset="./images/homepage/family-gathering-mobile.jpg 1x,
+                        ./images/homepage/family-gathering-mobile@2x.jpg 2x" media="(min-width: 300px)">
+                        <img src="./images/homepage/family-gathering-mobile.jpg" alt="Family Gathering">
+                    </picture>
 
-            </div>
-            Family Gathering Special Events Social Events Family Gathering We love catering for entire families. So please bring everyone along for a special meal with your loved ones. We’ll provide a memorable experience for all. Special Events Whether it’s a romantic dinner or special date you’re celebrating with others we’ll look after you. We’ll be sure to mark your special date with an unforgettable meal. Social Events Are you looking to have a larger social event? No problem! We’re more than happy to cater for big parties. We’ll work with you to make your event a hit with everyone. Book a table
-        </section><!-- .slider -->
+                    <picture class="event__photos" id="photo-2">
+                        <source srcset="./images/homepage/special-events-desktop.jpg 1x,
+                        ./images/homepage/special-events-desktop@2x.jpg 2x" media="(min-width: 1024px)">
+                        <source srcset="./images/homepage/special-events-tablet.jpg 1x, 
+                        ./images/homepage/special-events-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                        <source srcset="./images/homepage/special-events-mobile.jpg 1x,
+                        ./images/homepage/special-events-mobile@2x.jpg 2x" media="(min-width: 300px)">
+                        <img src="./images/homepage/special-events-mobile.jpg" alt="Special Events">
+                    </picture>
+
+                    <picture class="event__photos" id="photo-3">
+                        <source srcset="./images/homepage/social-events-desktop.jpg 1x,
+                        ./images/homepage/social-events-desktop@2x.jpg 2x" media="(min-width: 1024px)">
+                        <source srcset="./images/homepage/social-events-tablet.jpg 1x, 
+                        ./images/homepage/social-events-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                        <source srcset="./images/homepage/social-events-mobile.jpg 1x,
+                        ./images/homepage/special-events-mobile@2x.jpg 2x" media="(min-width: 300px)">
+                        <img src="./images/homepage/social-events-mobile.jpg" alt="Social Events">
+                    </picture>
+                </div>
+                <div class="event__names">
+                    <ul class="event__list">
+                        <li class="event__item event__item-active" id="event-1">
+                            <p>Family Gathering</p>
+                            <p class="event__line event__line--active" id="line-1"></p>
+                        </li>
+                        <li class="event__item" id="event-2">
+                            <p>Special Events</p>
+                            <p class="event__line event__line--active" id="line-2"></p>
+                        </li>
+                        <li class="event__item" id="event-3">
+                            <p>Social Events</p>
+                            <p class="event__line event__line--active" id="line-2"></p>
+                        </li>
+                    </ul><!-- .event__list -->
+
+                    <div>
+                        <div class="event__content event__content--active" id="content-1">
+                            <h3 class="event__title">Family Gathering</h3>
+                            <p class="event__paragraph paragraph">We love catering for entire families. So please bring everyone along for a special meal with your loved ones. We’ll provide a memorable experience for all.</p>
+                        </div>
+
+                        <div class="event__content" id="content-2">
+                            <h3 class="event__title bold">Special Events</h3>
+                            <p class="event__paragraph paragraph">  Whether it’s a romantic dinner or special date you’re celebrating with others we’ll look after you. We’ll be sure to mark your special date with an unforgettable meal. </p>
+                        </div>
+
+                        <div class="event__content" id="content-3">
+                            <h3 class="event__title">Social Events</h3>
+                            <p class="event__paragraph paragraph">  Are you looking to have a larger social event? No problem! We’re more than happy to cater for big parties. We’ll work with you to make your event a hit with everyone.  </p>
+                        </div>
+                    </div>
+                </div>
+                <a class="event__button button body-2" href="./booking_dine.html">Book a table </a>
+            </div><!-- .events__container -->      
+        </section><!-- .events -->
+
         <section class="cta">
-             Ready to make a reservation? Book a table
+            <h3 class="cta__title bold">Ready to make a reservation?</h3>
+            <a class="cta__button button body-2" href="./booking_dine.html">Book a table </a>
         </section><!-- .cta -->
     </main>
     <footer class="footer">
-        Marthwaite, Sedbergh Cumbria +00 44 123 4567 Open Times Mon - Fri: 09:00 AM - 10:00 PM Sat - Sun: 09:00 AM - 11:30 PM
+        <footer class="footer__container">
+            <div class="footer__logo">
+                <img src="images/logo.svg" alt="Dine logo">
+            </div>
+            <div class="footer__address">Marthwaite, Sedbergh Cumbria +00 44 123 4567</div>
+            <div class="footer__hours">Open Times Mon - Fri: 09:00 AM - 10:00 PM Sat - Sun: 09:00 AM - 11:30 PM</div>
+        </footer>
+         
     </footer>
 
     <div class="attribution">
