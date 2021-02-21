@@ -40,7 +40,6 @@ body {
   min-height: 100vh;
   width: 100%;
   font-family: "Spartan", sans-serif;
-  /* display: grid;*/
   outline: 1px solid black;
   overflow-x: hidden;
 }
@@ -77,6 +76,12 @@ h2 {
   font-size: 4.0rem;
   line-height: 5.6rem;
   font-weight: 700;
+}
+
+h2 .regular {
+  font-size: 3.0rem;
+  line-height: 3.6rem;
+  font-weight: 400;
 }
 
 h3 .bold {
@@ -152,17 +157,79 @@ footer {
   /*position: relative;*/
   min-width: 37.5rem;
   min-height: 74.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-image: url(/images/homepage/hero-bg-mobile.jpg);
   background-image: -webkit-image-set(url(/images/homepage/hero-bg-mobile.jpg) 1x, url(/images/homepage/hero-bg-mobile@2x.jpg) 2x);
   background-image: image-set(url(/images/homepage/hero-bg-mobile.jpg) 1x, url(/images/homepage/hero-bg-mobile@2x.jpg) 2x);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
+  text-align: center;
+  color: #ffffff;
 }
 
-.intro__column {
+@media screen and (min-width: 768px) {
+  .intro {
+    background-image: url(/images/homepage/hero-bg-tablet.jpg);
+    background-image: -webkit-image-set(url(/images/homepage/hero-bg-tablet.jpg) 1x, url(/images/homepage/hero-bg-tablet@2x.jpg) 2x);
+    background-image: image-set(url(/images/homepage/hero-bg-tablet.jpg) 1x, url(/images/homepage/hero-bg-tablet@2x.jpg) 2x);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    min-height: 99.2rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .intro {
+    background-image: url(/images/homepage/hero-bg-desktop.jpg);
+    background-image: -webkit-image-set(url(/images/homepage/hero-bg-desktop.jpg) 1x, url(/images/homepage/hero-bg-desktop@2x.jpg) 2x);
+    background-image: image-set(url(/images/homepage/hero-bg-desktop.jpg) 1x, url(/images/homepage/hero-bg-desktop@2x.jpg) 2x);
+    min-height: 82rem;
+    text-align: left;
+  }
+}
+
+.intro__container {
+  position: absolute;
   width: 32.7rem;
   min-height: 36.4rem;
+  margin-top: 12rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 /* Glide */

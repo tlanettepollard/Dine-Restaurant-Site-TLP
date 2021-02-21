@@ -3,6 +3,7 @@
     /*position: relative;*/
     min-width: 37.5rem;
     min-height: 74.8rem;
+    @include flex (column, center);
     background-image: url(/images/homepage/hero-bg-mobile.jpg);
     background-image: image-set(
         url(/images/homepage/hero-bg-mobile.jpg) 1x,
@@ -11,11 +12,39 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
+    text-align: center;
+    color: $color-white;
 
-    &__column {
+    @include md-breakpoint {
+        background-image: url(/images/homepage/hero-bg-tablet.jpg);
+        background-image: image-set(
+            url(/images/homepage/hero-bg-tablet.jpg) 1x,
+            url(/images/homepage/hero-bg-tablet@2x.jpg) 2x
+        );
+
+        @include flex (column, center);
+        min-height: 99.2rem;
+    }
+    @include lg-breakpoint {
+        background-image: url(/images/homepage/hero-bg-desktop.jpg);
+        background-image: image-set(
+            url(/images/homepage/hero-bg-desktop.jpg) 1x,
+            url(/images/homepage/hero-bg-desktop@2x.jpg) 2x
+        );
+        min-height: 82rem;
+        text-align: left;
+        
+    }
+
+    &__container {
+        position: absolute;
         width: 32.7rem;
         min-height: 36.4rem;
+        margin-top: 12rem;
+        @include flex (column, space-between);
 
     }
+
+    
 }
 
