@@ -61,6 +61,10 @@ p {
 }
 
 /* Base Styles */
+.curve-left, .curve-right, .lines {
+  visibility: hidden;
+}
+
 h1, h2, h3, body {
   font-family: "Spartan", sans-serif;
 }

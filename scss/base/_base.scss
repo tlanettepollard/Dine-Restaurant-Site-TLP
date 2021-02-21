@@ -52,6 +52,9 @@ p {
 }
 
 /* Base Styles */
-
+.curve-left, .curve-right, .lines {
+    @include sm-breakpoint;
+    visibility: hidden;
+}
 
 
