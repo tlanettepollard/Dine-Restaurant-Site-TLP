@@ -40,8 +40,7 @@ body {
   min-height: 100vh;
   width: 100%;
   font-family: "Spartan", sans-serif;
-  display: -ms-grid;
-  display: grid;
+  /* display: grid;*/
   outline: 1px solid black;
   overflow-x: hidden;
 }
@@ -54,12 +53,11 @@ p {
 }
 
 /* Helpers */
-.container {
-  width: 87%;
-  max-width: 1110px;
-  margin: 0 auto;
-}
-
+/*.container {
+    width: 87%;
+    max-width: 1110px;
+    margin: 0 auto;
+}*/
 /* Base Styles */
 .curve-left, .curve-right, .lines {
   visibility: hidden;
@@ -151,69 +149,20 @@ footer {
 
 /* Mobile First Design */
 .intro {
+  /*position: relative;*/
   min-width: 37.5rem;
   min-height: 74.8rem;
-  background: #121212;
   background-image: url(/images/homepage/hero-bg-mobile.jpg);
   background-image: -webkit-image-set(url(/images/homepage/hero-bg-mobile.jpg) 1x, url(/images/homepage/hero-bg-mobile@2x.jpg) 2x);
   background-image: image-set(url(/images/homepage/hero-bg-mobile.jpg) 1x, url(/images/homepage/hero-bg-mobile@2x.jpg) 2x);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
-  text-align: center;
-}
-
-@media screen and (min-width: 768px) {
-  .intro {
-    background-image: url(/images/homepage/hero-bg-tablet.jpg);
-    background-image: -webkit-image-set(url(/images/homepage/hero-bg-tablet.jpg) 1x, url(/images/homepage/hero-bg-tablet@2x.jpg) 2x);
-    background-image: image-set(url(/images/homepage/hero-bg-tablet.jpg) 1x, url(/images/homepage/hero-bg-tablet@2x.jpg) 2x);
-    min-height: 99.2rem;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  .intro {
-    background-image: url(/images/homepage/hero-bg-desktop.jpg);
-    background-image: -webkit-image-set(url(/images/homepage/hero-bg-desktop.jpg) 1x, url(/images/homepage/hero-bg-desktop@2x.jpg) 2x);
-    background-image: image-set(url(/images/homepage/hero-bg-desktop.jpg) 1x, url(/images/homepage/hero-bg-desktop@2x.jpg) 2x);
-    min-height: 82.4rem;
-    text-align: left;
-  }
 }
 
 .intro__column {
-  width: 90%;
-  max-width: 35rem;
-  height: 38.5rem;
-  position: relative;
-  top: 24.5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.intro__logo {
-  margin-top: 3.6rem;
-}
-
-.intro__title {
-  color: #ffffff;
-  font-size: 4rem;
-}
-
-.intro__text {
-  color: #ffffff;
+  width: 32.7rem;
+  min-height: 36.4rem;
 }
 
 /* Glide */
