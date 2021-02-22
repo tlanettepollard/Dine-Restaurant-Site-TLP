@@ -170,6 +170,7 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: #121212;
   background-image: url(/images/homepage/hero-bg-mobile.jpg);
   background-image: -webkit-image-set(url(/images/homepage/hero-bg-mobile.jpg) 1x, url(/images/homepage/hero-bg-mobile@2x.jpg) 2x);
   background-image: image-set(url(/images/homepage/hero-bg-mobile.jpg) 1x, url(/images/homepage/hero-bg-mobile@2x.jpg) 2x);
@@ -178,12 +179,6 @@ footer {
   background-position: top;
   text-align: center;
   color: #ffffff;
-  /* &__title {
-        font-weight: $weight-regular;
-        font-size: 3.0rem;
-        line-height: 3.7rem;
-        margin-top: -2rem;
-    }*/
 }
 
 @media screen and (min-width: 768px) {
@@ -236,6 +231,14 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.intro__title {
+  margin-top: -2rem;
+}
+
+.intro__text {
+  margin-top: -3.5rem;
 }
 
 /* Glide */

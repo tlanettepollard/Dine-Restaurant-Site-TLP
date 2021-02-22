@@ -4,6 +4,7 @@
     min-width: 37.5rem;
     min-height: 74.8rem;
     @include flex (column, center);
+    background-color: $primary-cod-gray;
     background-image: url(/images/homepage/hero-bg-mobile.jpg);
     background-image: image-set(
         url(/images/homepage/hero-bg-mobile.jpg) 1x,
@@ -44,12 +45,13 @@
         @include flex (column, space-between);
 
     }
-  /* &__title {
-        font-weight: $weight-regular;
-        font-size: 3.0rem;
-        line-height: 3.7rem;
+    &__title {
         margin-top: -2rem;
-    }*/
+    }
+    &__text {
+        margin-top: -3.5rem;
+    }
+
     
 
     
