@@ -72,37 +72,37 @@ h1 {
   font-weight: 300;
 }
 
-h2 {
+.bold-h2 {
   font-size: 4.0rem;
   line-height: 5.6rem;
   font-weight: 700;
 }
 
-/*
-h2 .regular-1 {
-    font-size: 4.0rem;
-    line-height: 5.6rem;
-    font-weight: $weight-regular;
-} */
-h3 .bold {
+.regular-h2 {
+  font-size: 3.0rem;
+  line-height: 3.7rem;
+  font-weight: 400;
+}
+
+.bold-h3 {
   font-size: 1.8rem;
   line-height: 2.8rem;
   font-weight: 700;
 }
 
-h3 .semi-bold-1 {
+.semi-bold-h3 {
   font-size: 1.4rem;
   line-height: 2.8rem;
   font-weight: 600;
 }
 
-body .body-1 {
+.body-1 {
   font-size: 1.8rem;
   line-height: 3.0rem;
   font-weight: 400;
 }
 
-body .body-2 {
+.body-2 {
   font-size: 1.45rem;
   line-height: 2.4rem;
   font-weight: 400;
@@ -178,6 +178,12 @@ footer {
   background-position: top;
   text-align: center;
   color: #ffffff;
+  /* &__title {
+        font-weight: $weight-regular;
+        font-size: 3.0rem;
+        line-height: 3.7rem;
+        margin-top: -2rem;
+    }*/
 }
 
 @media screen and (min-width: 768px) {
@@ -230,12 +236,6 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.intro__title {
-  font-weight: 400;
-  font-size: 3.0rem;
-  line-height: 3.7rem;
 }
 
 /* Glide */

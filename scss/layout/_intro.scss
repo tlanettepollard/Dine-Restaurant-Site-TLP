@@ -44,12 +44,14 @@
         @include flex (column, space-between);
 
     }
-    &__title {
+  /* &__title {
         font-weight: $weight-regular;
         font-size: 3.0rem;
         line-height: 3.7rem;
-    }
+        margin-top: -2rem;
+    }*/
     
+
     
 }
 
