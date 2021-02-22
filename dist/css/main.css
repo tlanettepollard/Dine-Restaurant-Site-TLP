@@ -78,19 +78,19 @@ h2 {
   font-weight: 700;
 }
 
-h2 .regular {
-  font-size: 3.0rem;
-  line-height: 3.6rem;
-  font-weight: 400;
-}
-
+/*
+h2 .regular-1 {
+    font-size: 4.0rem;
+    line-height: 5.6rem;
+    font-weight: $weight-regular;
+} */
 h3 .bold {
   font-size: 1.8rem;
   line-height: 2.8rem;
   font-weight: 700;
 }
 
-h3 .semi-bold {
+h3 .semi-bold-1 {
   font-size: 1.4rem;
   line-height: 2.8rem;
   font-weight: 600;
@@ -103,8 +103,8 @@ body .body-1 {
 }
 
 body .body-2 {
-  font-size: 1.5rem;
-  line-height: 2.8rem;
+  font-size: 1.45rem;
+  line-height: 2.4rem;
   font-weight: 400;
 }
 
@@ -230,6 +230,12 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.intro__title {
+  font-weight: 400;
+  font-size: 3.0rem;
+  line-height: 3.7rem;
 }
 
 /* Glide */

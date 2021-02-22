@@ -9,17 +9,17 @@ h1 {
     font-weight: $weight-light;
 }
 
-h2 {
+h2  {
     font-size: 4.0rem;
     line-height: 5.6rem;
     font-weight: $weight-bold;
 }
-
-h2 .regular{
-    font-size: 3.0rem;
-    line-height: 3.6rem;
+/*
+h2 .regular-1 {
+    font-size: 4.0rem;
+    line-height: 5.6rem;
     font-weight: $weight-regular;
-}
+} */
 
 h3 .bold {
     font-size: 1.8rem;
@@ -27,7 +27,7 @@ h3 .bold {
     font-weight: $weight-bold;
 }
 
-h3 .semi-bold {
+h3 .semi-bold-1 {
     font-size: 1.4rem;
     line-height: 2.8rem;
     font-weight: $weight-semi-bold;
@@ -40,8 +40,8 @@ body .body-1 {
 }
 
 body .body-2 {
-    font-size: 1.5rem;
-    line-height: 2.8rem;
+    font-size: 1.45rem;
+    line-height: 2.4rem;
     font-weight: $weight-regular;
 }
 
