@@ -40,8 +40,6 @@ body {
   min-height: 100vh;
   width: 100%;
   font-family: "Spartan", sans-serif;
-  display: -ms-grid;
-  display: grid;
   outline: 1px solid black;
   overflow-x: hidden;
 }
@@ -54,12 +52,11 @@ p {
 }
 
 /* Helpers */
-.container {
-  width: 87%;
-  max-width: 1110px;
-  margin: 0 auto;
-}
-
+/*.container {
+    width: 87%;
+    max-width: 1110px;
+    margin: 0 auto;
+}*/
 /* Base Styles */
 .curve-left, .curve-right, .lines {
   visibility: hidden;
@@ -75,33 +72,39 @@ h1 {
   font-weight: 300;
 }
 
-h2 {
+.bold-h2 {
   font-size: 4.0rem;
   line-height: 5.6rem;
   font-weight: 700;
 }
 
-h3 .bold {
+.regular-h2 {
+  font-size: 3.0rem;
+  line-height: 3.7rem;
+  font-weight: 400;
+}
+
+.bold-h3 {
   font-size: 1.8rem;
   line-height: 2.8rem;
   font-weight: 700;
 }
 
-h3 .semi-bold {
+.semi-bold-h3 {
   font-size: 1.4rem;
   line-height: 2.8rem;
   font-weight: 600;
 }
 
-body .body-1 {
+.body-1 {
   font-size: 1.8rem;
   line-height: 3.0rem;
   font-weight: 400;
 }
 
-body .body-2 {
-  font-size: 1.5rem;
-  line-height: 2.8rem;
+.body-2 {
+  font-size: 1.45rem;
+  line-height: 2.4rem;
   font-weight: 400;
 }
 
@@ -151,9 +154,23 @@ footer {
 
 /* Mobile First Design */
 .intro {
+  /*position: relative;*/
   min-width: 37.5rem;
   min-height: 74.8rem;
-  background: #121212;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #121212;
   background-image: url(/images/homepage/hero-bg-mobile.jpg);
   background-image: -webkit-image-set(url(/images/homepage/hero-bg-mobile.jpg) 1x, url(/images/homepage/hero-bg-mobile@2x.jpg) 2x);
   background-image: image-set(url(/images/homepage/hero-bg-mobile.jpg) 1x, url(/images/homepage/hero-bg-mobile@2x.jpg) 2x);
@@ -161,6 +178,7 @@ footer {
   background-size: cover;
   background-position: top;
   text-align: center;
+  color: #ffffff;
 }
 
 @media screen and (min-width: 768px) {
@@ -168,6 +186,19 @@ footer {
     background-image: url(/images/homepage/hero-bg-tablet.jpg);
     background-image: -webkit-image-set(url(/images/homepage/hero-bg-tablet.jpg) 1x, url(/images/homepage/hero-bg-tablet@2x.jpg) 2x);
     background-image: image-set(url(/images/homepage/hero-bg-tablet.jpg) 1x, url(/images/homepage/hero-bg-tablet@2x.jpg) 2x);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     min-height: 99.2rem;
   }
 }
@@ -177,17 +208,16 @@ footer {
     background-image: url(/images/homepage/hero-bg-desktop.jpg);
     background-image: -webkit-image-set(url(/images/homepage/hero-bg-desktop.jpg) 1x, url(/images/homepage/hero-bg-desktop@2x.jpg) 2x);
     background-image: image-set(url(/images/homepage/hero-bg-desktop.jpg) 1x, url(/images/homepage/hero-bg-desktop@2x.jpg) 2x);
-    min-height: 82.4rem;
+    min-height: 82rem;
     text-align: left;
   }
 }
 
-.intro__column {
-  width: 90%;
-  max-width: 35rem;
-  height: 38.5rem;
-  position: relative;
-  top: 24.5rem;
+.intro__container {
+  position: absolute;
+  width: 32.7rem;
+  min-height: 36.4rem;
+  margin-top: 12rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -203,17 +233,12 @@ footer {
           align-items: center;
 }
 
-.intro__logo {
-  margin-top: 3.6rem;
-}
-
 .intro__title {
-  color: #ffffff;
-  font-size: 4rem;
+  margin-top: -2rem;
 }
 
 .intro__text {
-  color: #ffffff;
+  margin-top: -3.5rem;
 }
 
 /* Glide */

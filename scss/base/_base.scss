@@ -31,7 +31,6 @@ body {
     width: 100%;
     font-family: "Spartan",
     sans-serif;
-    display: grid;
     outline: 1px solid black;
     overflow-x: hidden;
 }
@@ -45,11 +44,11 @@ p {
 
 /* Helpers */
 
-.container {
+/*.container {
     width: 87%;
     max-width: 1110px;
     margin: 0 auto;
-}
+}*/
 
 /* Base Styles */
 .curve-left, .curve-right, .lines {
@@ -57,4 +56,7 @@ p {
     visibility: hidden;
 }
 
+.button {
+    
+}
 

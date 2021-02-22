@@ -2,40 +2,52 @@ h1, h2, h3, body {
     font-family: $spartan;
 }
 
+// H1 styles
 
 h1 {
     font-size: 6.4rem;
     line-height: 7.2rem;
     font-weight: $weight-light;
 }
+// H2 styles
 
-h2 {
+.bold-h2 {
     font-size: 4.0rem;
     line-height: 5.6rem;
     font-weight: $weight-bold;
 }
 
-h3 .bold {
+.regular-h2{
+    font-size: 3.0rem;
+    line-height: 3.7rem;
+    font-weight: $weight-regular;
+} 
+
+// H3 Styles
+
+.bold-h3 {
     font-size: 1.8rem;
     line-height: 2.8rem;
     font-weight: $weight-bold;
 }
 
-h3 .semi-bold {
+.semi-bold-h3 {
     font-size: 1.4rem;
     line-height: 2.8rem;
     font-weight: $weight-semi-bold;
 }
 
-body .body-1 {
+// Body styles
+
+.body-1 {
     font-size: 1.8rem;
     line-height: 3.0rem;
     font-weight: $weight-regular;
 }
 
-body .body-2 {
-    font-size: 1.5rem;
-    line-height: 2.8rem;
+.body-2 {
+    font-size: 1.45rem;
+    line-height: 2.4rem;
     font-weight: $weight-regular;
 }
 
