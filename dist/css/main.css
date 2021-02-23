@@ -111,6 +111,10 @@ li {
   border: 1px solid #5c687a;
 }
 
+.button--light {
+  color: #ffffff;
+}
+
 h1, h2, h3, body {
   font-family: "Spartan", sans-serif;
 }
