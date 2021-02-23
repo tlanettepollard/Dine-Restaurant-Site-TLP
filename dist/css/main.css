@@ -87,8 +87,8 @@ li {
   line-height: 1.6rem;
   padding: 2.4rem 5.4rem;
   /* Moves title to center of butto */
-  -webkit-box-shadow: 2px 2px 2px 1px #5c687a;
-          box-shadow: 2px 2px 2px 1px #5c687a;
+  /*box-shadow: 2px 2px 2px 1px
+    hsl(217, 14%, 42%);*/
   -webkit-transition: all 0.7s ease-in;
   transition: all 0.7s ease-in;
 }
@@ -96,13 +96,19 @@ li {
 .button--dark {
   border: 1px solid #ffffff;
   color: #ffffff;
-  background: #121212;
+  background-color: #121212;
 }
 
 .button--dark:hover {
   background-color: #ffffff;
   color: #121212;
   border: 1px solid #121212;
+}
+
+.button--dark:disabled {
+  background-color: #121212;
+  color: #5c687a;
+  border: 1px solid #5c687a;
 }
 
 h1, h2, h3, body {
