@@ -23,12 +23,14 @@ html {
     position: relative;
     box-sizing: border-box;
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 html,
 body {
     min-height: 100vh;
     width: 100%;
+    margin: 0 auto;
     font-family: "Spartan",
     sans-serif;
     outline: 1px solid black;
@@ -42,7 +44,18 @@ p {
     margin: 0;
 }
 
-/* Helpers */
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+picture, img {
+    display: inline-block;
+}
+
+li {
+    list-style-type: none;
+}
 
 /*.container {
     width: 87%;
@@ -57,6 +70,41 @@ p {
 }
 
 .button {
-    
+    width: 24.6rem;
+    height: 6.3rem;
+    display: inline-block;
+    font-size: 1.4rem;
+    font-weight: $weight-regular;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.6rem;
+    padding: 2.4rem 5.4rem; /* Moves title to center of butto */
+    /*box-shadow: 2px 2px 2px 1px
+    hsl(217, 14%, 42%);*/
+    transition: all 0.7s ease-in;
 }
+.button--dark {
+    border: 1px solid $color-white;
+    color: $color-white;
+    background-color:$primary-cod-gray;
+}
+
+.button--dark:hover {
+    background-color: $color-white;
+    color: $primary-cod-gray;
+    border: 1px solid $primary-cod-gray;
+}
+
+.button--dark:disabled {
+    background-color: $primary-cod-gray;
+    color: $secondary-shuttle-gray;
+    border: 1px solid $secondary-shuttle-gray;
+}
+
+.button--light {
+    color: $color-white;
+     
+}
+
+
 
