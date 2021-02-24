@@ -3,9 +3,6 @@
 /* Secondary Colors */
 /* Font Weights */
 /*$layout-breakpoint-xl: 1200px;*/
-/* Design Elements 
-$transition: all 0.2s;
-*/
 @import url("https://fonts.googleapis.com/css?family=Spartan:100,200,300,400,500,600,700,800,900&display=swap");
 /* Condensed Universal Reset */
 * {
@@ -41,7 +38,6 @@ body {
   min-height: 100vh;
   width: 100%;
   margin: 0 auto;
-  font-family: "Spartan", sans-serif;
   outline: 1px solid black;
   overflow-x: hidden;
 }
@@ -77,42 +73,33 @@ li {
 }
 
 .button {
-  width: 24.6rem;
-  height: 6.3rem;
   display: inline-block;
-  font-size: 1.4rem;
-  font-weight: 400;
+  min-width: 17.1rem;
+  height: 6.7rem;
+  padding: 2.4rem 5.6rem;
   text-transform: uppercase;
+  text-decoration: none;
   text-align: center;
-  line-height: 1.6rem;
-  padding: 2.4rem 5.4rem;
-  /* Moves title to center of butto */
-  /*box-shadow: 2px 2px 2px 1px
-    hsl(217, 14%, 42%);*/
-  -webkit-transition: all 0.7s ease-in;
-  transition: all 0.7s ease-in;
-}
-
-.button--dark {
-  border: 1px solid #ffffff;
   color: #ffffff;
-  background-color: #121212;
+  border: 1px solid #ffffff;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
-.button--dark:hover {
-  background-color: #ffffff;
+.button:hover, .button:active {
   color: #121212;
-  border: 1px solid #121212;
+  background-color: #ffffff;
 }
 
-.button--dark:disabled {
-  background-color: #121212;
-  color: #5c687a;
+.button:disabled {
+  color: #121212;
   border: 1px solid #5c687a;
 }
 
-.button--light {
-  color: #ffffff;
+@media screen and (min-width: 768px) {
+  .button {
+    width: 24.6rem;
+  }
 }
 
 h1, h2, h3, body {
@@ -149,19 +136,52 @@ h1 {
   font-weight: 600;
 }
 
-.body-1 {
-  font-size: 1.8rem;
-  line-height: 3.0rem;
+body {
+  font-family: "Spartan", sans-serif;
+  font-size: 15px;
+  line-height: 28px;
+  letter-spacing: -0.19px;
   font-weight: 400;
 }
 
-.body-2 {
-  font-size: 1.45rem;
-  line-height: 2.4rem;
-  font-weight: 400;
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: -0.22px;
+    font-weight: 400;
+  }
 }
 
 /* Form Buttons */
+.cta {
+  min-width: 37.5rem;
+  height: 33rem;
+  background-image: url(/images/homepage/ready-bg-mobile.jpg);
+  background-image: -webkit-image-set(url(/images/homepage/ready-bg-mobile.jpg) 1x, url(/images/homepage/ready-bg-mobile@2x.jpg) 2x);
+  background-image: image-set(url(/images/homepage/ready-bg-mobile.jpg) 1x, url(/images/homepage/ready-bg-mobile@2x.jpg) 2x);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cta__title {
+  color: #ffffff;
+  text-align: center;
+}
+
 .features {
   min-width: 37.5rem;
   min-height: 145.6rem;
