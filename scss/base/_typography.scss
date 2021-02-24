@@ -39,15 +39,18 @@ h1 {
 
 // Body styles
 
-.body-1 {
-    font-size: 1.8rem;
-    line-height: 3.0rem;
+body {
+    font-size: 15px;
+    line-height: 28px;
+    letter-spacing: -0.19px;
     font-weight: $weight-regular;
+
+    @include md-breakpoint {
+        font-size: 18px;
+        line-height: 30px;
+        letter-spacing: -0.22px;
+        font-weight: $weight-regular;
+    }
 }
 
-.body-2 {
-    font-size: 1.45rem;
-    line-height: 2.4rem;
-    font-weight: $weight-regular;
-}
 
