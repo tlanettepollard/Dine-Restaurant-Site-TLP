@@ -3,9 +3,6 @@
 /* Secondary Colors */
 /* Font Weights */
 /*$layout-breakpoint-xl: 1200px;*/
-/* Design Elements 
-$transition: all 0.2s;
-*/
 @import url("https://fonts.googleapis.com/css?family=Spartan:100,200,300,400,500,600,700,800,900&display=swap");
 /* Condensed Universal Reset */
 * {
@@ -41,7 +38,6 @@ body {
   min-height: 100vh;
   width: 100%;
   margin: 0 auto;
-  font-family: "Spartan", sans-serif;
   outline: 1px solid black;
   overflow-x: hidden;
 }
@@ -79,9 +75,31 @@ li {
 .button {
   display: inline-block;
   min-width: 17.1rem;
-  height: 6.8rem;
+  height: 6.7rem;
   padding: 2.4rem 5.8rem;
   text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.button:hover, .button:active {
+  color: #121212;
+  background-color: #ffffff;
+}
+
+.button:disabled {
+  color: #121212;
+  border: 1px solid #5c687a;
+}
+
+@media screen and (min-width: 768px) {
+  .button {
+    width: 24.6rem;
+  }
 }
 
 h1, h2, h3, body {
@@ -119,6 +137,7 @@ h1 {
 }
 
 body {
+  font-family: "Spartan", sans-serif;
   font-size: 15px;
   line-height: 28px;
   letter-spacing: -0.19px;

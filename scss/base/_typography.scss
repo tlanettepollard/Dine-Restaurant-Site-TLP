@@ -17,11 +17,12 @@ h1 {
     font-weight: $weight-bold;
 }
 
-.regular-h2{
+.regular-h2 {
     font-size: 3.0rem;
     line-height: 3.7rem;
     font-weight: $weight-regular;
-} 
+}
+
 
 // H3 Styles
 
@@ -40,11 +41,12 @@ h1 {
 // Body styles
 
 body {
+    font-family: $spartan;
     font-size: 15px;
     line-height: 28px;
     letter-spacing: -0.19px;
     font-weight: $weight-regular;
-
+     
     @include md-breakpoint {
         font-size: 18px;
         line-height: 30px;
