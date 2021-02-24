@@ -1,6 +1,7 @@
 /* Variables */
 /* Primary Colors */
 /* Secondary Colors */
+/* Box Shadow */
 /* Font Weights */
 /*$layout-breakpoint-xl: 1200px;*/
 @import url("https://fonts.googleapis.com/css?family=Spartan:100,200,300,400,500,600,700,800,900&display=swap");
@@ -62,21 +63,16 @@ li {
   list-style-type: none;
 }
 
-/*.container {
-    width: 87%;
-    max-width: 1110px;
-    margin: 0 auto;
-}*/
 /* Base Styles */
 .curve-left, .curve-right, .lines {
-  visibility: hidden;
+  display: none;
 }
 
 .button {
   display: inline-block;
-  min-width: 17.1rem;
+  min-width: 24.3rem;
   height: 6.7rem;
-  padding: 2.4rem 5.6rem;
+  padding: 2.2rem 5.6rem;
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
@@ -113,13 +109,14 @@ h1 {
 }
 
 .bold-h2 {
-  font-size: 4.0rem;
-  line-height: 5.6rem;
+  font-size: 3.2rem;
   font-weight: 700;
+  line-height: 4rem;
+  letter-spacing: -0.4px;
 }
 
 .regular-h2 {
-  font-size: 3.0rem;
+  font-size: 3.2rem;
   line-height: 3.7rem;
   font-weight: 400;
 }
@@ -175,16 +172,64 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  align-items: center;
 }
 
 .cta__title {
   color: #ffffff;
   text-align: center;
+  margin-bottom: 28px;
 }
 
 .features {
-  min-width: 37.5rem;
-  min-height: 145.6rem;
+  min-height: 144.5rem;
+  text-align: center;
+  color: #242b38;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.features__area {
+  min-height: 68.3rem;
+  position: relative;
+}
+
+.features__title {
+  max-width: 32.7rem;
+  padding: 3rem 0rem;
+  margin: auto;
+}
+
+.features__text {
+  max-width: 32.7rem;
+  margin-bottom: 8.7rem;
+}
+
+.features picture {
+  margin-top: -6.2rem;
+  position: relative;
+}
+
+.features img {
+  -webkit-box-shadow: 0 7.5rem 10rem -5rem rgba(56, 66, 85, 0.5);
+          box-shadow: 0 7.5rem 10rem -5rem rgba(56, 66, 85, 0.5);
+}
+
+.features .pattern {
+  padding-top: 4.3rem;
+  display: block;
+  margin: 0 auto;
 }
 
 footer {
@@ -307,11 +352,11 @@ footer {
 }
 
 .intro__title {
-  margin-top: -2rem;
+  margin-top: -1.8rem;
 }
 
 .intro__text {
-  margin-top: -3.5rem;
+  margin-top: -2.5rem;
 }
 
 /* Glide */
