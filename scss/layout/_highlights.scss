@@ -3,4 +3,10 @@
     min-height: 172.0rem;
     background: $primary-cod-gray;
     color: $color-white;
+    margin: auto;
+
+    &__container {
+        width: 32.7rem;
+        margin: auto;
+    }
 }
