@@ -1,6 +1,40 @@
 
 .features {
-    min-width: 37.5rem;
-    min-height: 145.6rem;
+    min-height: 144.5rem;
+    text-align: center;
+    color: $secondary-ebony-clay;
+    @include flex(column, space-between);
+    &__area {
+        
+        min-height: 68.3rem;
+        position: relative;
+    }
+
+    &__title {
+        max-width: 32.7rem;
+        padding: 3rem 0rem;
+        margin: auto;
+    }
+
+    &__text {
+        max-width: 32.7rem;
+        margin-bottom: 8.7rem;
+    }
+
+    picture {
+        margin-top: -6.2rem;
+        position: relative;
+    }
+
+    img {
+        box-shadow: $bshadow-1;
+    }
+    .pattern {
+        padding-top: 4.3rem;
+        display: block;
+        margin: 0 auto;
+    }
+
+    
 }
 
