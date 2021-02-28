@@ -269,11 +269,21 @@ footer {
   background: #121212;
   color: #ffffff;
   margin: auto;
+  text-align: center;
 }
 
 .highlights__container {
   width: 32.7rem;
   margin: auto;
+  padding-top: 6.9rem;
+}
+
+.highlights__header {
+  padding-bottom: 5.5rem;
+}
+
+.highlights__pattern, .highlights__title {
+  padding-bottom: 2.5rem;
 }
 
 /* Mobile First Design */

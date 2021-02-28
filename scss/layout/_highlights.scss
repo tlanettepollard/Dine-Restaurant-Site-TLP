@@ -4,9 +4,18 @@
     background: $primary-cod-gray;
     color: $color-white;
     margin: auto;
+    text-align: center;
 
     &__container {
         width: 32.7rem;
         margin: auto;
+        padding-top: 6.9rem;
+    }
+    &__header {
+        padding-bottom: 5.5rem;
+    }
+    &__pattern,
+    &__title  {
+        padding-bottom: 2.5rem;
     }
 }
