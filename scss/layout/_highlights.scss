@@ -1,25 +1,12 @@
 .highlights {
-    min-width: 32.7rem;
-    min-height: 172.0rem;
-    background: $primary-cod-gray;
+    height: 172.0rem;
+    background-color: $primary-cod-gray;
     color: $color-white;
-    margin: auto;
     text-align: center;
+    padding: 5rem 0;
 
     &__container {
-        width: 32.7rem;
-        margin: auto;
-        padding-top: 6.9rem;
+        @include flex(column, center);
+        flex-wrap: wrap;
     }
-    &__header {
-        padding-bottom: 5.5rem;
-    }
-    &__pattern,
-    &__title  {
-        padding-bottom: 2.5rem;
-    }
-    
-}
-.menu-items {
-    
 }
