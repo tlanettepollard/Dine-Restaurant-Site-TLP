@@ -205,6 +205,10 @@ body {
   position: relative;
 }
 
+.features__area:last-child {
+  padding-top: 5.5rem;
+}
+
 .features__title {
   max-width: 32.7rem;
   padding: 3rem 0rem;
@@ -264,14 +268,29 @@ footer {
 }
 
 .highlights {
-  min-width: 37.5rem;
-  min-height: 172.0rem;
-  background: #121212;
+  height: 172.0rem;
+  background-color: #121212;
   color: #ffffff;
-  margin: auto;
+  text-align: center;
+  padding: 5rem 0;
 }
 
 .highlights__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 32.7rem;
   margin: auto;
 }
