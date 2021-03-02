@@ -8,5 +8,7 @@
     &__container {
         @include flex(column, center);
         flex-wrap: wrap;
+        width: 32.7rem;
+        margin: auto;
     }
 }
