@@ -21,10 +21,6 @@
     }
 }
 
-.menu-text {
-    
-}
-
 .menu-title {
     padding-top: 2.4rem;
 }
@@ -34,7 +30,7 @@
     padding: 0 1.6rem 2.4rem;
     border-bottom: 1px $secondary-ebony-clay solid;
 }
-
-.menu-paragraph:last-child {
-    
+.border {
+    border-bottom: none;
 }
+

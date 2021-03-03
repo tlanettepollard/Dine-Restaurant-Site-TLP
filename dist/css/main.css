@@ -313,6 +313,10 @@ footer {
   border-bottom: 1px #242b38 solid;
 }
 
+.border {
+  border-bottom: none;
+}
+
 /* Mobile First Design */
 .intro {
   /*position: relative;*/
