@@ -238,7 +238,7 @@ body {
 
 footer {
   min-width: 37.5rem;
-  height: 43.7rem;
+  min-height: 43.7rem;
   background-color: #121212;
   color: #ffffff;
   text-align: center;
@@ -250,9 +250,9 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
