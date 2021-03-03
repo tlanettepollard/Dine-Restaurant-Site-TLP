@@ -272,7 +272,7 @@ footer {
   background-color: #121212;
   color: #ffffff;
   text-align: center;
-  padding: 5rem 0;
+  padding: 7rem 0;
 }
 
 .highlights__container {
@@ -293,6 +293,24 @@ footer {
       flex-wrap: wrap;
   width: 32.7rem;
   margin: auto;
+}
+
+.highlights__header {
+  margin-bottom: 6rem;
+}
+
+.highlights__title {
+  padding: 2rem 0;
+}
+
+.menu-title {
+  padding-top: 2.4rem;
+}
+
+.menu-paragraph {
+  margin-bottom: 2rem;
+  padding: 0 1.6rem 2.4rem;
+  border-bottom: 1px #242b38 solid;
 }
 
 /* Mobile First Design */
