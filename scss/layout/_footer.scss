@@ -1,8 +1,15 @@
 footer {
     min-width: 37.5rem;
-    min-height: 43.7rem;
+    height: 43.7rem;
     background-color: $primary-cod-gray;
-    @include flex (column, space-between);
+    color: $color-white;
+    text-align: center;
+    text-transform: uppercase;
+    @include flex (column, space-evenly);
+
+    &__address {
+        
+    }
 }
 
 
