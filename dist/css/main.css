@@ -131,6 +131,7 @@ h1 {
   font-size: 1.4rem;
   line-height: 2.8rem;
   font-weight: 600;
+  letter-spacing: 2px;
 }
 
 body {
@@ -410,7 +411,39 @@ footer {
   margin-top: -2.5rem;
 }
 
-/* Glide */
-/*@import "../node_modules/@glidejs/glide/src/assets/sass/glide.core.scss";
-@import "../node_modules/@glidejs/glide/src/assets/sass/glide.theme.scss"; */
+.event {
+  min-height: 84rem;
+  position: relative;
+  text-align: center;
+  margin: 8rem 0;
+}
+
+.event__photos {
+  position: relative;
+}
+
+.event__photo {
+  display: none;
+  -webkit-box-shadow: 0 2.7rem 4.7rem -7rem rgba(0, 0, 0, 0.75);
+          box-shadow: 0 2.7rem 4.7rem -7rem rgba(0, 0, 0, 0.75);
+}
+
+.event__photo--active {
+  max-width: 43rem;
+  display: inline-block;
+  margin-bottom: 4rem;
+  z-index: 1;
+}
+
+.event__list {
+  text-transform: uppercase;
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+.event__item {
+  opacity: 0.7;
+  cursor: pointer;
+  padding-bottom: 1.5rem;
+}
 /*# sourceMappingURL=main.css.map */

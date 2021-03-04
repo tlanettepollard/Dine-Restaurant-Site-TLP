@@ -1,5 +1,46 @@
-/* Glide */
-/*@import "../node_modules/@glidejs/glide/src/assets/sass/glide.core.scss";
-@import "../node_modules/@glidejs/glide/src/assets/sass/glide.theme.scss"; */
+.event {
+    min-height: 84rem;
+    position: relative;
+    text-align: center;
+    margin: 8rem 0;
+    &__container {
+        
+    }
+
+    &__photos {
+        position: relative;
+    }
+    &__photo {
+        display: none;
+        box-shadow: $bshadow-3;
+    }
+    &__photo--active {
+        max-width: 43rem;
+        display: inline-block;
+        margin-bottom: 4rem;
+        z-index: 1;
+    }
+    &__names {
+
+    }
+
+    &__list {
+        text-transform: uppercase;
+        position: relative;
+        margin-bottom: 3rem;
+    }
+
+    &__item {
+        opacity: 0.7;
+        cursor: pointer;
+        padding-bottom: 1.5rem;
+    }
+
+}
+
+
+
+
+
 
 
