@@ -5,10 +5,8 @@ footer {
     color: $color-white;
     text-align: center;
     text-transform: uppercase;
-    @include flex (column, center);
-    
-
-    
+    @include flex (column, space-evenly);
+    row-gap: -1em;
 }
 
 
