@@ -16,7 +16,7 @@
   border: 0 none;
   padding: 0;
   margin: 0;
-  outline: 1px solid black;
+  /*outline: 1px solid black;*/
 }
 
 *::before,
@@ -98,6 +98,10 @@ li {
   }
 }
 
+.button--dark {
+  background-color: #121212;
+}
+
 h1, h2, h3, body {
   font-family: "Spartan", sans-serif;
 }
@@ -149,6 +153,13 @@ body {
     letter-spacing: -0.22px;
     font-weight: 400;
   }
+}
+
+.paragraph {
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 0.19px;
+  line-height: 2.8rem;
 }
 
 /* Form Buttons */
@@ -262,7 +273,7 @@ footer {
 
 /* Attribution */
 .attribution {
-  background-color: #9e7f67;
+  background-color: #121212;
   font-size: 11px;
   text-align: center;
   color: white;
@@ -418,6 +429,10 @@ footer {
   margin: 8rem 0;
 }
 
+.event__container {
+  min-width: 32.7rem;
+}
+
 .event__photos {
   position: relative;
 }
@@ -468,5 +483,17 @@ footer {
 .event__line--active {
   visibility: visible;
   z-index: -5;
+}
+
+.event__content {
+  display: none;
+}
+
+.event__paragraph {
+  padding: 2rem 5.3rem;
+}
+
+.event__content--active {
+  display: block;
 }
 /*# sourceMappingURL=main.css.map */

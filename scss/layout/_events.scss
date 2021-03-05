@@ -4,7 +4,7 @@
     text-align: center;
     margin: 8rem 0;
     &__container {
-        
+        min-width: 32.7rem;
     }
 
     &__photos {
@@ -55,6 +55,22 @@
     &__line--active {
         visibility: visible;
         z-index: -5;
+    }
+
+    &__content {
+        display: none;
+    }
+
+    &__title {
+
+    }
+
+    &__paragraph {
+        padding: 2rem 5.3rem;
+    }
+
+    &__content--active {
+        display: block;
     }
 
 }
