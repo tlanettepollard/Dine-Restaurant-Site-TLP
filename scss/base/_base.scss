@@ -9,7 +9,7 @@
     border: 0 none;
     padding: 0;
     margin: 0;
-    /*outline: 1px solid black;*/
+    outline: 1px solid black;
 }
 
 *::before,
@@ -91,5 +91,8 @@ li {
 
  .button--dark {
      background-color: $primary-cod-gray;
+     &:hover {
+         border: 1px solid $secondary-ebony-clay;
+     }
  }
 

@@ -12,10 +12,11 @@
     }
     &__photo {
         display: none;
-        box-shadow: $bshadow-3;
+        box-shadow: $bshadow-1;
     }
     &__photo--active {
-        max-width: 43rem;
+        max-width: 40rem;
+        max-height: 40rem;
         display: inline-block;
         margin-bottom: 4rem;
         z-index: 1;
@@ -59,6 +60,7 @@
 
     &__content {
         display: none;
+        padding-bottom: 1rem;
     }
 
     &__title {
