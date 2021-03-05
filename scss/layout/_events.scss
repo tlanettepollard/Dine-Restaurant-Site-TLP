@@ -4,7 +4,7 @@
     text-align: center;
     margin: 8rem 0;
     &__container {
-        
+        min-width: 32.7rem;
     }
 
     &__photos {
@@ -12,10 +12,11 @@
     }
     &__photo {
         display: none;
-        box-shadow: $bshadow-3;
+        box-shadow: $bshadow-1;
     }
     &__photo--active {
-        max-width: 43rem;
+        max-width: 40rem;
+        max-height: 40rem;
         display: inline-block;
         margin-bottom: 4rem;
         z-index: 1;
@@ -55,6 +56,23 @@
     &__line--active {
         visibility: visible;
         z-index: -5;
+    }
+
+    &__content {
+        display: none;
+        padding-bottom: 1rem;
+    }
+
+    &__title {
+
+    }
+
+    &__paragraph {
+        padding: 2rem 5.3rem;
+    }
+
+    &__content--active {
+        display: block;
     }
 
 }

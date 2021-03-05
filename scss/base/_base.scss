@@ -89,4 +89,10 @@ li {
     }
  }
 
+ .button--dark {
+     background-color: $primary-cod-gray;
+     &:hover {
+         border: 1px solid $secondary-ebony-clay;
+     }
+ }
 
