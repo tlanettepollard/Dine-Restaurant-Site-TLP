@@ -9,13 +9,12 @@
         "../../scss/base/_typography.scss",
         "../../scss/components/_button.scss",
         "../../scss/components/_calltoaction.scss",
-        "../../scss/layout/_features.scss",
-        "../../scss/layout/_footer.scss",
-        "../../scss/layout/_highlights.scss",
-        "../../scss/layout/_intro.scss",
-        "../../scss/layout/_events.scss",
-        "../../scss/pages/_home.scss",
-        "../../scss/pages/_booking.scss"
+        "../../scss/home/_features.scss",
+        "../../scss/home/_footer.scss",
+        "../../scss/home/_highlights.scss",
+        "../../scss/home/_intro.scss",
+        "../../scss/home/_events.scss",
+        "../../scss/booking/_reservation.scss"
     ],
     "names": [],
     "file": "main.css"
