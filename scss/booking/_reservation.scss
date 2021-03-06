@@ -1,10 +1,31 @@
 
-.b__header {
+.b-header {
     min-width: 37.5rem;
     min-height: 60rem;
+    @include flex (column, center);
+    background-color: $primary-cod-gray;
+    background-image: url(/images/booking/hero-bg-mobile.jpg);
+    background-image: image-set(url(/images/booking/hero-bg-mobile.jpg) 1x,
+        url(/images/homepage/hero-bg-mobile@2x.jpg) 2x);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    text-align: center;
+    color: $color-white;
+
+    &__container {
+       width: 32.7rem;
+
+
+    }
 }
 
 .reservation {
     min-width: 37.5rem;
     min-height: 53.5rem;
+
+    &__container {
+        width: 32.7rem;
+        height: 58.5rem;
+    }
 }
