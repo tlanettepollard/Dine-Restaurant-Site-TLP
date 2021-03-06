@@ -35,13 +35,10 @@
         opacity: 0.5;
         cursor: pointer;
         padding-bottom: 1.5rem;
-        transition: transform 0.5s ease-in;
-    }
-     
+    } 
     &__item--active {
         color: $primary-cod-gray;
         opacity: 1;
-
     }
 
     &__line {
