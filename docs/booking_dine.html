@@ -50,7 +50,16 @@
                                <input type="number" name="day" aria-label="day" id="day" placeholder="DD" min="0" max="31" class="form__input">
                                <input type="year" name="year" aria-label="year" id="year" placeholder="YYYY" min="2020" class="form__input">
                            </div> <!-- .form__field-box -->
-                       </div>
+                       </div><!-- .form__field -->
+                       
+                       <div class="form__field form__field--number" id="time">
+                            <label for="time">Pick a time</label>
+                            <span class="form__error">Error Message</span>
+                            <div class="form__field-box">
+                                <input type="number" name="hour" aria-label="hour" id="hour" placeholder="00" min="0" max="12" class="form__input">
+                                <input type="number" name="min" aria-label="min" id="min" placeholder="00" min="0" max="59" class="form__input">
+                            </div><!-- .form__field-box -->
+                       </div><!-- .form__field -->
                     </form>
                 </div>
             </div><!-- .reservation__container -->
@@ -81,7 +90,7 @@
     </div>
     
     
-    Pick a time
+    
 
     Make Reservation
 
