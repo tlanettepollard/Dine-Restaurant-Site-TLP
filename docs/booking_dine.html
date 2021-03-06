@@ -32,9 +32,19 @@
             <div class="reservation__container">
                 <div class="reservation__form">
                     <form id="form" class="form">
-                       <div class="form">
+                       <div class="form__field form__field--text">
                         <input type="text" name="name" id="name" placeholder="Name" aria-label="name" class="form__input">
-                       </div> 
+                        <span class="form__error">Error Message</span>
+                       </div> <!-- .form__field -->
+
+                       <div class="form__field form__field--text">
+                        <input type="email" name="email" id="email" placeholder="Email" aria-label="email" class="form__input">
+                        <span class="form__error">Error Message</span>
+                       </div> <!-- .form__field -->
+
+                       <div class="form__field form__field--number" id="date">
+                           <label for="date">Pick a date</label>
+                       </div>
                     </form>
                 </div>
             </div><!-- .reservation__container -->
@@ -64,12 +74,7 @@
         Coded by <a href="https://github.com/TLanetteRose">T.Lanette</a>.
     </div>
     
-
-
-
-    Name
-    Email
-    Pick a date
+    
     Pick a time
 
     Make Reservation
