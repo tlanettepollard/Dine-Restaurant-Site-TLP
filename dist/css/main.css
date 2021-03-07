@@ -620,6 +620,34 @@ footer {
   cursor: pointer;
 }
 
+.form__input::-webkit-input-placeholder {
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  letter-spacing: -0.225px;
+  color: inherit;
+}
+
+.form__input:-ms-input-placeholder {
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  letter-spacing: -0.225px;
+  color: inherit;
+}
+
+.form__input::-ms-input-placeholder {
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  letter-spacing: -0.225px;
+  color: inherit;
+}
+
+.form__input::placeholder {
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  letter-spacing: -0.225px;
+  color: inherit;
+}
+
 .curve {
   display: none;
 }
