@@ -586,6 +586,21 @@ footer {
   max-width: 32.7rem;
 }
 
+.form__input {
+  border: none;
+  border-bottom: 1px solid #242b38;
+  cursor: pointer;
+}
+
+.form__field {
+  margin: 0 auto;
+  /* margin-bottom: 3.2rem; */
+}
+
+.form__field--text {
+  width: 100%;
+}
+
 .form__message {
   display: block;
   visibility: hidden;

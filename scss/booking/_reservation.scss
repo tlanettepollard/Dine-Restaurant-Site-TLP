@@ -51,6 +51,21 @@
 }
 
 .form {
+
+    &__input {
+        border: none;
+        border-bottom: 1px solid $secondary-ebony-clay;
+        cursor: pointer;
+    }
+
+    &__field {
+        margin: 0 auto;
+       /* margin-bottom: 3.2rem; */
+    }
+
+    &__field--text {
+        width: 100%;
+    }
     
     &__message {
         display: block;
