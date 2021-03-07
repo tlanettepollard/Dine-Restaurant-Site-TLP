@@ -47,20 +47,19 @@
         position: relative;
         margin: auto 0;
     }
+
+    &__form {
+        height: 58.7rem;
+        max-width: 35rem;
+        padding: 3.2rem;
+        background: $color-white;
+        margin-top: -10rem;
+        margin-bottom: 10rem;
+        box-shadow: 1px 3px 30px $secondary-shuttle-gray;
+        @include flex (column, center);
+    }
 }
 
-form {
-    height: 58.7rem;
-    max-width: 35rem;
-    padding: 3.2rem;
-    background: $color-white;
-    margin-top: -10rem;
-    margin-bottom: 10rem;
-    box-shadow: 1px 3px 30px $secondary-shuttle-gray;
-    @include flex (column, center);
-
-
-}
 
 .curve {
     display: none;

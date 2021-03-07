@@ -586,7 +586,7 @@ footer {
   margin: auto 0;
 }
 
-form {
+.reservation__form {
   height: 58.7rem;
   max-width: 35rem;
   padding: 3.2rem;
