@@ -39,162 +39,22 @@
 
 .reservation {
     position: relative;
-    min-height: 53.4rem;
+    min-height: 53.5rem;
     color: $primary-cod-gray;
     @include flex (column, center);
     
-    &__container {
-        max-width: 35rem;
-        position: relative;
-        margin: auto 0;
-    }
-
     &__form {
         height: 58.5rem;
         max-width: 32.7rem;
-        padding: 3.2rem;
-        background: $color-white;
-        margin-top: -10rem;
-        margin-bottom: 10rem;
-        box-shadow: 1px 3px 30px $secondary-shuttle-gray;
-        @include flex (column, center);
     }
+
 }
 
 .form {
-    &__input {
-        border: none;
-        border-bottom: 1px solid $secondary-ebony-clay;
-        font-size: 1.8rem;
-        line-height: 2.8rem;
-        letter-spacing: -0.225px;
-        color: inherit;
-        cursor: pointer;
-    }
-    &__input::placeholder {
-        font-size: 1.8rem;
-        line-height: 2.8rem;
-        letter-spacing: -0.225px;
-        color: inherit;
-    }
-    &__field {
-        margin: 0 auto;
-        margin-bottom: 3.2rem;
-    }
-    &__field--text {
-        width: 100%;
-        
-        .form__input {
-            display: block;
-            width: 100%;
-            height: 4.5rem;
-            padding: 0.5rem 0;
-        }
-    }
-    &__field--number {
-        width: 100%;
-        height: 0.1rem;
-        position: relative;
-
-        label {
-            color: inherit;
-            font-family: inherit;
-            font-size: 1.8rem;
-            line-height: 2.8rem;
-            letter-spacing: -0.225px;
-            text-align: left;
-        }
-
-        .form__input {
-            width: 30%;
-            padding: 0.5rem;
-            margin: 0 0.3rem;
-            text-align: left;
-            cursor: pointer;
-
-            &--arrow {
-                position: relative;
-                min-width: 8.8rem;
-                border-bottom: none;
-
-                &:after {
-                    content: "\f078";
-                    font: normal normal normal 2rem/1 FontAwesome; 
-                    color: $primary-beaver;
-                    right: 2rem;
-                    top: 1rem;
-                    height: 3.4rem;
-                    position: absolute;
-                }
-
-                select {
-                    appearance: none;
-                    width: 100%;
-                    max-width: 30rem;
-                    height: 4rem;
-                    line-height: 2.8rem;
-                    font-size: inherit;
-                    font-weight: 400;
-                    color: inherit;
-                    border: none;
-                    border-bottom: 1px solid $secondary-ebony-clay;
-                }
-            }
-        }
-    }
-
-    &__field-box {
-        position: relative;
-        @include flex(row, center);
-    }
-
-    &__field--people {
-        width: 100%;
-        text-align: center;
-        padding-bottom: 1rem;
-        border-bottom: 1px solid $secondary-ebony-clay;
-
-        .form__input {
-            width: 70%;
-            text-align: center;
-            border: none;
-            vertical-align: middle;
-        }
-    }
-
+    
     &__message {
         display: block;
         visibility: hidden;
         font-weight: bold;
-        padding-top: 0.7rem;
-        font-size: 1rem;
-        text-align: left;
     }
-
-    &__message--error {
-        visibility: visible;
-    }
-    &__input--error {
-        border-bottom: 1px solid #B54949;
-        color: #B54949;
-    }
-}
-
-.icon-count {
-    cursor: pointer;
-    width: 1.5rem;
-    vertical-align: middle;
-    padding: 1rem;
-}
-
-.form__input--arrow .active {
-    transform: rotate(180deg);
-}
-
-.curve {
-    display: none;
-}
-
-.lines {
-    display: none;
 }

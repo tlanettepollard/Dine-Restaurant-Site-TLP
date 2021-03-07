@@ -564,7 +564,7 @@ footer {
 
 .reservation {
   position: relative;
-  min-height: 53.4rem;
+  min-height: 53.5rem;
   color: #121212;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -581,210 +581,14 @@ footer {
           align-items: center;
 }
 
-.reservation__container {
-  max-width: 35rem;
-  position: relative;
-  margin: auto 0;
-}
-
 .reservation__form {
   height: 58.5rem;
   max-width: 32.7rem;
-  padding: 3.2rem;
-  background: #ffffff;
-  margin-top: -10rem;
-  margin-bottom: 10rem;
-  -webkit-box-shadow: 1px 3px 30px #5c687a;
-          box-shadow: 1px 3px 30px #5c687a;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.form__input {
-  border: none;
-  border-bottom: 1px solid #242b38;
-  font-size: 1.8rem;
-  line-height: 2.8rem;
-  letter-spacing: -0.225px;
-  color: inherit;
-  cursor: pointer;
-}
-
-.form__input::-webkit-input-placeholder {
-  font-size: 1.8rem;
-  line-height: 2.8rem;
-  letter-spacing: -0.225px;
-  color: inherit;
-}
-
-.form__input:-ms-input-placeholder {
-  font-size: 1.8rem;
-  line-height: 2.8rem;
-  letter-spacing: -0.225px;
-  color: inherit;
-}
-
-.form__input::-ms-input-placeholder {
-  font-size: 1.8rem;
-  line-height: 2.8rem;
-  letter-spacing: -0.225px;
-  color: inherit;
-}
-
-.form__input::placeholder {
-  font-size: 1.8rem;
-  line-height: 2.8rem;
-  letter-spacing: -0.225px;
-  color: inherit;
-}
-
-.form__field {
-  margin: 0 auto;
-  margin-bottom: 3.2rem;
-}
-
-.form__field--text {
-  width: 100%;
-}
-
-.form__field--text .form__input {
-  display: block;
-  width: 100%;
-  height: 4.5rem;
-  padding: 0.5rem 0;
-}
-
-.form__field--number {
-  width: 100%;
-  height: 0.1rem;
-  position: relative;
-}
-
-.form__field--number label {
-  color: inherit;
-  font-family: inherit;
-  font-size: 1.8rem;
-  line-height: 2.8rem;
-  letter-spacing: -0.225px;
-  text-align: left;
-}
-
-.form__field--number .form__input {
-  width: 30%;
-  padding: 0.5rem;
-  margin: 0 0.3rem;
-  text-align: left;
-  cursor: pointer;
-}
-
-.form__field--number .form__input--arrow {
-  position: relative;
-  min-width: 8.8rem;
-  border-bottom: none;
-}
-
-.form__field--number .form__input--arrow:after {
-  content: "\f078";
-  font: normal normal normal 2rem/1 FontAwesome;
-  color: #9e7f67;
-  right: 2rem;
-  top: 1rem;
-  height: 3.4rem;
-  position: absolute;
-}
-
-.form__field--number .form__input--arrow select {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  width: 100%;
-  max-width: 30rem;
-  height: 4rem;
-  line-height: 2.8rem;
-  font-size: inherit;
-  font-weight: 400;
-  color: inherit;
-  border: none;
-  border-bottom: 1px solid #242b38;
-}
-
-.form__field-box {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.form__field--people {
-  width: 100%;
-  text-align: center;
-  padding-bottom: 1rem;
-  border-bottom: 1px solid #242b38;
-}
-
-.form__field--people .form__input {
-  width: 70%;
-  text-align: center;
-  border: none;
-  vertical-align: middle;
 }
 
 .form__message {
   display: block;
   visibility: hidden;
   font-weight: bold;
-  padding-top: 0.7rem;
-  font-size: 1rem;
-  text-align: left;
-}
-
-.form__message--error {
-  visibility: visible;
-}
-
-.form__input--error {
-  border-bottom: 1px solid #B54949;
-  color: #B54949;
-}
-
-.icon-count {
-  cursor: pointer;
-  width: 1.5rem;
-  vertical-align: middle;
-  padding: 1rem;
-}
-
-.form__input--arrow .active {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-}
-
-.curve {
-  display: none;
-}
-
-.lines {
-  display: none;
 }
 /*# sourceMappingURL=main.css.map */
