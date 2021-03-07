@@ -564,7 +564,8 @@ footer {
 
 .reservation {
   position: relative;
-  min-height: 53.5rem;
+  min-height: 53.4rem;
+  color: #121212;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -587,8 +588,8 @@ footer {
 }
 
 .reservation__form {
-  height: 58.7rem;
-  max-width: 35rem;
+  height: 58.5rem;
+  max-width: 32.7rem;
   padding: 3.2rem;
   background: #ffffff;
   margin-top: -10rem;
@@ -712,6 +713,7 @@ footer {
   height: 4rem;
   line-height: 2.8rem;
   font-size: inherit;
+  font-weight: 400;
   color: inherit;
   border: none;
   border-bottom: 1px solid #242b38;
@@ -738,6 +740,44 @@ footer {
   width: 100%;
   text-align: center;
   padding-bottom: 1rem;
+  border-bottom: 1px solid #242b38;
+}
+
+.form__field--people .form__input {
+  width: 70%;
+  text-align: center;
+  border: none;
+  vertical-align: middle;
+}
+
+.form__message {
+  display: block;
+  visibility: hidden;
+  font-weight: bold;
+  padding-top: 0.7rem;
+  font-size: 1rem;
+  text-align: left;
+}
+
+.form__message--error {
+  visibility: visible;
+}
+
+.form__input--error {
+  border-bottom: 1px solid #B54949;
+  color: #B54949;
+}
+
+.icon-count {
+  cursor: pointer;
+  width: 1.5rem;
+  vertical-align: middle;
+  padding: 1rem;
+}
+
+.form__input--arrow .active {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .curve {

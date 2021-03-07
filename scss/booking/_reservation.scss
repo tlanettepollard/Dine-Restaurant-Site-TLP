@@ -39,7 +39,8 @@
 
 .reservation {
     position: relative;
-    min-height: 53.5rem;
+    min-height: 53.4rem;
+    color: $primary-cod-gray;
     @include flex (column, center);
     
     &__container {
@@ -49,8 +50,8 @@
     }
 
     &__form {
-        height: 58.7rem;
-        max-width: 35rem;
+        height: 58.5rem;
+        max-width: 32.7rem;
         padding: 3.2rem;
         background: $color-white;
         margin-top: -10rem;
@@ -133,6 +134,7 @@
                     height: 4rem;
                     line-height: 2.8rem;
                     font-size: inherit;
+                    font-weight: 400;
                     color: inherit;
                     border: none;
                     border-bottom: 1px solid $secondary-ebony-clay;
@@ -150,8 +152,43 @@
         width: 100%;
         text-align: center;
         padding-bottom: 1rem;
+        border-bottom: 1px solid $secondary-ebony-clay;
+
+        .form__input {
+            width: 70%;
+            text-align: center;
+            border: none;
+            vertical-align: middle;
+        }
     }
 
+    &__message {
+        display: block;
+        visibility: hidden;
+        font-weight: bold;
+        padding-top: 0.7rem;
+        font-size: 1rem;
+        text-align: left;
+    }
+
+    &__message--error {
+        visibility: visible;
+    }
+    &__input--error {
+        border-bottom: 1px solid #B54949;
+        color: #B54949;
+    }
+}
+
+.icon-count {
+    cursor: pointer;
+    width: 1.5rem;
+    vertical-align: middle;
+    padding: 1rem;
+}
+
+.form__input--arrow .active {
+    transform: rotate(180deg);
 }
 
 .curve {
