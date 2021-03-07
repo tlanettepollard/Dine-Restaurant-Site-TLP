@@ -38,11 +38,14 @@
 }
 
 .reservation {
-    min-width: 37.5rem;
     min-height: 53.5rem;
+    @include flex (column, center);
 
     &__container {
-        width: 32.7rem;
-        height: 58.5rem;
+        min-width: 32.7rem;
+        position: relative;
+        margin: auto;
+        
+
     }
 }
