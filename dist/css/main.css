@@ -664,6 +664,21 @@ footer {
   padding: 0.5rem 0;
 }
 
+.form__field--number {
+  width: 100%;
+  height: 0.1rem;
+  position: relative;
+}
+
+.form__field--number label {
+  color: inherit;
+  font-family: inherit;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  letter-spacing: -0.225px;
+  text-align: left;
+}
+
 .curve {
   display: none;
 }
