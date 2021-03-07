@@ -526,17 +526,95 @@ footer {
   color: #ffffff;
 }
 
+@media screen and (min-width: 768px) {
+  .b-header {
+    background-image: url(/images/booking/hero-bg-tablet.jpg);
+    background-image: -webkit-image-set(url(/images/booking/hero-bg-tablet.jpg) 1x, url(/images/booking/hero-bg-tablet@2x.jpg) 2x);
+    background-image: image-set(url(/images/booking/hero-bg-tablet.jpg) 1x, url(/images/booking/hero-bg-tablet@2x.jpg) 2x);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    min-height: 99.2rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .b-header {
+    background-image: url(/images/booking/hero-bg-desktop.jpg);
+    background-image: -webkit-image-set(url(/images/booking/hero-bg-desktop.jpg) 1x, url(/images/booking/hero-bg-desktop@2x.jpg) 2x);
+    background-image: image-set(url(/images/booking/hero-bg-desktop.jpg) 1x, url(/images/booking/hero-bg-desktop@2x.jpg) 2x);
+    min-height: 82rem;
+    text-align: left;
+  }
+}
+
 .b-header__container {
   width: 32.7rem;
 }
 
 .reservation {
-  min-width: 37.5rem;
+  position: relative;
   min-height: 53.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .reservation__container {
-  width: 32.7rem;
-  height: 58.5rem;
+  max-width: 35rem;
+  position: relative;
+  margin: auto 0;
+}
+
+form {
+  height: 58.7rem;
+  max-width: 35rem;
+  padding: 3.2rem;
+  background: #ffffff;
+  margin-top: -10rem;
+  margin-bottom: 10rem;
+  -webkit-box-shadow: 1px 3px 30px #5c687a;
+          box-shadow: 1px 3px 30px #5c687a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.curve {
+  display: none;
+}
+
+.lines {
+  display: none;
 }
 /*# sourceMappingURL=main.css.map */
