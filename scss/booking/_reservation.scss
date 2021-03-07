@@ -141,6 +141,17 @@
         }
     }
 
+    &__field-box {
+        position: relative;
+        @include flex(row, center);
+    }
+
+    &__field--people {
+        width: 100%;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
 }
 
 .curve {
