@@ -610,6 +610,16 @@ footer {
           align-items: center;
 }
 
+.form__input {
+  border: none;
+  border-bottom: 1px solid #242b38;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  letter-spacing: -0.225px;
+  color: inherit;
+  cursor: pointer;
+}
+
 .curve {
   display: none;
 }

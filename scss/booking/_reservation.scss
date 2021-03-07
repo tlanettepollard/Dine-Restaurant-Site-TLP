@@ -60,6 +60,17 @@
     }
 }
 
+.form {
+    &__input {
+        border: none;
+        border-bottom: 1px solid $secondary-ebony-clay;
+        font-size: 1.8rem;
+        line-height: 2.8rem;
+        letter-spacing: -0.225px;
+        color: inherit;
+        cursor: pointer;
+    }
+}
 
 .curve {
     display: none;
