@@ -38,18 +38,116 @@
 }
 
 .reservation {
+    position: relative;
     min-height: 53.5rem;
+    color: $primary-cod-gray;
     @include flex (column, center);
+    
+    &__form {
+        height: 58.5rem;
+        max-width: 32.7rem;
+        margin-top: -20rem;
+        background: $color-white;
+        padding: 2.2rem;
 
-    &__container {
-        min-width: 32.7rem;
+    }
+
+}
+
+.form {
+    /*padding: 0 2.6rem;*/
+    &__input {
+        border: none;
+        border-bottom: 1px solid $secondary-ebony-clay;
+        cursor: pointer;
+    }
+
+    &__input::placeholder {
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+        letter-spacing: -0.225px;
+        color: inherit;
+    }
+
+    &__field {
+        margin: 0 auto;
+        margin-bottom: 1.2rem; 
+    }
+
+    &__field--text {
+        width: 100%;
+
+        .form__input {
+            display: block;
+            width: 100%;
+            height: 4.5rem;
+            padding: 0.5rem 0;
+        }
+    }
+
+    &__field--number {
+        width: 100%;
+        /*height: 8.1rem;*/
         position: relative;
-        margin: auto;
-        
 
+        label {
+            color: inherit;
+            font-family: inherit;
+            font-size: 1.8rem;
+            line-height: 2.5rem;
+            letter-spacing: -0.225px;
+            text-align: left;
+        }
+
+        .form__input {
+            width: 30%;
+            padding: 0.5rem;
+            margin: 0 0.3rem;
+            text-align: left;
+            cursor: pointer;
+
+            &--arrow {
+                position: relative;
+                min-width: 8.8rem;
+                border-bottom: none;
+
+                &:after {
+                    content: "\f078";
+                    font: normal normal normal 2rem/1 FontAwesome;
+                    color: $primary-beaver;
+                    right: 2rem;
+                    top: 1rem;
+                    height: 3.4rem;
+                    position: absolute;
+                }
+
+                select {
+                    appearance: none;
+                    width: 100%;
+                    max-width: 30rem;
+                    height: 4rem;
+                    line-height: 2.5rem;
+                    font-size: inherit;
+                    font-weight: 400;
+                    color: inherit;
+                    border: none;
+                    border-bottom: 1px solid $secondary-ebony-clay;
+                }
+            }
+        }
+    }
+    &__field-box {
+        position: relative;
+        @include flex (row, center);
+    }
+    
+    &__message {
+        display: block;
+        visibility: hidden;
+        font-weight: bold;
     }
 }
 
-form {
-    position: relative;
+.time, .date{
+    margin-top: -10px;
 }

@@ -16,3 +16,5 @@ learned not to make certain tasks over difficult; My events section doesn't need
 buttons: transparent for dark colored backgrounds and dark for white colored backgrounds
 
 2/24/2021: Learned their is a difference between visibility: hidden and displayed: none. 
+
+3/07/2021: Learned that appearance: none removes the arrow on the selector. 

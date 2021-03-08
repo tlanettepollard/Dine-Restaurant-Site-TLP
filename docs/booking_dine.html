@@ -34,18 +34,18 @@
                     <form id="form" class="form">
                        <div class="form__field form__field--text">
                         <input type="text" name="name" id="name" placeholder="Name" aria-label="name" class="form__input">
-                        <span class="form__error">Error Message</span>
+                        <span class="form__message">Error Message</span>
                        </div> <!-- .form__field -->
 
                        <div class="form__field form__field--text">
                         <input type="email" name="email" id="email" placeholder="Email" aria-label="email" class="form__input">
-                        <span class="form__error">Error Message</span>
+                        <span class="form__message">Error Message</span>
                        </div> <!-- .form__field -->
 
                        <div class="form__field form__field--number" id="date">
                            <label for="date">Pick a date</label>
-                           <span class="form__error">Error Message</span>
-                           <div class="form__field-box">
+                           <span class="form__message">Error Message</span>
+                           <div class="form__field-box date">
                                <input type="number" name="month" aria-label="month" id="month" placeholder="MM" min="0" max="12" class="form__input">
                                <input type="number" name="day" aria-label="day" id="day" placeholder="DD" min="0" max="31" class="form__input">
                                <input type="year" name="year" aria-label="year" id="year" placeholder="YYYY" min="2020" class="form__input">
@@ -54,8 +54,8 @@
                        
                        <div class="form__field form__field--number" id="time">
                             <label for="time">Pick a time</label>
-                            <span class="form__error">Error Message</span>
-                            <div class="form__field-box">
+                            <span class="form__message">Error Message</span>
+                            <div class="form__field-box time">
                                 <input type="number" name="hour" aria-label="hour" id="hour" placeholder="00" min="0" max="12" class="form__input">
                                 <input type="number" name="min" aria-label="min" id="min" placeholder="00" min="0" max="59" class="form__input">
                                 <div class="form__input form__input--arrow" id="arrow" onclick="rotateArrow()">
