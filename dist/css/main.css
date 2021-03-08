@@ -675,6 +675,21 @@ footer {
   position: absolute;
 }
 
+.form__field--number .form__input--arrow select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 100%;
+  max-width: 30rem;
+  height: 4rem;
+  line-height: 2.5rem;
+  font-size: inherit;
+  font-weight: 400;
+  color: inherit;
+  border: none;
+  border-bottom: 1px solid #242b38;
+}
+
 .form__message {
   display: block;
   visibility: hidden;
