@@ -668,6 +668,11 @@ footer {
 .form__field--number .form__input--arrow:after {
   content: "\f078";
   font: normal normal normal 2rem/1 FontAwesome;
+  color: #9e7f67;
+  right: 2rem;
+  top: 1rem;
+  height: 3.4rem;
+  position: absolute;
 }
 
 .form__message {
