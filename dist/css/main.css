@@ -584,6 +584,13 @@ footer {
 .reservation__form {
   height: 58.5rem;
   max-width: 32.7rem;
+  margin-top: -20rem;
+  background: #ffffff;
+  padding: 2.2rem;
+}
+
+.form {
+  /*padding: 0 2.6rem;*/
 }
 
 .form__input {
@@ -622,7 +629,7 @@ footer {
 
 .form__field {
   margin: 0 auto;
-  /* margin-bottom: 3.2rem; */
+  margin-bottom: 1.2rem;
 }
 
 .form__field--text {
@@ -690,9 +697,30 @@ footer {
   border-bottom: 1px solid #242b38;
 }
 
+.form__field-box {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .form__message {
   display: block;
   visibility: hidden;
   font-weight: bold;
+}
+
+.time, .date {
+  margin-top: -10px;
 }
 /*# sourceMappingURL=main.css.map */

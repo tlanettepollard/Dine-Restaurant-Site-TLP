@@ -46,13 +46,16 @@
     &__form {
         height: 58.5rem;
         max-width: 32.7rem;
+        margin-top: -20rem;
+        background: $color-white;
+        padding: 2.2rem;
 
     }
 
 }
 
 .form {
-
+    /*padding: 0 2.6rem;*/
     &__input {
         border: none;
         border-bottom: 1px solid $secondary-ebony-clay;
@@ -68,7 +71,7 @@
 
     &__field {
         margin: 0 auto;
-       /* margin-bottom: 3.2rem; */
+        margin-bottom: 1.2rem; 
     }
 
     &__field--text {
@@ -133,10 +136,18 @@
             }
         }
     }
+    &__field-box {
+        position: relative;
+        @include flex (row, center);
+    }
     
     &__message {
         display: block;
         visibility: hidden;
         font-weight: bold;
     }
+}
+
+.time, .date{
+    margin-top: -10px;
 }
