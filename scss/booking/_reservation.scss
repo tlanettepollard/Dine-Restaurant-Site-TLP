@@ -46,7 +46,8 @@
     &__form {
         height: 58.5rem;
         max-width: 32.7rem;
-        margin-top: -20rem;
+        margin-top: -10rem;
+        margin-bottom: 10rem;
         background: $color-white;
         padding: 2.2rem;
 
@@ -54,17 +55,29 @@
 
 }
 
+.curve {
+    display: none;
+}
+
+.lines {
+    display: none;
+}
+
 .form {
     /*padding: 0 2.6rem;*/
     &__input {
         border: none;
         border-bottom: 1px solid $secondary-ebony-clay;
+        font-size: 1.8rem;
+        line-height: 2.8rem;
+        letter-spacing: -0.225px;
+        color: inherit;
         cursor: pointer;
     }
 
     &__input::placeholder {
         font-size: 1.8rem;
-        line-height: 2.5rem;
+        line-height: 2.8rem;
         letter-spacing: -0.225px;
         color: inherit;
     }
@@ -139,6 +152,20 @@
     &__field-box {
         position: relative;
         @include flex (row, center);
+    }
+    &__field--people {
+        width: 100%;
+        text-align: center;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid $secondary-ebony-clay;
+        .form__input {
+            width: 70%;
+            text-align: center;
+            border: none;
+            padding-bottom: 1rem;
+            vertical-align: middle;
+            font-weight: $weight-bold;
+        }
     }
     
     &__message {

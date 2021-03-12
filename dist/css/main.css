@@ -100,10 +100,19 @@ li {
 
 .button--dark {
   background-color: #121212;
+  color: #ffffff;
+  border: 1px solid #ffffff;
 }
 
 .button--dark:hover {
   border: 1px solid #242b38;
+}
+
+.button--submit {
+  display: block;
+  max-width: 30.3rem;
+  width: 100%;
+  margin: 0 auto;
 }
 
 h1, h2, h3, body {
@@ -584,9 +593,18 @@ footer {
 .reservation__form {
   height: 58.5rem;
   max-width: 32.7rem;
-  margin-top: -20rem;
+  margin-top: -10rem;
+  margin-bottom: 10rem;
   background: #ffffff;
   padding: 2.2rem;
+}
+
+.curve {
+  display: none;
+}
+
+.lines {
+  display: none;
 }
 
 .form {
@@ -596,33 +614,37 @@ footer {
 .form__input {
   border: none;
   border-bottom: 1px solid #242b38;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  letter-spacing: -0.225px;
+  color: inherit;
   cursor: pointer;
 }
 
 .form__input::-webkit-input-placeholder {
   font-size: 1.8rem;
-  line-height: 2.5rem;
+  line-height: 2.8rem;
   letter-spacing: -0.225px;
   color: inherit;
 }
 
 .form__input:-ms-input-placeholder {
   font-size: 1.8rem;
-  line-height: 2.5rem;
+  line-height: 2.8rem;
   letter-spacing: -0.225px;
   color: inherit;
 }
 
 .form__input::-ms-input-placeholder {
   font-size: 1.8rem;
-  line-height: 2.5rem;
+  line-height: 2.8rem;
   letter-spacing: -0.225px;
   color: inherit;
 }
 
 .form__input::placeholder {
   font-size: 1.8rem;
-  line-height: 2.5rem;
+  line-height: 2.8rem;
   letter-spacing: -0.225px;
   color: inherit;
 }
@@ -712,6 +734,22 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.form__field--people {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #242b38;
+}
+
+.form__field--people .form__input {
+  width: 70%;
+  text-align: center;
+  border: none;
+  padding-bottom: 1rem;
+  vertical-align: middle;
+  font-weight: 700;
 }
 
 .form__message {
