@@ -171,8 +171,8 @@ body {
 .paragraph {
   font-size: 1.5rem;
   font-weight: 400;
-  letter-spacing: 0.19px;
-  line-height: 2.8rem;
+  letter-spacing: -0.1875px;
+  line-height: 2.5rem;
 }
 
 /* Form Buttons */
