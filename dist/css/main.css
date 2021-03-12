@@ -100,10 +100,19 @@ li {
 
 .button--dark {
   background-color: #121212;
+  color: #ffffff;
+  border: 1px solid #ffffff;
 }
 
 .button--dark:hover {
   border: 1px solid #242b38;
+}
+
+.button--submit {
+  display: block;
+  max-width: 30.3rem;
+  width: 100%;
+  margin: 0 auto;
 }
 
 h1, h2, h3, body {
@@ -736,6 +745,11 @@ footer {
 
 .form__field--people .form__input {
   width: 70%;
+  text-align: center;
+  border: none;
+  padding-bottom: 1rem;
+  vertical-align: middle;
+  font-weight: 700;
 }
 
 .form__message {

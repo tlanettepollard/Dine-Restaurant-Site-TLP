@@ -160,6 +160,11 @@
         border-bottom: 1px solid $secondary-ebony-clay;
         .form__input {
             width: 70%;
+            text-align: center;
+            border: none;
+            padding-bottom: 1rem;
+            vertical-align: middle;
+            font-weight: $weight-bold;
         }
     }
     
