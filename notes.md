@@ -18,3 +18,80 @@ buttons: transparent for dark colored backgrounds and dark for white colored bac
 2/24/2021: Learned their is a difference between visibility: hidden and displayed: none. 
 
 3/07/2021: Learned that appearance: none removes the arrow on the selector. 
+
+05/13/2021: Will add an updated Css Reset
+
+/* Reset */
+
+:root {
+    color-scheme: light dark;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+body, 
+#root,
+#root *,
+#root ::before,
+#root ::after {
+    box-sizing: border-box;
+    margin: 0;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    position: relative;
+    overflow-wrap: break-word;
+    min-width: 0;
+}
+
+body,
+#root {
+    min-height: 100%;
+    min-width: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui;
+    text-rendering: optimizeSpeed;
+    line-height: 1.2;
+}
+
+a {
+    text-decoration-skip-ink: auto;
+}
+
+ul[role="list"],
+ol[role="list"] {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+input,
+button, 
+textarea,
+select {
+    font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
