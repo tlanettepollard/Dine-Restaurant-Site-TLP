@@ -1,9 +1,61 @@
 /* Mobile First Design */
 .intro {
+    position: relative;
     min-width: 375px;
     min-height: 748px;
     width: 100vw;
     height: 100vh;
     margin: 0 auto;
+    @include flex (column, center);
+    background-color: $primary-cod-gray;
+    background-image: url(/images/homepage/hero-bg-mobile.jpg);
+    background-image: image-set(
+        url(/images/homepage/hero-bg-mobile.jpg) 1x,
+        url(/images/homepage/hero-bg-mobile@2x.jpg) 2x
+    );
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    text-align: center;
+    color: $color-white;
+
+    @include md-breakpoint {
+        background-image: url(/images/homepage/hero-bg-tablet.jpg);
+        background-image: image-set(
+            url(/images/homepage/hero-bg-tablet.jpg) 1x,
+            url(/images/homepage/hero-bg-tablet@2x.jpg) 2x
+        );
+        min-height: 992px;
+    }
+
+    @include lg-breakpoint {
+        background-image: url(/images/homepage/locally-sourced-desktop.jpg);
+        background-image: image-set(
+            url(/images/homepage/hero-bg-desktop.jpg) 1x,
+            url(/images/homepage/hero-bg-desktop@2x.jpg) 2x
+        );
+        min-height: 820px;
+        text-align: left;
+    }
+
+    &__container {
+        position: relative;
+        width: 330px;
+        height: 364px;
+        //margin-top: 10rem;
+        @include flex (column, space-between);
+    }
+
+    &__title {
+        font-size: 2.2rem !important;
+    }
+
+    &__text {
+        font-size: 0.82rem;
+        margin-top: -2%;
+    }
+    &__button {
+        margin-top: 10%;
+    }
 }
 

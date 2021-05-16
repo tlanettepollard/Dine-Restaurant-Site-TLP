@@ -92,14 +92,15 @@ select {
 }
 
 .button {
-  display: inline-block;
-  max-width: 24.3rem;
-  font-weight: 500;
-  font-size: 1.4rem;
+  display: block;
+  max-width: 247px;
+  max-height: 65px;
+  width: 100%;
+  height: 1000%;
+  padding: 20px 10px;
+  font-size: 1rem;
   line-height: 1.6rem;
   letter-spacing: 0.8px;
-  height: 6.7rem;
-  padding: 2.4rem 5.4rem;
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
@@ -290,11 +291,85 @@ footer {
 
 /* Mobile First Design */
 .intro {
+  position: relative;
   min-width: 375px;
   min-height: 748px;
   width: 100vw;
   height: 100vh;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #121212;
+  background-image: url(/images/homepage/hero-bg-mobile.jpg);
+  background-image: -webkit-image-set(url(/images/homepage/hero-bg-mobile.jpg) 1x, url(/images/homepage/hero-bg-mobile@2x.jpg) 2x);
+  background-image: image-set(url(/images/homepage/hero-bg-mobile.jpg) 1x, url(/images/homepage/hero-bg-mobile@2x.jpg) 2x);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  text-align: center;
+  color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .intro {
+    background-image: url(/images/homepage/hero-bg-tablet.jpg);
+    background-image: -webkit-image-set(url(/images/homepage/hero-bg-tablet.jpg) 1x, url(/images/homepage/hero-bg-tablet@2x.jpg) 2x);
+    background-image: image-set(url(/images/homepage/hero-bg-tablet.jpg) 1x, url(/images/homepage/hero-bg-tablet@2x.jpg) 2x);
+    min-height: 992px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .intro {
+    background-image: url(/images/homepage/locally-sourced-desktop.jpg);
+    background-image: -webkit-image-set(url(/images/homepage/hero-bg-desktop.jpg) 1x, url(/images/homepage/hero-bg-desktop@2x.jpg) 2x);
+    background-image: image-set(url(/images/homepage/hero-bg-desktop.jpg) 1x, url(/images/homepage/hero-bg-desktop@2x.jpg) 2x);
+    min-height: 820px;
+    text-align: left;
+  }
+}
+
+.intro__container {
+  position: relative;
+  width: 330px;
+  height: 364px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.intro__title {
+  font-size: 2.2rem !important;
+}
+
+.intro__text {
+  font-size: 0.82rem;
+  margin-top: -2%;
+}
+
+.intro__button {
+  margin-top: 10%;
 }
 
 .event {
