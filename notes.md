@@ -7,7 +7,6 @@ The image-set() CSS function notation is a method of letting the browser pick th
 
 Resolution and bandwidth differ by device and network access. The image-set() function delivers the most appropriate image resolution for a user’s device, providing a set of image options — each with an associated resolution declaration — from which the browser picks the most appropriate for the device and settings.
 
-
 Learned about Mixins and using values for flex mix in. You set the values based on what you want to do. 
 02/21/2021
 learned not to make certain tasks over difficult; My events section doesn't need a slideshow. I just need to remove and add classes
@@ -20,78 +19,155 @@ buttons: transparent for dark colored backgrounds and dark for white colored bac
 3/07/2021: Learned that appearance: none removes the arrow on the selector. 
 
 05/13/2021: Will add an updated Css Reset
+05/16/2021: Started working on file after time away.
 
-/* Reset */
 
-:root {
-    color-scheme: light dark;
-}
 
-html {
-    height: 100%;
-    width: 100%;
-}
 
-html:focus-within {
-    scroll-behavior: smooth;
-}
 
-body, 
-#root,
-#root *,
-#root ::before,
-#root ::after {
-    box-sizing: border-box;
-    margin: 0;
-    display: grid;
-    place-content: center;
-    text-align: center;
+
+
+
+Reservations.scss
+.reservation {
     position: relative;
-    overflow-wrap: break-word;
-    min-width: 0;
+    min-height: 53.5rem;
+    color: $primary-cod-gray;
+    @include flex (column, center);
+    
+    &__form {
+        height: 58.5rem;
+        max-width: 32.7rem;
+        margin-top: -10rem;
+        margin-bottom: 10rem;
+        background: $color-white;
+        padding: 2.2rem;
+
+    }
+
 }
 
-body,
-#root {
-    min-height: 100%;
-    min-width: 100%;
+.curve {
+    display: none;
 }
 
-body {
-    margin: 0;
-    font-family: system-ui;
-    text-rendering: optimizeSpeed;
-    line-height: 1.2;
+.lines {
+    display: none;
 }
 
-a {
-    text-decoration-skip-ink: auto;
-}
+.form {
+    /*padding: 0 2.6rem;*/
+    &__input {
+        border: none;
+        border-bottom: 1px solid $secondary-ebony-clay;
+        font-size: 1.8rem;
+        line-height: 2.8rem;
+        letter-spacing: -0.225px;
+        color: inherit;
+        cursor: pointer;
+    }
 
-ul[role="list"],
-ol[role="list"] {
-    list-style: none;
-}
+    &__input::placeholder {
+        font-size: 1.8rem;
+        line-height: 2.8rem;
+        letter-spacing: -0.225px;
+        color: inherit;
+    }
 
-img {
-    max-width: 100%;
-    display: block;
-}
+    &__field {
+        margin: 0 auto;
+        margin-bottom: 1.2rem; 
+    }
 
-input,
-button, 
-textarea,
-select {
-    font: inherit;
-}
+    &__field--text {
+        width: 100%;
 
-@media (prefers-reduced-motion: reduce) {
-    *,
-    *::before,
-    *::after {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-        scroll-behavior: auto !important;
+        .form__input {
+            display: block;
+            width: 100%;
+            height: 4.5rem;
+            padding: 0.5rem 0;
+        }
+    }
+
+    &__field--number {
+        width: 100%;
+        /*height: 8.1rem;*/
+        position: relative;
+
+        label {
+            color: inherit;
+            font-family: inherit;
+            font-size: 1.8rem;
+            line-height: 2.5rem;
+            letter-spacing: -0.225px;
+            text-align: left;
+        }
+
+        .form__input {
+            width: 30%;
+            padding: 0.5rem;
+            margin: 0 0.3rem;
+            text-align: left;
+            cursor: pointer;
+
+            &--arrow {
+                position: relative;
+                min-width: 8.8rem;
+                border-bottom: none;
+
+                &:after {
+                    content: "\f078";
+                    font: normal normal normal 2rem/1 FontAwesome;
+                    color: $primary-beaver;
+                    right: 2rem;
+                    top: 1rem;
+                    height: 3.4rem;
+                    position: absolute;
+                }
+
+                select {
+                    appearance: none;
+                    width: 100%;
+                    max-width: 30rem;
+                    height: 4rem;
+                    line-height: 2.5rem;
+                    font-size: inherit;
+                    font-weight: 400;
+                    color: inherit;
+                    border: none;
+                    border-bottom: 1px solid $secondary-ebony-clay;
+                }
+            }
+        }
+    }
+    &__field-box {
+        position: relative;
+        @include flex (row, center);
+    }
+    &__field--people {
+        width: 100%;
+        text-align: center;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid $secondary-ebony-clay;
+        .form__input {
+            width: 70%;
+            text-align: center;
+            border: none;
+            padding-bottom: 1rem;
+            vertical-align: middle;
+            font-weight: $weight-bold;
+        }
+    }
+    
+    &__message {
+        display: block;
+        visibility: hidden;
+        font-weight: bold;
     }
 }
+
+.time, .date{
+    margin-top: -10px;
+}
+
