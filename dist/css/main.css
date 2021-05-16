@@ -203,91 +203,6 @@ body {
 }
 
 /* Form Buttons */
-.cta {
-  min-width: 37.5rem;
-  height: 33rem;
-  background-image: url(/images/homepage/ready-bg-mobile.jpg);
-  background-image: -webkit-image-set(url(/images/homepage/ready-bg-mobile.jpg) 1x, url(/images/homepage/ready-bg-mobile@2x.jpg) 2x);
-  background-image: image-set(url(/images/homepage/ready-bg-mobile.jpg) 1x, url(/images/homepage/ready-bg-mobile@2x.jpg) 2x);
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  align-items: center;
-}
-
-.cta__title {
-  color: #ffffff;
-  text-align: center;
-  margin-bottom: 28px;
-}
-
-.features {
-  min-height: 144.5rem;
-  text-align: center;
-  color: #242b38;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.features__area {
-  min-height: 68.3rem;
-  position: relative;
-}
-
-.features__area:last-child {
-  padding-top: 5.5rem;
-}
-
-.features__title {
-  max-width: 32.7rem;
-  padding: 3rem 0rem;
-  margin: auto;
-}
-
-.features__text {
-  max-width: 32.7rem;
-  margin-bottom: 8.7rem;
-}
-
-.features picture {
-  margin-top: -6.2rem;
-  position: relative;
-}
-
-.features img {
-  -webkit-box-shadow: 0 7.5rem 10rem -5rem rgba(56, 66, 85, 0.5);
-          box-shadow: 0 7.5rem 10rem -5rem rgba(56, 66, 85, 0.5);
-}
-
-.features .pattern {
-  padding-top: 4.3rem;
-  display: block;
-  margin: 0 auto;
-}
-
 footer {
   min-width: 37.5rem;
   min-height: 43.7rem;
@@ -375,91 +290,11 @@ footer {
 
 /* Mobile First Design */
 .intro {
-  /*position: relative;*/
-  min-width: 37.5rem;
-  min-height: 74.8rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #121212;
-  background-image: url(/images/homepage/hero-bg-mobile.jpg);
-  background-image: -webkit-image-set(url(/images/homepage/hero-bg-mobile.jpg) 1x, url(/images/homepage/hero-bg-mobile@2x.jpg) 2x);
-  background-image: image-set(url(/images/homepage/hero-bg-mobile.jpg) 1x, url(/images/homepage/hero-bg-mobile@2x.jpg) 2x);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top;
-  text-align: center;
-  color: #ffffff;
-}
-
-@media screen and (min-width: 768px) {
-  .intro {
-    background-image: url(/images/homepage/hero-bg-tablet.jpg);
-    background-image: -webkit-image-set(url(/images/homepage/hero-bg-tablet.jpg) 1x, url(/images/homepage/hero-bg-tablet@2x.jpg) 2x);
-    background-image: image-set(url(/images/homepage/hero-bg-tablet.jpg) 1x, url(/images/homepage/hero-bg-tablet@2x.jpg) 2x);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    min-height: 99.2rem;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  .intro {
-    background-image: url(/images/homepage/hero-bg-desktop.jpg);
-    background-image: -webkit-image-set(url(/images/homepage/hero-bg-desktop.jpg) 1x, url(/images/homepage/hero-bg-desktop@2x.jpg) 2x);
-    background-image: image-set(url(/images/homepage/hero-bg-desktop.jpg) 1x, url(/images/homepage/hero-bg-desktop@2x.jpg) 2x);
-    min-height: 82rem;
-    text-align: left;
-  }
-}
-
-.intro__container {
-  position: absolute;
-  width: 32.7rem;
-  min-height: 36.4rem;
-  margin-top: 12rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.intro__title {
-  margin-top: -1.8rem;
-}
-
-.intro__text {
-  margin-top: -2.5rem;
+  min-width: 375px;
+  min-height: 748px;
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
 }
 
 .event {
@@ -537,49 +372,5 @@ footer {
 
 * {
   outline: 1px solid black;
-}
-
-.bk-header {
-  background-color: #121212;
-  background-image: url(/images/booking/hero-bg-mobile.jpg);
-  background-image: -webkit-image-set(url(/images/booking/hero-bg-mobile.jpg) 1x, url(/images/booking/hero-bg-mobile@2x.jpg) 2x);
-  background-image: image-set(url(/images/booking/hero-bg-mobile.jpg) 1x, url(/images/booking/hero-bg-mobile@2x.jpg) 2x);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top;
-  text-align: center;
-  color: #ffffff;
-}
-
-@media screen and (min-width: 768px) {
-  .bk-header {
-    background-image: url(/images/booking/hero-bg-tablet.jpg);
-    background-image: -webkit-image-set(url(/images/booking/hero-bg-tablet.jpg) 1x, url(/images/booking/hero-bg-tablet@2x.jpg) 2x);
-    background-image: image-set(url(/images/booking/hero-bg-tablet.jpg) 1x, url(/images/booking/hero-bg-tablet@2x.jpg) 2x);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    min-height: 99.2rem;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  .bk-header {
-    background-image: url(/images/booking/hero-bg-desktop.jpg);
-    background-image: -webkit-image-set(url(/images/booking/hero-bg-desktop.jpg) 1x, url(/images/booking/hero-bg-desktop@2x.jpg) 2x);
-    background-image: image-set(url(/images/booking/hero-bg-desktop.jpg) 1x, url(/images/booking/hero-bg-desktop@2x.jpg) 2x);
-    min-height: 82rem;
-    text-align: left;
-  }
 }
 /*# sourceMappingURL=main.css.map */

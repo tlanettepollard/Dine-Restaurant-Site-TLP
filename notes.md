@@ -19,7 +19,7 @@ buttons: transparent for dark colored backgrounds and dark for white colored bac
 3/07/2021: Learned that appearance: none removes the arrow on the selector. 
 
 05/13/2021: Will add an updated Css Reset
-05/16/2021: Started working on file after time away.
+05/16/2021: Started working on file after time away. Started again. Erased code I had already. Won't do pull request yet. 
 
 
 

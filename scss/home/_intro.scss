@@ -1,61 +1,9 @@
 /* Mobile First Design */
 .intro {
-    /*position: relative;*/
-    min-width: 37.5rem;
-    min-height: 74.8rem;
-    @include flex (column, center);
-    background-color: $primary-cod-gray;
-    background-image: url(/images/homepage/hero-bg-mobile.jpg);
-    background-image: image-set(
-        url(/images/homepage/hero-bg-mobile.jpg) 1x,
-        url(/images/homepage/hero-bg-mobile@2x.jpg) 2x
-    );
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top;
-    text-align: center;
-    color: $color-white;
-
-    @include md-breakpoint {
-        background-image: url(/images/homepage/hero-bg-tablet.jpg);
-        background-image: image-set(
-            url(/images/homepage/hero-bg-tablet.jpg) 1x,
-            url(/images/homepage/hero-bg-tablet@2x.jpg) 2x
-        );
-
-        @include flex (column, center);
-        min-height: 99.2rem;
-    }
-    @include lg-breakpoint {
-        background-image: url(/images/homepage/hero-bg-desktop.jpg);
-        background-image: image-set(
-            url(/images/homepage/hero-bg-desktop.jpg) 1x,
-            url(/images/homepage/hero-bg-desktop@2x.jpg) 2x
-        );
-        min-height: 82rem;
-        text-align: left;
-        
-    }
-
-    &__container {
-        position: absolute;
-        width: 32.7rem;
-        min-height: 36.4rem;
-        margin-top: 12rem;
-        @include flex (column, space-between);
-
-    }
-    &__title {
-        margin-top: -1.8rem;
-    }
-    &__text {
-        margin-top: -2.5rem;
-    }
-
-    &__button {
-        
-    }
-
-    
+    min-width: 375px;
+    min-height: 748px;
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
 }
 
