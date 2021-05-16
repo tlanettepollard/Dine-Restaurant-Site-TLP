@@ -50,9 +50,9 @@ ol[role="list"] {
     list-style: none;
 }
 
-img {
+picture, img {
     max-width: 100%;
-    display: block;
+    display: inline-block;
 }
 
 input,

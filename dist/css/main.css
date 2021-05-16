@@ -58,9 +58,9 @@ ol[role="list"] {
   list-style: none;
 }
 
-img {
+picture, img {
   max-width: 100%;
-  display: block;
+  display: inline-block;
 }
 
 input,
@@ -205,31 +205,21 @@ body {
 
 /* Form Buttons */
 .features {
-  min-height: 1445px;
-  text-align: center;
-  color: #242b38;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  min-width: 375px;
+  min-height: 1457px;
 }
 
 .features__area {
-  min-height: 683px;
+  min-width: 327px;
+  min-height: 663px;
   position: relative;
 }
 
-.features__area:last-child {
-  padding-top: 55px;
+.features__title {
+  max-width: 327px;
+  font-size: 2.2rem !important;
+  padding: 30px 0;
+  margin: auto;
 }
 
 footer {
@@ -369,8 +359,8 @@ footer {
 }
 
 .intro__container {
-  position: relative;
-  width: 330px;
+  position: absolute;
+  min-width: 327px;
   height: 364px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -387,12 +377,8 @@ footer {
           align-items: center;
 }
 
-.intro__title {
-  font-size: 2.2rem !important;
-}
-
 .intro__text {
-  font-size: 0.82rem;
+  font-size: 0.85rem;
   margin-top: -2%;
 }
 
