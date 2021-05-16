@@ -204,6 +204,34 @@ body {
 }
 
 /* Form Buttons */
+.features {
+  min-height: 1445px;
+  text-align: center;
+  color: #242b38;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.features__area {
+  min-height: 683px;
+  position: relative;
+}
+
+.features__area:last-child {
+  padding-top: 55px;
+}
+
 footer {
   min-width: 37.5rem;
   min-height: 43.7rem;
@@ -310,7 +338,7 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #121212;
+  background: #121212;
   background-image: url(/images/homepage/hero-bg-mobile.jpg);
   background-image: -webkit-image-set(url(/images/homepage/hero-bg-mobile.jpg) 1x, url(/images/homepage/hero-bg-mobile@2x.jpg) 2x);
   background-image: image-set(url(/images/homepage/hero-bg-mobile.jpg) 1x, url(/images/homepage/hero-bg-mobile@2x.jpg) 2x);

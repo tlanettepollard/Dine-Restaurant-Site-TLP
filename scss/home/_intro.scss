@@ -7,7 +7,7 @@
     height: 100vh;
     margin: 0 auto;
     @include flex (column, center);
-    background-color: $primary-cod-gray;
+    background: $primary-cod-gray;
     background-image: url(/images/homepage/hero-bg-mobile.jpg);
     background-image: image-set(
         url(/images/homepage/hero-bg-mobile.jpg) 1x,
@@ -42,7 +42,6 @@
         position: relative;
         width: 330px;
         height: 364px;
-        //margin-top: 10rem;
         @include flex (column, space-between);
     }
 

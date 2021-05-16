@@ -1,1 +1,18 @@
 
+.features {
+    min-height: 1445px;
+    text-align: center;
+    color: $secondary-ebony-clay;
+    @include flex (column, space-between);
+
+    &__area {
+        min-height: 683px;
+        position: relative;
+    }
+    
+    &__area:last-child {
+        padding-top: 55px;
+    }
+
+    
+}
