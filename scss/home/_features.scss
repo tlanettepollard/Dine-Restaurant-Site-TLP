@@ -1,3 +1,34 @@
 .features {
+    min-height: 90.75rem;
+    text-align: center;
+    color: $secondary-ebony-clay;
+    @include flex (column, space-between);
+
+    &__area {
+        min-height: 4.269rem;
+        
+        position: relative;
+    }
+
+    &__area:last-child {
+       padding-bottom: 5.5rem;
+    }
+
+    &__title {
+       max-width: 100%;
+       padding: 0 20%;
+       font-size: 2rem !important; 
+       line-height: 3rem !important;
+    }
+
+    &__text {
+        max-width: 37.5rem;
+        padding: 0 18%;
+    }
+
+    picture {
+        margin-top: -6.2rem;
+        position: relative;
+    }
     
 }

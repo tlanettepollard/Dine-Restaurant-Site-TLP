@@ -204,6 +204,51 @@ body {
 }
 
 /* Form Buttons */
+.features {
+  min-height: 90.75rem;
+  text-align: center;
+  color: #242b38;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.features__area {
+  min-height: 4.269rem;
+  position: relative;
+}
+
+.features__area:last-child {
+  padding-bottom: 5.5rem;
+}
+
+.features__title {
+  max-width: 100%;
+  padding: 0 20%;
+  font-size: 2rem !important;
+  line-height: 3rem !important;
+}
+
+.features__text {
+  max-width: 37.5rem;
+  padding: 0 18%;
+}
+
+.features picture {
+  margin-top: -6.2rem;
+  position: relative;
+}
+
 footer {
   min-width: 37.5rem;
   min-height: 43.7rem;
