@@ -20,6 +20,9 @@ buttons: transparent for dark colored backgrounds and dark for white colored bac
 
 05/13/2021: Will add an updated Css Reset
 05/16/2021: Started working on file after time away. Started again. Erased code I had already. Won't do pull request yet. 
+05/22/2021: Just read an article about using custom HTML Tags instead of divs. Thought this would be a great time to give it a try. However, I decided to continue as I was going. 
+https://levelup.gitconnected.com/death-to-div-creating-a-better-html-4775793270fc
+
 
 
 
