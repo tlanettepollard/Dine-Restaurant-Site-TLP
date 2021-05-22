@@ -30,5 +30,14 @@
         margin-top: -6.2rem;
         position: relative;
     }
+
+    img {
+        box-shadow: $bshadow-1;
+    }
     
+    .pattern {
+        padding-top: 2.938rem;
+        display: block; 
+        margin: 0 auto;
+    }
 }

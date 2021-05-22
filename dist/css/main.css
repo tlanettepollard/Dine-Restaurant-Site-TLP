@@ -249,6 +249,17 @@ body {
   position: relative;
 }
 
+.features img {
+  -webkit-box-shadow: 0 7.5rem 10rem -5rem rgba(56, 66, 85, 0.5);
+          box-shadow: 0 7.5rem 10rem -5rem rgba(56, 66, 85, 0.5);
+}
+
+.features .pattern {
+  padding-top: 2.938rem;
+  display: block;
+  margin: 0 auto;
+}
+
 footer {
   min-width: 37.5rem;
   min-height: 43.7rem;
