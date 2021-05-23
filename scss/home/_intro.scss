@@ -1,13 +1,13 @@
 /* Mobile First Design */
 .intro {
     position: relative;
-    min-width: 375px;
-    min-height: 748px;
+    min-width: 23.438rem;
+    min-height: 46.75rem;
     width: 100vw;
     height: 100vh;
     margin: 0 auto;
     @include flex (column, center);
-    background: $primary-cod-gray;
+    background-color: $primary-cod-gray;
     background-image: url(/images/homepage/hero-bg-mobile.jpg);
     background-image: image-set(
         url(/images/homepage/hero-bg-mobile.jpg) 1x,
