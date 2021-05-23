@@ -296,6 +296,7 @@ footer {
 }
 
 .highlights {
+  position: relative;
   min-height: 107.5rem;
   background-color: #121212;
   color: #ffffff;
@@ -317,7 +318,8 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-width: 20.438rem;
+  width: 20.438rem;
+  margin: auto;
 }
 
 .highlights__header {
@@ -326,22 +328,25 @@ footer {
 
 .highlights__title {
   font-size: 2rem !important;
-  padding: 0 20%;
 }
 
 .highlights__text {
   font-size: 0.95rem !important;
-  padding: 0 17%;
 }
 
 .highlights__area .menu-text .menu-title {
-  padding-top: 2.063rem;
+  padding-top: 2.125rem;
   font-size: 1rem !important;
 }
 
 .highlights__area .menu-text .menu-paragraph {
   font-size: 1rem !important;
-  padding: 0 25%;
+  margin-bottom: 2rem;
+  border-bottom: 1px #242b38 solid;
+}
+
+.highlights__area .menu-text .border {
+  border-bottom: none;
 }
 
 /* Mobile First Design */

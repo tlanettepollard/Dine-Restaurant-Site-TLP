@@ -1,4 +1,5 @@
 .highlights {
+    position: relative;
     min-height: 107.5rem;
     background-color: $primary-cod-gray;
     color: $color-white;
@@ -7,7 +8,9 @@
 
     &__container {
         @include flex (column, center);
-        min-width: 20.438rem;
+        //flex-wrap: wrap;
+        width: 20.438rem;
+        margin: auto;
     }
 
     &__header {
@@ -16,24 +19,35 @@
 
     &__title {
         font-size: 2rem !important;
-        padding: 0 20%;
+        //padding: 0 20%;
     }
 
     &__text {
         font-size: 0.95rem !important;
-        padding: 0 17%;
+        //padding: 0 17%;
     }
 
     &__area {
+        .food-items {
+            picture {
+
+            }
+        }
         .menu-text {
             .menu-title {
-                padding-top: 2.063rem;
+                padding-top: 2.125rem;
                 font-size: 1rem !important;
                 //font-weight: $weight-regular !important;
             }
             .menu-paragraph {
                 font-size: 1rem !important;
-                padding: 0 25%;
+                margin-bottom: 2rem;
+                //padding: 0 25%;
+                border-bottom: 1px $secondary-ebony-clay solid;
+            }
+
+            .border {
+                border-bottom: none;
             }
         }
     }
