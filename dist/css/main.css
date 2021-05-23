@@ -296,11 +296,11 @@ footer {
 }
 
 .highlights {
-  height: 172.0rem;
+  min-height: 107.5rem;
   background-color: #121212;
   color: #ffffff;
   text-align: center;
-  padding: 7rem 0;
+  padding: 4.5rem 0;
 }
 
 .highlights__container {
@@ -317,32 +317,31 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  width: 32.7rem;
-  margin: auto;
+  min-width: 20.438rem;
 }
 
 .highlights__header {
-  margin-bottom: 6rem;
+  margin-bottom: 5.188rem;
 }
 
 .highlights__title {
-  padding: 2rem 0;
+  font-size: 2rem !important;
+  padding: 0 20%;
 }
 
-.menu-title {
-  padding-top: 2.4rem;
+.highlights__text {
+  font-size: 0.95rem !important;
+  padding: 0 17%;
 }
 
-.menu-paragraph {
-  margin-bottom: 2rem;
-  padding: 0 1.6rem 2.4rem;
-  border-bottom: 1px #242b38 solid;
+.highlights__area .menu-text .menu-title {
+  padding-top: 2.063rem;
+  font-size: 1rem !important;
 }
 
-.border {
-  border-bottom: none;
+.highlights__area .menu-text .menu-paragraph {
+  font-size: 1rem !important;
+  padding: 0 25%;
 }
 
 /* Mobile First Design */
