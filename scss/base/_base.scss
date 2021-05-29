@@ -7,6 +7,7 @@
 html {
     height: 100%;
     width: 100%;
+    font-size: 62.5%;
 }
 
 html:focus-within {
@@ -36,6 +37,7 @@ body,
 
 body {
     margin: 0;
+    font-size: 10px;
     font-family: system-ui;
     text-rendering: optimizeSpeed;
     line-height: 1.2;
@@ -76,7 +78,55 @@ select {
 
 
 /* Base Styles */
+body {
+    font-family: $spartan;
+}
 
+h1 {
+    font-size: 6.4em;
+    line-height: 72px;
+    letter-spacing: -0.8;
+    font-weight: $weight-light;
+}
+
+h1 .regular {
+    font-size: 6.4em;
+    line-height: 72px;
+    letter-spacing: -0.8;
+    font-weight: $weight-regular;
+    
+}
+
+h2  {
+    font-size: 4em;
+    font-weight: $weight-bold;
+    line-height: 56px;
+    letter-spacing: -0.5;
+}
+
+h3 .regular {
+    font-size: 1.8em;
+    font-weight: $weight-regular;
+}
+
+h3 .bold {
+    font-size: 1.8em;
+}
+
+h3 .semi-bold {
+    font-size: 1.4em;
+}
+
+p .one {
+    font-size: 1.8em;
+    font-weight: $weight-regular;
+    line-height: 30px;
+    letter-spacing: -0.22;
+}
+
+p .two {
+    font-size: 1.5em;
+}
 
 .curve-left,
 .curve-right,

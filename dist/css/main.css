@@ -13,6 +13,7 @@
 html {
   height: 100%;
   width: 100%;
+  font-size: 62.5%;
 }
 
 html:focus-within {
@@ -44,6 +45,7 @@ body,
 
 body {
   margin: 0;
+  font-size: 10px;
   font-family: system-ui;
   text-rendering: optimizeSpeed;
   line-height: 1.2;
@@ -85,6 +87,55 @@ select {
 }
 
 /* Base Styles */
+body {
+  font-family: "Spartan", sans-serif;
+}
+
+h1 {
+  font-size: 6.4em;
+  line-height: 72px;
+  letter-spacing: -0.8;
+  font-weight: 300;
+}
+
+h1 .regular {
+  font-size: 6.4em;
+  line-height: 72px;
+  letter-spacing: -0.8;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 4em;
+  font-weight: 700;
+  line-height: 56px;
+  letter-spacing: -0.5;
+}
+
+h3 .regular {
+  font-size: 1.8em;
+  font-weight: 400;
+}
+
+h3 .bold {
+  font-size: 1.8em;
+}
+
+h3 .semi-bold {
+  font-size: 1.4em;
+}
+
+p .one {
+  font-size: 1.8em;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: -0.22;
+}
+
+p .two {
+  font-size: 1.5em;
+}
+
 .curve-left,
 .curve-right,
 .lines {
@@ -141,66 +192,6 @@ select {
   max-width: 30.3rem;
   width: 100%;
   margin: 0 auto;
-}
-
-h1, h2, h3, body {
-  font-family: "Spartan", sans-serif;
-}
-
-h1 {
-  font-size: 6.4rem;
-  line-height: 7.2rem;
-  font-weight: 300;
-}
-
-.bold-h2 {
-  font-size: 3.2rem;
-  font-weight: 700;
-  line-height: 4rem;
-  letter-spacing: -0.4px;
-}
-
-.regular-h2 {
-  font-size: 3.2rem;
-  line-height: 3.7rem;
-  font-weight: 400;
-}
-
-.bold-h3 {
-  font-size: 1.8rem;
-  line-height: 2.8rem;
-  font-weight: 700;
-}
-
-.semi-bold-h3 {
-  font-size: 1.4rem;
-  line-height: 2.8rem;
-  font-weight: 600;
-  letter-spacing: 2px;
-}
-
-body {
-  font-family: "Spartan", sans-serif;
-  font-size: 15px;
-  line-height: 28px;
-  letter-spacing: -0.19px;
-  font-weight: 400;
-}
-
-@media screen and (min-width: 768px) {
-  body {
-    font-size: 18px;
-    line-height: 30px;
-    letter-spacing: -0.22px;
-    font-weight: 400;
-  }
-}
-
-.paragraph {
-  font-size: 1.5rem;
-  font-weight: 400;
-  letter-spacing: -0.1875px;
-  line-height: 2.5rem;
 }
 
 /* Form Buttons */
@@ -304,7 +295,7 @@ footer {
   padding: 4rem 0;
 }
 
-.highlights__container {
+.highlights .menu__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -318,8 +309,25 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-width: 20.438rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 21rem;
   margin: auto;
+}
+
+.highlights .menu__container .menu-header {
+  margin-bottom: 1.7rem;
+}
+
+.highlights .menu__container .menu-header .menu-title {
+  width: 21rem;
+  font-size: 1.85rem !important;
+  margin: auto;
+}
+
+.highlights .menu__container .menu-header .menu-text {
+  font-size: 0.85rem;
+  line-height: 2rem;
 }
 
 /* Mobile First Design */
@@ -374,8 +382,8 @@ footer {
 
 .intro__container {
   position: absolute;
-  min-width: 327px;
-  height: 364px;
+  width: 33rem;
+  height: 36.4rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -392,11 +400,10 @@ footer {
 }
 
 .intro__title {
-  font-size: 2.75rem !important;
+  font-weight: 400 !important;
 }
 
 .intro__text {
-  font-size: 0.85rem;
   margin-top: -2%;
   padding: 0 13%;
 }
