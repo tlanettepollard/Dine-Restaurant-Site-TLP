@@ -304,67 +304,6 @@ footer {
   padding: 4rem 0;
 }
 
-.highlights__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 20.438rem;
-  margin: auto;
-}
-
-.highlights__header {
-  margin-bottom: 5.188rem;
-}
-
-.highlights__title {
-  font-size: 2rem !important;
-}
-
-.highlights__text {
-  font-size: 0.95rem !important;
-}
-
-.highlights__area .food-items {
-  width: 20.438rem;
-}
-
-.highlights__area .food-items picture {
-  -webkit-box-shadow: 0 7.5rem 10rem -5rem rgba(239, 241, 247, 0.5);
-          box-shadow: 0 7.5rem 10rem -5rem rgba(239, 241, 247, 0.5);
-}
-
-.highlights__area .menu-text {
-  width: 17.5rem;
-  padding: 0px;
-  margin: auto;
-}
-
-.highlights__area .menu-text .menu-title {
-  padding-top: 1rem;
-  font-size: 1rem !important;
-}
-
-.highlights__area .menu-text .menu-paragraph {
-  font-size: 1rem !important;
-  margin-bottom: 1rem;
-  padding-bottom: 3rem;
-  border-bottom: 1px #242b38 solid;
-}
-
-.highlights__area .menu-text .border {
-  border-bottom: none;
-}
-
 /* Mobile First Design */
 .intro {
   position: relative;
@@ -449,13 +388,48 @@ footer {
 }
 
 .event {
-  min-height: 920px;
+  min-height: 57.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .event__container {
-  min-width: 327px;
-  min-height: 600px;
+  min-width: 20.438rem;
+  min-height: 37.5rem;
   margin: 5rem 0 7.75rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.event__photos {
+  position: relative;
+}
+
+.event__photos .event-photo {
+  display: none;
+  -webkit-box-shadow: 0 7.5rem 10rem -5rem rgba(56, 66, 85, 0.5);
+          box-shadow: 0 7.5rem 10rem -5rem rgba(56, 66, 85, 0.5);
+}
+
+.event__photos .event-photo--active {
+  max-width: 34.1rem;
+  max-height: 37.5rem;
 }
 
 * {

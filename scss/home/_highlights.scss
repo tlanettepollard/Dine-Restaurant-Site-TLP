@@ -6,56 +6,7 @@
     text-align: center;
     padding: 4rem 0;
 
-    &__container {
-        @include flex (column, center);
-        //flex-wrap: wrap;
-        width: 20.438rem;
-        margin: auto;
-    }
-
-    &__header {
-        margin-bottom: 5.188rem;
-    }
-
-    &__title {
-        font-size: 2rem !important;
-        //padding: 0 20%;
-    }
-
-    &__text {
-        font-size: 0.95rem !important;
-        //padding: 0 17%;
-    }
-
-    &__area {
-
-        .food-items {
-            width: 20.438rem;
-            picture {
-                box-shadow: $bshadow-4;
-            }
-        }
-        .menu-text {
-            width: 17.5rem;
-            padding: 0px;
-            margin: auto;
-            .menu-title {
-                padding-top: 1rem;
-                font-size: 1rem !important;
-                //font-weight: $weight-regular !important;
-            }
-            .menu-paragraph {
-                font-size: 1rem !important;
-                margin-bottom: 1rem;
-                padding-bottom: 3rem;
-                border-bottom: 1px $secondary-ebony-clay solid;
-            }
-
-            .border {
-                border-bottom: none;
-            }
-        }
-    }
+    
 }
     
 
