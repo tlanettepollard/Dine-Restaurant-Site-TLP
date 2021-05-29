@@ -1,76 +1,13 @@
 .event {
-    min-height: 84rem;
-    position: relative;
-    text-align: center;
-    margin: 8rem 0;
-    &__container {
-        min-width: 32.7rem;
-    }
+   min-height: 920px;
+   
+   &__container {
+       min-width: 327px;
+       min-height: 600px;
+       margin: 5rem 0 7.75rem 0;
 
-    &__photos {
-        position: relative;
-    }
-    &__photo {
-        display: none;
-        box-shadow: $bshadow-1;
-    }
-    &__photo--active {
-        max-width: 40rem;
-        max-height: 40rem;
-        display: inline-block;
-        margin-bottom: 4rem;
-        z-index: 1;
-    }
-    &__names {
-
-    }
-
-    &__list {
-        text-transform: uppercase;
-        position: relative;
-        margin-bottom: 3rem;
-    }
-
-    &__item {
-        opacity: 0.5;
-        cursor: pointer;
-        padding-bottom: 1.5rem;
-    } 
-    &__item--active {
-        color: $primary-cod-gray;
-        opacity: 1;
-    }
-
-    &__line {
-        width: 4.8rem;
-        height: 0.1rem;
-        background-color: $primary-beaver;
-        visibility: hidden;
-        margin: 0 auto;
-        padding: 0;
-    }
-
-    &__line--active {
-        visibility: visible;
-        z-index: -5;
-    }
-
-    &__content {
-        display: none;
-        padding-bottom: 1rem;
-    }
-
-    &__title {
-
-    }
-
-    &__paragraph {
-        padding: 2rem 5.3rem;
-    }
-
-    &__content--active {
-        display: block;
-    }
+   }
+    
 
 }
 

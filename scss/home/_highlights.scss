@@ -4,7 +4,7 @@
     background-color: $primary-cod-gray;
     color: $color-white;
     text-align: center;
-    padding: 4.5rem 0;
+    padding: 4rem 0;
 
     &__container {
         @include flex (column, center);
@@ -28,12 +28,17 @@
     }
 
     &__area {
+
         .food-items {
+            width: 20.438rem;
             picture {
                 box-shadow: $bshadow-4;
             }
         }
         .menu-text {
+            width: 17.5rem;
+            padding: 0px;
+            margin: auto;
             .menu-title {
                 padding-top: 1rem;
                 font-size: 1rem !important;
