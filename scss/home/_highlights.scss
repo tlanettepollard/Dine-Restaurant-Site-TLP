@@ -6,7 +6,11 @@
     text-align: center;
     padding: 4rem 0;
 
-    
+    &__container {
+        @include flex (column, space-evenly);
+        min-width: 20.438rem;
+        margin: auto; 
+    }
 }
     
 
