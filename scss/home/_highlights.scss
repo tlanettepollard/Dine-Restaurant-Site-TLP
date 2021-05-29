@@ -30,19 +30,19 @@
     &__area {
         .food-items {
             picture {
-
+                box-shadow: $bshadow-4;
             }
         }
         .menu-text {
             .menu-title {
-                padding-top: 2.125rem;
+                padding-top: 1rem;
                 font-size: 1rem !important;
                 //font-weight: $weight-regular !important;
             }
             .menu-paragraph {
                 font-size: 1rem !important;
-                margin-bottom: 2rem;
-                //padding: 0 25%;
+                margin-bottom: 1rem;
+                padding-bottom: 3rem;
                 border-bottom: 1px $secondary-ebony-clay solid;
             }
 

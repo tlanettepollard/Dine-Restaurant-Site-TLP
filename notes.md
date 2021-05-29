@@ -23,6 +23,10 @@ buttons: transparent for dark colored backgrounds and dark for white colored bac
 05/22/2021: Just read an article about using custom HTML Tags instead of divs. Thought this would be a great time to give it a try. However, I decided to continue as I was going. 
 https://levelup.gitconnected.com/death-to-div-creating-a-better-html-4775793270fc
 
+05/29/2021: Learned about using px for root/html, then rem for components and em for text elements 
+ Used 62.5% for html font-size based on 16px default size; set body to 10px in case 16px isn't recognized; modules (main elements) should be rem; text elements are em;
+ https://css-tricks.com/rems-ems/
+
 
 
 

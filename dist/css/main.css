@@ -334,14 +334,20 @@ footer {
   font-size: 0.95rem !important;
 }
 
+.highlights__area .food-items picture {
+  -webkit-box-shadow: 0 7.5rem 10rem -5rem rgba(239, 241, 247, 0.5);
+          box-shadow: 0 7.5rem 10rem -5rem rgba(239, 241, 247, 0.5);
+}
+
 .highlights__area .menu-text .menu-title {
-  padding-top: 2.125rem;
+  padding-top: 1rem;
   font-size: 1rem !important;
 }
 
 .highlights__area .menu-text .menu-paragraph {
   font-size: 1rem !important;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+  padding-bottom: 3rem;
   border-bottom: 1px #242b38 solid;
 }
 
