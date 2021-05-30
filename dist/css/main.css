@@ -189,6 +189,8 @@ body {
   -ms-grid-column: 1;
   grid-area: features;
   height: 145.5rem;
+  grid-row-start: 2;
+  grid-row-end: 3;
 }
 
 .footer {
@@ -217,6 +219,8 @@ body {
   -ms-grid-column: 1;
   grid-area: highlights;
   height: 171.8rem;
+  grid-row-start: 3;
+  grid-row-end: 4;
 }
 
 /* Mobile First Design */
@@ -225,12 +229,16 @@ body {
   -ms-grid-column: 1;
   grid-area: hero;
   height: 74.8rem;
+  grid-row-start: 1;
+  grid-row-end: 2;
 }
 
 .events {
   -ms-grid-row: 4;
   -ms-grid-column: 1;
   grid-area: events;
+  grid-row-start: 4;
+  grid-row-end: 5;
 }
 
 * {

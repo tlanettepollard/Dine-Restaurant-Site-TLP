@@ -3,7 +3,8 @@
 .hero {
    grid-area: hero;
    height: 74.8rem;
-   
+   grid-row-start: 1;
+   grid-row-end: 2;
 
 }
 
