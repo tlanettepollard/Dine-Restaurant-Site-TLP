@@ -92,11 +92,10 @@ select {
   display: grid;
   -ms-grid-columns: none;
       grid-template-columns: none;
-  -ms-grid-rows: 5, 1fr;
-      grid-template-rows: 5, 1fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
       grid-template-areas: "hero" "features" "highlights" "events" "cta" "footer";
-  grid-auto-flow: row;
-  min-width: 100%;
+  width: 100%;
 }
 
 /* Typography */
@@ -105,6 +104,21 @@ h2,
 h3,
 body {
   font-family: "Spartan", sans-serif;
+}
+
+h1.light {
+  font-size: 6.4rem;
+  font-weight: 300;
+}
+
+h2.regular {
+  font-size: 4rem;
+  font-weight: 400;
+}
+
+h3.regular {
+  font-size: 1.8rem;
+  font-weight: 400;
 }
 
 /* Design Elements */
@@ -179,9 +193,15 @@ body {
   -ms-grid-row: 5;
   -ms-grid-column: 1;
   grid-area: cta;
-  grid-row-start: 5;
-  grid-row-end: 6;
+  -ms-grid-row: 5;
+  grid-row: 5;
   height: 32.8rem;
+  color: #ffffff;
+  background-image: url(/images/homepage/ready-bg-mobile.jpg);
+  background-image: image-reset(url(/images/homepage/ready-bg-mobile.jpg) 1x, url(/images/homepage/ready-bg-mobile@2x.jpg) 2x);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .features {
@@ -189,19 +209,23 @@ body {
   -ms-grid-column: 1;
   grid-area: features;
   height: 145.5rem;
+  -ms-grid-row: 2;
+  grid-row: 2;
 }
 
 .footer {
   -ms-grid-row: 6;
   -ms-grid-column: 1;
   grid-area: footer;
-  grid-row-start: 6;
-  grid-row-end: 7;
+  -ms-grid-row: 6;
+  grid-row: 6;
   height: 44rem;
 }
 
 /* Attribution */
 .attribution {
+  height: 5rem;
+  margin-top: 5rem;
   background-color: #121212;
   font-size: 11px;
   text-align: center;
@@ -217,6 +241,8 @@ body {
   -ms-grid-column: 1;
   grid-area: highlights;
   height: 171.8rem;
+  -ms-grid-row: 3;
+  grid-row: 3;
 }
 
 /* Mobile First Design */
@@ -225,12 +251,17 @@ body {
   -ms-grid-column: 1;
   grid-area: hero;
   height: 74.8rem;
+  -ms-grid-row: 1;
+  grid-row: 1;
 }
 
 .events {
   -ms-grid-row: 4;
   -ms-grid-column: 1;
   grid-area: events;
+  -ms-grid-row: 4;
+  grid-row: 4;
+  height: 104.6rem;
 }
 
 * {

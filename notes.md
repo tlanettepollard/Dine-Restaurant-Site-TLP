@@ -206,3 +206,8 @@ background-image: url(/images/homepage/hero-bg-mobile.jpg);
         min-height: 820px;
         text-align: left;
     }
+
+
+    
+    div sizes: 
+grid-template-rows: 74.8rem 145.5rem 171.8rem 104.6rem 32.8rem 44rem;
