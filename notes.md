@@ -27,7 +27,7 @@ https://levelup.gitconnected.com/death-to-div-creating-a-better-html-4775793270f
  Used 62.5% for html font-size based on 16px default size; set body to 10px in case 16px isn't recognized; modules (main elements) should be rem; text elements are em;
  https://css-tricks.com/rems-ems/
 
-
+05/30/2021: Starting my page styling over. I feel like an imposter. I need to make it my own. 
 
 
 
@@ -178,3 +178,31 @@ Reservations.scss
     margin-top: -10px;
 }
 
+Events Section
+background-image: url(/images/homepage/hero-bg-mobile.jpg);
+    background-image: image-set(
+        url(/images/homepage/hero-bg-mobile.jpg) 1x,
+        url(/images/homepage/hero-bg-mobile@2x.jpg) 2x
+    );
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+
+@include md-breakpoint {
+        background-image: url(/images/homepage/hero-bg-tablet.jpg);
+        background-image: image-set(
+            url(/images/homepage/hero-bg-tablet.jpg) 1x,
+            url(/images/homepage/hero-bg-tablet@2x.jpg) 2x
+        );
+        min-height: 992px;
+    }
+
+    @include lg-breakpoint {
+        background-image: url(/images/homepage/locally-sourced-desktop.jpg);
+        background-image: image-set(
+            url(/images/homepage/hero-bg-desktop.jpg) 1x,
+            url(/images/homepage/hero-bg-desktop@2x.jpg) 2x
+        );
+        min-height: 820px;
+        text-align: left;
+    }

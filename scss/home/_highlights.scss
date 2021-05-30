@@ -1,30 +1,3 @@
-.highlights {
-    position: relative;
-    min-height: 107.5rem;
-    background-color: $primary-cod-gray;
-    color: $color-white;
-    text-align: center;
-    padding: 4rem 0;
 
-    .menu__container {
-        @include flex (column, space-evenly);
-        flex-wrap: wrap;
-        width: 21rem;
-        margin: auto; 
-
-        .menu-header {
-            margin-bottom: 1.7rem;
-            .menu-title {
-                width: 21rem;
-                font-size: 1.85rem !important;
-                margin: auto;
-            }
-            .menu-text{
-                font-size: 0.85rem;
-                line-height: 2rem;
-            }
-        }
-    }
-}
     
 
