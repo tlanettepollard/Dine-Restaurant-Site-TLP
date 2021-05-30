@@ -186,6 +186,15 @@ body {
   color: white;
 }
 
+.highlights {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: highlights;
+  height: 171.8rem;
+  background-color: #121212;
+  color: #ffffff;
+}
+
 /* Mobile First Design */
 .hero {
   -ms-grid-row: 1;
