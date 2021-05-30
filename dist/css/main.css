@@ -11,7 +11,7 @@
 }
 
 html {
-  height: 100%;
+  height: 100vh;
   width: 100%;
   font-size: 62.5%;
 }
@@ -28,11 +28,10 @@ body,
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
-  display: -ms-grid;
-  display: grid;
   place-content: center;
   text-align: center;
   position: relative;
+  overflow-y: scroll;
   overflow-wrap: break-word;
   min-width: 0;
   font-size: 10px;
@@ -40,7 +39,7 @@ body,
 
 body,
 #root {
-  min-height: 100%;
+  min-height: 100vh;
   min-width: 100%;
 }
 
@@ -91,11 +90,13 @@ select {
 .main {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  -ms-grid-rows: ()[1fr];
-      grid-template-rows: repeat(1fr);
+  -ms-grid-columns: none;
+      grid-template-columns: none;
+  -ms-grid-rows: 5, 1fr;
+      grid-template-rows: 5, 1fr;
       grid-template-areas: "hero" "features" "highlights" "events" "cta" "footer";
+  grid-auto-flow: row;
+  min-width: 100%;
 }
 
 /* Typography */
@@ -107,6 +108,13 @@ body {
 }
 
 /* Design Elements */
+.hero,
+.highlights,
+.footer {
+  background-color: #121212;
+  color: #ffffff;
+}
+
 .curve-left,
 .curve-right,
 .lines {
@@ -167,11 +175,29 @@ body {
 }
 
 /* Form Buttons */
+.cta {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: cta;
+  grid-row-start: 5;
+  grid-row-end: 6;
+  height: 32.8rem;
+}
+
 .features {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: features;
   height: 145.5rem;
+}
+
+.footer {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  grid-area: footer;
+  grid-row-start: 6;
+  grid-row-end: 7;
+  height: 44rem;
 }
 
 /* Attribution */
@@ -191,8 +217,6 @@ body {
   -ms-grid-column: 1;
   grid-area: highlights;
   height: 171.8rem;
-  background-color: #121212;
-  color: #ffffff;
 }
 
 /* Mobile First Design */
@@ -201,8 +225,12 @@ body {
   -ms-grid-column: 1;
   grid-area: hero;
   height: 74.8rem;
-  background-color: #121212;
-  color: #ffffff;
+}
+
+.events {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: events;
 }
 
 * {
