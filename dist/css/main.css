@@ -107,6 +107,21 @@ body {
   font-family: "Spartan", sans-serif;
 }
 
+h1.light {
+  font-size: 6.4rem;
+  font-weight: 300;
+}
+
+h2.regular {
+  font-size: 4rem;
+  font-weight: 400;
+}
+
+h3 .regular {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
 /* Design Elements */
 .hero,
 .highlights,
@@ -182,6 +197,12 @@ body {
   grid-row-start: 5;
   grid-row-end: 6;
   height: 32.8rem;
+  color: #ffffff;
+  background-image: url(/images/homepage/ready-bg-mobile.jpg);
+  background-image: image-reset(url(/images/homepage/ready-bg-mobile.jpg) 1x, url(/images/homepage/ready-bg-mobile@2x.jpg) 2x);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .features {
@@ -204,6 +225,8 @@ body {
 
 /* Attribution */
 .attribution {
+  height: 5rem;
+  margin-top: 5rem;
   background-color: #121212;
   font-size: 11px;
   text-align: center;

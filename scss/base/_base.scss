@@ -105,20 +105,23 @@ body {
     font-family: $spartan;
 }
 
-h1 {
+h1.light {
+  font-size: 6.4rem;
+  font-weight: $weight-light;  
+}
+
+h1.regular {
     
 }
 
-h1 .regular {
-    
-}
-
-h2  {
-    
+h2.regular  {
+   font-size: 4rem; 
+   font-weight: $weight-regular;
 }
 
 h3 .regular {
-    
+    font-size: 1.8rem;
+    font-weight: $weight-regular;
 }
 
 h3 .bold {
