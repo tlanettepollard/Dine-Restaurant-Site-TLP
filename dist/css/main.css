@@ -35,6 +35,7 @@ body,
   position: relative;
   overflow-wrap: break-word;
   min-width: 0;
+  font-size: 10px;
 }
 
 body,
@@ -87,6 +88,16 @@ select {
 }
 
 /* Base Styles */
+.main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: ()[1fr];
+      grid-template-rows: repeat(1fr);
+      grid-template-areas: "hero" "features" "highlights" "events" "cta" "footer";
+}
+
 /* Typography */
 h1,
 h2,
@@ -156,6 +167,13 @@ body {
 }
 
 /* Form Buttons */
+.features {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: features;
+  height: 145.5rem;
+}
+
 /* Attribution */
 .attribution {
   background-color: #121212;
@@ -169,6 +187,15 @@ body {
 }
 
 /* Mobile First Design */
+.hero {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: hero;
+  height: 74.8rem;
+  background-color: #121212;
+  color: #ffffff;
+}
+
 * {
   outline: 1px solid black;
 }

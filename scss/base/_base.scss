@@ -27,6 +27,7 @@ body,
     position: relative;
     overflow-wrap: break-word;
     min-width: 0;
+    font-size: 10px;
 }
 
 body,
@@ -80,6 +81,18 @@ select {
 
 /* Base Styles */
 
+.main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1fr);
+    grid-template-areas: 
+        "hero"
+        "features"
+        "highlights"
+        "events"
+        "cta"
+        "footer";
+}
 /* Typography */
 
 h1,
