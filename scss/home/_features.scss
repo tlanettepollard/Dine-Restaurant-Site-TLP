@@ -1,6 +1,46 @@
 
 .features {
     grid-area: features;
-    height: 145.5rem;
     grid-row: 2;
+    min-height: 144.6rem;
+    @include flex (column, space-evenly);
+    text-align: center;
+
+      &__container {
+          min-height: 68.3rem;
+          position: relative;
+      } 
+
+      &__picture {
+          margin-top: -10rem;
+      }
+       
+     .pattern {
+         padding-top: 4rem;
+         display: block;
+         margin: 0 auto;
+     }
+
+     .curve {
+         z-index: -1;
+     }
+
+     &__content {
+         .features-title {
+            max-width: 30rem;
+            margin: auto;
+            padding: 1rem 0;
+            
+         }
+
+         .features-text {
+             max-width: 45.1rem;
+             margin: auto;
+             padding: 0 3rem;
+             
+         }
+     }  
 }
+
+
+

@@ -198,7 +198,7 @@ p.two {
   width: 100%;
   height: 1000%;
   padding: 20px 10px;
-  font-size: 1rem;
+  font-size: 1.4rem;
   line-height: 1.6rem;
   letter-spacing: 0.8px;
   text-transform: uppercase;
@@ -263,9 +263,54 @@ p.two {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: features;
-  height: 145.5rem;
   -ms-grid-row: 2;
   grid-row: 2;
+  min-height: 144.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.features__container {
+  min-height: 68.3rem;
+  position: relative;
+}
+
+.features__picture {
+  margin-top: -10rem;
+}
+
+.features .pattern {
+  padding-top: 4rem;
+  display: block;
+  margin: 0 auto;
+}
+
+.features .curve {
+  z-index: -1;
+}
+
+.features__content .features-title {
+  max-width: 30rem;
+  margin: auto;
+  padding: 1rem 0;
+}
+
+.features__content .features-text {
+  max-width: 45.1rem;
+  margin: auto;
+  padding: 0 3rem;
 }
 
 .footer {
@@ -323,7 +368,7 @@ p.two {
     background-image: url(/images/homepage/hero-bg-tablet.jpg);
     background-image: -webkit-image-set(url(/images/homepage/hero-bg-tablet.jpg) 1x, url(/images/homepage/hero-bg-tablet@2x.jpg) 2x);
     background-image: image-set(url(/images/homepage/hero-bg-tablet.jpg) 1x, url(/images/homepage/hero-bg-tablet@2x.jpg) 2x);
-    min-height: 992px;
+    min-height: 99.2rem;
   }
 }
 
@@ -332,7 +377,7 @@ p.two {
     background-image: url(/images/homepage/locally-sourced-desktop.jpg);
     background-image: -webkit-image-set(url(/images/homepage/hero-bg-desktop.jpg) 1x, url(/images/homepage/hero-bg-desktop@2x.jpg) 2x);
     background-image: image-set(url(/images/homepage/hero-bg-desktop.jpg) 1x, url(/images/homepage/hero-bg-desktop@2x.jpg) 2x);
-    min-height: 820px;
+    min-height: 82rem;
     text-align: left;
   }
 }
@@ -367,7 +412,7 @@ p.two {
 }
 
 .hero__button {
-  margin-top: 1rem;
+  margin-top: 3rem;
 }
 
 .events {
