@@ -32,3 +32,6 @@ document.getElementById("event-2").addEventListener("click", () => {
 document.getElementById("event-3").addEventListener("click", () => {
     toggleItem(3);
 });
+
+
+// Form
