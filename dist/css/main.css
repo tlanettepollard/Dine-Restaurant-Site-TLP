@@ -273,9 +273,9 @@ p.two {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -284,33 +284,15 @@ p.two {
 
 .features__container {
   min-height: 68.3rem;
+}
+
+.features picture {
+  margin-top: -7.2rem;
   position: relative;
 }
 
-.features__picture {
-  margin-top: -10rem;
-}
-
 .features .pattern {
-  padding-top: 4rem;
-  display: block;
-  margin: 0 auto;
-}
-
-.features .curve {
-  z-index: -1;
-}
-
-.features__content .features-title {
-  max-width: 30rem;
-  margin: auto;
-  padding: 1rem 0;
-}
-
-.features__content .features-text {
-  max-width: 45.1rem;
-  margin: auto;
-  padding: 0 3rem;
+  margin: 2rem 0;
 }
 
 .footer {
