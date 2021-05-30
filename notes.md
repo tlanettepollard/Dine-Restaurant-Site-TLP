@@ -27,7 +27,7 @@ https://levelup.gitconnected.com/death-to-div-creating-a-better-html-4775793270f
  Used 62.5% for html font-size based on 16px default size; set body to 10px in case 16px isn't recognized; modules (main elements) should be rem; text elements are em;
  https://css-tricks.com/rems-ems/
 
-05/30/2021: Starting my page styling over. I feel like an imposter. I need to make it my own. I decided to use CSS Grid this time. 
+05/30/2021: Starting my page styling over. I feel like an imposter. I need to make it my own. I decided to use CSS Grid this time. I'm learning that I need to let flex box work for me when I am positioning elements. 
 
 
 

@@ -286,6 +286,17 @@ p.two {
   min-height: 68.3rem;
 }
 
+.features .features-title {
+  width: 30rem;
+  margin: auto;
+}
+
+.features .features-text {
+  width: 36rem;
+  margin: auto;
+  padding: 2rem 0;
+}
+
 .features picture {
   margin-top: -7.2rem;
   position: relative;
@@ -322,7 +333,7 @@ p.two {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: highlights;
-  height: 171.8rem;
+  height: 172rem;
   -ms-grid-row: 3;
   grid-row: 3;
 }
