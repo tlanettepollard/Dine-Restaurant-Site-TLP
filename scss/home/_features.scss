@@ -3,43 +3,31 @@
     grid-area: features;
     grid-row: 2;
     min-height: 144.6rem;
-    @include flex (column, space-evenly);
+    @include flex (column, space-between);
     text-align: center;
 
-      &__container {
-          min-height: 68.3rem;
-          position: relative;
-      } 
+    &__container {
+        min-height: 68.3rem;
+    }
+    .features-title {
+        width: 30rem;
+        margin: auto;
+    }
+    .features-text {
+        width: 36rem;
+        margin: auto;
+        padding: 2rem 0;
+    }
 
-      &__picture {
-          margin-top: -10rem;
-      }
+    picture {
+        margin-top: -7.2rem;
+        position: relative;
+    }
+
+    .pattern {
+        margin: 2rem 0;
+    }
        
-     .pattern {
-         padding-top: 4rem;
-         display: block;
-         margin: 0 auto;
-     }
-
-     .curve {
-         z-index: -1;
-     }
-
-     &__content {
-         .features-title {
-            max-width: 30rem;
-            margin: auto;
-            padding: 1rem 0;
-            
-         }
-
-         .features-text {
-             max-width: 45.1rem;
-             margin: auto;
-             padding: 0 3rem;
-             
-         }
-     }  
 }
 
 
