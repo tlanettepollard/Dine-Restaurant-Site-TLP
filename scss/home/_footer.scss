@@ -1,4 +1,11 @@
 
+.footer {
+    grid-area: footer;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    height: 44rem;
+    
+}
 
 /* Attribution */
 .attribution {
