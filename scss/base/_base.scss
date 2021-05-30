@@ -85,7 +85,7 @@ select {
 .main {
     display: grid;
     grid-template-columns: none;
-    grid-template-rows: (5, 1fr);
+    grid-template-rows: auto;
     grid-template-areas: 
         "hero"
         "features"
@@ -93,8 +93,8 @@ select {
         "events"
         "cta"
         "footer";
-    grid-auto-flow: row;
-    min-width: 100%;
+    
+    width: 100%;
 }
 /* Typography */
 
@@ -119,24 +119,24 @@ h2.regular  {
    font-weight: $weight-regular;
 }
 
-h3 .regular {
+h3.regular {
     font-size: 1.8rem;
     font-weight: $weight-regular;
 }
 
-h3 .bold {
+h3.bold {
     
 }
 
-h3 .semi-bold {
+h3.semi-bold {
     
 }
 
-p .one {
+p.one {
     
 }
 
-p .two {
+p.two {
     
 }
 

@@ -92,11 +92,10 @@ select {
   display: grid;
   -ms-grid-columns: none;
       grid-template-columns: none;
-  -ms-grid-rows: 5, 1fr;
-      grid-template-rows: 5, 1fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
       grid-template-areas: "hero" "features" "highlights" "events" "cta" "footer";
-  grid-auto-flow: row;
-  min-width: 100%;
+  width: 100%;
 }
 
 /* Typography */
@@ -117,7 +116,7 @@ h2.regular {
   font-weight: 400;
 }
 
-h3 .regular {
+h3.regular {
   font-size: 1.8rem;
   font-weight: 400;
 }
@@ -194,8 +193,8 @@ h3 .regular {
   -ms-grid-row: 5;
   -ms-grid-column: 1;
   grid-area: cta;
-  grid-row-start: 5;
-  grid-row-end: 6;
+  -ms-grid-row: 5;
+  grid-row: 5;
   height: 32.8rem;
   color: #ffffff;
   background-image: url(/images/homepage/ready-bg-mobile.jpg);
@@ -210,16 +209,16 @@ h3 .regular {
   -ms-grid-column: 1;
   grid-area: features;
   height: 145.5rem;
-  grid-row-start: 2;
-  grid-row-end: 3;
+  -ms-grid-row: 2;
+  grid-row: 2;
 }
 
 .footer {
   -ms-grid-row: 6;
   -ms-grid-column: 1;
   grid-area: footer;
-  grid-row-start: 6;
-  grid-row-end: 7;
+  -ms-grid-row: 6;
+  grid-row: 6;
   height: 44rem;
 }
 
@@ -242,8 +241,8 @@ h3 .regular {
   -ms-grid-column: 1;
   grid-area: highlights;
   height: 171.8rem;
-  grid-row-start: 3;
-  grid-row-end: 4;
+  -ms-grid-row: 3;
+  grid-row: 3;
 }
 
 /* Mobile First Design */
@@ -252,16 +251,17 @@ h3 .regular {
   -ms-grid-column: 1;
   grid-area: hero;
   height: 74.8rem;
-  grid-row-start: 1;
-  grid-row-end: 2;
+  -ms-grid-row: 1;
+  grid-row: 1;
 }
 
 .events {
   -ms-grid-row: 4;
   -ms-grid-column: 1;
   grid-area: events;
-  grid-row-start: 4;
-  grid-row-end: 5;
+  -ms-grid-row: 4;
+  grid-row: 4;
+  height: 104.6rem;
 }
 
 * {
