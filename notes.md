@@ -178,7 +178,7 @@ Reservations.scss
     margin-top: -10px;
 }
 
-Events Section
+Hero Section
 background-image: url(/images/homepage/hero-bg-mobile.jpg);
     background-image: image-set(
         url(/images/homepage/hero-bg-mobile.jpg) 1x,

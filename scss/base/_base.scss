@@ -106,38 +106,73 @@ body {
 }
 
 h1.light {
-  font-size: 6.4rem;
-  font-weight: $weight-light;  
+    font-size: 6.4rem;
+    font-weight: $weight-light;
+    line-height: 7.2rem;  
+    letter-spacing: -0.8;
 }
 
 h1.regular {
-    
+    font-size: 6.4rem;
+    font-weight: $weight-regular;
+    line-height: 7.2rem;
+    letter-spacing: -0.8;
 }
 
 h2.regular  {
    font-size: 4rem; 
    font-weight: $weight-regular;
+   line-height: 5.6rem;
+   letter-spacing: -0.5;
+}
+
+h2.bold {
+    font-size: 4rem;
+    font-weight: $weight-bold;
+    line-height: 5.6rem;
+    letter-spacing: -0.5;
+}
+
+h2.medium {
+    font-size: 3rem;
+    font-weight: $weight-regular;
+    line-height: 4rem;
+    letter-spacing: -0.5;
 }
 
 h3.regular {
     font-size: 1.8rem;
     font-weight: $weight-regular;
+    line-height: 2.8rem;
+    letter-spacing: -0.22;
 }
 
 h3.bold {
-    
+    font-size: 1.8rem;
+    font-weight: $weight-bold;
+    line-height: 2.8rem;
+    letter-spacing: -0.22;
 }
 
 h3.semi-bold {
-    
+    font-size: 1.4rem;
+    font-weight: $weight-semi-bold;
+    line-height: 2.8rem;
+    letter-spacing: +2;
 }
 
 p.one {
-    
+    font-size: 1.8rem;
+    font-weight: $weight-regular;
+    line-height: 3rem;
+    letter-spacing: -0.22;
 }
 
 p.two {
-    
+    font-size: 1.4rem;
+    font-weight: $weight-regular;
+    line-height: 2.8rem;
+    letter-spacing: 0.19;
 }
 
 /* Design Elements */ 
@@ -158,7 +193,7 @@ p.two {
 
 .button {
     display: block;
-    max-width: 247px;
+    max-width: 23.9rem;
     max-height: 65px;
     width: 100%;
     height: 1000%;

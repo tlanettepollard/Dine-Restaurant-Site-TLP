@@ -2,8 +2,52 @@
 
 .hero {
    grid-area: hero;
-   height: 74.8rem;
    grid-row: 1;
+   min-height: 75rem;
+   position: relative;
+   z-index: 0;
 
+   background-image: url(/images/homepage/hero-bg-mobile.jpg);
+   background-image: image-set(url(/images/homepage/hero-bg-mobile.jpg) 1x,
+      url(/images/homepage/hero-bg-mobile@2x.jpg) 2x);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: top;
+
+   @include md-breakpoint {
+      background-image: url(/images/homepage/hero-bg-tablet.jpg);
+      background-image: image-set(url(/images/homepage/hero-bg-tablet.jpg) 1x,
+            url(/images/homepage/hero-bg-tablet@2x.jpg) 2x);
+      min-height: 992px;
+   }
+
+   @include lg-breakpoint {
+      background-image: url(/images/homepage/locally-sourced-desktop.jpg);
+      background-image: image-set(url(/images/homepage/hero-bg-desktop.jpg) 1x,
+            url(/images/homepage/hero-bg-desktop@2x.jpg) 2x);
+      min-height: 820px;
+      text-align: left;
+   }
+
+   &__container {
+      min-width: 32.7rem;
+      @include flex (column, space-evenly);
+      align-content: baseline;
+      margin: 25rem 0 auto;
+      
+   }
+
+   &__title {
+      padding: 0 6rem;
+   }
+
+   &__text {
+      margin-top: -1rem;
+      padding: 0 4rem;
+   }
+
+   &__button {
+      margin-top: 1rem;
+   }
 }
 
