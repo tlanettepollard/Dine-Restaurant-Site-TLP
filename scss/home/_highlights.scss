@@ -1,0 +1,13 @@
+
+.highlights {
+    grid-area: highlights;
+    grid-row: 3;
+    min-height: 172rem;
+    text-align: center;
+    @include flex (column, space-between);
+
+    &__container {
+        @include flex (column, space-between);
+    }
+}
+
