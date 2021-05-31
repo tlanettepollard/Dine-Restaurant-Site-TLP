@@ -2,7 +2,15 @@
 .events {
     grid-area: events;
     grid-row: 4;
-    height: 104.6rem;
+    min-height: 104.6rem;
+    width: 37.5rem;
+    margin: auto;
+
+    &__container {
+        @include flex (column, space-between);
+    }
+    
+
 }
 
 
