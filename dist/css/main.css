@@ -365,7 +365,7 @@ p.two {
 }
 
 .highlights__container .menu-header {
-  margin-top: 1rem;
+  margin-top: .5rem;
   margin-bottom: 6rem;
 }
 
@@ -377,13 +377,24 @@ p.two {
   padding: 0 2rem;
 }
 
+.highlights__container .menu__content {
+  margin-top: -2rem;
+}
+
 .highlights__container .menu__content .menu-items {
   border-bottom: 1px solid #5c687a;
   margin-top: 2rem;
+  margin-bottom: 4rem;
+  padding: 0 2rem;
 }
 
 .highlights__container .menu__content .menu-items:last-of-type {
   border-bottom: none;
+}
+
+.highlights__container .menu__content .menu-items .menu-paragraph {
+  padding: 0rem 4rem 3rem;
+  margin-bottom: 2rem;
 }
 
 /* Mobile First Design */
@@ -462,7 +473,11 @@ p.two {
   grid-area: events;
   -ms-grid-row: 4;
   grid-row: 4;
-  height: 104.6rem;
+  min-height: 91.6rem;
+  margin: 6rem 0;
+  position: relative;
+  text-align: center;
+  color: #242b38;
 }
 
 * {

@@ -15,7 +15,7 @@
         padding: 0 2rem;
 
         .menu-header {
-            margin-top: 1rem;
+            margin-top: .5rem;
             margin-bottom: 6rem;
             .menu-title {
                 padding: 0 2rem;
@@ -26,11 +26,18 @@
         }
 
         .menu__content {
+            margin-top: -2rem;
             .menu-items {
                 border-bottom: 1px solid $secondary-shuttle-gray;
                 margin-top: 2rem;
+                margin-bottom: 4rem;
+                padding: 0 2rem;
                 &:last-of-type {
                     border-bottom: none;
+                }
+                .menu-paragraph{
+                    padding:  0rem 4rem 3rem;
+                    margin-bottom: 2rem;
                 }
             }
             

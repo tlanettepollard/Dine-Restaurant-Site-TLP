@@ -2,7 +2,11 @@
 .events {
     grid-area: events;
     grid-row: 4;
-    height: 104.6rem;
+    min-height: 91.6rem;
+    margin: 6rem 0;
+    position: relative;
+    text-align: center;
+    color: $secondary-ebony-clay;
 }
 
 
