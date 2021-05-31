@@ -302,6 +302,11 @@ p.two {
   position: relative;
 }
 
+.features picture img {
+  -webkit-box-shadow: 0 7.5rem 10rem -5rem rgba(56, 66, 85, 0.5);
+          box-shadow: 0 7.5rem 10rem -5rem rgba(56, 66, 85, 0.5);
+}
+
 .features .pattern {
   margin: 2rem 0;
 }
@@ -337,22 +342,12 @@ p.two {
   grid-row: 3;
   min-height: 172rem;
   text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  padding: 5rem 0;
+  margin: 3rem 0;
 }
 
 .highlights__container {
+  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -366,6 +361,29 @@ p.two {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 0 2rem;
+}
+
+.highlights__container .menu-header {
+  margin-top: 1rem;
+  margin-bottom: 6rem;
+}
+
+.highlights__container .menu-header .menu-title {
+  padding: 0 2rem;
+}
+
+.highlights__container .menu-header .menu-text {
+  padding: 0 2rem;
+}
+
+.highlights__container .menu__content .menu-items {
+  border-bottom: 1px solid #5c687a;
+  margin-top: 2rem;
+}
+
+.highlights__container .menu__content .menu-items:last-of-type {
+  border-bottom: none;
 }
 
 /* Mobile First Design */

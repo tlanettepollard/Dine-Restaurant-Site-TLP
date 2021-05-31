@@ -2,12 +2,44 @@
 .highlights {
     grid-area: highlights;
     grid-row: 3;
+    //min-width: 37.5rem;
     min-height: 172rem;
     text-align: center;
-    @include flex (column, space-between);
+    padding: 5rem 0;
+    margin: 3rem 0;
+    //@include flex (column, space-between);
 
     &__container {
+        margin: auto;
         @include flex (column, space-between);
-    }
-}
+        padding: 0 2rem;
 
+        .menu-header {
+            margin-top: 1rem;
+            margin-bottom: 6rem;
+            .menu-title {
+                padding: 0 2rem;
+            }
+            .menu-text {
+                padding: 0 2rem;
+            }
+        }
+
+        .menu__content {
+            .menu-items {
+                border-bottom: 1px solid $secondary-shuttle-gray;
+                margin-top: 2rem;
+                &:last-of-type {
+                    border-bottom: none;
+                }
+            }
+            
+        }
+
+    
+        
+    }
+    
+
+     
+}
