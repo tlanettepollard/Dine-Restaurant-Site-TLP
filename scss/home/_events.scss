@@ -2,11 +2,15 @@
 .events {
     grid-area: events;
     grid-row: 4;
-    min-height: 91.6rem;
-    margin: 6rem 0;
-    position: relative;
-    text-align: center;
-    color: $secondary-ebony-clay;
+    min-height: 104.6rem;
+    width: 37.5rem;
+    margin: auto;
+
+    &__container {
+        @include flex (column, space-between);
+    }
+    
+
 }
 
 

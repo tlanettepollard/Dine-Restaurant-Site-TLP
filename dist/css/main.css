@@ -473,11 +473,25 @@ p.two {
   grid-area: events;
   -ms-grid-row: 4;
   grid-row: 4;
-  min-height: 91.6rem;
-  margin: 6rem 0;
-  position: relative;
-  text-align: center;
-  color: #242b38;
+  min-height: 104.6rem;
+  width: 37.5rem;
+  margin: auto;
+}
+
+.events__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 * {
