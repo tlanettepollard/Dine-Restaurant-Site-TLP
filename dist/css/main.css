@@ -385,15 +385,24 @@ p.two {
   margin-top: -2rem;
 }
 
+.highlights__container .menu__content .menu-photo {
+  -webkit-box-shadow: 0 7.5rem 10rem -5rem rgba(239, 241, 247, 0.5);
+          box-shadow: 0 7.5rem 10rem -5rem rgba(239, 241, 247, 0.5);
+}
+
 .highlights__container .menu__content .menu-items {
   border-bottom: 1px solid #5c687a;
   margin-top: 2rem;
   margin-bottom: 4rem;
-  padding: 0 2rem;
+  padding: 0 1rem;
 }
 
 .highlights__container .menu__content .menu-items:last-of-type {
   border-bottom: none;
+}
+
+.highlights__container .menu__content .menu-items .menu-items--title {
+  margin-top: 4rem;
 }
 
 .highlights__container .menu__content .menu-items .menu-paragraph {

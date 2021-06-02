@@ -27,13 +27,19 @@
 
         .menu__content {
             margin-top: -2rem;
+            .menu-photo {
+                box-shadow: $bshadow-4;
+            }
             .menu-items {
                 border-bottom: 1px solid $secondary-shuttle-gray;
                 margin-top: 2rem;
                 margin-bottom: 4rem;
-                padding: 0 2rem;
+                padding: 0 1rem;
                 &:last-of-type {
                     border-bottom: none;
+                }
+                .menu-items--title {
+                    margin-top: 4rem;
                 }
                 .menu-paragraph{
                     padding:  0rem 4rem 3rem;
