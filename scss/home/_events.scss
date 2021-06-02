@@ -8,6 +8,44 @@
 
     &__container {
         @include flex (column, space-between);
+
+        .event__photos img {
+            position: relative;
+        }
+
+         .event-photo {
+             display: none;
+             box-shadow: $bshadow-2;
+         }
+
+         .event-photo--active {
+             max-width: 40rem;
+             display: inline-block;
+             margin-bottom: 4rem;
+             z-index: 1;
+         }
+
+         .events__slider {
+             padding: 0;
+         }
+
+         .events__list {
+             text-transform: uppercase;
+             position: relative;
+             margin-bottom: 3rem;
+
+             .event__item {
+                 opacity: 0.7;
+                 cursor: pointer;
+                 padding-bottom: 1.5rem;
+                 margin: auto;
+             }
+
+             .event__item--active {
+                 color: $secondary-ebony-clay;
+                 opacity: 1;
+             }
+         }
     }
     
 

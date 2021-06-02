@@ -60,6 +60,10 @@ ol[role="list"] {
   list-style: none;
 }
 
+li {
+  list-style-type: none;
+}
+
 picture, img {
   max-width: 100%;
   display: inline-block;
@@ -492,6 +496,45 @@ p.two {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.events__container .event__photos img {
+  position: relative;
+}
+
+.events__container .event-photo {
+  display: none;
+  -webkit-box-shadow: 0 1.5rem 2.5rem 0 rgba(56, 66, 85, 0.25);
+          box-shadow: 0 1.5rem 2.5rem 0 rgba(56, 66, 85, 0.25);
+}
+
+.events__container .event-photo--active {
+  max-width: 40rem;
+  display: inline-block;
+  margin-bottom: 4rem;
+  z-index: 1;
+}
+
+.events__container .events__slider {
+  padding: 0;
+}
+
+.events__container .events__list {
+  text-transform: uppercase;
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+.events__container .events__list .event__item {
+  opacity: 0.7;
+  cursor: pointer;
+  padding-bottom: 1.5rem;
+  margin: auto;
+}
+
+.events__container .events__list .event__item--active {
+  color: #242b38;
+  opacity: 1;
 }
 
 * {
