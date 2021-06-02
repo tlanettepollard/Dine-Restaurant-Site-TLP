@@ -515,10 +515,26 @@ p.two {
   z-index: 1;
 }
 
+.events__container .events__slider {
+  padding: 0;
+}
+
 .events__container .events__list {
   text-transform: uppercase;
   position: relative;
   margin-bottom: 3rem;
+}
+
+.events__container .events__list .event__item {
+  opacity: 0.7;
+  cursor: pointer;
+  padding-bottom: 1.5rem;
+  margin: auto;
+}
+
+.events__container .events__list .event__item--active {
+  color: #242b38;
+  opacity: 1;
 }
 
 * {

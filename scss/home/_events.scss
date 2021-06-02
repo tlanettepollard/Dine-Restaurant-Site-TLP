@@ -26,13 +26,25 @@
          }
 
          .events__slider {
-
+             padding: 0;
          }
 
          .events__list {
              text-transform: uppercase;
              position: relative;
              margin-bottom: 3rem;
+
+             .event__item {
+                 opacity: 0.7;
+                 cursor: pointer;
+                 padding-bottom: 1.5rem;
+                 margin: auto;
+             }
+
+             .event__item--active {
+                 color: $secondary-ebony-clay;
+                 opacity: 1;
+             }
          }
     }
     
