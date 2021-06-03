@@ -8,6 +8,7 @@
 
     &__container {
         @include flex (column, space-between);
+        align-items: space-between;
 
         .event__photos img {
             position: relative;
@@ -39,17 +40,56 @@
                  cursor: pointer;
                  padding-bottom: 1.5rem;
                  margin: auto;
+                -webkit-transition: transform 0.5s 0s ease-in;
+                -moz-transition: transform 0.5s 0s ease-in;
+                -o-transition: transform 0.5s 0s ease-in;
+                transition: transform 0.5s 0s ease-in; 
              }
 
              .event__item--active {
                  color: $secondary-ebony-clay;
                  opacity: 1;
+                 transform: translateY(1rem);
              }
+
+             .two {
+                 margin-bottom: 0.5rem;
+             }
+
+             .event__line {
+                 width: 4.8rem;
+                 height: .1rem;
+                 background-color: $primary-beaver;
+                 visibility: hidden;
+                 margin: 0 auto;
+                 padding: 0;
+             }
+
+             .event__line--active {
+                 visibility: visible;
+                 z-index: -5;
+             }
+
+             
+         }
+
+         .event__content {
+             display: none;
+         }
+
+         .event__content--active {
+             display: block;
+         }
+
+         .event__paragraph {
+             padding: 2rem 0;
          }
     }
     
 
 }
+
+     
 
 
 

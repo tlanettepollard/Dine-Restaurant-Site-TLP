@@ -4,6 +4,8 @@
     grid-row: 5;
     height: 32.8rem;
     color: $color-white;
+    @include flex(column, center);
+    text-align: center;
 
     background-image: url(/images/homepage/ready-bg-mobile.jpg);
         background-image: image-reset(

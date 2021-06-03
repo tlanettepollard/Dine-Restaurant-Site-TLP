@@ -196,12 +196,11 @@ p.two {
 
 /* Buttons */
 .button {
-  display: block;
+  display: inline-block;
   max-width: 23.9rem;
   max-height: 65px;
   width: 100%;
-  height: 1000%;
-  padding: 20px 10px;
+  padding: 2rem 1rem;
   font-size: 1.4rem;
   line-height: 1.6rem;
   letter-spacing: 0.8px;
@@ -237,7 +236,20 @@ p.two {
 }
 
 .button--dark:hover {
+  color: #121212;
+  background: #ffffff;
   border: 1px solid #242b38;
+}
+
+.button--transparent {
+  color: #ffffff;
+  background: inherit;
+  border: 1px solid #ffffff;
+}
+
+.button--transparent:hover {
+  background: #121212;
+  color: #ffffff;
 }
 
 .button--submit {
@@ -256,6 +268,20 @@ p.two {
   grid-row: 5;
   height: 32.8rem;
   color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
   background-image: url(/images/homepage/ready-bg-mobile.jpg);
   background-image: image-reset(url(/images/homepage/ready-bg-mobile.jpg) 1x, url(/images/homepage/ready-bg-mobile@2x.jpg) 2x);
   background-repeat: no-repeat;
@@ -321,11 +347,15 @@ p.two {
   grid-area: footer;
   -ms-grid-row: 6;
   grid-row: 6;
-  height: 44rem;
+  max-height: 44rem;
+  height: 100%;
+  margin: 0 auto;
+  padding: 8rem 2.4rem;
+  text-align: center;
+  /* Attribution */
 }
 
-/* Attribution */
-.attribution {
+.footer .attribution {
   height: 5rem;
   margin-top: 5rem;
   background-color: #121212;
@@ -334,7 +364,7 @@ p.two {
   color: white;
 }
 
-.attribution a {
+.footer .attribution a {
   color: white;
 }
 
@@ -385,15 +415,24 @@ p.two {
   margin-top: -2rem;
 }
 
+.highlights__container .menu__content .menu-photo {
+  -webkit-box-shadow: 0 7.5rem 10rem -5rem rgba(239, 241, 247, 0.5);
+          box-shadow: 0 7.5rem 10rem -5rem rgba(239, 241, 247, 0.5);
+}
+
 .highlights__container .menu__content .menu-items {
   border-bottom: 1px solid #5c687a;
   margin-top: 2rem;
   margin-bottom: 4rem;
-  padding: 0 2rem;
+  padding: 0 1rem;
 }
 
 .highlights__container .menu__content .menu-items:last-of-type {
   border-bottom: none;
+}
+
+.highlights__container .menu__content .menu-items .menu-items--title {
+  margin-top: 4rem;
 }
 
 .highlights__container .menu__content .menu-items .menu-paragraph {
@@ -496,6 +535,9 @@ p.two {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-align: space-between;
+      -ms-flex-align: space-between;
+          align-items: space-between;
 }
 
 .events__container .event__photos img {
@@ -530,11 +572,48 @@ p.two {
   cursor: pointer;
   padding-bottom: 1.5rem;
   margin: auto;
+  -webkit-transition: transform 0.5s 0s ease-in;
+  -webkit-transition: -webkit-transform 0.5s 0s ease-in;
+  transition: -webkit-transform 0.5s 0s ease-in;
+  transition: transform 0.5s 0s ease-in;
+  transition: transform 0.5s 0s ease-in, -webkit-transform 0.5s 0s ease-in;
 }
 
 .events__container .events__list .event__item--active {
   color: #242b38;
   opacity: 1;
+  -webkit-transform: translateY(1rem);
+          transform: translateY(1rem);
+}
+
+.events__container .events__list .two {
+  margin-bottom: 0.5rem;
+}
+
+.events__container .events__list .event__line {
+  width: 4.8rem;
+  height: .1rem;
+  background-color: #9e7f67;
+  visibility: hidden;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.events__container .events__list .event__line--active {
+  visibility: visible;
+  z-index: -5;
+}
+
+.events__container .event__content {
+  display: none;
+}
+
+.events__container .event__content--active {
+  display: block;
+}
+
+.events__container .event__paragraph {
+  padding: 2rem 0;
 }
 
 * {
