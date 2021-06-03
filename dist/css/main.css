@@ -196,12 +196,11 @@ p.two {
 
 /* Buttons */
 .button {
-  display: block;
+  display: inline-block;
   max-width: 23.9rem;
   max-height: 65px;
   width: 100%;
-  height: 1000%;
-  padding: 20px 10px;
+  padding: 2rem 1rem;
   font-size: 1.4rem;
   line-height: 1.6rem;
   letter-spacing: 0.8px;
@@ -237,7 +236,20 @@ p.two {
 }
 
 .button--dark:hover {
+  color: #121212;
+  background: #ffffff;
   border: 1px solid #242b38;
+}
+
+.button--transparent {
+  color: #ffffff;
+  background: inherit;
+  border: 1px solid #ffffff;
+}
+
+.button--transparent:hover {
+  background: #121212;
+  color: #ffffff;
 }
 
 .button--submit {
@@ -256,6 +268,20 @@ p.two {
   grid-row: 5;
   height: 32.8rem;
   color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
   background-image: url(/images/homepage/ready-bg-mobile.jpg);
   background-image: image-reset(url(/images/homepage/ready-bg-mobile.jpg) 1x, url(/images/homepage/ready-bg-mobile@2x.jpg) 2x);
   background-repeat: no-repeat;
@@ -322,6 +348,19 @@ p.two {
   -ms-grid-row: 6;
   grid-row: 6;
   height: 44rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 /* Attribution */

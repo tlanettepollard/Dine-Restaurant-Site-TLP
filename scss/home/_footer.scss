@@ -3,6 +3,8 @@
     grid-area: footer;
     grid-row: 6;
     height: 44rem;
+    @include flex (column, center);
+    
     
 }
 
