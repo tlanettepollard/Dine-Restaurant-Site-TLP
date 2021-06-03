@@ -31,7 +31,7 @@ https://levelup.gitconnected.com/death-to-div-creating-a-better-html-4775793270f
 
 05/31/2021: Continuing with styling highlights and the rest of the page.
 
-06/02/2021: used a transitions generator for Events section list items; 
+06/02/2021: used a transitions generator for Events section list items; I love flex box and grid. It has made sizing the sections more easier. 
 https://makingcss.com/transition
 
 

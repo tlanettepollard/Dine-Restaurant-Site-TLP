@@ -2,23 +2,28 @@
 .footer {
     grid-area: footer;
     grid-row: 6;
-    height: 44rem;
-    @include flex (column, center);
-    
-    
-}
-
-/* Attribution */
-.attribution {
-    height: 5rem;
-    margin-top: 5rem;
-    background-color: $primary-cod-gray;
-    font-size: 11px;
+    max-height: 44rem;
+    height: 100%;
+    margin: 0 auto;
+    padding: 8rem 2.4rem;
     text-align: center;
-    color: white;
+    
+
+
+    /* Attribution */
+    .attribution {
+        height: 5rem;
+        margin-top: 5rem;
+        background-color: $primary-cod-gray;
+        font-size: 11px;
+        text-align: center;
+        color: white;
+
+    }
+
+    .attribution a {
+        color: white;
+    }
     
 }
 
-.attribution a {
-    color: white;
-}
