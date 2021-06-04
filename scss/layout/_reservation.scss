@@ -1,4 +1,19 @@
 
+.bk__main {
+    display: grid;
+    grid-template-columns: none;
+    grid-template-rows: auto;
+    grid-area: 
+    "bk__header"
+    "reservation"
+    "bk__footer";
+
+    width: 100%;
+
+    
+}
+
+    
 
 
 

@@ -5,11 +5,8 @@
 // Base 
 @import "base/base";
 
-// Components
-@import "components/button";
-@import "components/calltoaction";
-
 // Page Layout
+@import "layout/calltoaction";
 @import "layout/features";
 @import "layout/footer";
 @import "layout/highlights";

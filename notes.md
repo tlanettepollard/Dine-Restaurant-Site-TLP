@@ -216,3 +216,17 @@ background-image: url(/images/homepage/hero-bg-mobile.jpg);
     
     div sizes: 
 grid-template-rows: 74.8rem 145.5rem 171.8rem 104.6rem 32.8rem 44rem;
+
+.bk__header {
+        grid-area: bk__header;
+        grid-row: 1;
+        min-height: 60rem;
+        width: 100%; 
+
+        background-image: url(/images/homepage/ready-bg-mobile.jpg);
+        background-image: image-reset(url(/images/homepage/ready-bg-mobile.jpg) 1x,
+            url(/images/homepage/ready-bg-mobile@2x.jpg) 2x);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center; 
+        }
