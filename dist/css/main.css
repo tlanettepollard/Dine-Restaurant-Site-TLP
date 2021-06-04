@@ -91,6 +91,10 @@ select {
 }
 
 /* Base Styles */
+* {
+  outline: 1px solid black;
+}
+
 .main {
   display: -ms-grid;
   display: grid;
@@ -639,9 +643,5 @@ p.two {
 
 .events__container .event__paragraph {
   padding: 2rem 0;
-}
-
-* {
-  outline: 1px solid black;
 }
 /*# sourceMappingURL=main.css.map */

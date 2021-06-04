@@ -9,15 +9,13 @@
 @import "components/button";
 @import "components/calltoaction";
 
-// Home Page Layout
-@import "home/features";
-@import "home/footer";
-@import "home/highlights";
-@import "home/hero";
-@import "home/events";
-
-// Booking Page Layout
-@import "booking/reservation"
+// Page Layout
+@import "layout/features";
+@import "layout/footer";
+@import "layout/highlights";
+@import "layout/hero";
+@import "layout/events";
+@import "layout/reservation"
 
 
 

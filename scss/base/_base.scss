@@ -85,6 +85,9 @@ select {
 
 
 /* Base Styles */
+* {
+    outline: 1px solid black;
+}
 
 .main {
     display: grid;
