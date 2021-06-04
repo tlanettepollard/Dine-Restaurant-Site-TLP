@@ -85,6 +85,9 @@ select {
 
 
 /* Base Styles */
+* {
+    outline: 1px solid black;
+}
 
 .main {
     display: grid;
@@ -100,6 +103,7 @@ select {
     
     width: 100%;
 }
+
 /* Typography */
 
 h1,

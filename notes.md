@@ -34,6 +34,8 @@ https://levelup.gitconnected.com/death-to-div-creating-a-better-html-4775793270f
 06/02/2021: used a transitions generator for Events section list items; I love flex box and grid. It has made sizing the sections more easier. 
 https://makingcss.com/transition
 
+06/03/2021: Had to change my class names on the reservations page so that they wouldn't conflict with the home page. 
+
 
 
 
@@ -214,3 +216,17 @@ background-image: url(/images/homepage/hero-bg-mobile.jpg);
     
     div sizes: 
 grid-template-rows: 74.8rem 145.5rem 171.8rem 104.6rem 32.8rem 44rem;
+
+.bk__header {
+        grid-area: bk__header;
+        grid-row: 1;
+        min-height: 60rem;
+        width: 100%; 
+
+        background-image: url(/images/homepage/ready-bg-mobile.jpg);
+        background-image: image-reset(url(/images/homepage/ready-bg-mobile.jpg) 1x,
+            url(/images/homepage/ready-bg-mobile@2x.jpg) 2x);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center; 
+        }
