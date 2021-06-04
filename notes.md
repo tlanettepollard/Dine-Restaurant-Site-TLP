@@ -36,6 +36,7 @@ https://makingcss.com/transition
 
 06/03/2021: Had to change my class names on the reservations page so that they wouldn't conflict with the home page. 
 
+06/04/2021: 
 
 
 

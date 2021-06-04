@@ -3,10 +3,10 @@
     display: grid;
     grid-template-columns: none;
     grid-template-rows: auto;
-    grid-area: 
-    "bk__header"
-    "reservation"
-    "bk__footer";
+    grid-template-areas: 
+    "header"
+    "section"
+    "footer";
 
     width: 100%;
 
@@ -14,7 +14,32 @@
 }
 
     
+.bk__header {
+    grid-area: header;
+    grid-row: 1;
+    min-height: 60rem;
+    position: relative;
+    
 
+    background-image: url(/images/homepage/ready-bg-mobile.jpg);
+    background-image: image-reset(url(/images/homepage/ready-bg-mobile.jpg) 1x,
+        url(/images/homepage/ready-bg-mobile@2x.jpg) 2x);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 
+.reservation {
+    grid-area: section;
+    grid-row: 2;
+    min-height: 58.5rem;
+}
+
+.bk__footer {
+    grid-area: footer;
+    grid-row: 3;
+    max-height: 44rem;
+    height: 100%;
+}
 
 

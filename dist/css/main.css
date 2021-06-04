@@ -345,10 +345,9 @@ p.two {
 }
 
 .footer {
-  -ms-grid-row: 6;
+  -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: footer;
-  -ms-grid-row: 6;
   grid-row: 6;
   max-height: 44rem;
   height: 100%;
@@ -651,7 +650,41 @@ p.two {
       grid-template-columns: none;
   -ms-grid-rows: auto;
       grid-template-rows: auto;
-  grid-area: "bk__header" "reservation" "bk__footer";
+      grid-template-areas: "header" "section" "footer";
   width: 100%;
+}
+
+.bk__header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: header;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  min-height: 60rem;
+  position: relative;
+  background-image: url(/images/homepage/ready-bg-mobile.jpg);
+  background-image: image-reset(url(/images/homepage/ready-bg-mobile.jpg) 1x, url(/images/homepage/ready-bg-mobile@2x.jpg) 2x);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.reservation {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: section;
+  -ms-grid-row: 2;
+  grid-row: 2;
+  min-height: 58.5rem;
+}
+
+.bk__footer {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: footer;
+  -ms-grid-row: 3;
+  grid-row: 3;
+  max-height: 44rem;
+  height: 100%;
 }
 /*# sourceMappingURL=main.css.map */
