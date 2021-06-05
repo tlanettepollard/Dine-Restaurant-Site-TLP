@@ -908,6 +908,18 @@ p.two {
   color: #B54949;
 }
 
+.reservation .form .icon-count {
+  cursor: pointer;
+  width: 1.5rem;
+  vertical-align: middle;
+  padding: 1rem;
+}
+
+.reservation .form .form__input--arrow .active {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
 .bk__footer {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
