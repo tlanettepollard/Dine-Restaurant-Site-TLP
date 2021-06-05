@@ -231,3 +231,143 @@ grid-template-rows: 74.8rem 145.5rem 171.8rem 104.6rem 32.8rem 44rem;
         background-size: cover;
         background-position: center; 
         }
+
+        ********************************
+        Form
+        &__input {
+            border: none;
+            border-bottom: 1px solid $secondary-ebony-clay;
+            font-size: 1.8rem;
+            line-height: 2.8rem;
+            letter-spacing: -0.225px;
+            color: inherit;
+            cursor: pointer;
+        }
+
+        &__input::placeholder {
+            font-size: 1.8rem;
+            line-height: 2.8rem;
+            letter-spacing: -0.225px;
+            color: inherit;
+        }
+
+        &__field {
+            margin: 0 auto;
+            margin-bottom: 3.2rem;
+        }
+
+        &__field--text {
+            width: 100%;
+
+            .form__input {
+                display: block;
+                width: 100%;
+                height: 4.5rem;
+                padding: 0.5rem 0;
+            }
+        }
+
+        &__field--number {
+            width: 100%;
+            height: 8.1rem;
+            position: relative;
+
+            label {
+                color: inherit;
+                font-family: inherit;
+                font-size: 1.8rem;
+                line-height: 2.8rem;
+                letter-spacing: -0.225px;
+                text-align: left;
+            }
+
+            .form__input {
+                width: 30%;
+                padding: 0.5rem;
+                margin: 0 0.3rem;
+                text-align: left;
+                cursor: pointer;
+
+                &--arrow {
+                    position: relative;
+                    min-width: 8.8rem;
+                    border-bottom: none;
+
+                    &::after {
+                        content: "\f078";
+                        font: normal normal normal 2rem/1 FontAwesome;
+                        color: $primary-beaver;
+                        right: 2rem;
+                        top: 1rem;
+                        height: 3.4rem;
+                        position: absolute;
+                        
+                    }
+
+                    select {
+                        appearance: none;
+                        width: 100%;
+                        max-width: 30rem;
+                        height: 4rem;
+                        line-height: 2.8rem;
+                        font-size: inherit;
+                        font-weight: $weight-regular;
+                        color: inherit;
+                        border: none;
+                        border-bottom: 1px solid $secondary-ebony-clay;
+                    }
+                }
+
+ 
+            }
+
+        }
+        // Set up for reservation time
+        &__field-box {
+            position: relative;
+            @include flex (row, center);
+        }
+
+        &__field--people {
+            width: 100%;
+            text-align: center;
+            border: none;
+            vertical-align: middle;
+            // For number of people section
+            .form__input {
+                width: 70%;
+                text-align: center;
+                border: none;
+                vertical-align: middle;
+            }
+        }
+
+        &__message {
+            display: block;
+            visibility: hidden;
+            font-weight: $weight-bold;
+            padding-top: 0.7rem;
+            font-size: 1rem;
+            text-align: left;
+            color: $color-error;
+        }
+
+        &__message--error {
+            visibility: visible;
+        }
+
+        &__input--error {
+            border-bottom: 1px solid $color-error;
+            color: $color-error;
+        }
+         // Styles icons to add/subtract people
+    .icon-count {
+        cursor: pointer;
+        width: 1.5rem;
+        vertical-align: middle;
+        padding: 1rem;
+    }
+
+    .form__input--arrow .active {
+        transform: rotate(180deg);
+    }
