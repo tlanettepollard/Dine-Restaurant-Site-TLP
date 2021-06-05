@@ -42,6 +42,10 @@
         .bk__header--paragraph {
             padding: 0 3rem;
         }
+
+        .bk__header--button {
+            margin-bottom: 2rem;
+        }
     }   
     
 }
@@ -66,10 +70,25 @@
         background: $color-white;
         padding: 3.2rem;
         margin-top: -10rem;
-
+        margin-bottom: 10rem;
+        box-shadow: $bshadow-1;
         @include flex(column, center);
     }
+
+    .form {
+        &__input {
+            border: none;
+            border-bottom: 1px solid $secondary-ebony-clay;
+            font-size: 1.8rem;
+            line-height: 2.8rem;
+            letter-spacing: -0.225px;
+            color: inherit;
+            cursor: pointer;
+        }
+    }
 }
+
+
 
 .bk__footer {
     grid-area: footer;

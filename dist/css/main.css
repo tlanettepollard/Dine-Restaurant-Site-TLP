@@ -703,6 +703,10 @@ p.two {
   padding: 0 3rem;
 }
 
+.bk__header--container .bk__header--button {
+  margin-bottom: 2rem;
+}
+
 .reservation {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
@@ -727,6 +731,9 @@ p.two {
   background: #ffffff;
   padding: 3.2rem;
   margin-top: -10rem;
+  margin-bottom: 10rem;
+  -webkit-box-shadow: 0 7.5rem 10rem -5rem rgba(56, 66, 85, 0.5);
+          box-shadow: 0 7.5rem 10rem -5rem rgba(56, 66, 85, 0.5);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -740,6 +747,16 @@ p.two {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.reservation .form__input {
+  border: none;
+  border-bottom: 1px solid #242b38;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  letter-spacing: -0.225px;
+  color: inherit;
+  cursor: pointer;
 }
 
 .bk__footer {
