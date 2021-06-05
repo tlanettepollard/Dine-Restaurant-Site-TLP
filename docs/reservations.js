@@ -1,5 +1,5 @@
 // booking page reservation form
-
+// Variables for Form Elements
 const form = document.getElementById('form');
 const formName = document.getElementById('name');
 const formEmail = document.getElementById('email');
@@ -15,6 +15,7 @@ const min = document.getElementById('min');
 
 const arrow = document.getElementById('arrow');
 
+// Variables for Number Picker
 const people = document.getElementById('people');
 const iconMinus = document.getElementById('icon-minus');
 const iconPlus = document.getElementById('icon-plus');
