@@ -832,6 +832,93 @@ p.two {
   border-bottom: none;
 }
 
+.reservation .form__field--number .form__input--arrow::after {
+  content: "\f078";
+  font: normal normal normal 2rem/1 FontAwesome;
+  color: #9e7f67;
+  right: 2rem;
+  top: 1rem;
+  height: 3.4rem;
+  position: absolute;
+}
+
+.reservation .form__field--number .form__input--arrow select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 100%;
+  max-width: 30rem;
+  height: 4rem;
+  line-height: 2.8rem;
+  font-size: inherit;
+  font-weight: 400;
+  color: inherit;
+  border: none;
+  border-bottom: 1px solid #242b38;
+}
+
+.reservation .form__field-box {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.reservation .form__field--people {
+  width: 100%;
+  text-align: center;
+  border: none;
+  vertical-align: middle;
+}
+
+.reservation .form__field--people .form__input {
+  width: 70%;
+  text-align: center;
+  border: none;
+  vertical-align: middle;
+}
+
+.reservation .form__message {
+  display: block;
+  visibility: hidden;
+  font-weight: 700;
+  padding-top: 0.7rem;
+  font-size: 1rem;
+  text-align: left;
+  color: #B54949;
+}
+
+.reservation .form__message--error {
+  visibility: visible;
+}
+
+.reservation .form__input--error {
+  border-bottom: 1px solid #B54949;
+  color: #B54949;
+}
+
+.reservation .icon-count {
+  cursor: pointer;
+  width: 1.5rem;
+  vertical-align: middle;
+  padding: 1rem;
+}
+
+.reservation .form__input--arrow .active {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
 .bk__footer {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
