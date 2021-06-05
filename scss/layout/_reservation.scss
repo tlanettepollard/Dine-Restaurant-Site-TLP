@@ -110,6 +110,40 @@
             }
         }
 
+        &__field--number {
+            width: 100%;
+            height: 8.1rem;
+            position: relative;
+            // Styles for numbers sections 
+            label {
+                color: inherit;
+                font-family: inherit;
+                font-size: 1.8rem;
+                line-height: 2.8rem;
+                letter-spacing: -0.225px;
+                text-align: left;
+            }
+
+            .form__input {
+                width: 30%;
+                padding: 0.5rem;
+                margin: 0 0.3rem;
+                text-align: left;
+                cursor: pointer;
+
+                &--arrow {
+                    position: relative;
+                    min-width: 8.8rem;
+                    border-bottom: none;
+
+                    &::after {
+                        content: "\f078";
+                        font: normal normal normal 2rem/1px inherit;
+                    }
+                }
+            }
+        }
+
     }
 
     

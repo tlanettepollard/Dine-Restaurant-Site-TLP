@@ -38,11 +38,21 @@ https://makingcss.com/transition
 
 06/04/2021: Continued with form section;
 
-06/05/2021: Trying to recreate form styling on my own. 
+06/05/2021: Trying to recreate form styling on my own. I learned something new:
+/* font: normal normal medium 45px/61px Oswald; */ is short-hand for the below font codes
+
+font-style: normal;
+font-variant: normal;
+font-weight: medium;
+font-size: 45px;
+line-height: 61px;
+font-family: Oswald;
 
 
 
 
+
+************************
 Reservations.scss
 .reservation {
     position: relative;
@@ -373,3 +383,5 @@ grid-template-rows: 74.8rem 145.5rem 171.8rem 104.6rem 32.8rem 44rem;
     .form__input--arrow .active {
         transform: rotate(180deg);
     }
+
+

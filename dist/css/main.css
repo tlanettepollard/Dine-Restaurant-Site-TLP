@@ -804,6 +804,40 @@ p.two {
   padding: 0.5rem 0;
 }
 
+.reservation .form__field--number {
+  width: 100%;
+  height: 8.1rem;
+  position: relative;
+}
+
+.reservation .form__field--number label {
+  color: inherit;
+  font-family: inherit;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  letter-spacing: -0.225px;
+  text-align: left;
+}
+
+.reservation .form__field--number .form__input {
+  width: 30%;
+  padding: 0.5rem;
+  margin: 0 0.3rem;
+  text-align: left;
+  cursor: pointer;
+}
+
+.reservation .form__field--number .form__input--arrow {
+  position: relative;
+  min-width: 8.8rem;
+  border-bottom: none;
+}
+
+.reservation .form__field--number .form__input--arrow::after {
+  content: "\f078";
+  font: normal normal normal 2rem/1px inherit;
+}
+
 .bk__footer {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
