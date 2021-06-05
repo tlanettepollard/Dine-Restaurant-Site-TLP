@@ -48,6 +48,12 @@ font-size: 45px;
 line-height: 61px;
 font-family: Oswald;
 
+Referred to Stack Overflow about checking email address validity--> http://www.regular-expressions.info/ 
+/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;
+used to check any email address; the one above tests to see if a properly formed email address was used.
+
+parseInt= converts its first argument to a string, parses that string, then returns an integer or NaN
+
 
 
 

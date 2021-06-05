@@ -198,6 +198,17 @@
             border-bottom: 1px solid $color-error;
             color: $color-error;
         }
+
+        .icon-count {
+            cursor: pointer;
+            width: 1.5rem;
+            vertical-align: middle;
+            padding: 1rem;
+        }
+
+        .form__input--arrow .active {
+            transform: rotate(180deg);
+        }
     }
 
     
