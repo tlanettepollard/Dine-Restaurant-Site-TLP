@@ -35,12 +35,12 @@
                 <div class="reservation__form">
                     <form id="form" class="form">
                        <div class="form__field form__field--text">
-                        <input type="text" name="name" id="name" placeholder="Name" aria-label="name" class="form__input">
+                        <input type="text" name="name" id="name" placeholder="Name" aria-label="name" class="form__input" autocomplete="off">
                         <span class="form__message">Error Message</span>
                        </div> <!-- .form__field -->
 
                        <div class="form__field form__field--text">
-                        <input type="email" name="email" id="email" placeholder="Email" aria-label="email" class="form__input">
+                        <input type="email" name="email" id="email" placeholder="Email" aria-label="email" class="form__input" autocomplete="off">
                         <span class="form__message">Error Message</span>
                        </div> <!-- .form__field -->
 
@@ -48,7 +48,7 @@
                            <label for="date">Pick a date</label>
                            <span class="form__message">Error Message</span>
                            <div class="form__field-box date">
-                               <input type="text" inputmode="numeric" month" aria-label="month" id="month" placeholder="MM" min="0" class="form__input">
+                               <input type="text" inputmode="numeric" name="month" aria-label="month" id="month" placeholder="MM" min="0" max="12" class="form__input">
                                <input type="text" inputmode="numeric" name="day" aria-label="day" id="day" placeholder="DD" min="0" class="form__input">
                                <input type="year" name="year" aria-label="year" id="year" placeholder="YYYY" min="2020" class="form__input">
                            </div> <!-- .form__field-box -->
