@@ -192,6 +192,10 @@ p.two {
   color: #ffffff;
 }
 
+.bk__header {
+  color: #ffffff;
+}
+
 .curve-left,
 .curve-right,
 .lines {
@@ -669,6 +673,36 @@ p.two {
   background-position: center;
 }
 
+.bk__header--container {
+  min-width: 32.7rem;
+  min-height: 40rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  margin: 5rem 0 auto;
+}
+
+.bk__header--container .bk__header--title {
+  padding: 2rem 2rem 0;
+  margin: 0 auto;
+}
+
+.bk__header--container .bk__header--paragraph {
+  padding: 0 3rem;
+}
+
 .reservation {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
@@ -676,6 +710,36 @@ p.two {
   -ms-grid-row: 2;
   grid-row: 2;
   min-height: 58.5rem;
+  position: relative;
+  color: #121212;
+}
+
+.reservation__container {
+  width: 90%;
+  max-width: 35rem;
+  margin: 0 auto;
+  position: relative;
+}
+
+.reservation__form {
+  height: 58.5rem;
+  max-width: 32.7rem;
+  background: #ffffff;
+  padding: 3.2rem;
+  margin-top: -10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .bk__footer {
