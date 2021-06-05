@@ -719,15 +719,16 @@ p.two {
 }
 
 .reservation__container {
-  width: 90%;
-  max-width: 35rem;
+  width: 80%;
+  max-width: 54rem;
   margin: 0 auto;
   position: relative;
 }
 
 .reservation__form {
+  max-height: 58.5rem;
+  max-width: 54rem;
   height: 58.5rem;
-  max-width: 32.7rem;
   background: #ffffff;
   padding: 3.2rem;
   margin-top: -10rem;
@@ -815,7 +816,7 @@ p.two {
   font-size: 1.8rem;
   line-height: 2.8rem;
   letter-spacing: -0.225px;
-  text-align: left;
+  margin-right: 20rem;
 }
 
 .reservation .form__field--number .form__input {
@@ -905,18 +906,6 @@ p.two {
 .reservation .form__input--error {
   border-bottom: 1px solid #B54949;
   color: #B54949;
-}
-
-.reservation .icon-count {
-  cursor: pointer;
-  width: 1.5rem;
-  vertical-align: middle;
-  padding: 1rem;
-}
-
-.reservation .form__input--arrow .active {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
 }
 
 .bk__footer {
