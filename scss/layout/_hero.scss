@@ -3,9 +3,9 @@
 .hero {
    grid-area: hero;
    grid-row: 1;
-   height: 74.8rem;
-   padding-right: 2.6rem;
-   padding-left: 2.6rem;
+   min-height: 74.8rem;
+   padding-right: 2rem;
+   padding-left: 2rem;
    position: relative;
    text-align: center;
    z-index: 0;
@@ -36,31 +36,23 @@
       min-width: 32.7rem;
       @include flex (column, space-evenly);
       align-content: baseline;
-      padding-top: 25rem;
-      margin: 0 auto;
-
-      @include tablet-bp {
-         padding-top: 36rem;
-      }
-
+      margin: 22rem 0 auto;
+      
+      
    }
 
    &__title {
-      margin-top: 3rem;
       padding-right: 4rem;
       padding-left: 4rem;
-
-
    }
 
-   &__text {
-      margin-top: -1rem;
-      padding-right: 3rem;
-      padding-left: 3rem;
+   &__text{
+      padding-right: 2rem;
+      padding-left: 2rem;
    }
 
    &__button {
-      margin-top: 3rem;
+      margin-top: 2rem;
    }
 
 }

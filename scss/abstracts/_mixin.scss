@@ -8,7 +8,7 @@
 }
 
 @mixin mobile-bp {
-    @media screen and (max-width: $mobile-bp) {
+    @media screen and (min-width: $mobile-sm-bp) and (max-width: $mobile-end-bp) {
         @content;
     }
 }

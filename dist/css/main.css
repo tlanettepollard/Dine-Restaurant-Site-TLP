@@ -481,9 +481,9 @@ p.two {
   grid-area: hero;
   -ms-grid-row: 1;
   grid-row: 1;
-  height: 74.8rem;
-  padding-right: 2.6rem;
-  padding-left: 2.6rem;
+  min-height: 74.8rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
   position: relative;
   text-align: center;
   z-index: 0;
@@ -531,30 +531,21 @@ p.two {
           align-items: center;
   -ms-flex-line-pack: baseline;
       align-content: baseline;
-  padding-top: 25rem;
-  margin: 0 auto;
-}
-
-@media screen and (min-width: 76.8rem) and (max-width: 119.9rem) {
-  .hero__container {
-    padding-top: 36rem;
-  }
+  margin: 22rem 0 auto;
 }
 
 .hero__title {
-  margin-top: 3rem;
   padding-right: 4rem;
   padding-left: 4rem;
 }
 
 .hero__text {
-  margin-top: -1rem;
-  padding-right: 3rem;
-  padding-left: 3rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
 }
 
 .hero__button {
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 
 .events {
