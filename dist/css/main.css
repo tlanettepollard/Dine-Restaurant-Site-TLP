@@ -479,6 +479,8 @@ p.two {
   -ms-grid-row: 1;
   grid-row: 1;
   min-height: 75rem;
+  padding-right: 2.6rem;
+  padding-left: 2.6rem;
   position: relative;
   z-index: 0;
   background-image: url(/images/homepage/hero-bg-mobile.jpg);
@@ -525,16 +527,20 @@ p.two {
           align-items: center;
   -ms-flex-line-pack: baseline;
       align-content: baseline;
-  margin: 25rem 0 auto;
+  padding-top: 25rem;
+  margin: 0 auto;
 }
 
 .hero__title {
-  padding: 0 6rem;
+  margin-top: 3rem;
+  padding-right: 4rem;
+  padding-left: 4rem;
 }
 
 .hero__text {
   margin-top: -1rem;
-  padding: 0 4rem;
+  padding-right: 3rem;
+  padding-left: 3rem;
 }
 
 .hero__button {
