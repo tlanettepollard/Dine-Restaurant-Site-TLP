@@ -54,7 +54,8 @@ used to check any email address; the one above tests to see if a properly formed
 
 parseInt= converts its first argument to a string, parses that string, then returns an integer or NaN
 
-06/06/2021: Adjusting measurements; realizing that I should focus on padding; 
+06/06/2021: Adjusting measurements; realizing that I should focus on padding; had trouble with media queries. Going to change tomorrow. 
+https://designshack.net/articles/css/sass-and-media-queries-what-you-can-and-cant-do/
 
 
 
