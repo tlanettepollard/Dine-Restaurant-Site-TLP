@@ -27,10 +27,16 @@ $weight-semi-bold: 600;
 $weight-bold: 700;
 
 // Breakpoints 
-$layout-breakpoint-sm: 576px;
+/*$layout-breakpoint-sm: 576px;
 $layout-breakpoint-md: 768px;
-$layout-breakpoint-lg: 992px;
+$layout-breakpoint-lg: 992px;*/
 /*$layout-breakpoint-xl: 1200px;*/
+
+$mobile-sm-bp: 43.5rem;
+$mobile-end-bp: 76.7rem;
+$tablet-start-bp: 76.8rem;
+$tablet-end-bp: 119.9rem;
+$desktop-bp: 120rem;
 
 // Design Elements 
 $transition: all 0.2s;

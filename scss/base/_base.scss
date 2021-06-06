@@ -198,7 +198,7 @@ p.two {
 .curve-right,
 .lines {
     display: none;
-    @include md-breakpoint {
+    @include tablet-bp {
         
     }
 }
@@ -232,7 +232,7 @@ p.two {
         border: 1px solid $secondary-shuttle-gray;
     }
 
-    @include md-breakpoint {
+    @include tablet-bp {
         width: 24.6rem;
     }
 }

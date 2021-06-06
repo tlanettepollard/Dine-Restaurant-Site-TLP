@@ -7,20 +7,20 @@
     align-items: center;
 }
 
-@mixin sm-breakpoint {
-    @media screen and (min-width: $layout-breakpoint-sm) {
+@mixin mobile-bp {
+    @media screen and (min-width: $mobile-sm-bp) and (max-width: $mobile-end-bp) {
         @content;
     }
 }
 
-@mixin md-breakpoint {
-    @media screen and (min-width: $layout-breakpoint-md) {
+@mixin tablet-bp {
+    @media screen and (min-width: $tablet-start-bp) and (max-width: $tablet-end-bp) {
         @content;
     }
 }
 
-@mixin lg-breakpoint  {
-    @media screen and (min-width: $layout-breakpoint-lg) {
+@mixin desktop-bp  {
+    @media screen and (min-width: $desktop-bp) {
         @content;
     }
 }
