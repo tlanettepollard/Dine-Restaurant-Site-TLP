@@ -142,7 +142,7 @@ h2.bold {
 }
 
 h2.medium {
-    font-size: 3rem;
+    font-size: 3.2rem;
     font-weight: $weight-regular;
     line-height: 4rem;
     letter-spacing: -0.5;
@@ -198,7 +198,7 @@ p.two {
 .curve-right,
 .lines {
     display: none;
-    @include respond-medium {
+    @include respond-md {
         display: block;
     }
 }
@@ -232,7 +232,7 @@ p.two {
         border: 1px solid $secondary-shuttle-gray;
     }
 
-    @include respond-medium {
+    @include respond-md {
         width: 24.6rem;
     }
 }

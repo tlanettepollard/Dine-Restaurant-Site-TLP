@@ -7,4 +7,14 @@
     align-items: center;
 }
 
-@mixin 
+@mixin respond-md {
+    @media screen and (min-width: 76.8rem) {
+        @content;
+    }
+}
+
+@mixin respond-lg {
+    @media screen and (min-width: 102.4rem) {
+        @content;
+    }
+}

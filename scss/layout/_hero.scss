@@ -12,24 +12,31 @@
    background-size: cover;
    background-position: top;
 
-   @include respond-medium {
+   @include respond-md {
       background-image: url(/images/homepage/hero-bg-tablet.jpg);
       background-image: image-set(url(/images/homepage/hero-bg-tablet.jpg) 1x,
             url(/images/homepage/hero-bg-tablet@2x.jpg) 2x);
       min-height: 99.2rem;
    }
 
-   @include respond-large {
+   @include respond-lg {
       background-image: url(/images/homepage/locally-sourced-desktop.jpg);
       background-image: image-set(url(/images/homepage/hero-bg-desktop.jpg) 1x,
             url(/images/homepage/hero-bg-desktop@2x.jpg) 2x);
-      min-height: 82rem;
+      min-height: 96rem;
       text-align: left;
    }
 
    &__container {
-     height: 36.4rem;
-     padding-top: 60%;  
+     height: 38.4rem;
+     position: relative;
+     top: 23.2rem;  
+     @include flex (column, space-evenly);
+
+     @include respond-md {
+        top: 37.4rem;
+        height: 40.2rem;
+     }
    }
 
    &__title {
@@ -38,13 +45,14 @@
    }
 
    &__text{
-      //margin-top: 1rem;
+      max-width: 60.3;
       padding-left: 1rem;
       padding-right: 1rem;
+      padding-bottom: 2rem;
    }
 
    &__button {
-      margin-top: 1rem;
+      margin-top: 2rem;
    }
 
 }
