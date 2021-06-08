@@ -17,14 +17,14 @@
    background-size: cover;
    background-position: top;
 
-   @include tablet-bp {
+   @include respond-medium {
       background-image: url(/images/homepage/hero-bg-tablet.jpg);
       background-image: image-set(url(/images/homepage/hero-bg-tablet.jpg) 1x,
             url(/images/homepage/hero-bg-tablet@2x.jpg) 2x);
       min-height: 99.2rem;
    }
 
-   @include desktop-bp {
+   @include respond-large {
       background-image: url(/images/homepage/locally-sourced-desktop.jpg);
       background-image: image-set(url(/images/homepage/hero-bg-desktop.jpg) 1x,
             url(/images/homepage/hero-bg-desktop@2x.jpg) 2x);
@@ -34,9 +34,9 @@
 
    &__container {
       min-width: 32.7rem;
-      @include flex (column, space-evenly);
-      align-content: baseline;
-      margin: 22rem 0 auto;
+      //@include flex (column, center);
+      //align-content: baseline;
+      padding-top: 23rem;
       
       
    }
@@ -47,8 +47,9 @@
    }
 
    &__text{
-      padding-right: 2rem;
-      padding-left: 2rem;
+      margin-top: 1rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
    }
 
    &__button {
@@ -57,3 +58,4 @@
 
 }
 
+/* Media Queries */ 

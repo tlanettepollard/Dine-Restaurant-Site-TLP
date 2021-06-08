@@ -198,8 +198,8 @@ p.two {
 .curve-right,
 .lines {
     display: none;
-    @include tablet-bp {
-        
+    @include respond-medium {
+        display: block;
     }
 }
 
@@ -232,7 +232,7 @@ p.two {
         border: 1px solid $secondary-shuttle-gray;
     }
 
-    @include tablet-bp {
+    @include respond-medium {
         width: 24.6rem;
     }
 }
