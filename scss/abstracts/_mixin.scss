@@ -7,20 +7,20 @@
     align-items: center;
 }
 
-@mixin mobile-bp {
-    @media screen and (min-width: $mobile-sm-bp) and (max-width: $mobile-end-bp) {
+@mixin respond-small {
+    @media only screen and (min-width: 48.1rem) and (max-width: 76.7rem) {
         @content;
     }
 }
 
-@mixin tablet-bp {
-    @media screen and (min-width: $tablet-start-bp) and (max-width: $tablet-end-bp) {
+@mixin respond-medium {
+    @media only screen and (min-width: 76.8rem) and (max-width: 102.4rem) {
         @content;
     }
 }
 
-@mixin desktop-bp  {
-    @media screen and (min-width: $desktop-bp) {
+@mixin respond-large {
+    @media only screen and (min-width: 102.5rem) and (max-width: 120rem) {
         @content;
     }
 }

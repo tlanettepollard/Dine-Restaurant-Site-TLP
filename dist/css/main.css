@@ -3,10 +3,6 @@
 /* Secondary Colors */
 /* Box Shadow */
 /* Font Weights */
-/*$layout-breakpoint-sm: 576px;
-$layout-breakpoint-md: 768px;
-$layout-breakpoint-lg: 992px;*/
-/*$layout-breakpoint-xl: 1200px;*/
 @import url("https://fonts.googleapis.com/css?family=Spartan:100,200,300,400,500,600,700,800,900&display=swap");
 /* Reset */
 :root {
@@ -205,6 +201,14 @@ p.two {
   display: none;
 }
 
+@media only screen and (min-width: 76.8rem) and (max-width: 102.4rem) {
+  .curve-left,
+  .curve-right,
+  .lines {
+    display: block;
+  }
+}
+
 /* Buttons */
 .button {
   display: inline-block;
@@ -234,7 +238,7 @@ p.two {
   border: 1px solid #5c687a;
 }
 
-@media screen and (min-width: 76.8rem) and (max-width: 119.9rem) {
+@media only screen and (min-width: 76.8rem) and (max-width: 102.4rem) {
   .button {
     width: 24.6rem;
   }
@@ -495,7 +499,7 @@ p.two {
   background-position: top;
 }
 
-@media screen and (min-width: 76.8rem) and (max-width: 119.9rem) {
+@media only screen and (min-width: 76.8rem) and (max-width: 102.4rem) {
   .hero {
     background-image: url(/images/homepage/hero-bg-tablet.jpg);
     background-image: -webkit-image-set(url(/images/homepage/hero-bg-tablet.jpg) 1x, url(/images/homepage/hero-bg-tablet@2x.jpg) 2x);
@@ -504,7 +508,7 @@ p.two {
   }
 }
 
-@media screen and (min-width: 120rem) {
+@media only screen and (min-width: 102.5rem) and (max-width: 120rem) {
   .hero {
     background-image: url(/images/homepage/locally-sourced-desktop.jpg);
     background-image: -webkit-image-set(url(/images/homepage/hero-bg-desktop.jpg) 1x, url(/images/homepage/hero-bg-desktop@2x.jpg) 2x);
@@ -516,22 +520,7 @@ p.two {
 
 .hero__container {
   min-width: 32.7rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-line-pack: baseline;
-      align-content: baseline;
-  margin: 22rem 0 auto;
+  padding-top: 23rem;
 }
 
 .hero__title {
@@ -540,14 +529,16 @@ p.two {
 }
 
 .hero__text {
-  padding-right: 2rem;
-  padding-left: 2rem;
+  margin-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .hero__button {
   margin-top: 2rem;
 }
 
+/* Media Queries */
 .events {
   -ms-grid-row: 4;
   -ms-grid-column: 1;
@@ -651,7 +642,7 @@ p.two {
 }
 
 .events__container .event__paragraph {
-  padding: 2rem 0;
+  padding: 2rem 1rem;
 }
 
 .bk__main {

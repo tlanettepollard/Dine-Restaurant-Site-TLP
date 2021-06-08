@@ -57,6 +57,9 @@ parseInt= converts its first argument to a string, parses that string, then retu
 06/06/2021: Adjusting measurements; realizing that I should focus on padding; had trouble with media queries. Going to change tomorrow. 
 https://designshack.net/articles/css/sass-and-media-queries-what-you-can-and-cant-do/
 
+06/07/2021: Adjusted my media queries by using a mixin with a range of sizes. 
+https://www.freecodecamp.org/news/css-media-queries-breakpoints-media-types-standard-resolutions-and-more/
+https://dev.to/paul_duvall/sass-and-media-queries-hb2
 
 
 ************************
