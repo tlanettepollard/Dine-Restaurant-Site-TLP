@@ -3,13 +3,8 @@
 .hero {
    grid-area: hero;
    grid-row: 1;
-   min-height: 74.8rem;
-   padding-right: 2rem;
-   padding-left: 2rem;
-   position: relative;
-   text-align: center;
-   z-index: 0;
-
+   height: 74.8rem;
+   
    background-image: url(/images/homepage/hero-bg-mobile.jpg);
    background-image: image-set(url(/images/homepage/hero-bg-mobile.jpg) 1x,
          url(/images/homepage/hero-bg-mobile@2x.jpg) 2x);
@@ -33,12 +28,8 @@
    }
 
    &__container {
-      min-width: 32.7rem;
-      //@include flex (column, center);
-      //align-content: baseline;
-      padding-top: 23rem;
-      
-      
+     height: 36.4rem;
+     padding-top: 60%;  
    }
 
    &__title {
@@ -47,13 +38,13 @@
    }
 
    &__text{
-      margin-top: 1rem;
+      //margin-top: 1rem;
       padding-left: 1rem;
       padding-right: 1rem;
    }
 
    &__button {
-      margin-top: 2rem;
+      margin-top: 1rem;
    }
 
 }
