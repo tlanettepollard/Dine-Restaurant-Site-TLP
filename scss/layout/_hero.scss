@@ -4,41 +4,37 @@
    grid-area: hero;
    grid-row: 1;
    min-height: 74.8rem;
-   padding-right: 2rem;
-   padding-left: 2rem;
-   position: relative;
-   text-align: center;
-   z-index: 0;
-
+   
    background-image: url(/images/homepage/hero-bg-mobile.jpg);
-   background-image: image-set(url(/images/homepage/hero-bg-mobile.jpg) 1x,
-         url(/images/homepage/hero-bg-mobile@2x.jpg) 2x);
+   background-image: image-set(
+      url(/images/homepage/hero-bg-mobile.jpg) 1x,
+      url(/images/homepage/hero-bg-mobile@2x.jpg) 2x);
    background-repeat: no-repeat;
    background-size: cover;
    background-position: top;
 
-   @include respond-medium {
+   @include respond-md {
       background-image: url(/images/homepage/hero-bg-tablet.jpg);
-      background-image: image-set(url(/images/homepage/hero-bg-tablet.jpg) 1x,
-            url(/images/homepage/hero-bg-tablet@2x.jpg) 2x);
+      background-image: image-set(
+         url(/images/homepage/hero-bg-tablet.jpg) 1x,
+         url(/images/homepage/hero-bg-tablet@2x.jpg) 2x);
       min-height: 99.2rem;
    }
 
-   @include respond-large {
-      background-image: url(/images/homepage/locally-sourced-desktop.jpg);
-      background-image: image-set(url(/images/homepage/hero-bg-desktop.jpg) 1x,
-            url(/images/homepage/hero-bg-desktop@2x.jpg) 2x);
-      min-height: 82rem;
+   @include respond-lg {
+      background-image: url(/images/homepage/hero-bg-desktop.jpg);
+      background-image: image-set(
+         url(/images/homepage/hero-bg-desktop.jpg) 1x,
+         url(/images/homepage/hero-bg-desktop@2x.jpg) 2x);
+      min-height: 96rem;
       text-align: left;
    }
 
    &__container {
-      min-width: 32.7rem;
-      //@include flex (column, center);
-      //align-content: baseline;
-      padding-top: 23rem;
-      
-      
+     height: 38.4rem;
+     position: relative;
+     top: 23.2rem;  
+     @include flex (column, space-evenly);
    }
 
    &__title {
@@ -47,9 +43,10 @@
    }
 
    &__text{
-      margin-top: 1rem;
+      max-width: 60.3;
       padding-left: 1rem;
       padding-right: 1rem;
+      padding-bottom: 2rem;
    }
 
    &__button {
