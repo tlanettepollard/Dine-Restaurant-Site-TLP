@@ -4,7 +4,7 @@
 /* Box Shadow */
 /* Font Weights */
 @import url("https://fonts.googleapis.com/css?family=Spartan:100,200,300,400,500,600,700,800,900&display=swap");
-/* Reset */
+/* Condensed Reset */
 :root {
   color-scheme: light dark;
 }
@@ -27,7 +27,6 @@ body,
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
-  place-content: center;
   text-align: center;
   position: relative;
   overflow-y: scroll;
@@ -59,10 +58,6 @@ ol[role="list"] {
   list-style: none;
 }
 
-li {
-  list-style-type: none;
-}
-
 picture, img {
   max-width: 100%;
   display: inline-block;
@@ -75,19 +70,20 @@ select {
   font: inherit;
 }
 
-/*
 @media (prefers-reduced-motion: reduce) {
-
-    *,
-    *::before,
-    *::after {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-        scroll-behavior: auto !important;
-    }
+  *,
+  *::before,
+  *::after {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    -webkit-transition-duration: 0.01ms !important;
+            transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
-*/
+
 /* Base Styles */
 * {
   outline: 1px solid black;
@@ -490,14 +486,6 @@ p.two {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
-}
-
-@media screen and (min-width: 76.8rem) {
-  .hero {
-    height: 99.2rem;
-    padding-top: 37.4rem;
-    background-image: url(/images/homepage/hero-bg-tablet@2x.jpg);
-  }
 }
 
 .hero__container {

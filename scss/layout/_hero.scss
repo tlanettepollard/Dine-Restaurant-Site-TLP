@@ -10,11 +10,7 @@
    background-size: cover;
    background-position: top;
 
-   @media screen and (min-width: $bp-start-tablet) {
-      height: 99.2rem;
-      padding-top: 37.4rem;
-      background-image: url(/images/homepage/hero-bg-tablet@2x.jpg);
-   }
+   
    
 
    &__container {
