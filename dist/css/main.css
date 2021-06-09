@@ -505,7 +505,7 @@ p.two {
 
 @media screen and (min-width: 102.4rem) {
   .hero {
-    background-image: url(/images/homepage/locally-sourced-desktop.jpg);
+    background-image: url(/images/homepage/hero-bg-desktop.jpg);
     background-image: -webkit-image-set(url(/images/homepage/hero-bg-desktop.jpg) 1x, url(/images/homepage/hero-bg-desktop@2x.jpg) 2x);
     background-image: image-set(url(/images/homepage/hero-bg-desktop.jpg) 1x, url(/images/homepage/hero-bg-desktop@2x.jpg) 2x);
     min-height: 96rem;
@@ -530,13 +530,6 @@ p.two {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-@media screen and (min-width: 76.8rem) {
-  .hero__container {
-    top: 37.4rem;
-    height: 40.2rem;
-  }
 }
 
 .hero__title {
