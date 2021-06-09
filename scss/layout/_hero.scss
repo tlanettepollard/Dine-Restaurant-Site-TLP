@@ -5,31 +5,17 @@
    grid-row: 1;
    min-height: 74.8rem;
    text-align: center;
-
-   background-image: url(/images/homepage/hero-bg-mobile.jpg);
-   background-image: image-set(
-      url(/images/homepage/hero-bg-mobile.jpg) 1x,
-      url(/images/homepage/hero-bg-mobile@2x.jpg) 2x);
+   background-image: url(/images/homepage/hero-bg-mobile@2x.jpg);
    background-repeat: no-repeat;
    background-size: cover;
    background-position: top;
 
-   @include respond-tablet {
-      background-image: url(/images/homepage/hero-bg-tablet.jpg);
-      background-image: image-set(
-         url(/images/homepage/hero-bg-tablet.jpg) 1x,
-         url(/images/homepage/hero-bg-tablet@2x.jpg) 2x);
-      min-height: 99.2rem;
+   @media screen and (min-width: $bp-start-tablet) {
+      height: 99.2rem;
+      padding-top: 37.4rem;
+      background-image: url(/images/homepage/hero-bg-tablet@2x.jpg);
    }
-
-   @include respond-desktop {
-      //background-image: url(/images/homepage/hero-bg-desktop.jpg);
-      background-image: image-set(
-         url(/images/homepage/hero-bg-desktop.jpg) 1x,
-         url(/images/homepage/hero-bg-desktop@2x.jpg) 2x);
-      min-height: 96rem;
-      text-align: left;
-   }
+   
 
    &__container {
      height: 38.4rem;
@@ -65,3 +51,4 @@
 }
 
 /* Media Queries */ 
+ 
