@@ -7,14 +7,19 @@
     align-items: center;
 }
 
-@mixin respond-md {
-    @media screen and (min-width: 76.8rem) {
+@mixin respond-mobile {@media screen and (max-width: $bp-end-mobile)    {
+    @content;
+    }
+}
+
+@mixin respond-tablet {
+    @media screen and (min-width: $bp-start-tablet) and (max-width: $bp-end-tablet) {
         @content;
     }
 }
 
-@mixin respond-lg {
-    @media screen and (min-width: 102.4rem) {
+@mixin respond-desktop {
+    @media screen and (min-width: $bp-desktop) {
         @content;
     }
 }

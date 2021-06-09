@@ -4,7 +4,8 @@
    grid-area: hero;
    grid-row: 1;
    min-height: 74.8rem;
-   
+   text-align: center;
+
    background-image: url(/images/homepage/hero-bg-mobile.jpg);
    background-image: image-set(
       url(/images/homepage/hero-bg-mobile.jpg) 1x,
@@ -13,7 +14,7 @@
    background-size: cover;
    background-position: top;
 
-   @include respond-md {
+   @include respond-tablet {
       background-image: url(/images/homepage/hero-bg-tablet.jpg);
       background-image: image-set(
          url(/images/homepage/hero-bg-tablet.jpg) 1x,
@@ -21,8 +22,8 @@
       min-height: 99.2rem;
    }
 
-   @include respond-lg {
-      background-image: url(/images/homepage/hero-bg-desktop.jpg);
+   @include respond-desktop {
+      //background-image: url(/images/homepage/hero-bg-desktop.jpg);
       background-image: image-set(
          url(/images/homepage/hero-bg-desktop.jpg) 1x,
          url(/images/homepage/hero-bg-desktop@2x.jpg) 2x);
@@ -34,23 +35,31 @@
      height: 38.4rem;
      position: relative;
      top: 23.2rem;  
-     @include flex (column, space-evenly);
+     //@include flex (column, space-evenly);
+      //align-content: center;
+
+      
+     
+   }
+
+   &__logo {
+      padding-top: 2rem;
+      width: 10.3rem;
+      height: 4rem;
    }
 
    &__title {
-      padding-right: 4rem;
-      padding-left: 4rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
    }
 
    &__text{
-      max-width: 60.3;
-      padding-left: 1rem;
-      padding-right: 1rem;
-      padding-bottom: 2rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
    }
 
    &__button {
-      margin-top: 2rem;
+      
    }
 
 }

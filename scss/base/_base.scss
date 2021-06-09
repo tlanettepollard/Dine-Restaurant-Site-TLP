@@ -198,7 +198,7 @@ p.two {
 .curve-right,
 .lines {
     display: none;
-    @include respond-md {
+    @include respond-tablet {
         display: block;
     }
 }
@@ -232,7 +232,7 @@ p.two {
         border: 1px solid $secondary-shuttle-gray;
     }
 
-    @include respond-md {
+    @include respond-tablet {
         width: 24.6rem;
     }
 }
