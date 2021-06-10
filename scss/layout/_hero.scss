@@ -3,15 +3,18 @@
 .hero {
    grid-area: hero;
    grid-row: 1;
-   min-height: 74.8rem;
-   min-width: 37.5rem;
+   height: 74.8rem;
    text-align: center;
+   padding-right: 2.4rem;
+   padding-left: 2.4rem;
    background-image: url(/images/homepage/hero-bg-mobile.jpg);
    background-repeat: no-repeat;
    background-size: cover;
-   background-position: top;
+   //background-position: top;
 
-   
+   @media (min-width: 76.8rem) {
+      height: 99.2rem;
+   }
    
 
    &__container {

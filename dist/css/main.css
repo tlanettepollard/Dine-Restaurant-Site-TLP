@@ -14,6 +14,8 @@ $bp-desktop: 120rem; */
 }
 
 html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   height: 100vh;
   width: 100%;
   font-size: 62.5%;
@@ -42,7 +44,7 @@ body,
 body,
 #root {
   min-height: 100vh;
-  min-width: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -308,7 +310,7 @@ p.two {
   grid-area: features;
   -ms-grid-row: 2;
   grid-row: 2;
-  min-height: 144.6rem;
+  height: 144.6rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -484,13 +486,19 @@ p.two {
   grid-area: hero;
   -ms-grid-row: 1;
   grid-row: 1;
-  min-height: 74.8rem;
-  min-width: 37.5rem;
+  height: 74.8rem;
   text-align: center;
+  padding-right: 2.4rem;
+  padding-left: 2.4rem;
   background-image: url(/images/homepage/hero-bg-mobile.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top;
+}
+
+@media (min-width: 76.8rem) {
+  .hero {
+    height: 99.2rem;
+  }
 }
 
 .hero__container {
