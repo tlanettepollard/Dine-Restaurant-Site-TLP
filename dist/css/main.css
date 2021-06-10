@@ -3,6 +3,10 @@
 /* Secondary Colors */
 /* Box Shadow */
 /* Font Weights */
+/*$bp-end-mobile: 76.7rem;
+$bp-start-tablet: 76.8rem;
+$bp-end-tablet: 119.9rem;
+$bp-desktop: 120rem; */
 @import url("https://fonts.googleapis.com/css?family=Spartan:100,200,300,400,500,600,700,800,900&display=swap");
 /* Condensed Reset */
 :root {
@@ -481,8 +485,9 @@ p.two {
   -ms-grid-row: 1;
   grid-row: 1;
   min-height: 74.8rem;
+  min-width: 37.5rem;
   text-align: center;
-  background-image: url(/images/homepage/hero-bg-mobile@2x.jpg);
+  background-image: url(/images/homepage/hero-bg-mobile.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;

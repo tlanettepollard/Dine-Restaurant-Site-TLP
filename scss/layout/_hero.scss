@@ -4,8 +4,9 @@
    grid-area: hero;
    grid-row: 1;
    min-height: 74.8rem;
+   min-width: 37.5rem;
    text-align: center;
-   background-image: url(/images/homepage/hero-bg-mobile@2x.jpg);
+   background-image: url(/images/homepage/hero-bg-mobile.jpg);
    background-repeat: no-repeat;
    background-size: cover;
    background-position: top;
@@ -47,4 +48,4 @@
 }
 
 /* Media Queries */ 
- 
+  
