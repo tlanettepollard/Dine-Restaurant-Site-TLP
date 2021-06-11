@@ -1,11 +1,7 @@
-/* Condensed Reset */
+/* Reset */
 
-:root {
-    color-scheme: light dark;
-}
 
 html {
-    box-sizing: border-box;
     height: 100vh;
     width: 100%;
     font-size: 62.5%;
@@ -23,20 +19,19 @@ body,
     box-sizing: border-box;
     margin: 0;
     //display: grid;
-    //place-content: center;
+    place-content: center;
     text-align: center;
     position: relative;
     //overflow-y: scroll;
-    overflow-wrap: break-word;
+    //overflow-wrap: break-word;
     min-width: 0;
     font-size: 10px;
 }
 
 body,
 #root {
-    min-height: 100vh;
-    //overflow-x: hidden;
-    //min-width: 100%;
+    height: 100vh;
+    min-width: 100%;
 }
 
 body {
@@ -48,7 +43,9 @@ body {
 }
 
 a {
-    text-decoration-skip-ink: auto;
+    cursor: pointer;
+    text-decoration: none;
+    //text-decoration-skip-ink: auto;
 }
 
 ul[role="list"],
@@ -68,17 +65,9 @@ select {
     font: inherit;
 }
 
-@media (prefers-reduced-motion: reduce) {
 
-    *,
-    *::before,
-    *::after {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-        scroll-behavior: auto !important;
-    }
-}
+
+
 
 
 /* Base Styles */
@@ -195,9 +184,7 @@ p.two {
 .curve-right,
 .lines {
     display: none;
-    @media (min-width: $bp-start-tablet) {
-        display: block;
-    }
+    
 }
 
 /* Buttons */
@@ -229,9 +216,6 @@ p.two {
         border: 1px solid $secondary-shuttle-gray;
     }
 
-    @media screen and (min-width: 76.8rem) {
-        width: 24.6rem;
-    }
 }
 
 .button--dark {

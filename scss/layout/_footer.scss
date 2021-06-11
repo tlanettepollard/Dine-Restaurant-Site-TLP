@@ -1,25 +1,4 @@
 
-.footer {
-    grid-area: footer;
-    grid-row: 6;
-    max-height: 44rem;
-    height: 100%;
-    margin: 0 auto;
-    padding: 8rem 2.4rem;
-    text-align: center;
-    &__container {
-        @include flex(column, space-between);
-
-        &--logo,
-        &--address,
-        &--hours {
-            padding-bottom: 2rem;
-        }
-
-        p {
-            text-transform: uppercase;
-        }
-    }
 
 
     /* Attribution */
