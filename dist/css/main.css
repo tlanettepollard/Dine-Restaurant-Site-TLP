@@ -3,10 +3,6 @@
 /* Secondary Colors */
 /* Box Shadow */
 /* Font Weights */
-/*$bp-end-mobile: 76.7rem;
-$bp-start-tablet: 76.8rem;
-$bp-end-tablet: 119.9rem;
-$bp-desktop: 120rem; */
 @import url("https://fonts.googleapis.com/css?family=Spartan:100,200,300,400,500,600,700,800,900&display=swap");
 /* Condensed Reset */
 :root {
@@ -35,7 +31,6 @@ body,
   margin: 0;
   text-align: center;
   position: relative;
-  overflow-y: scroll;
   overflow-wrap: break-word;
   min-width: 0;
   font-size: 10px;
@@ -44,7 +39,6 @@ body,
 body,
 #root {
   min-height: 100vh;
-  overflow-x: hidden;
 }
 
 body {
@@ -118,70 +112,70 @@ h1.light {
   font-size: 6.4rem;
   font-weight: 300;
   line-height: 7.2rem;
-  letter-spacing: -0.8;
+  letter-spacing: -0.08rem;
 }
 
 h1.regular {
   font-size: 6.4rem;
   font-weight: 400;
   line-height: 7.2rem;
-  letter-spacing: -0.8;
+  letter-spacing: -0.08rem;
 }
 
 h2.regular {
   font-size: 4rem;
   font-weight: 400;
   line-height: 5.6rem;
-  letter-spacing: -0.5;
+  letter-spacing: -0.05rem;
 }
 
 h2.bold {
   font-size: 4rem;
   font-weight: 700;
   line-height: 5.6rem;
-  letter-spacing: -0.5;
+  letter-spacing: -0.05rem;
 }
 
 h2.medium {
   font-size: 3.2rem;
   font-weight: 400;
   line-height: 4rem;
-  letter-spacing: -0.5;
+  letter-spacing: -0.05rem;
 }
 
 h3.regular {
   font-size: 1.8rem;
   font-weight: 400;
   line-height: 2.8rem;
-  letter-spacing: -0.22;
+  letter-spacing: -0.022rem;
 }
 
 h3.bold {
   font-size: 1.8rem;
   font-weight: 700;
   line-height: 2.8rem;
-  letter-spacing: -0.22;
+  letter-spacing: -0.022rem;
 }
 
 h3.semi-bold {
   font-size: 1.4rem;
   font-weight: 600;
   line-height: 2.8rem;
-  letter-spacing: +2;
+  letter-spacing: .2rem;
 }
 
 p.one {
   font-size: 1.8rem;
   font-weight: 400;
   line-height: 3rem;
-  letter-spacing: -0.22;
+  letter-spacing: -0.022rem;
 }
 
 p.two {
   font-size: 1.4rem;
   font-weight: 400;
   line-height: 2.8rem;
-  letter-spacing: 0.19;
+  letter-spacing: .019rem;
 }
 
 /* Design Elements */
@@ -202,7 +196,7 @@ p.two {
   display: none;
 }
 
-@media screen and (min-width: 76.8rem) {
+@media (min-width: 76.8rem) {
   .curve-left,
   .curve-right,
   .lines {
@@ -310,7 +304,7 @@ p.two {
   grid-area: features;
   -ms-grid-row: 2;
   grid-row: 2;
-  height: 144.6rem;
+  min-height: 144.6rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -486,18 +480,18 @@ p.two {
   grid-area: hero;
   -ms-grid-row: 1;
   grid-row: 1;
-  height: 74.8rem;
-  text-align: center;
-  padding-right: 2.4rem;
-  padding-left: 2.4rem;
   background-image: url(/images/homepage/hero-bg-mobile.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: top;
+  min-height: 74.8rem;
+  text-align: center;
 }
 
-@media (min-width: 76.8rem) {
+@media screen and (min-width: 76.8rem) {
   .hero {
-    height: 99.2rem;
+    background-image: url(/images/homepage/hero-bg-tablet.jpg);
+    min-height: 99.2rem;
   }
 }
 
@@ -571,7 +565,7 @@ p.two {
   z-index: 1;
 }
 
-.events__container .events__slider {
+.events__container .events__items {
   padding: 0;
 }
 
@@ -586,7 +580,6 @@ p.two {
   cursor: pointer;
   padding-bottom: 1.5rem;
   margin: auto;
-  -webkit-transition: transform 0.5s 0s ease-in;
   -webkit-transition: -webkit-transform 0.5s 0s ease-in;
   transition: -webkit-transform 0.5s 0s ease-in;
   transition: transform 0.5s 0s ease-in;

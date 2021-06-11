@@ -26,7 +26,7 @@ body,
     //place-content: center;
     text-align: center;
     position: relative;
-    overflow-y: scroll;
+    //overflow-y: scroll;
     overflow-wrap: break-word;
     min-width: 0;
     font-size: 10px;
@@ -35,7 +35,7 @@ body,
 body,
 #root {
     min-height: 100vh;
-    overflow-x: hidden;
+    //overflow-x: hidden;
     //min-width: 100%;
 }
 
@@ -114,70 +114,70 @@ h1.light {
     font-size: 6.4rem;
     font-weight: $weight-light;
     line-height: 7.2rem;  
-    letter-spacing: -0.8;
+    letter-spacing: -0.08rem;
 }
 
 h1.regular {
     font-size: 6.4rem;
     font-weight: $weight-regular;
     line-height: 7.2rem;
-    letter-spacing: -0.8;
+    letter-spacing: -0.08rem;
 }
 
 h2.regular  {
    font-size: 4rem; 
    font-weight: $weight-regular;
    line-height: 5.6rem;
-   letter-spacing: -0.5;
+   letter-spacing: -0.05rem;
 }
 
 h2.bold {
     font-size: 4rem;
     font-weight: $weight-bold;
     line-height: 5.6rem;
-    letter-spacing: -0.5;
+    letter-spacing: -0.05rem;
 }
 
 h2.medium {
     font-size: 3.2rem;
     font-weight: $weight-regular;
     line-height: 4rem;
-    letter-spacing: -0.5;
+    letter-spacing: -0.05rem;
 }
 
 h3.regular {
     font-size: 1.8rem;
     font-weight: $weight-regular;
     line-height: 2.8rem;
-    letter-spacing: -0.22;
+    letter-spacing: -0.022rem;
 }
 
 h3.bold {
     font-size: 1.8rem;
     font-weight: $weight-bold;
     line-height: 2.8rem;
-    letter-spacing: -0.22;
+    letter-spacing: -0.022rem;
 }
 
 h3.semi-bold {
     font-size: 1.4rem;
     font-weight: $weight-semi-bold;
     line-height: 2.8rem;
-    letter-spacing: +2;
+    letter-spacing: .2rem;
 }
 
 p.one {
     font-size: 1.8rem;
     font-weight: $weight-regular;
     line-height: 3rem;
-    letter-spacing: -0.22;
+    letter-spacing: -0.022rem;
 }
 
 p.two {
     font-size: 1.4rem;
     font-weight: $weight-regular;
     line-height: 2.8rem;
-    letter-spacing: 0.19;
+    letter-spacing: .019rem;
 }
 
 /* Design Elements */ 
@@ -195,7 +195,7 @@ p.two {
 .curve-right,
 .lines {
     display: none;
-    @media screen and (min-width: 76.8rem) {
+    @media (min-width: $bp-start-tablet) {
         display: block;
     }
 }

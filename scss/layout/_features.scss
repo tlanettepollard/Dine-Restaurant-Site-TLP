@@ -2,7 +2,7 @@
 .features {
     grid-area: features;
     grid-row: 2;
-    height: 144.6rem;
+    min-height: 144.6rem;
     @include flex (column, space-between);
     text-align: center;
 
