@@ -1,8 +1,8 @@
 .hero {
-    position: relative;
+    //position: relative;
     grid-area: hero;
     grid-row: 1;
-    //height: 76.8rem;
+    min-height: 76.8rem;
     
     &__bg {
         width: 100%;
