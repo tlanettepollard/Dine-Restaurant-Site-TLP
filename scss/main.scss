@@ -1,13 +1,14 @@
 /* Base */
-@import "base/base";
-@import "base/mixins";
-@import "base/typography";
 @import "base/variables";
+@import "base/mixin";
+@import "base/base";
+@import "base/typography";
 
 /* Layout */
-@import "layout/cta";
-@import "layout/events";
-@import "layout/features";
-@import "layout/footer";
 @import "layout/hero";
-@import "layout/highlights";
+@import "layout/features";
+@import "layout/food";
+@import "layout/events";
+@import "layout/cta";
+@import "layout/footer";
+

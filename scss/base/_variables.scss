@@ -10,10 +10,32 @@ $secondary-mirage: #17192b;
 $secondary-ebony-clay: #242b37;
 $secondary-shuttle-gray: #5c6779;
 
-/* Breakpoints */ 
-$breakpoint-sm: 57.6rem;
-$breakpoint-md: 76.8rem;
-$breakpoint-lg: 99.2rem;
-$breakpoint-xl: 120rem;
+$color-white: #ffffff;
+$color-error: #B54949;
+$active-text-field: #111111;
+$inactive-numbers: #D8D8D8;
+$inactive-dropdown: #D8D8D8;
 
+/* Box Shadow */ 
+$bshadow-1: 0 7.5rem 10rem -5rem rgba(56, 66, 85, 0.5);
+$bshadow-2: 0 1.5rem 2.5rem 0 rgba(56, 66, 85, 0.25);
+$bshadow-3: 0 2.7rem 4.7rem -7rem rgba(0,0,0,0.75);
+
+/* Fonts */
+// Variables
+$font-family: 'Spartan', sans-serif;
+$weight-light: 300;
+$weight-regular: 400;
+$weight-semi-bold: 600;
+$weight-bold: 700;
+
+/* Breakpoints */ 
+$bp-desktop: 120rem;
+$bp-tablet-end: 119.9rem;
+$bp-tablet-start: 76.8rem;
+$bp-mobile: 76.7rem;
+
+
+/* Design Elements */
+$transition: all 0.2s;
 
