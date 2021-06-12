@@ -7,12 +7,6 @@
 /* Fonts */
 /* Breakpoints */
 /* Design Elements */
-/* Reset */
-/*
-:root {
-    color-scheme: light dark;
-}
-*/
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 * {
   margin: 0;
@@ -38,7 +32,7 @@ body {
 
 /* Main Styling */
 .main {
-  height: 100%;
+  height: 100vh;
   width: 100%;
   display: -ms-grid;
   display: grid;
@@ -212,14 +206,13 @@ p.two {
 /* Layout */
 .hero {
   height: 74.8rem;
-  width: 100%;
   text-align: center;
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: hero;
   -ms-grid-row: 1;
   grid-row: 1;
-  background-image: url(/images/homepage/hero-bg-mobile.jpg);
+  background-image: url(../../images/homepage/hero-bg-mobile.jpg);
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -228,7 +221,7 @@ p.two {
 @media (min-width: 76.8rem) and (max-width: 119.9rem) {
   .hero {
     height: 99.2rem;
-    background-image: url(/images/homepage/hero-bg-tablet.jpg);
+    background-image: url(../../images/homepage/hero-bg-tablet.jpg);
   }
 }
 
@@ -236,7 +229,7 @@ p.two {
   .hero {
     height: 96rem;
     text-align: left;
-    background-image: url(/images/homepage/hero-bg-desktop.jpg);
+    background-image: url(../../images/homepage/hero-bg-desktop.jpg);
   }
 }
 
