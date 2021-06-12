@@ -4,17 +4,25 @@
 /* Box Shadow */
 /* Font Weights */
 @import url("https://fonts.googleapis.com/css?family=Spartan:100,200,300,400,500,600,700,800,900&display=swap");
+/*
+@mixin respond($breakpoint) {
+    @if ($breakpoint == tablet) {
+        @media only screen and (min-width: 76.8rem) {
+            @content;
+        }
+    }
+
+    @if ($breakpoint == desktop) {
+        @media only screen and (min-width: 120rem) {
+            @content;
+        }
+    }
+}
+*/
 /* Condensed Universal Reset */
 * {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
-  vertical-align: baseline;
-  font-weight: inherit;
-  font-family: inherit;
-  font-size: 100%;
-  border: 0 none;
-  padding: 0;
   margin: 0;
+  padding: 0;
   outline: 1px solid black;
 }
 
@@ -24,55 +32,34 @@
           box-sizing: inherit;
 }
 
-/* Additional Reset */
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-size: 62.5%;
-  scroll-behavior: smooth;
 }
 
 body {
+  font-family: "Spartan", sans-serif;
   min-height: 100vh;
-  margin: 0 auto;
   overflow-x: hidden;
 }
 
-h1,
-h2,
-h3,
-p {
-  margin: 0;
-}
-
-a {
-  cursor: pointer;
-  text-decoration: none;
-}
-
-picture,
-img {
-  display: inline-block;
-}
-
-li {
-  list-style-type: none;
-}
-
 /* Base Styles */
-* {
-  outline: 1px solid black;
-}
-
 .main {
-  width: 100vw;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: none;
+      grid-template-columns: none;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+      grid-template-areas: "hero" "features" "highlights" "events" "cta" "footer";
+  width: 100%;
 }
 
 /* Typography */
 h1,
 h2,
-h3,
-body {
+h3 {
   font-family: "Spartan", sans-serif;
 }
 
@@ -239,5 +226,14 @@ p.two {
 
 .footer .attribution a {
   color: white;
+}
+
+.hero {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: hero;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  background: #121212;
 }
 /*# sourceMappingURL=main.css.map */

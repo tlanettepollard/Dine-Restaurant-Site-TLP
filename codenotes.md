@@ -528,3 +528,76 @@ CTA code
         background-size: cover;
         background-position: center;
 }
+
+*****************************************
+<picture class="features__picture">
+                    <source srcset="/images/homepage/locally-sourced-desktop.jpg 1x, 
+                    /images/homepage/locally-sourced-desktop@2x.jpg 2x" media="(min-width: 64rem)"/>
+
+                    <source srcset="/images/homepage/locally-sourced-tablet.jpg 1x, 
+                    /images/homepage/locally-sourced-tablet@2x.jpg 2x" media="(min-width: 48rem)"/>
+
+                    <source srcset="/images/homepage/locally-sourced-mobile.jpg 1x, 
+                    /images/homepage/locally-sourced-mobile@2x.jpg 2x" media="(min-width: 18.75rem)"/>
+</picture>
+
+<picture class="features__picture">
+                    <source srcset="/images/homepage/enjoyable-place-desktop.jpg 1x, 
+                    /images/homepage/enjoyable-place-desktop@2x.jpg 2x" media="(min-width: 102.4rem)"/>
+
+                    <source srcset="/images/homepage/enjoyable-place-tablet.jpg 1x, 
+                    /images/homepage/enjoyable-place-tablet@2x.jpg 2x" media="(min-width: 76.8rem)"/>
+
+                    <source srcset="/images/homepage/enjoyable-place-mobile.jpg 1x, 
+                    /images/homepage/enjoyable-place-mobile@2x.jpg 2x" media="(min-width: 30rem)" />
+</picture>
+
+<picture class="menu-items--picture">
+                            <source srcset="/images/homepage/salmon-desktop-tablet.jpg 1x, 
+                            /images/homepage/salmon-desktop-tablet@2x.jpg 2x" media="(min-width: 48rem)"/>
+
+                            <source srcset="/images/homepage/salmon-mobile.jpg 1x, 
+                            /images/homepage/      salmon-mobile@2x.jpg 2x" media="(min-width: 18.75rem)"/>
+</picture>
+
+<picture class="menu-items--picture">
+                            <source srcset="/images/homepage/beef-desktop-tablet.jpg 1x, 
+                            /images/homepage/beef-desktop-tablet@2x.jpg 2x" media="(min-width: 48rem)"/>
+
+                            <source srcset="/images/homepage/beef-mobile.jpg 1x, 
+                            /images/homepage/      beef-mobile@2x.jpg 2x" media="(min-width: 18.75rem)"/>
+</picture>
+
+<picture class="menu-items--picture">
+                            <source srcset="/images/homepage/chocolate-desktop-tablet.jpg 1x, 
+                            /images/homepage/chocolate-desktop-tablet@2x.jpg 2x" media="(min-width: 48rem)"/>
+
+                            <source srcset="/images/homepage/chocolate-mobile.jpg 1x, 
+                            /images/homepage/      chocolate-mobile@2x.jpg 2x" media="(min-width: 18.75rem)"/>
+</picture>
+<picture class="event-photo event-photo--active" id="photo-1">
+                        <source srcset="/images/homepage/family-gathering-desktop.jpg 1x,
+                        /images/homepage/family-gathering-desktop@2x.jpg 2x" media="(min-width: 64rem)">
+                        <source srcset="/images/homepage/family-gathering-tablet.jpg 1x, 
+                        /images/homepage/family-gathering-tablet@2x.jpg 2x" media="(min-width: 48rem)">
+                        <source srcset="/images/homepage/family-gathering-mobile.jpg 1x,
+                        /images/homepage/family-gathering-mobile@2x.jpg 2x" media="(min-width: 18.75rem)">
+</picture>
+
+<picture class="event-photo" id="photo-2">
+                        <source srcset="/images/homepage/special-events-desktop.jpg 1x,
+                        /images/homepage/special-events-desktop@2x.jpg 2x" media="(min-width: 64rem)">
+                        <source srcset="/images/homepage/special-events-tablet.jpg 1x, 
+                        /images/homepage/special-events-tablet@2x.jpg 2x" media="(min-width: 48rem)">
+                        <source srcset="/images/homepage/special-events-mobile.jpg 1x,
+                        /images/homepage/special-events-mobile@2x.jpg 2x" media="(min-width: 18.75rem)">
+</picture>
+
+<picture class="event-photo" id="photo-3">
+                        <source srcset="/images/homepage/social-events-desktop.jpg 1x,
+                        /images/homepage/social-events-desktop@2x.jpg 2x" media="(min-width: 64rem)">
+                        <source srcset="/images/homepage/social-events-tablet.jpg 1x, 
+                        /images/homepage/social-events-tablet@2x.jpg 2x" media="(min-width: 48rem)">
+                        <source srcset="/images/homepage/social-events-mobile.jpg 1x,
+                        /images/homepage/social-events-mobile@2x.jpg 2x" media="(min-width: 18.75rem)">
+</picture>
