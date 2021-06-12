@@ -4,44 +4,45 @@
 /* Box Shadow */
 /* Font Weights */
 @import url("https://fonts.googleapis.com/css?family=Spartan:100,200,300,400,500,600,700,800,900&display=swap");
-/* Reset */
-html {
-  height: 100vh;
-  width: 100%;
-  font-size: 62.5%;
+/* Condensed Universal Reset */
+* {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  vertical-align: baseline;
+  font-weight: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  border: 0 none;
+  padding: 0;
+  margin: 0;
+  outline: 1px solid black;
 }
 
-html:focus-within {
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+/* Additional Reset */
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62.5%;
   scroll-behavior: smooth;
 }
 
-body,
-#root,
-#root *,
-#root ::before,
-#root ::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin: 0;
-  place-content: center;
-  text-align: center;
-  position: relative;
-  min-width: 0;
-  font-size: 10px;
-}
-
-body,
-#root {
-  height: 100vh;
-  min-width: 100%;
-}
-
 body {
+  min-height: 100vh;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+p {
   margin: 0;
-  font-size: 10px;
-  font-family: system-ui;
-  text-rendering: optimizeSpeed;
-  line-height: 1.2;
 }
 
 a {
@@ -49,21 +50,13 @@ a {
   text-decoration: none;
 }
 
-ul[role="list"],
-ol[role="list"] {
-  list-style: none;
-}
-
-picture, img {
-  max-width: 100%;
+picture,
+img {
   display: inline-block;
 }
 
-input,
-button,
-textarea,
-select {
-  font: inherit;
+li {
+  list-style-type: none;
 }
 
 /* Base Styles */
@@ -72,14 +65,7 @@ select {
 }
 
 .main {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: none;
-      grid-template-columns: none;
-  -ms-grid-rows: auto;
-      grid-template-rows: auto;
-      grid-template-areas: "hero" "features" "highlights" "events" "cta" "footer";
-  width: 100%;
+  width: 100vw;
 }
 
 /* Typography */
@@ -237,94 +223,8 @@ p.two {
   margin: 0 auto;
 }
 
-.features {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: features;
-  -ms-grid-row: 2;
-  grid-row: 2;
-  min-height: 144.6rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-}
-
-.features__container {
-  min-height: 68.3rem;
-}
-
-.features .features-title {
-  width: 30rem;
-  margin: auto;
-}
-
-.features .features-text {
-  width: 36rem;
-  margin: auto;
-  padding: 2rem 0;
-}
-
-.features picture {
-  margin-top: -7.2rem;
-  position: relative;
-}
-
-.features picture img {
-  -webkit-box-shadow: 0 7.5rem 10rem -5rem rgba(56, 66, 85, 0.5);
-          box-shadow: 0 7.5rem 10rem -5rem rgba(56, 66, 85, 0.5);
-}
-
-.features .pattern {
-  margin: 2rem 0;
-}
-
 .footer {
-  -ms-grid-row: 6;
-  -ms-grid-column: 1;
-  grid-area: footer;
-  -ms-grid-row: 6;
-  grid-row: 6;
-  max-height: 44rem;
-  height: 100%;
-  margin: 0 auto;
-  padding: 8rem 2.4rem;
-  text-align: center;
   /* Attribution */
-}
-
-.footer__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.footer__container--logo, .footer__container--address, .footer__container--hours {
-  padding-bottom: 2rem;
-}
-
-.footer__container p {
-  text-transform: uppercase;
 }
 
 .footer .attribution {
@@ -339,122 +239,5 @@ p.two {
 
 .footer .attribution a {
   color: white;
-}
-
-.highlights {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: highlights;
-  -ms-grid-row: 3;
-  grid-row: 3;
-  min-height: 172rem;
-  text-align: center;
-  padding: 5rem 0;
-  margin: 3rem 0;
-}
-
-.highlights__container {
-  margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 0 2rem;
-}
-
-.highlights__container .menu-header {
-  margin-top: .5rem;
-  margin-bottom: 6rem;
-}
-
-.highlights__container .menu-header .menu-title {
-  padding: 0 2rem;
-}
-
-.highlights__container .menu-header .menu-text {
-  padding: 0 2rem;
-}
-
-.highlights__container .menu__content {
-  margin-top: -2rem;
-}
-
-.highlights__container .menu__content .menu-photo {
-  -webkit-box-shadow: 0 7.5rem 10rem -5rem rgba(239, 241, 247, 0.5);
-          box-shadow: 0 7.5rem 10rem -5rem rgba(239, 241, 247, 0.5);
-}
-
-.highlights__container .menu__content .menu-items {
-  border-bottom: 1px solid #5c687a;
-  margin-top: 2rem;
-  margin-bottom: 4rem;
-  padding: 0 1rem;
-}
-
-.highlights__container .menu__content .menu-items:last-of-type {
-  border-bottom: none;
-}
-
-.highlights__container .menu__content .menu-items .menu-items--title {
-  margin-top: 4rem;
-}
-
-.highlights__container .menu__content .menu-items .menu-paragraph {
-  padding: 0rem 4rem 3rem;
-  margin-bottom: 2rem;
-}
-
-/* Mobile First Design */
-.hero {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: hero;
-  -ms-grid-row: 1;
-  grid-row: 1;
-  background-image: url(/images/homepage/hero-bg-mobile.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top;
-  min-height: 74.8rem;
-  text-align: center;
-}
-
-.hero__container {
-  height: 38.4rem;
-  position: relative;
-  top: 23.2rem;
-}
-
-.hero__logo {
-  padding-top: 2rem;
-  width: 10.3rem;
-  height: 4rem;
-}
-
-.hero__title {
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
-.hero__text {
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
-/* Media Queries */
-@media screen and (min-width: 76.8rem) {
-  .hero {
-    height: 99.2rem;
-    background-image: url(/images/homepage/hero-bg-tablet.jpg);
-  }
 }
 /*# sourceMappingURL=main.css.map */
