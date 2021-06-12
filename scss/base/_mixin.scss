@@ -1,0 +1,25 @@
+
+@mixin flex($direction, $justifyContent) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justifyContent;
+    align-items: center;
+}
+
+@mixin respond-mobile {
+    @media screen and (min-width: $breakpoint-sm) {
+        @content;
+    }
+}
+
+@mixin respond-tablet {
+    @media screen and (min-width: $breakpoint-md) {
+        @content;
+    }
+}
+
+@mixin respond-desktop {
+    @media screen and (min-width: $breakpoint-lg) {
+        @content;
+    }
+}

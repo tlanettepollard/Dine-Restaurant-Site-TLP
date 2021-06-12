@@ -5,7 +5,7 @@
     color-scheme: light dark;
 }
 */
-@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 * {
   outline: 1px solid black;
   -webkit-box-sizing: border-box;
@@ -41,14 +41,13 @@ body,
 
 body,
 #root {
-  min-height: 100%;
+  min-height: 100vh;
   min-width: 100%;
 }
 
 body {
   margin: 0 auto;
   padding: 0 auto;
-  font-family: system-ui;
   font-size: 1.4rem;
   text-rendering: optimizeSpeed;
   line-height: 1.2;
@@ -93,14 +92,12 @@ select {
 }
 
 /* Main Styling */
-body {
-  font-family: "Spartan", sans-serif;
-}
-
 /* Variables */
 /* Colors */
 /* Primary */
 /* Secondary */
+/* Box Shadow */
+/* Fonts */
 /* Breakpoints */
 /* Layout */
 /* Attribution */
