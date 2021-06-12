@@ -1,106 +1,41 @@
-/* Reset */
+/* Condensed Universal Reset */
 
-:root {
-    color-scheme: light dark;
+* {
+    margin: 0;
+    padding: 0;
+    outline: 1px solid black;
+}
+
+*::before,
+*::after {
+    box-sizing: inherit;
 }
 
 html {
-    height: 100vh;
-    width: 100%;
-    font-size: 62.5%;
-}
-
-html:focus-within {
-    scroll-behavior: smooth;
-}
-
-body,
-#root,
-#root *,
-#root ::before,
-#root ::after {
     box-sizing: border-box;
-    margin: 0;
-    //display: grid;
-    place-content: center;
-    text-align: center;
-    position: relative;
-    overflow-y: scroll;
-    overflow-wrap: break-word;
-    min-width: 0;
-    font-size: 10px;
-}
-
-body,
-#root {
-    min-height: 100vh;
-    min-width: 100%;
+    font-size: 62.5%; // 1rem = 10px, 10px/16px = 62.5%
 }
 
 body {
-    margin: 0;
-    font-size: 10px;
-    font-family: system-ui;
-    text-rendering: optimizeSpeed;
-    line-height: 1.2;
+    //background-color: $primary-cod-gray;
+    font-family: "Spartan", sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
 }
-
-a {
-    text-decoration-skip-ink: auto;
-}
-
-ul[role="list"],
-ol[role="list"] {
-    list-style: none;
-}
-
-li {
-    list-style-type: none;
-}
-
-picture, img {
-    max-width: 100%;
-    display: inline-block;
-}
-
-input,
-button,
-textarea,
-select {
-    font: inherit;
-}
-
-@media (prefers-reduced-motion: reduce) {
-
-    *,
-    *::before,
-    *::after {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-        scroll-behavior: auto !important;
-    }
-}
-
-
-
 /* Base Styles */
-* {
-    outline: 1px solid black;
-}
 
 .main {
     display: grid;
     grid-template-columns: none;
     grid-template-rows: auto;
-    grid-template-areas: 
+    grid-template-areas:
         "hero"
         "features"
         "highlights"
         "events"
         "cta"
         "footer";
-    
+
     width: 100%;
 }
 
@@ -108,8 +43,7 @@ select {
 
 h1,
 h2,
-h3,
-body {
+h3 {
     font-family: $spartan;
 }
 
@@ -117,70 +51,70 @@ h1.light {
     font-size: 6.4rem;
     font-weight: $weight-light;
     line-height: 7.2rem;  
-    letter-spacing: -0.8;
+    letter-spacing: -0.08rem;
 }
 
 h1.regular {
     font-size: 6.4rem;
     font-weight: $weight-regular;
     line-height: 7.2rem;
-    letter-spacing: -0.8;
+    letter-spacing: -0.08rem;
 }
 
 h2.regular  {
    font-size: 4rem; 
    font-weight: $weight-regular;
    line-height: 5.6rem;
-   letter-spacing: -0.5;
+   letter-spacing: -0.05rem;
 }
 
 h2.bold {
     font-size: 4rem;
     font-weight: $weight-bold;
     line-height: 5.6rem;
-    letter-spacing: -0.5;
+    letter-spacing: -0.05rem;
 }
 
 h2.medium {
     font-size: 3.2rem;
     font-weight: $weight-regular;
     line-height: 4rem;
-    letter-spacing: -0.5;
+    letter-spacing: -0.05rem;
 }
 
 h3.regular {
     font-size: 1.8rem;
     font-weight: $weight-regular;
     line-height: 2.8rem;
-    letter-spacing: -0.22;
+    letter-spacing: -0.022rem;
 }
 
 h3.bold {
     font-size: 1.8rem;
     font-weight: $weight-bold;
     line-height: 2.8rem;
-    letter-spacing: -0.22;
+    letter-spacing: -0.022rem;
 }
 
 h3.semi-bold {
     font-size: 1.4rem;
     font-weight: $weight-semi-bold;
     line-height: 2.8rem;
-    letter-spacing: +2;
+    letter-spacing: .2rem;
 }
 
 p.one {
     font-size: 1.8rem;
     font-weight: $weight-regular;
     line-height: 3rem;
-    letter-spacing: -0.22;
+    letter-spacing: -0.022rem;
 }
 
 p.two {
     font-size: 1.4rem;
     font-weight: $weight-regular;
     line-height: 2.8rem;
-    letter-spacing: 0.19;
+    letter-spacing: .019rem;
 }
 
 /* Design Elements */ 
@@ -198,9 +132,7 @@ p.two {
 .curve-right,
 .lines {
     display: none;
-    @include respond-md {
-        display: block;
-    }
+    
 }
 
 /* Buttons */
@@ -232,9 +164,6 @@ p.two {
         border: 1px solid $secondary-shuttle-gray;
     }
 
-    @include respond-md {
-        width: 24.6rem;
-    }
 }
 
 .button--dark {

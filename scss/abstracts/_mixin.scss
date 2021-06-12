@@ -7,14 +7,18 @@
     align-items: center;
 }
 
-@mixin respond-md {
-    @media screen and (min-width: 76.8rem) {
-        @content;
+/*
+@mixin respond($breakpoint) {
+    @if ($breakpoint == tablet) {
+        @media only screen and (min-width: 76.8rem) {
+            @content;
+        }
     }
-}
 
-@mixin respond-lg {
-    @media screen and (min-width: 102.4rem) {
-        @content;
+    @if ($breakpoint == desktop) {
+        @media only screen and (min-width: 120rem) {
+            @content;
+        }
     }
 }
+*/

@@ -61,6 +61,7 @@ https://designshack.net/articles/css/sass-and-media-queries-what-you-can-and-can
 https://www.freecodecamp.org/news/css-media-queries-breakpoints-media-types-standard-resolutions-and-more/
 https://dev.to/paul_duvall/sass-and-media-queries-hb2
 
+06/11/2021: Starting again. I need more practice with designing websites using CSS Grid for responsiveness. going back to flex only. 
 
 ************************
 Reservations.scss
