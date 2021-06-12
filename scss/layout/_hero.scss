@@ -1,7 +1,8 @@
 .hero {
+    position: relative;
     grid-area: hero;
     grid-row: 1;
-    height: 76.8rem;
+    //height: 76.8rem;
     
     &__bg {
         width: 100%;
@@ -22,6 +23,7 @@
 
     &__logo {
         padding-bottom: 2.4rem;
+        width: 10.3rem;
     }
 
     &__title {

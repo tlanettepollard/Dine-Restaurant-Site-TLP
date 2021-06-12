@@ -210,12 +210,12 @@ p.two {
 
 /* Layout */
 .hero {
+  position: relative;
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: hero;
   -ms-grid-row: 1;
   grid-row: 1;
-  height: 76.8rem;
 }
 
 .hero__bg {
@@ -249,6 +249,7 @@ p.two {
 
 .hero__logo {
   padding-bottom: 2.4rem;
+  width: 10.3rem;
 }
 
 .hero__title {
