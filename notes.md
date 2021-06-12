@@ -63,6 +63,8 @@ https://dev.to/paul_duvall/sass-and-media-queries-hb2
 
 06/11/2021: Starting again. I need more practice with designing websites using CSS Grid for responsiveness. going back to flex only. 
 
+06/12/2021: Starting again again. I couldn't figure out the problem with the media queries. 
+
 ************************
 Reservations.scss
 .reservation {
