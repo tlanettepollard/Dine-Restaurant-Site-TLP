@@ -24,15 +24,18 @@ $bshadow-3: 0 2.7rem 4.7rem -7rem rgba(0,0,0,0.75);
 /* Fonts */
 // Variables
 $font-family: 'Spartan', sans-serif;
-
-
-
-
+$weight-light: 300;
+$weight-regular: 400;
+$weight-semi-bold: 600;
+$weight-bold: 700;
 
 /* Breakpoints */ 
-$breakpoint-sm: 57.6rem;
-$breakpoint-md: 76.8rem;
-$breakpoint-lg: 99.2rem;
-$breakpoint-xl: 120rem;
+$bp-desktop: 120rem;
+$bp-tablet-end: 119.9rem;
+$bp-tablet-start: 76.8rem;
+$bp-mobile: 76.7rem;
 
+
+/* Design Elements */
+$transition: all 0.2s;
 

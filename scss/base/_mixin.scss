@@ -1,5 +1,5 @@
 
-@mixin flex($direction, $justifyContent) {
+@mixin flex ($direction, $justifyContent) {
     display: flex;
     flex-direction: $direction;
     justify-content: $justifyContent;
@@ -7,19 +7,19 @@
 }
 
 @mixin respond-mobile {
-    @media screen and (min-width: $breakpoint-sm) {
+    @media (max-width: $bp-mobile) {
         @content;
     }
 }
 
 @mixin respond-tablet {
-    @media screen and (min-width: $breakpoint-md) {
+    @media (min-width: $bp-tablet-start) and (max-width: $bp-tablet-end) {
         @content;
     }
 }
 
-@mixin respond-desktop {
-    @media screen and (min-width: $breakpoint-lg) {
+@mixin respond-desktop { 
+    @media (min-width: $bp-desktop) {
         @content;
     }
 }

@@ -6,87 +6,120 @@
 }
 */
 * {
-    outline: 1px solid black;
-    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
 }
 
 html {
     box-sizing: border-box;
-    height: 100%;
-    width: 100%;
-    font-size: 62.5%; /* 10px = 1rem */
-}
-
-html:focus-within {
-    scroll-behavior: smooth;
-}
-
-body,
-#root,
-#root *,
-#root ::before,
-#root ::after {
-    box-sizing: border-box;
-    margin: 0;
-    //display: grid;
-    //place-content: center;
-    //text-align: center;
-    position: relative;
-    overflow-wrap: break-word;
-    min-width: 0;
-    outline: 1px solid black;
-}
-
-body,
-#root {
-    min-height: 100vh;
-    min-width: 100%;
+    font-size: 62.5%; // 1rem = 10px, 10px/16px = 62.5%
 }
 
 body {
-    margin: 0 auto;
-    padding: 0 auto;
-    //font-family: system-ui;
-    font-size: 1.4rem;
-    text-rendering: optimizeSpeed;
-    line-height: 1.2;
-}
-
-a {
-    cursor:pointer;
-    text-decoration: none;
-    text-decoration-skip-ink: auto;
-}
-
-ul[role="list"],
-ol[role="list"] {
-    list-style: none;
-}
-
-picture, 
-img {
-    max-width: 100%;
-    display: inline-block;
-}
-
-input,
-button,
-textarea,
-select {
-    font: inherit;
-}
-
-@media (prefers-reduced-motion: reduce) {
-
-    *,
-    *::before,
-    *::after {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-        scroll-behavior: auto !important;
-    }
+    min-height: 100vh;
+    //overflow-x: hidden;
 }
 
 /* Main Styling */
+.main {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: none;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        'hero'
+        'features'
+        'food'
+        'events'
+        'cta'
+        'footer';
+}
 
+/* Design Elements */
+.hero,
+.highlights,
+.footer {
+    background-color: $primary-cod-gray;
+    color: $color-white;
+}
+
+.bk__header {
+    color: $color-white;
+}
+
+.curve-left,
+.curve-right,
+.lines {
+    display: none;
+}
+
+/* Buttons */
+
+.button {
+    display: inline-block;
+    max-width: 23.9rem;
+    max-height: 65px;
+    width: 100%;
+    padding: 2rem 1rem;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    color: $color-white;
+    border: 1px solid $color-white;
+    transition: $transition;
+
+    &:hover,
+    &:active {
+        color: $primary-cod-gray;
+        background-color: $color-white;
+    }
+
+    &:disabled {
+        color: $primary-cod-gray;
+        border: 1px solid $secondary-shuttle-gray;
+    }
+
+    @include respond-tablet {
+        width: 24.6rem;
+    }
+}
+
+.button--dark {
+    background-color: $primary-cod-gray;
+    color: $color-white;
+    border: 1px solid $color-white;
+
+    &:hover {
+        color: $primary-cod-gray;
+        background: $color-white;
+        border: 1px solid $secondary-ebony-clay;
+    }
+}
+
+.button--transparent {
+    color: $color-white;
+    background: inherit;
+    border: 1px solid $color-white;
+
+    &:hover {
+        background: $primary-cod-gray;
+        color: $color-white;
+    }
+}
+
+.button--submit {
+    display: block;
+    max-width: 30.3rem;
+    width: 100%;
+    margin: 0 auto;
+}
