@@ -5,21 +5,3 @@
     justify-content: $justifyContent;
     align-items: center;
 }
-
-@mixin respond-mobile {
-    @media (max-width: $bp-mobile) {
-        @content;
-    }
-}
-
-@mixin respond-tablet {
-    @media (min-width: $bp-tablet-start) and (max-width: $bp-tablet-end) {
-        @content;
-    }
-}
-
-@mixin respond-desktop { 
-    @media (min-width: $bp-desktop) {
-        @content;
-    }
-}
