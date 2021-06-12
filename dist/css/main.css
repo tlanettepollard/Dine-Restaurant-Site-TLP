@@ -5,7 +5,12 @@
 /* Secondary */
 /* Box Shadow */
 /* Fonts */
-/* Breakpoints */
+/* Breakpoints 
+$bp-desktop: 120rem;
+$bp-tablet-end: 119.9rem;
+$bp-tablet-start: 76.8rem;
+$bp-mobile: 76.7rem;
+*/
 /* Design Elements */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 * {
@@ -32,7 +37,7 @@ body {
 
 /* Main Styling */
 .main {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   display: -ms-grid;
   display: grid;
@@ -90,7 +95,7 @@ body {
   border: 1px solid #5c6779;
 }
 
-@media (min-width: 76.8rem) and (max-width: 119.9rem) {
+@media only screen and (min-width: 76.8rem) {
   .button {
     width: 24.6rem;
   }
@@ -205,32 +210,55 @@ p.two {
 
 /* Layout */
 .hero {
-  height: 74.8rem;
-  text-align: center;
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: hero;
   -ms-grid-row: 1;
   grid-row: 1;
-  background-image: url(../../images/homepage/hero-bg-mobile.jpg);
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
+  height: 76.8rem;
 }
 
-@media (min-width: 76.8rem) and (max-width: 119.9rem) {
-  .hero {
-    height: 99.2rem;
-    background-image: url(../../images/homepage/hero-bg-tablet.jpg);
-  }
+.hero__bg {
+  width: 100%;
+  /*background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;*/
 }
 
-@media (min-width: 120rem) {
-  .hero {
-    height: 96rem;
-    text-align: left;
-    background-image: url(../../images/homepage/hero-bg-desktop.jpg);
-  }
+.hero__container {
+  position: absolute;
+  top: 23rem;
+  padding-right: 2.4rem;
+  padding-left: 2.4rem;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.hero__logo {
+  padding-bottom: 2.4rem;
+}
+
+.hero__title {
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.hero__text {
+  padding-bottom: 5rem;
 }
 
 /* Attribution */

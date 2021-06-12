@@ -22,7 +22,7 @@ body {
 
 /* Main Styling */
 .main {
-    height: 100vh;
+    height: 100%;
     width: 100%;
     display: grid;
     grid-template-columns: none;
@@ -83,7 +83,7 @@ body {
         border: 1px solid $secondary-shuttle-gray;
     }
 
-    @include respond-tablet {
+    @media only screen and (min-width: 76.8rem) {
         width: 24.6rem;
     }
 }

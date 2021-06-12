@@ -1,24 +1,36 @@
-
 .hero {
-    height: 74.8rem;
-    text-align: center;
     grid-area: hero;
     grid-row: 1;
-    background-image: url(../../images/homepage/hero-bg-mobile.jpg);
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    @include respond-tablet {
-        height: 99.2rem;
-        background-image: url(../../images/homepage/hero-bg-tablet.jpg);
-    }
-
-    @include respond-desktop {
-        height: 96rem;
-        text-align: left;
-        background-image: url(../../images/homepage/hero-bg-desktop.jpg);
-    }
-
-}
+    height: 76.8rem;
     
+    &__bg {
+        width: 100%;
+        /*background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;*/ 
+    }
+
+    &__container {
+        position: absolute;
+        top: 23rem;
+        padding-right: 2.4rem;
+        padding-left: 2.4rem;
+        margin: auto;
+        @include flex (column, space-between);
+        text-align: center;
+    }
+
+    &__logo {
+        padding-bottom: 2.4rem;
+    }
+
+    &__title {
+        padding-bottom: 2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;    
+    }
+
+    &__text {
+        padding-bottom: 5rem;
+    }
+}
