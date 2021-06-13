@@ -38,10 +38,6 @@ body {
 .main {
   height: 100%;
   width: 100%;
-  display: grid;
-  grid-template-columns: none;
-  grid-template-rows: auto;
-  grid-template-areas: "hero" "features" "food" "events" "cta" "footer";
 }
 
 /* Design Elements */
@@ -200,58 +196,26 @@ p.two {
 
 /* Layout */
 .hero {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center top;
-  background-image: url(../../images/homepage/hero-bg-mobile@2x.jpg);
-  grid-area: hero;
-  grid-row: 1;
+  position: relative;
   height: 74.8rem;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-items: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
 }
-.hero__container {
-  position: absolute;
-  top: 23rem;
-  padding-right: 2.4rem;
-  padding-left: 2.4rem;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
-.hero__logo {
-  padding-bottom: 2.4rem;
-  width: 10.3rem;
-}
-.hero__title {
-  padding-bottom: 2rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-.hero__text {
-  padding-bottom: 5rem;
-}
-@media screen and (min-width: 76.8rem) {
-  .hero .hero {
-    background-image: url(../../images/homepage/hero-bg-tablet@2x.jpg);
+@media (max-width: 767px) {
+  .hero {
+    background-image: url(/images/homepage/hero-bg-mobile@2x.jpg);
   }
 }
-@media screen and (min-width: 120rem) {
-  .hero .hero {
-    background-image: url(../../images/homepage/hero-bg-desktop@2x.jpg);
-    background-position: center bottom;
-    background-size: cover;
-    text-align: left;
+@media (min-width: 768px) and (max-width: 1024px) {
+  .hero {
+    background-image: url(/images/homepage/hero-bg-tablet@2x.jpg);
   }
-  .hero .hero__container {
-    padding: 14.5rem;
-    max-width: 144rem;
+}
+@media (min-width: 1025px) {
+  .hero {
+    background-image: url(/images/homepage/hero-bg-desktop@2x.jpg);
   }
 }
 

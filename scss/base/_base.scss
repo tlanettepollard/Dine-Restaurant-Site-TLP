@@ -25,16 +25,7 @@ body {
 .main {
     height: 100%;
     width: 100%;
-    display: grid;
-    grid-template-columns: none;
-    grid-template-rows: auto;
-    grid-template-areas: 
-        'hero'
-        'features'
-        'food'
-        'events'
-        'cta'
-        'footer';
+    
 }
 
 /* Design Elements */

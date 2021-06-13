@@ -715,3 +715,17 @@ form.addEventListener('submit', (e) => {
 
 
 Hero Photo Desktop media="(max-width: 139.9rem)
+
+<!-- <picture>
+        <source srcset="/images/homepage/hero-bg-desktop.jpg 1x,
+          /images/homepage/hero-bg-desktop@2x.jpg 2x"
+          media="(min-width: 120rem)"/>
+        <source srcset="/images/homepage/hero-bg-tablet.jpg 1x,
+          /images/homepage/hero-bg-tablet@2x.jpg 2x"
+          media="(min-width: 99.2rem)" />
+        <source srcset="/images/homepage/hero-bg-mobile.jpg 1x, 
+          /images/homepage/hero-bg-mobile@2x.jpg 2x"
+          media="(min-width: 30rem)" />
+        <img src="/images/homepage/hero-bg-mobile.jpg" class="hero__bg" alt="Home Hero background" />
+      </picture> -->
+

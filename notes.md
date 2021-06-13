@@ -63,7 +63,9 @@ https://dev.to/paul_duvall/sass-and-media-queries-hb2
 
 06/11/2021: Starting again. I need more practice with designing websites using CSS Grid for responsiveness. going back to flex only. 
 
-06/12/2021: Starting again again. I couldn't figure out the problem with the media queries. The biggest lesson I learned today was the the variables and mixin files need to be listed as imports before the other import files. That's why my media queries were messed up and didn't work!  
+06/12/2021: Starting again again. I couldn't figure out the problem with the media queries. The biggest lesson I learned today was the the variables and mixin files need to be listed as imports before the other import files. That's why my media queries were messed up and didn't work! 
+
+06/13/2021: I think I have the background images set. I read on web.dev about using media queries to add different sized images. I also took grid off of the site. Will focus on flex.
 
 ************************
 Reservations.scss
