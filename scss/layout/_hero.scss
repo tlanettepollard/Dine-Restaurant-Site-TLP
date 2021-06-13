@@ -2,13 +2,14 @@
     //position: relative;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top;
+    background-position: center top;
+    background-image: url(../../images/homepage/hero-bg-mobile@2x.jpg);
+
     grid-area: hero;
     grid-row: 1;
     height: 74.8rem;
     text-align: center;
-    background-image: url(../../images/homepage/hero-bg-mobile@2x.jpg);
-
+    
      @include flex(column, center);
      align-items: center;
 
@@ -18,7 +19,7 @@
         top: 23rem;
         padding-right: 2.4rem;
         padding-left: 2.4rem;
-        margin: auto;
+        margin: 0 auto;
         @include flex (column, space-between);
     }
 
@@ -40,8 +41,9 @@
 
     @media screen and (min-width: 76.8rem) {
         .hero {
-            height: 99.2rem;
             background-image: url(../../images/homepage/hero-bg-tablet@2x.jpg);
+            //height: 99.2rem;
+            
             
         }
         
@@ -49,9 +51,18 @@
 
     @media screen and (min-width: 120rem) {
         .hero {
-            height: 82rem;
-            text-align: left;
             background-image: url(../../images/homepage/hero-bg-desktop@2x.jpg);
+            background-position: center bottom;
+            background-size: cover;
+            //height: 82rem;
+            text-align: left;
+            
+            
+
+            &__container {
+                padding: 14.5rem;
+                max-width: 144rem;
+            }
             
         }
         
