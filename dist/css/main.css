@@ -200,17 +200,14 @@ p.two {
 
 /* Layout */
 .hero {
-  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  background-image: url(../../images/homepage/hero-bg-mobile@2x.jpg);
   grid-area: hero;
   grid-row: 1;
   height: 74.8rem;
-}
-.hero__bg {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top;
-  min-height: 100vh;
-  background-image: url("../../images/homepage/hero-bg-mobile@2x.jpg");
+  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -222,12 +219,11 @@ p.two {
   top: 23rem;
   padding-right: 2.4rem;
   padding-left: 2.4rem;
-  margin: auto;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  text-align: center;
 }
 .hero__logo {
   padding-bottom: 2.4rem;
@@ -243,21 +239,19 @@ p.two {
 }
 @media screen and (min-width: 76.8rem) {
   .hero .hero {
-    height: 80rem;
-  }
-  .hero .hero__bg {
-    background-image: url("../../images/homepage/hero-bg-tablet@2x.jpg");
-    min-height: 75rem;
+    background-image: url(../../images/homepage/hero-bg-tablet@2x.jpg);
   }
 }
 @media screen and (min-width: 120rem) {
   .hero .hero {
-    height: 82rem;
+    background-image: url(../../images/homepage/hero-bg-desktop@2x.jpg);
+    background-position: center bottom;
+    background-size: cover;
+    text-align: left;
   }
-  .hero .hero__bg {
-    background-image: url("../../images/homepage/hero-bg-desktop@2x.jpg");
-    align-items: flex-start;
-    min-height: 80rem;
+  .hero .hero__container {
+    padding: 14.5rem;
+    max-width: 144rem;
   }
 }
 
