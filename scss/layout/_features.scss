@@ -1,33 +1,15 @@
 .features {
     grid-area: features;
     grid-row: 2;
-    min-height: 144.6rem;
-    @include flex (column, space-around);
+    @include flex(column, space-between);
     text-align: center;
 
-    &__container {
-        min-height: 68.3rem;
-        
-    }
-    .features-title {
-        width: 30rem;
-        margin: auto;
-    }
-    .features-text {
-        width: 36rem;
-        margin: auto;
-        padding: 2rem 0;
+    &__container--left {
+        margin-bottom: .8rem;
     }
 
-    picture {
-        img {
-            margin-top: -10rem;
-            box-shadow: $bshadow-1;
-        }
+    &__container--right {
+        position: relative;
     }
 
-    .pattern {
-        margin: 2rem 0;
-    }
-       
 }
