@@ -711,3 +711,7 @@ form.addEventListener('submit', (e) => {
   checkEmail(formEmail);
   checkAmtPeople(people);
 });
+
+
+
+Hero Photo Desktop media="(max-width: 139.9rem)
