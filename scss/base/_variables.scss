@@ -29,12 +29,12 @@ $weight-regular: 400;
 $weight-semi-bold: 600;
 $weight-bold: 700;
 
-/* Breakpoints 
-$bp-desktop: 120rem;
-$bp-tablet-end: 119.9rem;
-$bp-tablet-start: 76.8rem;
-$bp-mobile: 76.7rem;
-*/
+/* Breakpoints */
+$bp-desktop: 1025px;
+$bp-tablet-end: 1024px;
+$bp-tablet-start: 768px;
+$bp-mobile: 767px;
+
 
 /* Design Elements */
 $transition: all 0.2s;
