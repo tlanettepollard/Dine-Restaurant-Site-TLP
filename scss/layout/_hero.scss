@@ -6,6 +6,9 @@
     background-attachment: fixed;
     background-size: cover;
     background-position: center center;
+
+    @include flex(column, space-between);
+    align-items: center;
     
     @media (max-width: 767px) {
         background-image: url(/images/homepage/hero-bg-mobile@2x.jpg);
@@ -18,4 +21,26 @@
     @media (min-width: 1025px){
         background-image: url(/images/homepage/hero-bg-desktop@2x.jpg);
     }
+
+    &__container {
+        position: absolute;
+        max-width: 32.7rem;
+        min-height: 36.4rem;
+        margin: 0 auto;
+        top: 22rem;
+        text-align: center;
+
+        @include flex(column, center);
+        row-gap: 1rem;
+
+    }
+     &__title {
+        padding: 2rem 4rem 0;
+     }
+
+     &__text {
+         padding: 1rem 1rem 2rem;
+     }
+
+
 }
