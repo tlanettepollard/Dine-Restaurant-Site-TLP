@@ -202,6 +202,11 @@ p.two {
   background-attachment: fixed;
   background-size: cover;
   background-position: center center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  align-items: center;
 }
 @media (max-width: 767px) {
   .hero {
@@ -218,20 +223,27 @@ p.two {
     background-image: url(/images/homepage/hero-bg-desktop@2x.jpg);
   }
 }
-
-.features {
-  grid-area: features;
-  grid-row: 2;
+.hero__container {
+  position: absolute;
+  max-width: 32.7rem;
+  min-height: 36.4rem;
+  margin: 0 auto;
+  top: 22rem;
+  text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  text-align: center;
+  row-gap: 1rem;
 }
-.features__container--left {
-  margin-bottom: 0.8rem;
+.hero__title {
+  padding: 2rem 4rem 0;
 }
-.features__container--right {
+.hero__text {
+  padding: 1rem 1rem 2rem;
+}
+
+.features {
   position: relative;
 }
 

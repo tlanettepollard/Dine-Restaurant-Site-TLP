@@ -1,15 +1,4 @@
 .features {
-    grid-area: features;
-    grid-row: 2;
-    @include flex(column, space-between);
-    text-align: center;
-
-    &__container--left {
-        margin-bottom: .8rem;
-    }
-
-    &__container--right {
-        position: relative;
-    }
+    position: relative;
 
 }
