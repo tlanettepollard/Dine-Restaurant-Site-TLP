@@ -197,7 +197,8 @@ p.two {
 /* Layout */
 .hero {
   position: relative;
-  height: 74.8rem;
+  height: 75rem;
+  padding-top: 23.2rem;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -207,6 +208,24 @@ p.two {
   justify-content: space-between;
   align-items: center;
   align-items: center;
+}
+@media (min-width: 415px) {
+  .hero {
+    padding-top: 28.2rem;
+    height: 80rem;
+  }
+}
+@media (min-width: 555px) {
+  .hero {
+    padding-top: 31.2rem;
+    height: 85rem;
+  }
+}
+@media (min-width: 655px) {
+  .hero {
+    padding-top: 38.2rem;
+    height: 90rem;
+  }
 }
 @media (max-width: 767px) {
   .hero {
@@ -228,7 +247,6 @@ p.two {
   max-width: 32.7rem;
   min-height: 36.4rem;
   margin: 0 auto;
-  top: 22rem;
   text-align: center;
   display: flex;
   flex-direction: column;
