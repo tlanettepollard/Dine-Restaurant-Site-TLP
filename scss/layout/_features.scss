@@ -1,4 +1,7 @@
 .features {
     position: relative;
+    height: 145.5rem;
+    @include flex(column, space-between);
+    margin: 0 auto;
 
 }

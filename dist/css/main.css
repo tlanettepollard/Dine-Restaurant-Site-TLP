@@ -207,7 +207,6 @@ p.two {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  align-items: center;
 }
 @media (min-width: 415px) {
   .hero {
@@ -227,6 +226,12 @@ p.two {
     height: 90rem;
   }
 }
+@media (min-width: 755px) {
+  .hero {
+    padding-top: 43.2rem;
+    height: 95rem;
+  }
+}
 @media (max-width: 767px) {
   .hero {
     background-image: url(/images/homepage/hero-bg-mobile@2x.jpg);
@@ -234,12 +239,26 @@ p.two {
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   .hero {
+    height: 99.2rem;
+    padding-top: 37.4rem;
     background-image: url(/images/homepage/hero-bg-tablet@2x.jpg);
+  }
+}
+@media (min-width: 890px) {
+  .hero {
+    height: 106.2rem;
+    padding-top: 44.4rem;
   }
 }
 @media (min-width: 1025px) {
   .hero {
     background-image: url(/images/homepage/hero-bg-desktop@2x.jpg);
+  }
+}
+@media (min-width: 1060px) {
+  .hero {
+    height: 113.2rem;
+    padding-top: 51.4rem;
   }
 }
 .hero__container {
@@ -263,6 +282,12 @@ p.two {
 
 .features {
   position: relative;
+  height: 145.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
 }
 
 /* Attribution */
