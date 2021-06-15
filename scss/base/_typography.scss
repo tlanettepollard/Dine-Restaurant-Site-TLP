@@ -7,70 +7,89 @@ body {
     font-family: $font-family;
 }
 
-h1.light {
-    font-size: 6.4rem;
+/* Headings */ 
+.heading-1 {
     font-weight: $weight-light;
-    line-height: 7.2rem;
+    font-size: 3.2rem;
+    line-height: 5rem;
     letter-spacing: -0.08rem;
+    color: $color-white;
+
+    // Tablet 
+    @media (min-width: $bp-tablet-start) and (max-width: $bp-tablet-end) {
+        font-size: 4.8rem;
+        line-height: 6rem;
+        letter-spacing: -0.08rem;
+    }
+    // Desktop
+    @media (min-width: $bp-desktop) {
+        font-size: 6.4rem;
+        line-height: 7.2rem;
+        letter-spacing: -0.08rem;
+
+    }
+
 }
 
-h1.regular {
-    font-size: 6.4rem;
-    font-weight: $weight-regular;
-    line-height: 7.2rem;
-    letter-spacing: -0.08rem;
-}
-
-h2.regular {
-    font-size: 4rem;
-    font-weight: $weight-regular;
-    line-height: 5.6rem;
-    letter-spacing: -0.05rem;
-}
-
-h2.bold {
-    font-size: 4rem;
+.heading-2-b {
     font-weight: $weight-bold;
-    line-height: 5.6rem;
-    letter-spacing: -0.05rem;
+    font-size: 3.2rem;
+    line-height: 2.8rem;
+    letter-spacing: -0.04rem;
+
+    @media (min-width: $bp-tablet-start) {
+        font-size: 4rem;
+        line-height: 5.6rem;
+        letter-spacing: -0.05rem;
+        //Same for Desktop
+    }
 }
 
-h2.medium {
-    font-size: 3rem;
+.heading-2-r {
     font-weight: $weight-regular;
-    line-height: 4rem;
-    letter-spacing: -0.05rem;
+    font-size: 3.2rem;
+    line-height: 2.8rem;
+    letter-spacing: -0.04rem;
+
+    @media (min-width: $bp-tablet-start) {
+        font-size: 4rem;
+        line-height: 5.6rem;
+        letter-spacing: -0.05rem;
+        //Same for Desktop
+    }
 }
 
-h3.regular {
+.heading-3-lg {
+    font-weight: $weight-bold;
     font-size: 1.8rem;
-    font-weight: $weight-regular;
     line-height: 2.8rem;
     letter-spacing: -0.022rem;
+    color: $color-white;
 }
 
-h3.bold {
-    font-size: 1.8rem;
-    font-weight: $weight-bold;
-    line-height: 2.8rem;
-    letter-spacing: -0.022rem;
-}
-
-h3.semi-bold {
-    font-size: 1.4rem;
+.heading-3-sm {
     font-weight: $weight-semi-bold;
+    font-size: 1.4rem;
     line-height: 2.8rem;
-    letter-spacing: +.2rem;
+    letter-spacing: .2rem;
+    color: $secondary-ebony-clay;
 }
 
-p.one {
-    font-size: 1.8rem;
+/* Body */
+.text-1 {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
     font-weight: $weight-regular;
-    line-height: 3rem;
-    letter-spacing: -0.022rem;
+    letter-spacing: -0.019rem;
+
+    @media (min-width: $bp-tablet-start) {
+        font-size: 1.8rem;
+        letter-spacing: -0.022rem;
+        //Same for Desktop
+    }
 }
 
-p.two {
+.text-2 {
     font-size: 1.4rem;
     font-weight: $weight-regular;
     line-height: 2.8rem;

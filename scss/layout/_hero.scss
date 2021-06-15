@@ -1,6 +1,7 @@
 .hero {
     position: relative;
-    height: 74.8rem;
+    height: 75rem;
+    padding-top: 23.2rem;
 
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -8,18 +9,55 @@
     background-position: center center;
 
     @include flex(column, space-between);
-    align-items: center;
-    
-    @media (max-width: 767px) {
+
+    @media (min-width: 415px) {
+        padding-top: 28.2rem;
+        height: 80rem;
+    }
+
+    @media (min-width: 555px) {
+        padding-top: 31.2rem;
+        height: 85rem;
+    }
+
+    @media (min-width: 655px) {
+        padding-top: 38.2rem;
+        height: 90rem;
+    }
+
+    @media (min-width: 755px) {
+        padding-top: 43.2rem;
+        height: 95rem;
+    }
+
+    @media (max-width: $bp-mobile) {
         background-image: url(/images/homepage/hero-bg-mobile@2x.jpg);
     }
 
-    @media (min-width: 768px) and (max-width: 1024px) {
+    @media (min-width: $bp-tablet-start) and (max-width: $bp-tablet-end) {
+        height: 99.2rem;
+        padding-top: 37.4rem;
         background-image: url(/images/homepage/hero-bg-tablet@2x.jpg);
     }
 
-    @media (min-width: 1025px){
+    @media (min-width: 890px) {
+        height: 106.2rem;
+        padding-top: 44.4rem;
+    }
+
+    @media (min-width: $bp-desktop){
+        height: 82rem;
+        padding-top: 6.5rem;
+        padding-left: 15.2rem;
+        //text-align: left;
+        @include flex(row, flex-start);
+
         background-image: url(/images/homepage/hero-bg-desktop@2x.jpg);
+    }
+
+    @media (min-width: 1060px) {
+        height: 113.2rem;
+        padding-top: 51.4rem;
     }
 
     &__container {
@@ -27,15 +65,24 @@
         max-width: 32.7rem;
         min-height: 36.4rem;
         margin: 0 auto;
-        top: 22rem;
+        //top: 23rem;
         text-align: center;
 
         @include flex(column, center);
-        row-gap: 1rem;
+        //row-gap: 1rem;
+
+        @media (min-width: 1025px) {
+            max-width: 144rem;
+            width: 45.8rem;
+            top: 23rem;
+            justify-content: space-between;
+            align-items: flex-start;
+            text-align: left;
+        }
 
     }
-     &__title {
-        padding: 2rem 4rem 0;
+     &__heading {
+        //padding: 2rem 4rem 0;
      }
 
      &__text {

@@ -5,12 +5,7 @@
 /* Secondary */
 /* Box Shadow */
 /* Fonts */
-/* Breakpoints 
-$bp-desktop: 120rem;
-$bp-tablet-end: 119.9rem;
-$bp-tablet-start: 76.8rem;
-$bp-mobile: 76.7rem;
-*/
+/* Breakpoints */
 /* Design Elements */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 * {
@@ -45,7 +40,6 @@ body {
 .food,
 .footer {
   background-color: #111111;
-  color: #ffffff;
 }
 
 .bk__header {
@@ -56,6 +50,14 @@ body {
 .curve-right,
 .lines {
   display: none;
+}
+
+.white {
+  color: #ffffff;
+}
+
+.dark {
+  color: #242b37;
 }
 
 /* Buttons */
@@ -124,70 +126,88 @@ body {
   font-family: "Spartan", sans-serif;
 }
 
-h1.light {
-  font-size: 6.4rem;
+/* Headings */
+.heading-1 {
   font-weight: 300;
-  line-height: 7.2rem;
+  font-size: 3.2rem;
+  line-height: 5rem;
   letter-spacing: -0.08rem;
+  color: #ffffff;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .heading-1 {
+    font-size: 4.8rem;
+    line-height: 6rem;
+    letter-spacing: -0.08rem;
+  }
+}
+@media (min-width: 1025px) {
+  .heading-1 {
+    font-size: 6.4rem;
+    line-height: 7.2rem;
+    letter-spacing: -0.08rem;
+  }
 }
 
-h1.regular {
-  font-size: 6.4rem;
-  font-weight: 400;
-  line-height: 7.2rem;
-  letter-spacing: -0.08rem;
-}
-
-h2.regular {
-  font-size: 4rem;
-  font-weight: 400;
-  line-height: 5.6rem;
-  letter-spacing: -0.05rem;
-}
-
-h2.bold {
-  font-size: 4rem;
+.heading-2-b {
   font-weight: 700;
-  line-height: 5.6rem;
-  letter-spacing: -0.05rem;
+  font-size: 3.2rem;
+  line-height: 2.8rem;
+  letter-spacing: -0.04rem;
+}
+@media (min-width: 768px) {
+  .heading-2-b {
+    font-size: 4rem;
+    line-height: 5.6rem;
+    letter-spacing: -0.05rem;
+  }
 }
 
-h2.medium {
-  font-size: 3rem;
+.heading-2-r {
   font-weight: 400;
-  line-height: 4rem;
-  letter-spacing: -0.05rem;
+  font-size: 3.2rem;
+  line-height: 2.8rem;
+  letter-spacing: -0.04rem;
+}
+@media (min-width: 768px) {
+  .heading-2-r {
+    font-size: 4rem;
+    line-height: 5.6rem;
+    letter-spacing: -0.05rem;
+  }
 }
 
-h3.regular {
+.heading-3-lg {
+  font-weight: 700;
   font-size: 1.8rem;
-  font-weight: 400;
   line-height: 2.8rem;
   letter-spacing: -0.022rem;
+  color: #ffffff;
 }
 
-h3.bold {
-  font-size: 1.8rem;
-  font-weight: 700;
-  line-height: 2.8rem;
-  letter-spacing: -0.022rem;
-}
-
-h3.semi-bold {
-  font-size: 1.4rem;
+.heading-3-sm {
   font-weight: 600;
+  font-size: 1.4rem;
   line-height: 2.8rem;
   letter-spacing: 0.2rem;
+  color: #242b37;
 }
 
-p.one {
-  font-size: 1.8rem;
+/* Body */
+.text-1 {
+  font-size: 1.5rem;
+  line-height: 1.8rem;
   font-weight: 400;
-  line-height: 3rem;
-  letter-spacing: -0.022rem;
+  letter-spacing: -0.019rem;
+}
+@media (min-width: 768px) {
+  .text-1 {
+    font-size: 1.8rem;
+    letter-spacing: -0.022rem;
+  }
 }
 
-p.two {
+.text-2 {
   font-size: 1.4rem;
   font-weight: 400;
   line-height: 2.8rem;
@@ -197,7 +217,8 @@ p.two {
 /* Layout */
 .hero {
   position: relative;
-  height: 74.8rem;
+  height: 75rem;
+  padding-top: 23.2rem;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -206,7 +227,30 @@ p.two {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  align-items: center;
+}
+@media (min-width: 415px) {
+  .hero {
+    padding-top: 28.2rem;
+    height: 80rem;
+  }
+}
+@media (min-width: 555px) {
+  .hero {
+    padding-top: 31.2rem;
+    height: 85rem;
+  }
+}
+@media (min-width: 655px) {
+  .hero {
+    padding-top: 38.2rem;
+    height: 90rem;
+  }
+}
+@media (min-width: 755px) {
+  .hero {
+    padding-top: 43.2rem;
+    height: 95rem;
+  }
 }
 @media (max-width: 767px) {
   .hero {
@@ -215,12 +259,33 @@ p.two {
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   .hero {
+    height: 99.2rem;
+    padding-top: 37.4rem;
     background-image: url(/images/homepage/hero-bg-tablet@2x.jpg);
+  }
+}
+@media (min-width: 890px) {
+  .hero {
+    height: 106.2rem;
+    padding-top: 44.4rem;
   }
 }
 @media (min-width: 1025px) {
   .hero {
+    height: 82rem;
+    padding-top: 6.5rem;
+    padding-left: 15.2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
     background-image: url(/images/homepage/hero-bg-desktop@2x.jpg);
+  }
+}
+@media (min-width: 1060px) {
+  .hero {
+    height: 113.2rem;
+    padding-top: 51.4rem;
   }
 }
 .hero__container {
@@ -228,16 +293,21 @@ p.two {
   max-width: 32.7rem;
   min-height: 36.4rem;
   margin: 0 auto;
-  top: 22rem;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  row-gap: 1rem;
 }
-.hero__title {
-  padding: 2rem 4rem 0;
+@media (min-width: 1025px) {
+  .hero__container {
+    max-width: 144rem;
+    width: 45.8rem;
+    top: 23rem;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+  }
 }
 .hero__text {
   padding: 1rem 1rem 2rem;
@@ -245,6 +315,12 @@ p.two {
 
 .features {
   position: relative;
+  height: 145.5rem;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 
 /* Attribution */
