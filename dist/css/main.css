@@ -327,7 +327,11 @@ body {
 .features__container .features__family,
 .features__container .features__locally {
   width: 32.7rem;
+  height: 72rem;
   margin: 0 auto;
+}
+.features__container .features__family {
+  transform: translateY(-7.2rem);
 }
 
 /* Attribution */
