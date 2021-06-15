@@ -1,9 +1,11 @@
 .features {
     height: 145.5rem;
+    margin: auto;
+    text-align: center;
 
     &__container {
         height: 145.5rem;
-        padding: 0 2.4rem 8rem;
+        margin: auto; 
         @include flex(column, space-around);
 
         .features__family, 
@@ -30,6 +32,11 @@
                 transform: translateY(8rem);
             }
         }
+
+        .features__title {
+            margin-bottom: 1.6rem;
+        }
+
     }
     
     
