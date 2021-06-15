@@ -56,6 +56,10 @@ body {
   color: #ffffff;
 }
 
+.dark {
+  color: #242b37;
+}
+
 /* Buttons */
 .button {
   display: inline-block;
@@ -145,14 +149,28 @@ body {
   }
 }
 
-.heading-2 {
+.heading-2-b {
   font-weight: 700;
   font-size: 3.2rem;
   line-height: 2.8rem;
   letter-spacing: -0.04rem;
 }
 @media (min-width: 768px) {
-  .heading-2 {
+  .heading-2-b {
+    font-size: 4rem;
+    line-height: 5.6rem;
+    letter-spacing: -0.05rem;
+  }
+}
+
+.heading-2-r {
+  font-weight: 400;
+  font-size: 3.2rem;
+  line-height: 2.8rem;
+  letter-spacing: -0.04rem;
+}
+@media (min-width: 768px) {
+  .heading-2-r {
     font-size: 4rem;
     line-height: 5.6rem;
     letter-spacing: -0.05rem;
