@@ -316,11 +316,11 @@ body {
 .features {
   position: relative;
   height: 145.5rem;
+  margin: auto;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  margin: 0 auto;
 }
 
 /* Attribution */
