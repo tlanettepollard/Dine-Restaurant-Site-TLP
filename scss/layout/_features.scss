@@ -1,9 +1,46 @@
 .features {
-    position: relative;
     height: 145.5rem;
     margin: auto;
-    @include flex(column, space-around);
+    text-align: center;
 
-     
+    &__container {
+        height: 145.5rem;
+        margin: auto; 
+        @include flex(column, space-around);
+
+        .features__family, 
+        .features__locally {
+            width: 32.7rem;
+            height: 72rem;
+            margin: 0 auto;
+        }
+
+        .features__family {
+            transform: translateY(-7.2rem);
+
+            @media (min-width: $bp-tablet-start) and (max-width: $bp-tablet-end) {
+                transform: translateY(-9.6rem);
+            }
+
+            @media (min-width: $bp-desktop) {
+                transform: translateY(-7rem);
+            }
+        }
+
+        .features__locally {
+            @media (min-width: $bp-desktop) {
+                transform: translateY(8rem);
+            }
+        }
+
+        .features__title {
+            margin-bottom: 1.6rem;
+        }
+
+    }
+    
+    
+    
+    
     
 }
