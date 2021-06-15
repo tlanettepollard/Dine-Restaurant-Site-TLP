@@ -1,9 +1,20 @@
 .features {
-    position: relative;
     height: 145.5rem;
-    margin: auto;
-    @include flex(column, space-around);
 
-     
+    &__container {
+        height: 145.5rem;
+        padding: 0 2.4rem 8rem;
+        @include flex(column, space-around);
+
+        .features__family, 
+        .features__locally {
+            width: 32.7rem;
+            margin: 0 auto;
+        }
+    }
+    
+    
+    
+    
     
 }

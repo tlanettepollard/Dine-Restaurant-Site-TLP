@@ -314,13 +314,20 @@ body {
 }
 
 .features {
-  position: relative;
   height: 145.5rem;
-  margin: auto;
+}
+.features__container {
+  height: 145.5rem;
+  padding: 0 2.4rem 8rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+}
+.features__container .features__family,
+.features__container .features__locally {
+  width: 32.7rem;
+  margin: 0 auto;
 }
 
 /* Attribution */
