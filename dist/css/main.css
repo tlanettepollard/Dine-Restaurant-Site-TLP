@@ -217,7 +217,7 @@ body {
 /* Layout */
 .hero {
   position: relative;
-  height: 75rem;
+  height: 100%;
   padding-top: 23.2rem;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -352,6 +352,17 @@ body {
 }
 .features__container .features__title {
   margin-bottom: 1.6rem;
+}
+
+.food {
+  height: 172rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.food__container {
+  height: 100%;
 }
 
 /* Attribution */
