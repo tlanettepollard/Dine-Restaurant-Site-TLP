@@ -1,0 +1,10 @@
+.food {
+    height: 172rem;
+    @include flex(column, space-between);
+    &__container {
+        height: 100%;
+    }
+
+    
+}
+    
