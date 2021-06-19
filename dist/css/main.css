@@ -438,18 +438,18 @@ body {
   align-items: center;
   padding-bottom: 6rem;
 }
-.events__container picture .event__photos {
+.events__container .event__photos {
   position: relative;
+  margin-top: 2rem;
 }
-.events__container .event-photo {
+.events__container .event__photo {
   display: none;
   box-shadow: 0 7.5rem 10rem -5rem rgba(56, 66, 85, 0.5);
 }
-.events__container .event-photo--active {
+.events__container .event__photo--active {
   max-width: 40rem;
   display: inline-block;
-  margin-bottom: 5rem;
-  padding-bottom: 2rem;
+  margin: 4rem 0;
   z-index: 1;
 }
 .events__container .events__slider {
