@@ -1,7 +1,6 @@
 .cta {
     height: 32.8rem;
     color: $color-white;
-    @include flex(column, center);
     text-align: center;
 
     background-image: url(/images/homepage/ready-bg-mobile.jpg);
@@ -10,4 +9,13 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+
+    &__content {
+        height: 100%;
+        @include flex (column, center);
+
+        &--heading {
+            padding: 2rem;
+        }
+    }
 }

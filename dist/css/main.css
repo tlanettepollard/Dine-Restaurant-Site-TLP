@@ -500,16 +500,22 @@ body {
 .cta {
   height: 32.8rem;
   color: #ffffff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   text-align: center;
   background-image: url(/images/homepage/ready-bg-mobile.jpg);
   background-image: image-reset(url(/images/homepage/ready-bg-mobile.jpg) 1x, url(/images/homepage/ready-bg-mobile@2x.jpg) 2x);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+.cta__content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cta__content--heading {
+  padding: 2rem;
 }
 
 /* Attribution */
