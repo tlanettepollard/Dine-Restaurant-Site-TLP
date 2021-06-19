@@ -1,10 +1,64 @@
+    
 .food {
-    height: 172rem;
-    @include flex(column, space-between);
+    position: relative;
+    height: 100%;
+    text-align: center;
+    padding: 5rem 0;
+
     &__container {
         height: 100%;
+        margin: auto;
+        @include flex (column, space-around);
+
+        .food__header {
+            min-height: 26rem;
+            transform: translateY(-1.2rem);
+
+            .food-pattern {
+                padding-top: 1rem;
+                padding-bottom: 4.5rem;
+            }
+
+            .food__heading {
+                padding: 0.5rem 6rem;
+            }
+
+            .food__text {
+                padding: 0 6rem;
+            }
+        }
+
+        .food__items {
+            min-height: 131rem;
+            margin-top: 2rem;
+            padding: 0 5rem;
+            @include flex (column, space-around);
+
+            .food__item {
+                height: 42rem;
+                margin-bottom: 4rem;
+                border-bottom: 1px solid $secondary-shuttle-gray;
+
+                &:last-of-type {
+                    border-bottom: none;
+                }
+                
+                picture .food-photo {
+                    -webkit-box-shadow: $bshadow-4;
+                    box-shadow: $bshadow-4;
+                }
+
+                &--heading {
+                    margin-top: 4rem;
+                }
+
+                &--paragraph {
+                    padding: 2rem 4.3rem 3rem;
+                }
+            }
+        }
     }
+}
 
     
-}
     

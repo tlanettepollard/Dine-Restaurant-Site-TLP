@@ -48,7 +48,7 @@ body {
 .heading-2-r {
     font-weight: $weight-regular;
     font-size: 3.2rem;
-    line-height: 2.8rem;
+    line-height: 4rem;
     letter-spacing: -0.04rem;
 
     @media (min-width: $bp-tablet-start) {
@@ -78,7 +78,7 @@ body {
 /* Body */
 .text-1 {
     font-size: 1.5rem;
-    line-height: 1.8rem;
+    line-height: 2.5rem;
     font-weight: $weight-regular;
     letter-spacing: -0.019rem;
 
@@ -90,7 +90,7 @@ body {
 }
 
 .text-2 {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: $weight-regular;
     line-height: 2.8rem;
     letter-spacing: .019rem;
