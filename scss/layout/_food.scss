@@ -44,8 +44,8 @@
                 }
                 
                 picture .food-photo {
-                    -webkit-box-shadow: 2px 10px 15px -2px #ffffff;
-                    box-shadow: 2px 10px 15px -2px #ffffff;
+                    -webkit-box-shadow: $bshadow-4;
+                    box-shadow: $bshadow-4;
                 }
 
                 &--heading {
