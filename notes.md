@@ -68,6 +68,7 @@ https://dev.to/paul_duvall/sass-and-media-queries-hb2
 06/13/2021: I think I have the background images set. I read on web.dev about using media queries to add different sized images. I also took grid off of the site. Will focus on flex.
 
 06/14/2021: I learned that it's best to use px for media queries. 
+06/19/2021: Learned about using transform/translate to position elements instead of margin. 
 
 ************************
 Reservations.scss

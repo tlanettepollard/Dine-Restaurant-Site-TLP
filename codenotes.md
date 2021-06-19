@@ -474,6 +474,67 @@ Highlights Code
     }
     
      
+.food {
+    min-height: 170rem;
+    text-align: center;
+    padding: 5rem 0;
+
+    &__container { 
+        min-height: 172rem;
+        margin: auto;
+        @include flex (column, space-around);
+
+      .food__header {
+          min-height: 26rem;
+          //margin-bottom: 2rem;
+          transform: translateY(-1.2rem);
+          .food-pattern {
+              padding-bottom: 5.5rem;
+          }
+          .food__heading {
+              padding: 2rem 6rem;
+          }
+          .food__text {
+              padding: 0 6rem;
+          }   
+        } 
+      
+      .food__items {
+          min-height: 131.2rem;
+          margin-top: 2rem;
+          padding: 0 5rem;
+          //transform: translateY(-.2rem);
+          @include flex (column, space-around);
+    
+        .food__item {
+            height: 42.1rem;
+            margin-bottom: 4rem;
+            border-bottom: 1px solid $secondary-shuttle-gray;
+
+            &:last-of-type {
+                border-bottom: none;
+            }
+
+            picture .food-photo {
+                
+            }
+
+            &--heading {
+               margin-top: 4rem;
+               padding-bottom: 2rem; 
+            }
+
+            &--paragraph {
+                padding: 1rem 4.3rem 3rem;
+                }
+        }
+        }
+    }
+}     
+
+
+
+
 }
 
 CTA code
