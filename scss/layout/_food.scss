@@ -17,8 +17,29 @@
           .food__heading {
               padding: 1rem 6rem;
           }
-          
-      }  
+          .food__text {
+              padding: 0 6rem;
+          }   
+      } 
+      
+      .food__items {
+          min-height: 131.2rem;
+          padding: 0 5rem;
+          @include flex (column, space-around);
+    
+        .food__item {
+            height: 42.1rem;
+            transform: translateY(-7.2rem);
+            border-bottom: 1px solid $secondary-shuttle-gray;
+
+            .food-photo {
+                box-shadow: $bshadow-2;
+            }
+
+            &__text
+        }
+
+      }
     }
     
 }
