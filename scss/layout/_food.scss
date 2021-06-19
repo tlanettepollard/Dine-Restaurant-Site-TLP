@@ -1,10 +1,25 @@
 .food {
-    height: 172rem;
-    @include flex(column, space-between);
-    &__container {
-        height: 100%;
-    }
+    min-height: 172rem;
+    text-align: center;
+    padding: 5rem 0;
 
+    &__container {
+        min-height: 172rem;
+        margin: auto;
+        @include flex (column, space-around);
+
+      .food__header {
+          min-height: 27.5rem;
+          transform: translateY(-7.2rem);
+          .food-pattern {
+              padding-bottom: 5rem;
+          }
+          .food__heading {
+              padding: 1rem 6rem;
+          }
+          
+      }  
+    }
     
 }
     

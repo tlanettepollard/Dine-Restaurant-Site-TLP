@@ -80,14 +80,21 @@
             text-align: left;
         }
 
-    }
-     &__heading {
-        //padding: 2rem 4rem 0;
-     }
+        .hero__logo {
+            padding-bottom: 2rem;
+        }
+        
+        .hero__heading {
+             //padding: 2rem 4rem 0;
+         }
 
-     &__text {
-         padding: 1rem 1rem 2rem;
-     }
+        .hero__text {
+             padding: 1rem 1rem 2rem;
+         }
+
+
+    }
+    
 
 
 }
