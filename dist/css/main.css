@@ -361,6 +361,13 @@ body {
 }
 .features__container .features__content--title {
   margin: 2rem 0;
+  padding: 0 5.5rem;
+}
+.features__container .features__content--text {
+  padding: 1rem 3.2rem 0;
+}
+.features__container picture .feature__photo {
+  box-shadow: 0 7.5rem 10rem -5rem rgba(56, 66, 85, 0.5);
 }
 
 .food {
