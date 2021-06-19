@@ -1,0 +1,13 @@
+.cta {
+    height: 32.8rem;
+    color: $color-white;
+    @include flex(column, center);
+    text-align: center;
+
+    background-image: url(/images/homepage/ready-bg-mobile.jpg);
+    background-image: image-reset(url(/images/homepage/ready-bg-mobile.jpg) 1x,
+            url(/images/homepage/ready-bg-mobile@2x.jpg) 2x);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
