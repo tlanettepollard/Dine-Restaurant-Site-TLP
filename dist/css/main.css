@@ -426,9 +426,8 @@ body {
 }
 
 .events {
-  grid-area: events;
-  grid-row: 4;
-  min-height: 104.6rem;
+  position: relative;
+  height: 100%;
   width: 37.5rem;
   margin: auto;
 }
@@ -437,9 +436,9 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  align-items: space-between;
+  padding-bottom: 6rem;
 }
-.events__container .event__photos img {
+.events__container picture .event__photos {
   position: relative;
 }
 .events__container .event-photo {
@@ -449,33 +448,35 @@ body {
 .events__container .event-photo--active {
   max-width: 40rem;
   display: inline-block;
-  margin-bottom: 4rem;
+  margin-bottom: 5rem;
+  padding-bottom: 2rem;
   z-index: 1;
 }
-.events__container .events__items {
-  padding: 0;
+.events__container .events__slider {
+  margin-top: 3rem;
 }
-.events__container .events__list {
+.events__container .events__slider .events__slider--list {
   text-transform: uppercase;
   position: relative;
   margin-bottom: 3rem;
 }
-.events__container .events__list .event__item {
+.events__container .events__slider .events__slider--list .event__item {
+  text-align: center;
   opacity: 0.7;
   cursor: pointer;
-  padding-bottom: 1.5rem;
+  padding: 2rem 0;
   margin: auto;
   transition: transform 0.5s 0s ease-in;
 }
-.events__container .events__list .event__item--active {
+.events__container .events__slider .events__slider--list .event__item--active {
   color: #242b37;
   opacity: 1;
   transform: translateY(1rem);
 }
-.events__container .events__list .two {
+.events__container .events__slider .events__slider--list .two {
   margin-bottom: 0.5rem;
 }
-.events__container .events__list .event__line {
+.events__container .events__slider .events__slider--list .event__line {
   width: 4.8rem;
   height: 0.1rem;
   background-color: #9e7166;
@@ -483,7 +484,7 @@ body {
   margin: 0 auto;
   padding: 0;
 }
-.events__container .events__list .event__line--active {
+.events__container .events__slider .events__slider--list .event__line--active {
   visibility: visible;
   z-index: -5;
 }
