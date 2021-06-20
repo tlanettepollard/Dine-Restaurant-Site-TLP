@@ -6,35 +6,46 @@
         height: 60rem;
         position: relative;
         @include flex (column, center);
-
-        background-image: url(/images/homepage/ready-bg-mobile.jpg);
-        background-image: image-reset(url(/images/homepage/ready-bg-mobile.jpg) 1x,
-            url(/images/homepage/ready-bg-mobile@2x.jpg) 2x);
+        text-align: center;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+
+        @media (max-width: $bp-mobile) {
+            background-image: url(/images/homepage/ready-bg-mobile@2x.jpg);
+        }
+
+        @media (min-width: $bp-tablet-start) and (max-width: $bp-tablet-end)  {
+            background-image: url(/images/homepage/ready-bg-tablet@2x.jpg);
+        }
+
+        @media (min-width: $bp-desktop) {
+            background-image: url(/images/homepage/ready-bg-desktop@2x.jp3);
+        }
 
         &--container {
             min-width: 32.7rem;
             height: 100%;
             @include flex (column, center);
-            padding: 5rem 0 auto;
+            row-gap: 2rem;
+            padding: 2rem 0 auto;
 
             .bk__header--logo {
-                transform: translateY(-6rem);
+                transform: translateY(-5rem);
             }
             
             .bk__header--title {
-                //padding: 3rem;
+                transform: translateY(-3rem);
                 margin: 0 auto;
             }
 
             .bk__header--text {
-                padding: 0 3rem;
+                transform: translateY(-3rem);
+                padding: 0 4rem;
             }
 
             .bk__header--button {
-                margin-bottom: 2rem;
+                margin-top: -2rem;
             }
         }
 
