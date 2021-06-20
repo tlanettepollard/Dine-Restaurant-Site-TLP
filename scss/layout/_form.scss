@@ -2,219 +2,239 @@
     position: relative;
     width: 100%;
 
-
-}
-
-.bk__header {
-    grid-area: header;
-    grid-row: 1;
-    min-height: 60rem;
-    position: relative;
-
-    background-image: url(/images/homepage/ready-bg-mobile.jpg);
-    background-image: image-reset(url(/images/homepage/ready-bg-mobile.jpg) 1x,
-            url(/images/homepage/ready-bg-mobile@2x.jpg) 2x);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-
-    &--container {
-        min-width: 32.7rem;
-        min-height: 40rem;
-        @include flex (column, space-evenly);
-        align-content: space-between;
-        margin: 5rem 0 auto;
-
-        .bk__header--title {
-            padding: 2rem 2rem 0;
-            margin: 0 auto;
-        }
-
-        .bk__header--paragraph {
-            padding: 0 3rem;
-        }
-
-        .bk__header--button {
-            margin-bottom: 2rem;
-        }
-    }
-
-}
-
-.reservation {
-    grid-area: section;
-    grid-row: 2;
-    min-height: 58.5rem;
-    position: relative;
-    color: $primary-cod-gray;
-
-    &__container {
-        width: 80%;
-        max-width: 54rem;
-        margin: 0 auto;
+    .bk__header {
+        height: 60rem;
         position: relative;
-    }
+        @include flex (column, center);
 
-    &__form {
-        max-height: 58.5rem;
-        max-width: 54rem;
-        height: 58.5rem;
-        background: $color-white;
-        padding: 3.2rem;
-        margin-top: -10rem;
-        margin-bottom: 10rem;
-        box-shadow: $bshadow-1;
-        @include flex(column, center);
-    }
+        background-image: url(/images/homepage/ready-bg-mobile.jpg);
+        background-image: image-reset(url(/images/homepage/ready-bg-mobile.jpg) 1x,
+            url(/images/homepage/ready-bg-mobile@2x.jpg) 2x);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
 
-    .form {
-        &__input {
-            border: none;
-            border-bottom: 1px solid $secondary-ebony-clay;
-            font-size: 1.8rem;
-            line-height: 2.8rem;
-            letter-spacing: -0.225px;
-            color: inherit;
-            cursor: pointer;
-        }
+        &--container {
+            min-width: 32.7rem;
+            height: 100%;
+            @include flex (column, center);
+            padding: 5rem 0 auto;
 
-        &__input::placeholder {
-            font-size: 1.8rem;
-            line-height: 2.8rem;
-            letter-spacing: -0.225px;
-            color: inherit;
-        }
+            .bk__header--logo {
+                transform: translateY(-6rem);
+            }
+            
+            .bk__header--title {
+                //padding: 3rem;
+                margin: 0 auto;
+            }
 
-        // Set margin-bottom of form field sections
-        &__field {
-            margin: 0 auto;
-            margin-bottom: 3.2rem;
-        }
+            .bk__header--text {
+                padding: 0 3rem;
+            }
 
-        &__field--text {
-            width: 100%;
-
-            // Styles form text sections
-            .form__input {
-                display: block;
-                width: 100%;
-                height: 4.5rem;
-                padding: 0.5rem 0;
+            .bk__header--button {
+                margin-bottom: 2rem;
             }
         }
 
-        &__field--number {
-            width: 100%;
-            height: 8.1rem;
-            position: relative;
+    }
 
-            label {
-                color: inherit;
-                font-family: inherit;
+    .reservation {
+        height: 58.5rem;
+        position: relative;
+        color: $primary-cod-gray;
+
+        &__container {
+            width: 80%;
+            max-width: 54rem;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        &__form {
+            max-height: 58.5rem;
+            max-width: 54rem;
+            height: 58.5rem;
+            background: $color-white;
+            padding: 3.2rem;
+            transform: translateY(-10rem);
+            margin-bottom: 10rem;
+            box-shadow: $bshadow-1;
+            @include flex(column, center);
+        }
+
+        .form {
+            &__input {
+                border: none;
+                border-bottom: 1px solid $secondary-ebony-clay;
                 font-size: 1.8rem;
                 line-height: 2.8rem;
                 letter-spacing: -0.225px;
-                //text-align: left;
-                margin-right: 20rem;
+                color: inherit;
+                cursor: pointer;
             }
 
-            .form__input {
-                width: 30%;
-                padding: 0.5rem;
-                margin: 0 0.3rem;
-                text-align: left;
-                cursor: pointer;
+            &__input::placeholder {
+                font-size: 1.8rem;
+                line-height: 2.8rem;
+                letter-spacing: -0.225px;
+                color: inherit;
+            }
 
-                &--arrow {
-                    position: relative;
-                    min-width: 8.8rem;
-                    border-bottom: none;
+            // Set margin-bottom of form field sections
+            &__field {
+                margin: 0 auto;
+                margin-bottom: 3.2rem;
+            }
 
-                    &::after {
-                        content: "\f078";
-                        font: normal normal normal 2rem/1 FontAwesome;
-                        color: $primary-beaver;
-                        right: 2rem;
-                        top: 1rem;
-                        height: 3.4rem;
-                        position: absolute;
-                    }
+            &__field--text {
+                width: 100%;
 
-                    select {
-                        appearance: none;
-                        width: 100%;
-                        max-width: 30rem;
-                        height: 4rem;
-                        line-height: 2.8rem;
-                        font-size: inherit;
-                        font-weight: $weight-regular;
-                        color: inherit;
-                        border: none;
-                        border-bottom: 1px solid $secondary-ebony-clay;
+                // Styles form text sections
+                .form__input {
+                    display: block;
+                    width: 100%;
+                    height: 4.5rem;
+                    padding: 0.5rem 0;
+                }
+            }
+
+            &__field--number {
+                width: 100%;
+                height: 8.1rem;
+                position: relative;
+
+                label {
+                    color: inherit;
+                    font-family: inherit;
+                    font-size: 1.8rem;
+                    line-height: 2.8rem;
+                    letter-spacing: -0.225px;
+                    //text-align: left;
+                    margin-right: 20rem;
+                }
+
+                .form__input {
+                    width: 30%;
+                    padding: 0.5rem;
+                    margin: 0 0.3rem;
+                    text-align: left;
+                    cursor: pointer;
+
+                    &--arrow {
+                        position: relative;
+                        min-width: 8.8rem;
+                        border-bottom: none;
+
+                        &::after {
+                            content: "\f078";
+                            font: normal normal normal 2rem/1 FontAwesome;
+                            color: $primary-beaver;
+                            right: 2rem;
+                            top: 1rem;
+                            height: 3.4rem;
+                            position: absolute;
+                        }
+
+                        select {
+                            appearance: none;
+                            width: 100%;
+                            max-width: 30rem;
+                            height: 4rem;
+                            line-height: 2.8rem;
+                            font-size: inherit;
+                            font-weight: $weight-regular;
+                            color: inherit;
+                            border: none;
+                            border-bottom: 1px solid $secondary-ebony-clay;
+                        }
                     }
                 }
             }
-        }
 
-        &__field-box {
-            position: relative;
-            @include flex(row, center);
-        }
+            &__field-box {
+                position: relative;
+                @include flex(row, center);
+            }
 
-        &__field--people {
-            width: 100%;
-            text-align: center;
-            border: none;
-            vertical-align: middle;
-
-            .form__input {
-                width: 70%;
+            &__field--people {
+                width: 100%;
                 text-align: center;
                 border: none;
                 vertical-align: middle;
+
+                .form__input {
+                    width: 70%;
+                    text-align: center;
+                    border: none;
+                    vertical-align: middle;
+                }
+            }
+
+            &__message {
+                display: block;
+                visibility: hidden;
+                font-weight: $weight-bold;
+                padding-top: 0.7rem;
+                font-size: 1rem;
+                text-align: left;
+                color: $color-error;
+            }
+
+            &__message--error {
+                visibility: visible;
+            }
+
+            &__input--error {
+                border-bottom: 1px solid $color-error;
+                color: $color-error;
+            }
+
+            .icon-count {
+                cursor: pointer;
+                width: 1.5rem;
+                vertical-align: middle;
+                padding: 1rem;
+            }
+
+            .form__input--arrow .active {
+                transform: rotate(180deg);
             }
         }
-
-        &__message {
-            display: block;
-            visibility: hidden;
-            font-weight: $weight-bold;
-            padding-top: 0.7rem;
-            font-size: 1rem;
-            text-align: left;
-            color: $color-error;
-        }
-
-        &__message--error {
-            visibility: visible;
-        }
-
-        &__input--error {
-            border-bottom: 1px solid $color-error;
-            color: $color-error;
-        }
-
-        .icon-count {
-            cursor: pointer;
-            width: 1.5rem;
-            vertical-align: middle;
-            padding: 1rem;
-        }
-
-        .form__input--arrow .active {
-            transform: rotate(180deg);
-        }
     }
-
-
-
 }
 
-
-
 .bk__footer {
-    grid-area: footer;
-    grid-row: 3;
-    max-height: 44rem;
-    height: 100%;
+    height: 60rem;
+    margin: 0 auto;
+    padding: 8rem 2.4rem;
+    text-align: center;
+    color: $color-white;
+    @include flex (column, space-between);
+
+    &--container {
+        @include flex(column, space-around);
+        height: 100%;
+        text-transform: uppercase;
+    }
+
+    /* Attribution */
+    .attribution {
+        position: relative;
+        margin-top: 5rem;
+        padding: 5px 0;
+        font-size: 11px;
+        text-align: center;
+        color: $secondary-shuttle-gray;
+    }
+
+    .attribution a {
+        color: $primary-beaver;
+        margin-top: 2rem;
+    }
+
+    .attribution a:hover {
+        color: $color-white;
+    }
 }
