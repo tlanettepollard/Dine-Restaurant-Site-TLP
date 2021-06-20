@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Base */
 /* Variables */
 /* Colors */
@@ -462,7 +463,7 @@ body {
 }
 .events__container .events__slider .events__slider--list .event__item {
   text-align: center;
-  opacity: 0.7;
+  opacity: 0.5;
   cursor: pointer;
   padding: 2rem 0;
   margin: auto;
@@ -473,29 +474,36 @@ body {
   opacity: 1;
   transform: translateY(1rem);
 }
-.events__container .events__slider .events__slider--list .two {
+.events__container .events__slider .events__slider--list .text-2 {
   margin-bottom: 0.5rem;
 }
 .events__container .events__slider .events__slider--list .event__line {
   width: 4.8rem;
   height: 0.1rem;
-  background-color: #9e7166;
   visibility: hidden;
   margin: 0 auto;
   padding: 0;
 }
 .events__container .events__slider .events__slider--list .event__line--active {
+  background-color: #9e7166;
   visibility: visible;
   z-index: -5;
 }
 .events__container .event__content {
   display: none;
 }
+.events__container .event__content--title {
+  padding: 2rem 1rem;
+}
+.events__container .event__content--text {
+  padding: 2.5rem 0;
+}
 .events__container .event__content--active {
   display: block;
+  text-align: center;
 }
-.events__container .event__paragraph {
-  padding: 2rem 1rem;
+.events__container .event__button {
+  margin-bottom: 2rem;
 }
 
 .cta {
@@ -519,10 +527,277 @@ body {
   padding: 2rem;
 }
 
+.footer {
+  height: 60rem;
+  margin: 0 auto;
+  padding: 8rem 2.4rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+.footer__container--logo, .footer__container--address, .footer__container--hours {
+  padding-bottom: 2rem;
+}
+.footer__container p {
+  text-transform: uppercase;
+}
+
 /* Attribution */
 .attribution {
   position: relative;
+  margin-top: 5rem;
   padding: 5px 0;
   font-size: 11px;
   text-align: center;
+  color: #5c6779;
+}
+
+.attribution a {
+  color: #9e7166;
+  margin-top: 2rem;
+}
+
+.attribution a:hover {
+  color: #ffffff;
+}
+
+.bk__main {
+  position: relative;
+  width: 100%;
+}
+.bk__main .bk__header {
+  height: 60rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/images/homepage/ready-bg-mobile.jpg);
+  background-image: image-reset(url(/images/homepage/ready-bg-mobile.jpg) 1x, url(/images/homepage/ready-bg-mobile@2x.jpg) 2x);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.bk__main .bk__header--container {
+  min-width: 32.7rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 0 auto;
+}
+.bk__main .bk__header--container .bk__header--logo {
+  transform: translateY(-6rem);
+}
+.bk__main .bk__header--container .bk__header--title {
+  margin: 0 auto;
+}
+.bk__main .bk__header--container .bk__header--text {
+  padding: 0 3rem;
+}
+.bk__main .bk__header--container .bk__header--button {
+  margin-bottom: 2rem;
+}
+.bk__main .reservation {
+  height: 58.5rem;
+  position: relative;
+  color: #111111;
+}
+.bk__main .reservation__container {
+  width: 80%;
+  max-width: 54rem;
+  margin: 0 auto;
+  position: relative;
+}
+.bk__main .reservation__form {
+  max-height: 58.5rem;
+  max-width: 54rem;
+  height: 58.5rem;
+  background: #ffffff;
+  padding: 3.2rem;
+  transform: translateY(-10rem);
+  margin-bottom: 10rem;
+  box-shadow: 0 7.5rem 10rem -5rem rgba(56, 66, 85, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.bk__main .reservation .form__input {
+  border: none;
+  border-bottom: 1px solid #242b37;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  letter-spacing: -0.225px;
+  color: inherit;
+  cursor: pointer;
+}
+.bk__main .reservation .form__input::-moz-placeholder {
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  letter-spacing: -0.225px;
+  color: inherit;
+}
+.bk__main .reservation .form__input:-ms-input-placeholder {
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  letter-spacing: -0.225px;
+  color: inherit;
+}
+.bk__main .reservation .form__input::placeholder {
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  letter-spacing: -0.225px;
+  color: inherit;
+}
+.bk__main .reservation .form__field {
+  margin: 0 auto;
+  margin-bottom: 3.2rem;
+}
+.bk__main .reservation .form__field--text {
+  width: 100%;
+}
+.bk__main .reservation .form__field--text .form__input {
+  display: block;
+  width: 100%;
+  height: 4.5rem;
+  padding: 0.5rem 0;
+}
+.bk__main .reservation .form__field--number {
+  width: 100%;
+  height: 8.1rem;
+  position: relative;
+}
+.bk__main .reservation .form__field--number label {
+  color: inherit;
+  font-family: inherit;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  letter-spacing: -0.225px;
+  margin-right: 20rem;
+}
+.bk__main .reservation .form__field--number .form__input {
+  width: 30%;
+  padding: 0.5rem;
+  margin: 0 0.3rem;
+  text-align: left;
+  cursor: pointer;
+}
+.bk__main .reservation .form__field--number .form__input--arrow {
+  position: relative;
+  min-width: 8.8rem;
+  border-bottom: none;
+}
+.bk__main .reservation .form__field--number .form__input--arrow::after {
+  content: "";
+  font: normal normal normal 2rem/1 FontAwesome;
+  color: #9e7166;
+  right: 2rem;
+  top: 1rem;
+  height: 3.4rem;
+  position: absolute;
+}
+.bk__main .reservation .form__field--number .form__input--arrow select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 100%;
+  max-width: 30rem;
+  height: 4rem;
+  line-height: 2.8rem;
+  font-size: inherit;
+  font-weight: 400;
+  color: inherit;
+  border: none;
+  border-bottom: 1px solid #242b37;
+}
+.bk__main .reservation .form__field-box {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.bk__main .reservation .form__field--people {
+  width: 100%;
+  text-align: center;
+  border: none;
+  vertical-align: middle;
+}
+.bk__main .reservation .form__field--people .form__input {
+  width: 70%;
+  text-align: center;
+  border: none;
+  vertical-align: middle;
+}
+.bk__main .reservation .form__message {
+  display: block;
+  visibility: hidden;
+  font-weight: 700;
+  padding-top: 0.7rem;
+  font-size: 1rem;
+  text-align: left;
+  color: #B54949;
+}
+.bk__main .reservation .form__message--error {
+  visibility: visible;
+}
+.bk__main .reservation .form__input--error {
+  border-bottom: 1px solid #B54949;
+  color: #B54949;
+}
+.bk__main .reservation .form .icon-count {
+  cursor: pointer;
+  width: 1.5rem;
+  vertical-align: middle;
+  padding: 1rem;
+}
+.bk__main .reservation .form .form__input--arrow .active {
+  transform: rotate(180deg);
+}
+
+.bk__footer {
+  height: 60rem;
+  margin: 0 auto;
+  padding: 8rem 2.4rem;
+  text-align: center;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  /* Attribution */
+}
+.bk__footer--container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  text-transform: uppercase;
+}
+.bk__footer .attribution {
+  position: relative;
+  margin-top: 5rem;
+  padding: 5px 0;
+  font-size: 11px;
+  text-align: center;
+  color: #5c6779;
+}
+.bk__footer .attribution a {
+  color: #9e7166;
+  margin-top: 2rem;
+}
+.bk__footer .attribution a:hover {
+  color: #ffffff;
 }/*# sourceMappingURL=main.css.map */

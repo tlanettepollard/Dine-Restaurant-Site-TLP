@@ -35,7 +35,7 @@
 
                 .event__item {
                     text-align: center;
-                    opacity: 0.7;
+                    opacity: 0.5;
                     cursor: pointer;
                     padding: 2rem 0;
                     margin: auto;
@@ -51,20 +51,20 @@
                     transform: translateY(1rem);
                 }
 
-                .two {
+                .text-2 {
                     margin-bottom: 0.5rem;
                 }
 
                 .event__line {
                     width: 4.8rem;
                     height: .1rem;
-                    background-color: $primary-beaver;
                     visibility: hidden;
                     margin: 0 auto;
                     padding: 0;
                 }
 
                 .event__line--active {
+                    background-color: $primary-beaver;
                     visibility: visible;
                     z-index: -5;
                 }
@@ -74,14 +74,23 @@
         }
         .event__content {
             display: none;
+
+            &--title {
+                padding: 2rem 1rem;
+            }
+
+            &--text {
+                padding: 2.5rem 0;
+            }
         }
 
         .event__content--active {
             display: block;
+            text-align: center;
         }
 
-        .event__paragraph {
-            padding: 2rem 1rem;
+        .event__button {
+            margin-bottom: 2rem;
         }
     }
 
