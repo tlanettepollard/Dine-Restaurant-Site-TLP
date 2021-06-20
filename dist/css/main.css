@@ -588,17 +588,17 @@ body {
 }
 @media (max-width: 767px) {
   .bk__main .bk__header {
-    background-image: url(/images/homepage/ready-bg-mobile@2x.jpg);
+    background-image: url(/images/booking/hero-bg-mobile@2x.jpg);
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   .bk__main .bk__header {
-    background-image: url(/images/homepage/ready-bg-tablet@2x.jpg);
+    background-image: url(/images/booking/hero-bg-tablet@2x.jpg);
   }
 }
 @media (min-width: 1025px) {
   .bk__main .bk__header {
-    background-image: url(/images/homepage/ready-bg-desktop@2x.jp3);
+    background-image: url(/images/booking/hero-bg-desktop@2x.jpg);
   }
 }
 .bk__main .bk__header--container {
@@ -612,18 +612,18 @@ body {
   padding: 2rem 0 auto;
 }
 .bk__main .bk__header--container .bk__header--logo {
-  transform: translateY(-5rem);
+  transform: translateY(-8rem);
 }
 .bk__main .bk__header--container .bk__header--title {
-  transform: translateY(-3rem);
+  transform: translateY(-5rem);
   margin: 0 auto;
 }
 .bk__main .bk__header--container .bk__header--text {
-  transform: translateY(-3rem);
+  transform: translateY(-4rem);
   padding: 0 4rem;
 }
 .bk__main .bk__header--container .bk__header--button {
-  margin-top: -2rem;
+  margin-bottom: 5rem;
 }
 .bk__main .reservation {
   height: 58.5rem;
