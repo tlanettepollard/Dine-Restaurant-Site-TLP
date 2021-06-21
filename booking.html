@@ -13,13 +13,11 @@
   <main role="main" class="bk__main">
     <header class="bk__header">
       <div class="bk__header--container">
-        <a href="./index.html">
-          <img class="bk__header--logo logo" src="../images/logo.svg" alt="Dine logo" />
-        </a>
+        <img class="bk__header--logo logo" src="../images/logo.svg" alt="Dine logo" />
         <h2 class="bk__header--title heading-2-r">Reservations
         </h2>
         <p class="bk__header--text text-2">We can’t wait to host you. If you have any special requirements please feel free to call on the phone number below. We’ll be happy to accommodate you.</p>
-        <a class="button bk__header--button" href="../docs/booking_dine.html">Reserve a Place </a>
+        <a class="button bk__header--button" href="/booking.html">Reserve a Place </a>
       </div><!-- .bk-header__container -->
     </header>
 
@@ -53,11 +51,11 @@
               <div class="form__field-box time">
                   <input type="number" name="hour" aria-label="hour" id="hour" placeholder="00" min="0" max="12" class="form__input">
                   <input type="number" name="min" aria-label="min" id="min" placeholder="00" min="0" max="59" class="form__input">
-                  <div class="form__input form__input--arrow" id="arrow" onclick="rotateArrow()">
+                  <div class="form__input form__input--arrow" id="arrow">
                     <select id="select">
                       <optgroup>
-                         <option value="AM" selected>AM</option>
-                         <option value="PM">PM</option>
+                         <option value="fas fa-angle-up" id="up-arrow" selected>AM</option>
+                         <option value="fas fa-angle-down" id="down-arrow">PM</option>
                       </optgroup>
                       <label for="select"></label>
                     </select>
@@ -66,9 +64,9 @@
             </div><!-- .form__field -->
 
             <div class="form__field form__field--people">
-              <img src="/images/icons/icon-minus.svg" alt="Icon minus" class="icon-count" id="icon-minus">
+              <svg xmlns="http://www.w3.org/2000/svg" width="7" height="3"><path fill="#9E7F66" d="M6.425 2.977V.601H.629v2.376z" class="icon-count" id="icon-minus"/></svg> 
               <input type="text" name="people" aria-label="people" id="people" placeholder="4 people" value="4 people" min="0" class="form__input">
-              <img src="/images/icons/icon-plus.svg" alt="Icon plus" class="icon-count" id="icon-plus">
+              <svg xmlns="http://www.w3.org/2000/svg" width="10" height="11"><path fill="#9E7F66" d="M6.227 10.156V6.727h3.429V4.342H6.227V.913H3.842v3.429H.413v2.385h3.429v3.429z" class="icon-count" id="icon-plus"/></svg>
             </div><!-- .form__field -->
             <button type="submit" class="button button--dark button--submit">Make Reservation</button>
           </form>
@@ -103,6 +101,7 @@
   </footer>
 
 </body>
-<script src="js/booking.js"></script>
+<script src="/js/booking.js"></script>
+<script src="https://kit.fontawesome.com/6dba2ff605.js" crossorigin="anonymous"></script>
 
 </html>

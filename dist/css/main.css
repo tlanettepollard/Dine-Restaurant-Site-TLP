@@ -581,11 +581,25 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url(/images/homepage/ready-bg-mobile.jpg);
-  background-image: image-reset(url(/images/homepage/ready-bg-mobile.jpg) 1x, url(/images/homepage/ready-bg-mobile@2x.jpg) 2x);
+  text-align: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+@media (max-width: 767px) {
+  .bk__main .bk__header {
+    background-image: url(/images/booking/hero-bg-mobile@2x.jpg);
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .bk__main .bk__header {
+    background-image: url(/images/booking/hero-bg-tablet@2x.jpg);
+  }
+}
+@media (min-width: 1025px) {
+  .bk__main .bk__header {
+    background-image: url(/images/booking/hero-bg-desktop@2x.jpg);
+  }
 }
 .bk__main .bk__header--container {
   min-width: 32.7rem;
@@ -594,19 +608,22 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 5rem 0 auto;
+  row-gap: 2rem;
+  padding: 2rem 0 auto;
 }
 .bk__main .bk__header--container .bk__header--logo {
-  transform: translateY(-6rem);
+  transform: translateY(-8rem);
 }
 .bk__main .bk__header--container .bk__header--title {
+  transform: translateY(-5rem);
   margin: 0 auto;
 }
 .bk__main .bk__header--container .bk__header--text {
-  padding: 0 3rem;
+  transform: translateY(-4rem);
+  padding: 0 4rem;
 }
 .bk__main .bk__header--container .bk__header--button {
-  margin-bottom: 2rem;
+  margin-bottom: 5rem;
 }
 .bk__main .reservation {
   height: 58.5rem;
