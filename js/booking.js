@@ -85,10 +85,9 @@ function checkAmtPeople (people) {
   }
 }
 
-function rotateArrow() {
-  arrow.classList.toggle('active');
-
-}
+arrow.addEventListener('click', () => {
+    
+})
 
 iconMinus.addEventListener('click', () => {
   people.value = parseInt(people.value) - 1;
