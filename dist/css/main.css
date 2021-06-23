@@ -779,7 +779,8 @@ body {
   vertical-align: middle;
   padding: 1rem;
 }
-.bk__main .reservation .form .form__input--arrow .active {
+
+.form__input--arrow .active {
   transform: rotate(180deg);
 }
 

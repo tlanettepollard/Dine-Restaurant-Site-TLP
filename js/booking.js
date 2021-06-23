@@ -14,8 +14,8 @@ const hour = document.getElementById('hour');
 const min = document.getElementById('min');
 
 const arrow = document.getElementById('arrow');
-const upArrow = document.getElementById('up-arrow');
-const downArrow = document.getElementById('down-arrow');
+//const upArrow = document.getElementById('up-arrow');
+//const downArrow = document.getElementById('down-arrow');
 
 // Variables for Number Picker
 const people = document.getElementById('people');
@@ -85,9 +85,7 @@ function checkAmtPeople (people) {
   }
 }
 
-arrow.addEventListener('click', () => {
-    
-})
+
 
 iconMinus.addEventListener('click', () => {
   people.value = parseInt(people.value) - 1;

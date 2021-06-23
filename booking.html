@@ -51,11 +51,12 @@
               <div class="form__field-box time">
                   <input type="number" name="hour" aria-label="hour" id="hour" placeholder="00" min="0" max="12" class="form__input">
                   <input type="number" name="min" aria-label="min" id="min" placeholder="00" min="0" max="59" class="form__input">
-                  <div class="form__input form__input--arrow" id="arrow">
+                  
+                  <div class="form__input form__input--arrow" id="arrow" onclick="rotateArrow()">
                     <select id="select">
                       <optgroup>
-                         <option value="fas fa-angle-up" id="up-arrow" selected>AM</option>
-                         <option value="fas fa-angle-down" id="down-arrow">PM</option>
+                         <option value="fas fa-check" selected>AM</option>
+                         <option value="fas fa-check">PM</option>
                       </optgroup>
                       <label for="select"></label>
                     </select>
