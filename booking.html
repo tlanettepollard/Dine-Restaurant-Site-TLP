@@ -52,11 +52,11 @@
                   <input type="number" name="hour" aria-label="hour" id="hour" placeholder="00" min="0" max="12" class="form__input">
                   <input type="number" name="min" aria-label="min" id="min" placeholder="00" min="0" max="59" class="form__input">
                   
-                  <div class="form__input form__input--arrow" id="arrow" onclick="rotateArrow()">
-                    <select id="select">
+                  <div class="form__input form__input--arrow" id="arrow">
+                    <select id="am-pm" name="am-pm" class="select">
                       <optgroup>
-                         <option value="am" selected>AM</option>
-                         <option value="pm">PM</option>
+                         <option class="form-option" value="am" selected>AM</option>
+                         <option class="form-option" value="pm">PM</option>
                       </optgroup>
                       <label for="select"></label>
                     </select>
