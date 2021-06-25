@@ -13,7 +13,7 @@ const time = document.getElementById('time');
 const hour = document.getElementById('hour');
 const min = document.getElementById('min');
 
-const select = document.getElementById('am-pm');
+//const select = document.getElementById('am-pm');
 const formInputArrow = document.getElementById('arrow');
 
 // Variables for Number Picker
@@ -85,7 +85,7 @@ function checkAmtPeople (people) {
 }
 
 formInputArrow.addEventListener('click', () => {
-    
+
 })
 
 iconMinus.addEventListener('click', () => {
