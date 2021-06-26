@@ -52,48 +52,43 @@
     }
 
     .reservation {
-        min-height: 58.5rem;
         position: relative;
+        min-height: 53.4rem;
         color: $primary-cod-gray;
+        @include flex(column, center);
 
         &__container {
-            width: 80%;
-            max-width: 54rem;
-            margin: 0 auto;
-            position: relative;
-        }
-
-        &__form {
-            max-height: 58.5rem;
-            max-width: 54rem;
             height: 58.5rem;
-            background: $color-white;
-            padding: 3.2rem;
-            margin-top: -10rem;
+            max-width: 54rem;
+        }
+        &__form {
+            height: 58.5rem;
+            max-width: 32.7rem;
+            padding: 3rem;
             margin-bottom: 10rem;
-            box-shadow: $bshadow-1;
-            @include flex(column, center);
+            background: $color-white;
+            transform: translateY(-10rem);
+            @include flex (column, center);
         }
 
         .form {
             &__input {
-                border: none;
-                border-bottom: 1px solid $secondary-ebony-clay;
-                font-size: 1.8rem;
-                line-height: 2.8rem;
-                letter-spacing: -0.225px;
-                color: inherit;
-                cursor: pointer;
+               border: none;
+               border-bottom: 1px solid $secondary-ebony-clay;
+               font-size: 1.8rem;
+               line-height: 2.8rem;
+               letter-spacing: -0.0225rem; 
+               color: inherit;
+               cursor: pointer;
             }
 
             &__input::placeholder {
-                font-size: 1.8rem;
-                line-height: 2.8rem;
-                letter-spacing: -0.225px;
+                font-size: inherit;
+                line-height: inherit;
+                letter-spacing: inherit;
                 color: inherit;
             }
 
-            // Set margin-bottom of form field sections
             &__field {
                 margin: 0 auto;
                 margin-bottom: 3.2rem;
@@ -102,7 +97,6 @@
             &__field--text {
                 width: 100%;
 
-                // Styles form text sections
                 .form__input {
                     display: block;
                     width: 100%;
@@ -121,98 +115,29 @@
                     font-family: inherit;
                     font-size: 1.8rem;
                     line-height: 2.8rem;
-                    letter-spacing: -0.225px;
-                    //text-align: left;
-                    margin-right: 20rem;
-                }
-
-                .form__input {
-                    width: 30%;
-                    padding: 0.5rem;
-                    margin: 0 0.3rem;
+                    letter-spacing: -0.0225rem;
                     text-align: left;
-                    cursor: pointer;
+                    //margin-right: 20rem;
+                }
+                .form__field-box {
+                    position: relative;
+                    @include flex (row, center);
 
-                    &--arrow {
-                        position: relative;
-                        min-width: 8.8rem;
-                        border-bottom: none;
+                    .form__input {
+                        width: 30%;
+                        padding: 0.5rem;
+                        margin: 0 0.3rem;
+                        text-align: left;
+                        cursor: pointer;
 
-                        &::after {
-                            content: "\f078";
-                            font: normal normal normal 2rem/1 FontAwesome;
-                            color: $primary-beaver;
-                            right: 2rem;
-                            top: 1rem;
-                            height: 3.4rem;
-                            position: absolute;
-                        }
-
-                        select {
-                            appearance: none;
-                            width: 100%;
-                            max-width: 30rem;
-                            height: 4rem;
-                            line-height: 2.8rem;
-                            font-size: inherit;
-                            font-weight: $weight-regular;
-                            color: inherit;
-                            border: none;
-                            border-bottom: 1px solid $secondary-ebony-clay;
-                        }
+                        
                     }
                 }
-            }
-
-            &__field-box {
-                position: relative;
-                @include flex(row, center);
-            }
-
-            &__field--people {
-                width: 100%;
-                text-align: center;
-                border: none;
-                vertical-align: middle;
-
-                .form__input {
-                    width: 70%;
-                    text-align: center;
-                    border: none;
-                    vertical-align: middle;
-                }
-            }
-
-            &__message {
-                display: block;
-                visibility: hidden;
-                font-weight: $weight-bold;
-                padding-top: 0.7rem;
-                font-size: 1rem;
-                text-align: left;
-                color: $color-error;
-            }
-
-            &__message--error {
-                visibility: visible;
-            }
-
-            &__input--error {
-                border-bottom: 1px solid $color-error;
-                color: $color-error;
-            }
-
-            .icon-count {
-                cursor: pointer;
-                width: 1.5rem;
-                vertical-align: middle;
-                padding: 1rem;
-            }
-
-            .form__input--arrow .active {
-                transform: rotate(180deg);
+                
             }
         }
+
+        
     }
 }
 
