@@ -121,7 +121,7 @@ Reservation Notes
                 font-size: 1.8rem;
                 line-height: 2.8rem;
                 letter-spacing: -0.225px;
-                //text-align: left;
+                text-align: left;
                 margin-right: 20rem;
             }
 

@@ -625,25 +625,25 @@ body {
   margin-bottom: 5rem;
 }
 .bk__main .reservation {
-  height: 58.5rem;
   position: relative;
+  min-height: 53.4rem;
   color: #111111;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .bk__main .reservation__container {
-  width: 80%;
+  height: 58.5rem;
   max-width: 54rem;
-  margin: 0 auto;
-  position: relative;
 }
 .bk__main .reservation__form {
-  max-height: 58.5rem;
-  max-width: 54rem;
   height: 58.5rem;
-  background: #ffffff;
-  padding: 3.2rem;
-  transform: translateY(-10rem);
+  max-width: 32.7rem;
+  padding: 3rem;
   margin-bottom: 10rem;
-  box-shadow: 0 7.5rem 10rem -5rem rgba(56, 66, 85, 0.5);
+  background: #ffffff;
+  transform: translateY(-10rem);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -654,26 +654,26 @@ body {
   border-bottom: 1px solid #242b37;
   font-size: 1.8rem;
   line-height: 2.8rem;
-  letter-spacing: -0.225px;
+  letter-spacing: -0.0225rem;
   color: inherit;
   cursor: pointer;
 }
 .bk__main .reservation .form__input::-moz-placeholder {
-  font-size: 1.8rem;
-  line-height: 2.8rem;
-  letter-spacing: -0.225px;
+  font-size: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
   color: inherit;
 }
 .bk__main .reservation .form__input:-ms-input-placeholder {
-  font-size: 1.8rem;
-  line-height: 2.8rem;
-  letter-spacing: -0.225px;
+  font-size: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
   color: inherit;
 }
 .bk__main .reservation .form__input::placeholder {
-  font-size: 1.8rem;
-  line-height: 2.8rem;
-  letter-spacing: -0.225px;
+  font-size: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
   color: inherit;
 }
 .bk__main .reservation .form__field {
@@ -699,91 +699,22 @@ body {
   font-family: inherit;
   font-size: 1.8rem;
   line-height: 2.8rem;
-  letter-spacing: -0.225px;
-  margin-right: 20rem;
-}
-.bk__main .reservation .form__field--number .form__input {
-  width: 30%;
-  padding: 0.5rem;
-  margin: 0 0.3rem;
+  letter-spacing: -0.0225rem;
   text-align: left;
 }
-.bk__main .reservation .form__field--number .form__input--arrow {
-  position: relative;
-  min-width: 8.8rem;
-  border-bottom: none;
-}
-.bk__main .reservation .form__field--number .form__input--arrow::after {
-  content: url("/images/icons/icon-arrow.svg");
-  position: absolute;
-  color: #9e7166;
-  right: 2rem;
-  top: 1rem;
-  height: 3.4rem;
-  pointer-events: none;
-  transition: all 0.6s ease;
-  transform: rotate(0deg);
-}
-.bk__main .reservation .form__field--number .form__input--arrow select {
-  display: inline-block;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  width: 100%;
-  max-width: 30rem;
-  height: 4rem;
-  line-height: 2.8rem;
-  font-size: inherit;
-  font-weight: 400;
-  color: inherit;
-  border: none;
-  border-bottom: 1px solid #242b37;
-  cursor: pointer;
-}
-.bk__main .reservation .form__field-box {
+.bk__main .reservation .form__field--number .form__field-box {
   position: relative;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
-.bk__main .reservation .form__field--people {
-  width: 100%;
-  text-align: center;
-  border: none;
-  vertical-align: middle;
-}
-.bk__main .reservation .form__field--people .form__input {
-  width: 70%;
-  text-align: center;
-  border: none;
-  vertical-align: middle;
-}
-.bk__main .reservation .form__message {
-  display: block;
-  visibility: hidden;
-  font-weight: 700;
-  padding-top: 0.7rem;
-  font-size: 1rem;
+.bk__main .reservation .form__field--number .form__field-box .form__input {
+  width: 30%;
+  padding: 0.5rem;
+  margin: 0 0.3rem;
   text-align: left;
-  color: #B54949;
-}
-.bk__main .reservation .form__message--error {
-  visibility: visible;
-}
-.bk__main .reservation .form__input--error {
-  border-bottom: 1px solid #B54949;
-  color: #B54949;
-}
-.bk__main .reservation .form .icon-count {
   cursor: pointer;
-  width: 1.5rem;
-  vertical-align: middle;
-  padding: 1rem;
-}
-
-.rotate {
-  transform: rotate(180deg);
 }
 
 .bk__footer {
@@ -803,6 +734,7 @@ body {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  width: 90vw;
   height: 100%;
   text-transform: uppercase;
 }
