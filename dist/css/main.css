@@ -722,6 +722,7 @@ body {
   height: 3.4rem;
   pointer-events: none;
   transition: all 0.6s ease;
+  transform: rotate(0deg);
 }
 .bk__main .reservation .form__field--number .form__input--arrow select {
   display: inline-block;
@@ -782,7 +783,6 @@ body {
 }
 
 .rotate {
-  transition: all 0.6s ease;
   transform: rotate(180deg);
 }
 
