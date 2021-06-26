@@ -70,6 +70,8 @@ https://dev.to/paul_duvall/sass-and-media-queries-hb2
 06/14/2021: I learned that it's best to use px for media queries. 
 06/19/2021: Learned about using transform/translate to position elements instead of margin. 
 
+06/26/2021: I learned about a great app on Twitter--ResponsivelyApp. I can open my webpage to see all of the responsive screens at once. I also went back to refactor my sizes to responsive measurements ie., using vw and vh. 
+
 ************************
 Reservations.scss
 .reservation {
