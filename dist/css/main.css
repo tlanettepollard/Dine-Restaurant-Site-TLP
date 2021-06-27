@@ -714,11 +714,32 @@ body {
   padding: 0.5rem;
   margin: 0 0.3rem;
   text-align: left;
-  cursor: pointer;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+}
+.bk__main .reservation .form__field--number .form__field-box .form__input select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  max-width: 30rem;
+  height: 3rem;
+  padding-left: 0.5rem;
+  line-height: 2.8rem;
+  font-size: inherit;
+  font-weight: 400;
+  border: none;
+  border-bottom: 1px solid #242b37;
+  cursor: pointer;
+}
+.bk__main .reservation .form__field--number .form__field-box .form__input .arrow-down {
+  transform: rotate(0deg);
+  transition: transform 1s linear;
+}
+.bk__main .reservation .form__field--number .form__field-box .form__input .arrow-down.active {
+  transform: rotate(180deg);
+  transition: transform 1s linear;
 }
 .bk__main .reservation .form__field--people {
   width: 100%;

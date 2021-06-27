@@ -13,10 +13,10 @@ const time = document.getElementById('time');
 const hour = document.getElementById('hour');
 const min = document.getElementById('min');
 
-//const select = document.getElementById('am-pm');
+const icon = document.getElementById('icon');
+//const select = document.getElementById('select');
+//const option = document.getElementById('form__option');
 const arrow = document.getElementById('arrow');
-const select = document.getElementById('select');
-
 
 // Variables for Number Picker
 const people = document.getElementById('people');
@@ -86,17 +86,11 @@ function checkAmtPeople (people) {
   }
 }
 
-(function rotateArrow() {
-  let active = false;
-  arrow.addEventListener('click', () => {
-    if (active) {
-      arrow.className = 'font__input--arrow active';
-    } else {
-      arrow.className = 'font__input--arrow';
-    }
-    active = !active;
-  });
-})(rotateArrow);
+
+
+arrow.addEventListener('click', function() {
+  icon.classList.toggle('active');
+});
 
 iconMinus.addEventListener('click', () => {
   people.value = parseInt(people.value) - 1;

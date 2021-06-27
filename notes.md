@@ -72,6 +72,8 @@ https://dev.to/paul_duvall/sass-and-media-queries-hb2
 
 06/26/2021: I learned about a great app on Twitter--ResponsivelyApp. I can open my webpage to see all of the responsive screens at once. I also went back to refactor my sizes to responsive measurements ie., using vw and vh. 
 
+06/27/2021: I did an 'addEventListener' to rotate my arrow. WooHoo! (Stack Overflow--You should ideally use current element and navigate to necessary element. This will ensure you are fetching correct element.)
+
 ************************
 Reservations.scss
 .reservation {

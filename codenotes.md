@@ -224,6 +224,13 @@ Reservation Notes
     height: 100%;
 }
 
+
+
+onclick="rotateArrow()"
+/*function rotateArrow() {
+  icon.classList.toggle('active');
+}*/
+
 Hero Code
 /* Mobile First Design */
 
