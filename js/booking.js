@@ -86,9 +86,17 @@ function checkAmtPeople (people) {
   }
 }
 
-function rotateArrow() {
-  arrow.classList.toggle('active');
-}
+(function rotateArrow() {
+  let active = false;
+  arrow.addEventListener('click', () => {
+    if (active) {
+      arrow.className = 'font__input--arrow active';
+    } else {
+      arrow.className = 'font__input--arrow';
+    }
+    active = !active;
+  });
+})(rotateArrow);
 
 iconMinus.addEventListener('click', () => {
   people.value = parseInt(people.value) - 1;
