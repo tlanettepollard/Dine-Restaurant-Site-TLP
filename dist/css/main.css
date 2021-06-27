@@ -216,9 +216,9 @@ body {
 
 /* Layout */
 .hero {
-  position: relative;
-  height: 100%;
-  padding-top: 23.2rem;
+  width: 100vw;
+  min-height: 74.8rem;
+  text-align: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -227,30 +227,30 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-}
-@media (min-width: 415px) {
-  .hero {
-    padding-top: 28.2rem;
-    height: 80rem;
-  }
-}
-@media (min-width: 555px) {
-  .hero {
-    padding-top: 31.2rem;
-    height: 85rem;
-  }
-}
-@media (min-width: 655px) {
-  .hero {
-    padding-top: 38.2rem;
-    height: 90rem;
-  }
-}
-@media (min-width: 755px) {
-  .hero {
-    padding-top: 43.2rem;
-    height: 95rem;
-  }
+  /* @media (min-width: 415px) {
+       padding-top: 28.2rem;
+       height: 80rem;
+   }*/
+  /* @media (min-width: 555px) {
+       padding-top: 31.2rem;
+       height: 85rem;
+   }*/
+  /*@media (min-width: 655px) {
+      padding-top: 38.2rem;
+      height: 90rem;
+  }*/
+  /* @media (min-width: 755px) {
+       padding-top: 43.2rem;
+       height: 95rem;
+   }*/
+  /* @media (min-width: 890px) {
+       height: 106.2rem;
+       padding-top: 44.4rem;
+   }*/
+  /* @media (min-width: 1060px) {
+       height: 113.2rem;
+       padding-top: 51.4rem;
+   }*/
 }
 @media (max-width: 767px) {
   .hero {
@@ -262,12 +262,6 @@ body {
     height: 99.2rem;
     padding-top: 37.4rem;
     background-image: url(/images/homepage/hero-bg-tablet@2x.jpg);
-  }
-}
-@media (min-width: 890px) {
-  .hero {
-    height: 106.2rem;
-    padding-top: 44.4rem;
   }
 }
 @media (min-width: 1025px) {
@@ -282,21 +276,14 @@ body {
     background-image: url(/images/homepage/hero-bg-desktop@2x.jpg);
   }
 }
-@media (min-width: 1060px) {
-  .hero {
-    height: 113.2rem;
-    padding-top: 51.4rem;
-  }
-}
 .hero__container {
-  position: absolute;
-  max-width: 32.7rem;
-  min-height: 36.4rem;
+  position: relative;
+  height: 38.4rem;
   margin: 0 auto;
-  text-align: center;
+  top: 23rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 @media (min-width: 1025px) {
@@ -317,57 +304,9 @@ body {
 }
 
 .features {
-  position: relative;
-  height: 100%;
+  min-height: 144.6rem;
   margin: auto;
   text-align: center;
-}
-.features__container {
-  height: 100%;
-  margin: auto;
-  padding-bottom: 6rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-}
-.features__container .features__family,
-.features__container .features__locally {
-  width: 90%;
-  height: 47%;
-  margin: 0 auto;
-  padding-bottom: 4rem;
-}
-.features__container .features__family {
-  transform: translateY(-7.2rem);
-}
-@media (min-width: 768px) and (max-width: 1024px) {
-  .features__container .features__family {
-    transform: translateY(-9.6rem);
-  }
-}
-@media (min-width: 1025px) {
-  .features__container .features__family {
-    transform: translateY(-7rem);
-  }
-}
-@media (min-width: 1025px) {
-  .features__container .features__locally {
-    transform: translateY(8rem);
-  }
-}
-.features__container .features__content--pattern {
-  padding-top: 2.5rem;
-}
-.features__container .features__content--title {
-  margin: 2rem 0;
-  padding: 0 5.5rem;
-}
-.features__container .features__content--text {
-  padding: 1rem 3.2rem 0;
-}
-.features__container picture .feature__photo {
-  box-shadow: 0 7.5rem 10rem -5rem rgba(56, 66, 85, 0.5);
 }
 
 .food {
@@ -735,11 +674,11 @@ body {
 }
 .bk__main .reservation .form__field--number .form__field-box .form__input .arrow-down {
   transform: rotate(0deg);
-  transition: transform 1s linear;
+  transition: all 1.5s ease-in-out;
 }
 .bk__main .reservation .form__field--number .form__field-box .form__input .arrow-down.active {
   transform: rotate(180deg);
-  transition: transform 1s linear;
+  transition: all 1.5s ease-in-out;
 }
 .bk__main .reservation .form__field--people {
   width: 100%;

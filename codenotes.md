@@ -379,7 +379,58 @@ Hero Code
 
 Features Code
 
+&__container {
+        position: relative;
+        width: 100vw;
+        height: 100%;
+        margin: auto; 
+        padding-bottom: 6rem;
+        @include flex(column, space-around);
 
+        .features__family, 
+        .features__locally {
+            width: 90%;
+            height: 47%;
+            margin: 0 auto;
+            padding-bottom: 4rem;
+        }
+
+        .features__family {
+            transform: translateY(-7.2rem);
+
+            @media (min-width: $bp-tablet-start) and (max-width: $bp-tablet-end) {
+                transform: translateY(-9.6rem);
+            }
+
+            @media (min-width: $bp-desktop) {
+                transform: translateY(-7rem);
+            }
+        }
+
+        .features__locally {
+            @media (min-width: $bp-desktop) {
+                transform: translateY(8rem);
+            }
+        }
+
+        .features__content {
+            &--pattern {
+                padding-top: 2.5rem;
+            }
+            &--title {
+                margin: 2rem 0;
+                padding: 0 5.5rem; 
+            }
+
+            &--text {
+                padding: 1rem 3.2rem 0;
+            }
+        }
+
+        picture .feature__photo {
+            box-shadow: $bshadow-1;
+        }
+    }
 
 
 Footer Code

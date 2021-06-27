@@ -1,8 +1,7 @@
 .hero {
-    position: relative;
-    height: 100%;
-    padding-top: 23.2rem;
-
+    width: 100vw;
+    min-height: 74.8rem;
+    text-align: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -10,25 +9,25 @@
 
     @include flex(column, space-between);
 
-    @media (min-width: 415px) {
+   /* @media (min-width: 415px) {
         padding-top: 28.2rem;
         height: 80rem;
-    }
+    }*/
 
-    @media (min-width: 555px) {
+   /* @media (min-width: 555px) {
         padding-top: 31.2rem;
         height: 85rem;
-    }
+    }*/
 
-    @media (min-width: 655px) {
+    /*@media (min-width: 655px) {
         padding-top: 38.2rem;
         height: 90rem;
-    }
+    }*/
 
-    @media (min-width: 755px) {
+   /* @media (min-width: 755px) {
         padding-top: 43.2rem;
         height: 95rem;
-    }
+    }*/
 
     @media (max-width: $bp-mobile) {
         background-image: url(/images/homepage/hero-bg-mobile@2x.jpg);
@@ -40,10 +39,10 @@
         background-image: url(/images/homepage/hero-bg-tablet@2x.jpg);
     }
 
-    @media (min-width: 890px) {
+   /* @media (min-width: 890px) {
         height: 106.2rem;
         padding-top: 44.4rem;
-    }
+    }*/
 
     @media (min-width: $bp-desktop){
         height: 82rem;
@@ -55,21 +54,21 @@
         background-image: url(/images/homepage/hero-bg-desktop@2x.jpg);
     }
 
-    @media (min-width: 1060px) {
+   /* @media (min-width: 1060px) {
         height: 113.2rem;
         padding-top: 51.4rem;
-    }
+    }*/
 
     &__container {
-        position: absolute;
-        max-width: 32.7rem;
-        min-height: 36.4rem;
+        position: relative;
+        //max-width: 32.7rem;
+        height: 38.4rem;
         margin: 0 auto;
-        //top: 23rem;
-        text-align: center;
+        top: 23rem;
+        
 
-        @include flex(column, center);
-        //row-gap: 1rem;
+        @include flex(column, space-between);
+        
 
         @media (min-width: 1025px) {
             max-width: 144rem;

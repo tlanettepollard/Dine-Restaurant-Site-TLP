@@ -145,12 +145,12 @@
 
                         .arrow-down {
                             transform: rotate(0deg);
-                            transition: transform 1s linear;
+                            transition: all 1.5s ease-in-out;
                         }
 
                         .arrow-down.active {
                             transform: rotate(180deg);
-                            transition: transform 1s linear;
+                            transition: all 1.5s ease-in-out;
                         }
                     }
                 
