@@ -161,8 +161,46 @@
                 }
                 
             }
-        }
 
+            &__field--people {
+                width: 100%;
+                text-align: center;
+                border: none;
+                vertical-align: middle;
+
+                .form__input {
+                    width: 70%;
+                    text-align: center;
+                    border: none;
+                    vertical-align: middle;
+                }
+            }
+            &__message {
+                display: block;
+                visibility: hidden;
+                font-weight: $weight-bold;
+                padding-top: .7rem;
+                font-size: 1rem;
+                text-align: left;
+                color: $color-error;
+            }
+
+            &__message--error {
+                visibility: visible;
+            }
+
+            &__input--error {
+                border-bottom: 1px solid $color-error;
+                color: $color-error;
+            }
+
+            .icon-count {
+                cursor: pointer;
+                width: 1.5rem;
+                vertical-align: middle;
+                padding: 1rem;
+            }
+        }
         
     }
 }

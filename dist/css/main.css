@@ -744,6 +744,40 @@ body {
   border-bottom: 1px solid #242b37;
   padding-left: 0.5rem;
 }
+.bk__main .reservation .form__field--people {
+  width: 100%;
+  text-align: center;
+  border: none;
+  vertical-align: middle;
+}
+.bk__main .reservation .form__field--people .form__input {
+  width: 70%;
+  text-align: center;
+  border: none;
+  vertical-align: middle;
+}
+.bk__main .reservation .form__message {
+  display: block;
+  visibility: hidden;
+  font-weight: 700;
+  padding-top: 0.7rem;
+  font-size: 1rem;
+  text-align: left;
+  color: #B54949;
+}
+.bk__main .reservation .form__message--error {
+  visibility: visible;
+}
+.bk__main .reservation .form__input--error {
+  border-bottom: 1px solid #B54949;
+  color: #B54949;
+}
+.bk__main .reservation .form .icon-count {
+  cursor: pointer;
+  width: 1.5rem;
+  vertical-align: middle;
+  padding: 1rem;
+}
 
 .bk__footer {
   height: 60rem;
