@@ -716,12 +716,12 @@ body {
   text-align: left;
   cursor: pointer;
 }
-.bk__main .reservation .form__field--number .form__field-box .am-pm {
+.bk__main .reservation .form__field--number .form__field-box .form__input--arrow {
   position: relative;
   min-width: 8rem;
   border-bottom: none;
 }
-.bk__main .reservation .form__field--number .form__field-box .am-pm::after {
+.bk__main .reservation .form__field--number .form__field-box .form__input--arrow::after {
   content: url("/images/icons/icon-arrow.svg");
   color: #9e7166;
   right: 2rem;
@@ -730,7 +730,7 @@ body {
   position: absolute;
   transform: rotate(0deg);
 }
-.bk__main .reservation .form__field--number .form__field-box .am-pm select {
+.bk__main .reservation .form__field--number .form__field-box .form__input--arrow select {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -779,7 +779,7 @@ body {
   vertical-align: middle;
   padding: 1rem;
 }
-.bk__main .reservation .form .am-pm .active {
+.bk__main .reservation .form .form__input--arrow .active {
   transform: rotate(180deg);
 }
 
