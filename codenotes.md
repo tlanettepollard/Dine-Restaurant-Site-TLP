@@ -431,8 +431,148 @@ Features Code
             box-shadow: $bshadow-1;
         }
     }
+************
+Feature Code 2
+.features {
+    background-color: $color-white;
+    min-height: 145.5rem;
+    margin: auto;
+    text-align: center;
+    //background-repeat: no-repeat;
+
+    &__container {
+        padding: 0 2.4rem 8rem;
+
+        @media (min-width: $bp-tablet-start) and (max-width: $bp-tablet-end) {
+            padding: 0 9.7rem 12rem;
+        }
+
+        @media (min-width: $bp-desktop) {
+            max-width: 111rem;
+            margin: 0 auto;
+        }
+
+        .features__section {
+            @media (min-width: $bp-desktop){
+                min-width: 54rem;
+                height: 72rem;
+            }
+        }
+
+        .features__enjoyable {
+            margin-bottom: .8rem;
+            transform: translateY(-7.2rem);
+
+            @media (min-width: $bp-tablet-start) and (max-width: $bp-tablet-end){
+                margin-bottom: 2.4rem;
+                transform: translateY(-9.6rem);
+            }
+
+            @media (min-width: $bp-desktop){
+                @include flex (row, space-between);
+                margin-bottom: -2.9rem;
+                transform: translateY(-7rem);
+            }
+
+            .features__photo {
+                 box-shadow: $bshadow-1;
+
+               &-enjoyable__image {
+                   width: 100%;
+                   background-repeat: no-repeat;
+                   background-size: cover;
+                   
+                   @media (max-width: $bp-mobile) {
+                       min-height: 40rem;
+                       background-position: center center;
+                   }
+
+                   @media (min-width: $bp-tablet-start) and (max-width: $bp-tablet-end) {
+                       min-height: 36rem;
+                   }
+
+                   @media (min-width: $bp-desktop){
+                       min-height: 72rem;
+                   }
+               }
+               .image-one {
+                   @media (max-width: $bp-mobile){
+                       background-image: url(/images/homepage/enjoyable-place-mobile@2x.jpg);
+                   }
+
+                   @media (min-width: $bp-tablet-start) and (max-width: $bp-tablet-end) {
+                       background-image: url(/images/homepage/enjoyable-place-tablet@2x.jpg);
+                   }
+
+                   @media (min-width: $bp-desktop) {
+                       background-image: url(/images/homepage/enjoyable-place-desktop@2x.jpg);
+                   }
+               } 
+            }
+        }
+
+        .features__locally {
+            position: relative;
+
+            @media (min-width: $bp-desktop){
+                @include flex (row-reverse, space-between);
+                transform: translateY(8rem);
+            }
+
+            .features__photo {
+
+                &-locally__image {
+                    width: 100%;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+
+                    @media (max-width: $bp-mobile){
+                        min-height: 40rem;
+                        background-position: center center;
+                    }
+
+                    @media (min-width: $bp-tablet-start) and (max-width: $bp-tablet-end) {
+                        min-height: 36rem;
+                    }
+
+                    @media (min-width: $bp-desktop) {
+                        min-height: 72rem;
+                    }
+                }
+
+                .image-two {
+                    @media (max-width: $bp-mobile){
+                        background-image: url(/images/homepage/locally-sourced-mobile@2x.jpg);
+                    }
+
+                    @media (min-width: $bp-tablet-start) and (max-width: $bp-tablet-end) {
+                        background-image: url(/images/homepage/locally-sourced-tablet@2x.jpg);
+                    }
+
+                    @media (min-width: $bp-desktop){
+                        background-image: url(/images/homepage/locally-sourced-desktop@2x.jpg);
+                    }
+                    
+                }
+            }
+        }
+    }
+    
+    
+
+    
+    
+    
+    
+    
+    
+}
 
 
+
+
+
+*****************
 Footer Code
 .footer {
     grid-area: footer;
