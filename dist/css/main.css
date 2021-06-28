@@ -303,6 +303,26 @@ body {
   padding: 1rem 1rem 2rem;
 }
 
+.features {
+  background-color: #ffffff;
+  min-height: 145.5rem;
+  text-align: center;
+}
+.features__container {
+  padding: 0 2.4rem 8rem;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .features__container {
+    padding: 0 9.7rem 12rem;
+  }
+}
+@media (min-width: 1025px) {
+  .features__container {
+    max-width: 111rem;
+    margin: 0 auto;
+  }
+}
+
 .food {
   position: relative;
   height: 100%;
