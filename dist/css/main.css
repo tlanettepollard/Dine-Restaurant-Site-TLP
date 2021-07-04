@@ -217,47 +217,18 @@ body {
 /* Layout */
 .hero {
   width: 100vw;
-  min-height: 74.8rem;
+  height: 74.8rem;
   text-align: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   background-position: center center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  /* @media (min-width: 415px) {
-       padding-top: 28.2rem;
-       height: 80rem;
-   }*/
-  /* @media (min-width: 555px) {
-       padding-top: 31.2rem;
-       height: 85rem;
-   }*/
-  /*@media (min-width: 655px) {
-      padding-top: 38.2rem;
-      height: 90rem;
-  }*/
-  /* @media (min-width: 755px) {
-       padding-top: 43.2rem;
-       height: 95rem;
-   }*/
-  /* @media (min-width: 890px) {
-       height: 106.2rem;
-       padding-top: 44.4rem;
-   }*/
-  /* @media (min-width: 1060px) {
-       height: 113.2rem;
-       padding-top: 51.4rem;
-   }*/
+  padding-top: 23.2rem;
+  padding-right: 2.4rem;
+  padding-left: 2.4rem;
+  background-image: url(/images/homepage/hero-bg-mobile@2x.jpg);
 }
-@media (max-width: 767px) {
-  .hero {
-    background-image: url(/images/homepage/hero-bg-mobile@2x.jpg);
-  }
-}
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) {
   .hero {
     height: 99.2rem;
     padding-top: 37.4rem;
@@ -268,39 +239,10 @@ body {
   .hero {
     height: 82rem;
     padding-top: 6.5rem;
-    padding-left: 15.2rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
+    padding-left: 15.5rem;
+    text-align: left;
     background-image: url(/images/homepage/hero-bg-desktop@2x.jpg);
   }
-}
-.hero__container {
-  position: relative;
-  height: 38.4rem;
-  margin: 0 auto;
-  top: 23rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
-@media (min-width: 1025px) {
-  .hero__container {
-    max-width: 144rem;
-    width: 45.8rem;
-    top: 23rem;
-    justify-content: space-between;
-    align-items: flex-start;
-    text-align: left;
-  }
-}
-.hero__container .hero__logo {
-  padding-bottom: 2rem;
-}
-.hero__container .hero__text {
-  padding: 1rem 1rem 2rem;
 }
 
 .features {
