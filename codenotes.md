@@ -435,10 +435,13 @@ Features Code
 Feature Code 2
 .features {
     background-color: $color-white;
-    min-height: 145.5rem;
-    margin: auto;
+    //height: 145.5rem;
     text-align: center;
-    //background-repeat: no-repeat;
+
+    @media (min-width: $bp-tablet-end) {
+        text-align: left;
+    }
+
 
     &__container {
         padding: 0 2.4rem 8rem;
@@ -452,111 +455,104 @@ Feature Code 2
             margin: 0 auto;
         }
 
-        .features__section {
-            @media (min-width: $bp-desktop){
-                min-width: 54rem;
-                height: 72rem;
-            }
-        }
-
         .features__enjoyable {
             margin-bottom: .8rem;
-            transform: translateY(-7.2rem);
 
-            @media (min-width: $bp-tablet-start) and (max-width: $bp-tablet-end){
+            @media (min-width: $bp-tablet-start) and (max-width: $bp-tablet-end) {
                 margin-bottom: 2.4rem;
-                transform: translateY(-9.6rem);
             }
 
-            @media (min-width: $bp-desktop){
+            @media (min-width: $bp-desktop) {
                 @include flex (row, space-between);
                 margin-bottom: -2.9rem;
-                transform: translateY(-7rem);
+            } 
+
+            .features__card-one {
+                transform: translateY(-7.2rem);
+
+                @media (min-width: $bp-tablet-start) and (max-width: $bp-tablet-end) {
+                    transform: translateY(-9.6rem);
+                }
+
+                @media (min-width: $bp-desktop) {
+                    transform: translateY(-7rem);
+                }   
+            }
+            
+            .features__image-one {
+                @media (max-width: $bp-mobile) {
+                    
+                    background-image: url(/images/homepage/enjoyable-place-mobile@2x.jpg);
+                }
+                
+                @media (min-width: $bp-tablet-start) and (max-width: $bp-tablet-end) {
+                    background-image: url(/images/homepage/enjoyable-place-tablet@2x.jpg);
+                }
+
+                @media (min-width: $bp-desktop){
+                    background-image: url(/images/homepage/enjoyable-place-desktop@2x.jpg);
+                }
             }
 
-            .features__photo {
-                 box-shadow: $bshadow-1;
-
-               &-enjoyable__image {
-                   width: 100%;
-                   background-repeat: no-repeat;
-                   background-size: cover;
-                   
-                   @media (max-width: $bp-mobile) {
-                       min-height: 40rem;
-                       background-position: center center;
-                   }
-
-                   @media (min-width: $bp-tablet-start) and (max-width: $bp-tablet-end) {
-                       min-height: 36rem;
-                   }
-
-                   @media (min-width: $bp-desktop){
-                       min-height: 72rem;
-                   }
-               }
-               .image-one {
-                   @media (max-width: $bp-mobile){
-                       background-image: url(/images/homepage/enjoyable-place-mobile@2x.jpg);
-                   }
-
-                   @media (min-width: $bp-tablet-start) and (max-width: $bp-tablet-end) {
-                       background-image: url(/images/homepage/enjoyable-place-tablet@2x.jpg);
-                   }
-
-                   @media (min-width: $bp-desktop) {
-                       background-image: url(/images/homepage/enjoyable-place-desktop@2x.jpg);
-                   }
-               } 
-            }
+            
         }
 
         .features__locally {
             position: relative;
 
-            @media (min-width: $bp-desktop){
+            @media (min-width: $bp-desktop) {
                 @include flex (row-reverse, space-between);
-                transform: translateY(8rem);
             }
 
-            .features__photo {
+            .features__card-two {
+                @media (min-width: $bp-desktop) {
+                    transform: translateY(8rem);
+                }
+            }
 
-                &-locally__image {
-                    width: 100%;
-                    background-repeat: no-repeat;
-                    background-size: cover;
-
-                    @media (max-width: $bp-mobile){
-                        min-height: 40rem;
-                        background-position: center center;
-                    }
-
-                    @media (min-width: $bp-tablet-start) and (max-width: $bp-tablet-end) {
-                        min-height: 36rem;
-                    }
-
-                    @media (min-width: $bp-desktop) {
-                        min-height: 72rem;
-                    }
+            .features__image-two {
+                @media (max-width: $bp-mobile){
+                    background-image: url(/images/homepage/locally-sourced-mobile@2x.jpg);
                 }
 
-                .image-two {
-                    @media (max-width: $bp-mobile){
-                        background-image: url(/images/homepage/locally-sourced-mobile@2x.jpg);
-                    }
+                @media (min-width: $bp-tablet-start) and (max-width: $bp-tablet-end) {
+                    background-image: url(/images/homepage/locally-sourced-tablet@2x.jpg);
+                }
 
-                    @media (min-width: $bp-tablet-start) and (max-width: $bp-tablet-end) {
-                        background-image: url(/images/homepage/locally-sourced-tablet@2x.jpg);
-                    }
-
-                    @media (min-width: $bp-desktop){
-                        background-image: url(/images/homepage/locally-sourced-desktop@2x.jpg);
-                    }
-                    
+                @media (min-width: $bp-desktop) {
+                    background-image: url(/images/homepage/locally-sourced-desktop@2x.jpg);
                 }
             }
         }
+
+        .features__card {
+          @media (min-width: $bp-desktop){
+              min-width: 54rem;
+              height: 72rem;   
+          }  
+        }
+        
+        .features__image {
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            @media (max-width: $bp-mobile){
+                min-height: 40rem;
+                background-position: center center;
+            }
+
+            @media (min-width: $bp-tablet-start) and (max-width: $bp-tablet-end) {
+                min-height: 36rem;
+            }
+
+            @media (min-width: $bp-desktop) {
+                min-height: 72rem;
+            }
+        }
+
     }
+}
     
     
 
