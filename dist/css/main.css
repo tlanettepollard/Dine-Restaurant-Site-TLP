@@ -304,7 +304,6 @@ body {
 }
 
 .features {
-  min-height: 140rem;
   text-align: center;
   background-repeat: no-repeat;
 }
@@ -390,17 +389,17 @@ body {
 .features__container .features__card {
   width: 100%;
   box-shadow: 0 7.5rem 10rem -5rem rgba(56, 66, 85, 0.5);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 @media (min-width: 1025px) {
   .features__container .features__card {
-    min-width: 54rem;
+    width: 54rem;
     height: 72rem;
   }
 }
 .features__container .features__card .features__image-enjoyable {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-position: center center;
   min-height: 40rem;
 }
 @media (max-width: 767px) {
@@ -416,6 +415,7 @@ body {
 }
 @media (min-width: 1025px) {
   .features__container .features__card .features__image-enjoyable {
+    width: 54rem;
     min-height: 72rem;
     background-image: url(/images/homepage/enjoyable-place-desktop@2x.jpg);
   }
@@ -439,6 +439,7 @@ body {
 }
 @media (min-width: 1025px) {
   .features__container .features__card .features__image-locally {
+    width: 54rem;
     min-height: 72rem;
     background-image: url(/images/homepage/locally-sourced-desktop@2x.jpg);
   }
