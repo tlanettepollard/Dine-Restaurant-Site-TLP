@@ -70,7 +70,6 @@
 
         .features__card {
             width: 100%;
-            min-height: 40rem;
             box-shadow: $bshadow-1;
 
             @media (min-width: $bp-desktop){
@@ -82,8 +81,9 @@
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position: center;
+                min-height: 40rem;
+
                 @media (max-width: $bp-mobile) {
-                    min-height: 40rem;
                     background-image: url(/images/homepage/enjoyable-place-mobile@2x.jpg);
                 }
 
@@ -109,6 +109,7 @@
                 }
 
                 @media (min-width: $bp-tablet-start) and (max-width: $bp-tablet-end){
+                    min-height: 36rem;
                     background-image: url(/images/homepage/locally-sourced-tablet@2x.jpg);
                 }
 
@@ -154,6 +155,14 @@
         .content-one {
             @media (max-width: $bp-mobile) {
                 transform: translateY(-7.2rem);
+            }
+
+            @media (min-width: $bp-tablet-start) and (max-width: $bp-tablet-end) {
+                transform: translateY(-9.6rem);
+            }
+
+            @media (min-width: $bp-desktop) {
+                transform: translateY(-4rem);
             }
         }
     }
