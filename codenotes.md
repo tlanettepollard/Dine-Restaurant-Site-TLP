@@ -752,27 +752,30 @@ CTA code
 }
 
 *****************************************
-<picture class="features__picture">
-                    <source srcset="/images/homepage/locally-sourced-desktop.jpg 1x, 
-                    /images/homepage/locally-sourced-desktop@2x.jpg 2x" media="(min-width: 64rem)"/>
-
-                    <source srcset="/images/homepage/locally-sourced-tablet.jpg 1x, 
-                    /images/homepage/locally-sourced-tablet@2x.jpg 2x" media="(min-width: 48rem)"/>
-
-                    <source srcset="/images/homepage/locally-sourced-mobile.jpg 1x, 
-                    /images/homepage/locally-sourced-mobile@2x.jpg 2x" media="(min-width: 18.75rem)"/>
-</picture>
-
-<picture class="features__picture">
+<picture class="features__image-enjoyable">
                     <source srcset="/images/homepage/enjoyable-place-desktop.jpg 1x, 
-                    /images/homepage/enjoyable-place-desktop@2x.jpg 2x" media="(min-width: 102.4rem)"/>
+                    /images/homepage/enjoyable-place-desktop@2x.jpg 2x" media="(min-width: 1024px)"/>
 
                     <source srcset="/images/homepage/enjoyable-place-tablet.jpg 1x, 
-                    /images/homepage/enjoyable-place-tablet@2x.jpg 2x" media="(min-width: 76.8rem)"/>
+                    /images/homepage/enjoyable-place-tablet@2x.jpg 2x" media="(min-width: 768px)"/>
 
                     <source srcset="/images/homepage/enjoyable-place-mobile.jpg 1x, 
-                    /images/homepage/enjoyable-place-mobile@2x.jpg 2x" media="(min-width: 30rem)" />
-</picture>
+                    /images/homepage/enjoyable-place-mobile@2x.jpg 2x" media="(min-width: 300px)" />
+
+                    <img src="images/homepage/enjoyable-place-mobile.jpg" alt="enjoyable place landscape">
+            </picture> 
+
+<picture class="features__image-locally">
+                    <source srcset="/images/homepage/locally-sourced-desktop.jpg 1x, 
+                    /images/homepage/locally-sourced-desktop@2x.jpg 2x" media="(min-width: 1025px)"/>
+
+                    <source srcset="/images/homepage/locally-sourced-tablet.jpg 1x, 
+                    /images/homepage/locally-sourced-tablet@2x.jpg 2x" media="(min-width: 768px) and ((max-width: 1024px)"/>
+
+                    <source srcset="/images/homepage/locally-sourced-mobile.jpg 1x, 
+                    /images/homepage/locally-sourced-mobile@2x.jpg 2x" media="(min-width: 300px) and (max-width: 767px)"/>
+                    <img src="images/homepage/locally-sourced-mobile.jpg" alt="locally sourced food">
+            </picture>
 
 <picture class="menu-items--picture">
                             <source srcset="/images/homepage/salmon-desktop-tablet.jpg 1x, 

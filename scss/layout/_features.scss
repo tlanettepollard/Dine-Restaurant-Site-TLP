@@ -1,0 +1,66 @@
+.features {
+    text-align: center; 
+    background-repeat: no-repeat;
+
+    @media (min-width: $bp-tablet-end) {
+       text-align: left;
+    }
+
+    @media (min-width: $bp-tablet-start) and (max-width: $bp-tablet-end) {
+        background-position-y: 10rem, bottom;
+        background-position-x: -67vw, 52vw;
+        background-image: url(/images/patterns/pattern-curve-top-right.svg), url(/images/patterns/pattern-curve-top-left.svg);
+    }
+    @media (min-width: $bp-desktop) {
+        background-image: url(/images/patterns/pattern-curve-bottom-right.svg), url(/images/patterns/pattern-curve-top-left.svg);
+        background-position-y: 24.2rem, bottom;
+        background-position-x: left, right;
+    }
+
+    &__container {
+        padding: 0 2.4rem 8rem;
+
+        @media (min-width: $bp-tablet-start) and (max-width: $bp-tablet-end) {
+            padding: 0 9.7rem 12rem;
+        }
+
+        @media (min-width: $bp-desktop){
+            max-width: 111rem;
+            margin: 0 auto;
+        }
+
+        .features__card {
+            width: 100%;
+            min-height: 40rem;
+            box-shadow: $bshadow-1;
+
+            @media (min-width: $bp-desktop){
+                min-width: 54rem;
+                height: 72rem;
+            } 
+            
+            .features__image-enjoyable {
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                @media (max-width: $bp-mobile) {
+                    min-height: 40rem;
+                    background-image: url(/images/homepage/enjoyable-place-mobile@2x.jpg);
+                }
+
+                @media (min-width: $bp-tablet-start) and (max-width: $bp-tablet-end) {
+                    min-height: 40rem;
+                    background-image: url(/images/homepage/enjoyable-place-tablet@2x.jpg);
+                }
+
+                @media (min-width: $bp-desktop) {
+                    min-height: 72rem;
+                    background-image: url(/images/homepage/enjoyable-place-desktop@2x.jpg);
+                }
+            }
+        }
+
+        
+    }
+
+}
