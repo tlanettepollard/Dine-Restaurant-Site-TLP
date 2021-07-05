@@ -304,6 +304,7 @@ body {
 }
 
 .features {
+  min-height: 140rem;
   text-align: center;
   background-repeat: no-repeat;
 }
@@ -338,6 +339,52 @@ body {
   .features__container {
     max-width: 111rem;
     margin: 0 auto;
+  }
+}
+@media (max-width: 767px) {
+  .features__container .features__enjoyable {
+    margin-bottom: 0.8rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .features__container .features__enjoyable {
+    margin-bottom: 2.4rem;
+  }
+}
+@media (min-width: 1025px) {
+  .features__container .features__enjoyable {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: -2.9rem;
+  }
+}
+.features__container .features__locally {
+  position: relative;
+}
+@media (min-width: 1025px) {
+  .features__container .features__locally {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .features__container .features__locally .floating-lines {
+    display: block;
+    right: 0;
+    top: 22.8rem;
+    transform: translateX(5.8rem);
+  }
+}
+@media (min-width: 1025px) {
+  .features__container .features__locally .floating-lines {
+    display: block;
+    right: 0;
+    top: 36rem;
+    transform: translateX(11.4rem);
   }
 }
 .features__container .features__card {
@@ -412,6 +459,26 @@ body {
 @media (min-width: 1025px) {
   .features__container .card-two {
     transform: translateY(8rem);
+  }
+}
+@media (max-width: 767px) {
+  .features__container .features__content {
+    margin-top: 4.8rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .features__container .features__content {
+    margin-top: 5.6rem;
+  }
+}
+@media (min-width: 1025px) {
+  .features__container .features__content {
+    max-width: 44.5rem;
+  }
+}
+@media (max-width: 767px) {
+  .features__container .content-one {
+    transform: translateY(-7.2rem);
   }
 }
 
