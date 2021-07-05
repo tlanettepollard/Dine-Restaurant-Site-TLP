@@ -12,9 +12,9 @@
   <main role="main" class="main">
     <section role="header" class="hero">
       <div class="hero__container"> 
-        <a class="hero__logo-link" href="/index.html">
-          <img class="hero__logo logo" src="/images/logo.svg" alt="Dine logo" />
-        </a>
+        <div class="hero__logo">
+          <img class="logo" src="/images/logo.svg" alt="Dine logo" />
+        </div>
         <h1 class="hero__heading heading-1">Exquisite dining since 1989</h1>
         <p class="hero__text text-2 white">Experience our seasonal menu in beautiful country surroundings. Eat the freshest produce from the comfort of our farmhouse.</p>
         <a class="button button--dark hero__button" href="booking.html">Book a table</a>
@@ -23,51 +23,34 @@
 
     <section class="features">
       <div class="features__container">
-        <div class="features__family">
-          <div class="features__photo features__photo--family">
-            <picture>
-                <source srcset="/images/homepage/enjoyable-place-desktop.jpg 1x, 
-                /images/homepage/enjoyable-place-desktop@2x.jpg 2x" media="(min-width: 120rem)"/>
-                <source srcset="/images/homepage/enjoyable-place-tablet.jpg 1x, 
-                /images/homepage/enjoyable-place-tablet@2x.jpg 2x" media="(min-width: 76.8rem)"/>
-                <source srcset="/images/homepage/enjoyable-place-mobile.jpg 1x, 
-                /images/homepage/enjoyable-place-mobile@2x.jpg 2x" media="(min-width: 30rem)" />
-                <img class="feature__photo features__photo--left" src="/images/homepage/enjoyable-place-mobile.jpg" alt="Enjoyable place"/>
-            </picture>  
+        <div class="features__enjoyable">
+          <div class="features__image">
+            <div class="features__image-enjoyable"></div>
           </div>
-          <div class="features__content features__content--family">
+          <div class="features__content-enjoyable">
             <img class="features__content--pattern" src="/images/patterns/pattern-divide.svg" alt="divide pattern"/>
                     
-            <h2 class="features__content--title heading-2-r dark">Enjoyable place for all the family</h2>
-            <p class="features__content--text text-2 dark">
-             Our relaxed surroundings make dining with us a great experience for everyone. We can even arrange a tour of the farm before your meal. </p> 
+            <h2 class="features__title heading-2-r dark">Enjoyable place for all the family</h2>
+            <p class="features__text text-2 dark">Our relaxed surroundings make dining with us a great experience for everyone. We can even arrange a tour of the farm before your meal. </p> 
           </div>
-          <img class="curve-right curve" src="/images/patterns/pattern-curve-top-right.svg" alt="Curve top right" />
+          <!--<img class="curve-right curve" src="/images/patterns/pattern-curve-top-right.svg" alt="Curve top right" />-->
         </div>
 
         <div class="features__locally">
-          <div class="features__photo features__photo--locally">
-            <picture>
-              <source srcset="/images/homepage/locally-sourced-desktop.jpg 1x, 
-              /images/homepage/locally-sourced-desktop@2x.jpg 2x" media="(min-width: 120rem)"/>
-              <source srcset="/images/homepage/locally-sourced-tablet.jpg 1x, 
-              /images/homepage/locally-sourced-tablet@2x.jpg 2x" media="(min-width: 76.8rem)"/>
-              <source srcset="/images/homepage/locally-sourced-mobile.jpg 1x, 
-              /images/homepage/locally-sourced-mobile@2x.jpg 2x" media="(min-width: 30rem)"/>
-              <img class="feature__photo features__photo--right" src="/images/homepage/locally-sourced-mobile.jpg" alt="Locally sourced"/>
-            </picture>
+          <div class="features__image">
+            <div class="features__image-locally"></div>
           </div>
-          <div class="features__content">
+          <div class="features__content-locally">
             <img class="features__content--pattern" src="/images/patterns/pattern-divide.svg" alt="divide pattern"/>
                     
-            <h2 class="features__content--title heading-2-r dark">The most locally sourced food</h2>
-            <p class="features__content--text text-2">
-              All our ingredients come directly from our farm or local fishery. So you can be sure that you’re eating the freshest, most sustainable food.</p> 
+            <h2 class="features__title heading-2-r dark">The most locally sourced food</h2>
+            <p class="features__text text-2">
+            All our ingredients come directly from our farm or local fishery. So you can be sure that you’re eating the freshest, most sustainable food.</p> 
           </div>
-          <img class="curve-left curve" src="/images/patterns/pattern-curve-top-left.svg" alt="Curve top left" />
-          <img class="lines" src="/images/patterns/pattern-lines.svg" alt="lines" />
-        </div>
-      </div><!-- .features__container -->  
+          <!--<img class="curve-left curve" src="/images/patterns/pattern-curve-top-left.svg" alt="Curve top left" />-->
+          <img class="floating-lines" src="/images/patterns/pattern-lines.svg" alt="lines" />
+        </div> 
+      </div><!-- .features__container -->
     </section><!-- .features -->
       
     <section class="food">

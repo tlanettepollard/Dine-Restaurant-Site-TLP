@@ -39,10 +39,16 @@ body {
     color: $color-white;
 }
 
+
 .curve-left,
 .curve-right,
-.lines {
+.floating-lines {
     display: none;
+}
+
+.floating-lines {
+    position: absolute;
+    z-index: 1;
 }
 
 .white {

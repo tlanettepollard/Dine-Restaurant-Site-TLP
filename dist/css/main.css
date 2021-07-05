@@ -48,8 +48,13 @@ body {
 
 .curve-left,
 .curve-right,
-.lines {
+.floating-lines {
   display: none;
+}
+
+.floating-lines {
+  position: absolute;
+  z-index: 1;
 }
 
 .white {
@@ -216,158 +221,167 @@ body {
 
 /* Layout */
 .hero {
-  position: relative;
-  height: 100%;
-  padding-top: 23.2rem;
+  width: 100vw;
+  height: 74.8rem;
+  text-align: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   background-position: center center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  padding-top: 23.2rem;
+  padding-right: 2.4rem;
+  padding-left: 2.4rem;
+  background-image: url(/images/homepage/hero-bg-mobile@2x.jpg);
 }
-@media (min-width: 415px) {
+@media (min-width: 768px) {
   .hero {
-    padding-top: 28.2rem;
-    height: 80rem;
-  }
-}
-@media (min-width: 555px) {
-  .hero {
-    padding-top: 31.2rem;
-    height: 85rem;
-  }
-}
-@media (min-width: 655px) {
-  .hero {
-    padding-top: 38.2rem;
-    height: 90rem;
-  }
-}
-@media (min-width: 755px) {
-  .hero {
-    padding-top: 43.2rem;
-    height: 95rem;
-  }
-}
-@media (max-width: 767px) {
-  .hero {
-    background-image: url(/images/homepage/hero-bg-mobile@2x.jpg);
-  }
-}
-@media (min-width: 768px) and (max-width: 1024px) {
-  .hero {
-    height: 99.2rem;
+    height: 92.2rem;
     padding-top: 37.4rem;
     background-image: url(/images/homepage/hero-bg-tablet@2x.jpg);
-  }
-}
-@media (min-width: 890px) {
-  .hero {
-    height: 106.2rem;
-    padding-top: 44.4rem;
   }
 }
 @media (min-width: 1025px) {
   .hero {
     height: 82rem;
     padding-top: 6.5rem;
-    padding-left: 15.2rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
+    padding-left: 15.5rem;
+    text-align: left;
     background-image: url(/images/homepage/hero-bg-desktop@2x.jpg);
   }
 }
-@media (min-width: 1060px) {
-  .hero {
-    height: 113.2rem;
-    padding-top: 51.4rem;
-  }
-}
-.hero__container {
-  position: absolute;
-  max-width: 32.7rem;
-  min-height: 36.4rem;
-  margin: 0 auto;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
 @media (min-width: 1025px) {
   .hero__container {
-    max-width: 144rem;
-    width: 45.8rem;
-    top: 23rem;
-    justify-content: space-between;
-    align-items: flex-start;
-    text-align: left;
+    max-width: 52.3rem;
   }
 }
-.hero__container .hero__logo {
-  padding-bottom: 2rem;
+@media (min-width: 768px) and (max-width: 1024px) {
+  .hero__logo {
+    padding-top: 3rem;
+  }
 }
-.hero__container .hero__text {
-  padding: 1rem 1rem 2rem;
+@media (max-width: 1024px) {
+  .hero__heading {
+    margin-top: 3.2rem;
+  }
+}
+@media (min-width: 1025px) {
+  .hero__heading {
+    margin-top: 15.3rem;
+  }
+}
+.hero__text {
+  margin-top: 2.4rem;
+}
+@media (max-width: 1024px) {
+  .hero__text {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+@media (max-width: 767px) {
+  .hero__text {
+    max-width: 40rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .hero__text {
+    max-width: 57.3rem;
+  }
+}
+@media (min-width: 1025px) {
+  .hero__text {
+    max-width: 44.5rem;
+  }
+}
+.hero__button {
+  margin-top: 5rem;
+}
+@media (max-width: 360px) {
+  .hero__button {
+    margin-top: 3rem;
+  }
 }
 
 .features {
-  position: relative;
-  height: 100%;
-  margin: auto;
+  background-color: #ffffff;
   text-align: center;
-}
-.features__container {
-  height: 100%;
-  margin: auto;
-  padding-bottom: 6rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-}
-.features__container .features__family,
-.features__container .features__locally {
-  width: 90%;
-  height: 47%;
-  margin: 0 auto;
-  padding-bottom: 4rem;
-}
-.features__container .features__family {
-  transform: translateY(-7.2rem);
+  background-repeat: no-repeat;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
-  .features__container .features__family {
-    transform: translateY(-9.6rem);
+  .features {
+    background-position-y: 10rem, bottom;
+    background-position-x: -67vw, 52vw;
+    background-image: url(/images/patterns/pattern-curve-top-right.svg), url(/images/patterns/pattern-curve-top-left.svg);
   }
 }
 @media (min-width: 1025px) {
-  .features__container .features__family {
-    transform: translateY(-7rem);
+  .features {
+    background-image: url(/images/patterns/pattern-curve-top-right.svg), url(/images/patterns/pattern-curve-top-left.svg);
+    background-position-y: 24.2rem, bottom;
+    background-position-x: left, right;
   }
+}
+.features__container {
+  padding: 0 2.4rem 8rem;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .features__container {
+    padding: 0 9.7rem 12rem;
+  }
+}
+@media (min-width: 1025px) {
+  .features__container {
+    max-width: 111rem;
+    margin: 0 auto;
+  }
+}
+.features__container .features__enjoyable,
+.features__container .features__locally {
+  height: 68.3rem;
+}
+.features__container .features__enjoyable {
+  margin-bottom: 0.8rem;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .features__container .features__enjoyable {
+    margin-bottom: 2.4rem;
+  }
+}
+@media (min-width: 1025px) {
+  .features__container .features__enjoyable {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: -2.9rem;
+  }
+}
+.features__container .features__locally {
+  position: relative;
 }
 @media (min-width: 1025px) {
   .features__container .features__locally {
-    transform: translateY(8rem);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
   }
 }
-.features__container .features__content--pattern {
-  padding-top: 2.5rem;
+@media (min-width: 768px) and (max-width: 1024px) {
+  .features__container .features__locally .floating-lines {
+    display: block;
+    right: 0;
+    top: 22.8rem;
+    transform: translateX(5.8rem);
+  }
 }
-.features__container .features__content--title {
-  margin: 2rem 0;
-  padding: 0 5.5rem;
-}
-.features__container .features__content--text {
-  padding: 1rem 3.2rem 0;
-}
-.features__container picture .feature__photo {
-  box-shadow: 0 7.5rem 10rem -5rem rgba(56, 66, 85, 0.5);
+@media (min-width: 1025px) {
+  .features__container .features__locally .floating-lines {
+    display: block;
+    right: 0;
+    top: 36rem;
+    transform: translateX(11.4rem);
+  }
 }
 
 .food {
@@ -714,7 +728,66 @@ body {
   padding: 0.5rem;
   margin: 0 0.3rem;
   text-align: left;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.bk__main .reservation .form__field--number .form__field-box .form__input select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  max-width: 30rem;
+  height: 3rem;
+  padding-left: 0.5rem;
+  line-height: 2.8rem;
+  font-size: inherit;
+  font-weight: 400;
+  border: none;
+  border-bottom: 1px solid #242b37;
   cursor: pointer;
+}
+.bk__main .reservation .form__field--number .form__field-box .form__input .arrow-down {
+  transform: rotate(0deg);
+  transition: all 1.5s ease-in-out;
+}
+.bk__main .reservation .form__field--number .form__field-box .form__input .arrow-down.active {
+  transform: rotate(180deg);
+  transition: all 1.5s ease-in-out;
+}
+.bk__main .reservation .form__field--people {
+  width: 100%;
+  text-align: center;
+  border: none;
+  vertical-align: middle;
+}
+.bk__main .reservation .form__field--people .form__input {
+  width: 70%;
+  text-align: center;
+  border: none;
+  vertical-align: middle;
+}
+.bk__main .reservation .form__message {
+  display: block;
+  visibility: hidden;
+  font-weight: 700;
+  padding-top: 0.7rem;
+  font-size: 1rem;
+  text-align: left;
+  color: #B54949;
+}
+.bk__main .reservation .form__message--error {
+  visibility: visible;
+}
+.bk__main .reservation .form__input--error {
+  border-bottom: 1px solid #B54949;
+  color: #B54949;
+}
+.bk__main .reservation .form .icon-count {
+  cursor: pointer;
+  width: 1.5rem;
+  vertical-align: middle;
+  padding: 1rem;
 }
 
 .bk__footer {

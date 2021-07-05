@@ -224,6 +224,13 @@ Reservation Notes
     height: 100%;
 }
 
+
+
+onclick="rotateArrow()"
+/*function rotateArrow() {
+  icon.classList.toggle('active');
+}*/
+
 Hero Code
 /* Mobile First Design */
 
@@ -372,9 +379,196 @@ Hero Code
 
 Features Code
 
+&__container {
+        position: relative;
+        width: 100vw;
+        height: 100%;
+        margin: auto; 
+        padding-bottom: 6rem;
+        @include flex(column, space-around);
+
+        .features__family, 
+        .features__locally {
+            width: 90%;
+            height: 47%;
+            margin: 0 auto;
+            padding-bottom: 4rem;
+        }
+
+        .features__family {
+            transform: translateY(-7.2rem);
+
+            @media (min-width: $bp-tablet-start) and (max-width: $bp-tablet-end) {
+                transform: translateY(-9.6rem);
+            }
+
+            @media (min-width: $bp-desktop) {
+                transform: translateY(-7rem);
+            }
+        }
+
+        .features__locally {
+            @media (min-width: $bp-desktop) {
+                transform: translateY(8rem);
+            }
+        }
+
+        .features__content {
+            &--pattern {
+                padding-top: 2.5rem;
+            }
+            &--title {
+                margin: 2rem 0;
+                padding: 0 5.5rem; 
+            }
+
+            &--text {
+                padding: 1rem 3.2rem 0;
+            }
+        }
+
+        picture .feature__photo {
+            box-shadow: $bshadow-1;
+        }
+    }
+************
+Feature Code 2
+.features {
+    background-color: $color-white;
+    //height: 145.5rem;
+    text-align: center;
+
+    @media (min-width: $bp-tablet-end) {
+        text-align: left;
+    }
+
+
+    &__container {
+        padding: 0 2.4rem 8rem;
+
+        @media (min-width: $bp-tablet-start) and (max-width: $bp-tablet-end) {
+            padding: 0 9.7rem 12rem;
+        }
+
+        @media (min-width: $bp-desktop) {
+            max-width: 111rem;
+            margin: 0 auto;
+        }
+
+        .features__enjoyable {
+            margin-bottom: .8rem;
+
+            @media (min-width: $bp-tablet-start) and (max-width: $bp-tablet-end) {
+                margin-bottom: 2.4rem;
+            }
+
+            @media (min-width: $bp-desktop) {
+                @include flex (row, space-between);
+                margin-bottom: -2.9rem;
+            } 
+
+            .features__card-one {
+                transform: translateY(-7.2rem);
+
+                @media (min-width: $bp-tablet-start) and (max-width: $bp-tablet-end) {
+                    transform: translateY(-9.6rem);
+                }
+
+                @media (min-width: $bp-desktop) {
+                    transform: translateY(-7rem);
+                }   
+            }
+            
+            .features__image-one {
+                @media (max-width: $bp-mobile) {
+                    
+                    background-image: url(/images/homepage/enjoyable-place-mobile@2x.jpg);
+                }
+                
+                @media (min-width: $bp-tablet-start) and (max-width: $bp-tablet-end) {
+                    background-image: url(/images/homepage/enjoyable-place-tablet@2x.jpg);
+                }
+
+                @media (min-width: $bp-desktop){
+                    background-image: url(/images/homepage/enjoyable-place-desktop@2x.jpg);
+                }
+            }
+
+            
+        }
+
+        .features__locally {
+            position: relative;
+
+            @media (min-width: $bp-desktop) {
+                @include flex (row-reverse, space-between);
+            }
+
+            .features__card-two {
+                @media (min-width: $bp-desktop) {
+                    transform: translateY(8rem);
+                }
+            }
+
+            .features__image-two {
+                @media (max-width: $bp-mobile){
+                    background-image: url(/images/homepage/locally-sourced-mobile@2x.jpg);
+                }
+
+                @media (min-width: $bp-tablet-start) and (max-width: $bp-tablet-end) {
+                    background-image: url(/images/homepage/locally-sourced-tablet@2x.jpg);
+                }
+
+                @media (min-width: $bp-desktop) {
+                    background-image: url(/images/homepage/locally-sourced-desktop@2x.jpg);
+                }
+            }
+        }
+
+        .features__card {
+          @media (min-width: $bp-desktop){
+              min-width: 54rem;
+              height: 72rem;   
+          }  
+        }
+        
+        .features__image {
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            @media (max-width: $bp-mobile){
+                min-height: 40rem;
+                background-position: center center;
+            }
+
+            @media (min-width: $bp-tablet-start) and (max-width: $bp-tablet-end) {
+                min-height: 36rem;
+            }
+
+            @media (min-width: $bp-desktop) {
+                min-height: 72rem;
+            }
+        }
+
+    }
+}
+    
+    
+
+    
+    
+    
+    
+    
+    
+}
 
 
 
+
+
+*****************
 Footer Code
 .footer {
     grid-area: footer;
