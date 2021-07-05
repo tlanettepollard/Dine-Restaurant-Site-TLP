@@ -1,0 +1,80 @@
+.features {
+    background-color: $color-white;
+    text-align: center;
+
+    background-repeat: no-repeat;
+
+    @media (min-width: $bp-tablet-start) and (max-width: $bp-tablet-end) {
+        background-position-y: 10rem, bottom;
+        background-position-x: -67vw, 52vw;
+        background-image: url(/images/patterns/pattern-curve-top-right.svg), url(/images/patterns/pattern-curve-top-left.svg);
+    }
+
+    @media (min-width: $bp-desktop) {
+        background-image: url(/images/patterns/pattern-curve-top-right.svg), url(/images/patterns/pattern-curve-top-left.svg);
+        background-position-y: 24.2rem, bottom;
+        background-position-x: left, right;
+    }
+
+    &__container {
+        padding: 0 2.4rem 8rem;
+
+        @media (min-width: $bp-tablet-start) and (max-width: $bp-tablet-end) {
+            padding: 0 9.7rem 12rem;
+        }
+
+        @media (min-width: $bp-desktop) {
+            max-width: 111rem;
+            margin: 0 auto;
+        }
+
+        .features__enjoyable,
+        .features__locally {
+            height: 68.3rem;
+        }
+
+        .features__enjoyable {
+            margin-bottom: .8rem;
+
+            @media (min-width: $bp-tablet-start) and (max-width: $bp-tablet-end) {
+                margin-bottom: 2.4rem;
+            }
+
+            @media (min-width: $bp-desktop) {
+                @include flex(row, space-between);
+                margin-bottom: -2.9rem;
+            }
+
+        }
+
+        .features__locally {
+            position: relative;
+
+            @media (min-width: $bp-desktop){
+                @include flex(row-reverse, space-between);
+            }
+
+            .floating-lines {
+                @media (min-width: $bp-tablet-start) and (max-width: $bp-tablet-end) {
+                    display: block;
+                    right: 0;
+                    top: 22.8rem;
+                    transform: translateX(5.8rem);
+                }
+                @media (min-width: $bp-desktop) {
+                    display: block;
+                    right: 0; 
+                    top: 36rem;
+                    transform: translateX(11.4rem);
+                }
+            }
+        } 
+        
+        
+
+    }
+
+    
+
+
+}

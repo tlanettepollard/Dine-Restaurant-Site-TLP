@@ -46,6 +46,11 @@ body {
     display: none;
 }
 
+.floating-lines {
+    position: absolute;
+    z-index: 1;
+}
+
 .white {
     color: $color-white;
 }
