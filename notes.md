@@ -74,6 +74,8 @@ https://dev.to/paul_duvall/sass-and-media-queries-hb2
 
 06/27/2021: I did an 'addEventListener' to rotate my arrow. WooHoo! (Stack Overflow--You should ideally use current element and navigate to necessary element. This will ensure you are fetching correct element.)
 
+07/05/2021: Took a break to complete a Codepen challenge. I keep learning from this project about SASS and nesting. 
+
 ************************
 Reservations.scss
 .reservation {
