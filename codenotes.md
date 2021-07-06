@@ -667,64 +667,76 @@ Highlights Code
         
     }
     
-     
+/* Food Section */
+
 .food {
-    min-height: 170rem;
+    position: relative;
+    height: 100%;
     text-align: center;
     padding: 5rem 0;
 
-    &__container { 
-        min-height: 172rem;
+    &__container {
+        height: 100%;
         margin: auto;
         @include flex (column, space-around);
 
-      .food__header {
-          min-height: 26rem;
-          //margin-bottom: 2rem;
-          transform: translateY(-1.2rem);
-          .food-pattern {
-              padding-bottom: 5.5rem;
-          }
-          .food__heading {
-              padding: 2rem 6rem;
-          }
-          .food__text {
-              padding: 0 6rem;
-          }   
-        } 
-      
-      .food__items {
-          min-height: 131.2rem;
-          margin-top: 2rem;
-          padding: 0 5rem;
-          //transform: translateY(-.2rem);
-          @include flex (column, space-around);
-    
-        .food__item {
-            height: 42.1rem;
-            margin-bottom: 4rem;
-            border-bottom: 1px solid $secondary-shuttle-gray;
+        
 
-            &:last-of-type {
-                border-bottom: none;
+        .food__header {
+            min-height: 26rem;
+            transform: translateY(-1.2rem);
+
+            .food-pattern {
+                padding-top: 1rem;
+                padding-bottom: 4.5rem;
             }
 
-            picture .food-photo {
-                
+            .food__heading {
+                padding: 0.5rem 6rem;
             }
 
-            &--heading {
-               margin-top: 4rem;
-               padding-bottom: 2rem; 
+            .food__text {
+                padding: 0 6rem;
             }
-
-            &--paragraph {
-                padding: 1rem 4.3rem 3rem;
-                }
         }
+
+        .food__items {
+            min-height: 131rem;
+            margin-top: 2rem;
+            padding: 0 5rem;
+            @include flex (column, space-around);
+
+            
+
+            .food__item {
+                height: 42rem;
+                margin-bottom: 4rem;
+                border-bottom: 1px solid $secondary-shuttle-gray;
+
+                &:last-of-type {
+                    border-bottom: none;
+                }
+
+                @media (min-width: $bp-tablet-start) and (max-width: $bp-tablet-end) {
+                    @include flex(row, space-between);
+                }
+                
+                picture .food-photo {
+                    -webkit-box-shadow: $bshadow-4;
+                    box-shadow: $bshadow-4;
+                }
+
+                &--heading {
+                    margin-top: 4rem;
+                }
+
+                &--paragraph {
+                    padding: 2rem 4.3rem 3rem;
+                }
+            }
         }
     }
-}     
+}    
 
 
 

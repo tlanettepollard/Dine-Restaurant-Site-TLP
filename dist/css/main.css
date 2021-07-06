@@ -510,58 +510,46 @@ body {
 }
 
 .food {
-  position: relative;
-  height: 100%;
-  text-align: center;
-  padding: 5rem 0;
+  padding: 7.2rem 2.4rem;
 }
-.food__container {
-  height: 100%;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
+@media (min-width: 768px) and (max-width: 1024px) {
+  .food {
+    padding: 9.7rem 9.8rem;
+  }
 }
-.food__container .food__header {
-  min-height: 26rem;
-  transform: translateY(-1.2rem);
+@media (min-width: 1025px) {
+  .food {
+    padding-top: 20rem;
+    padding-bottom: 12rem;
+  }
+  .food .food__container {
+    max-width: 111rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-items: flex-start !important;
+  }
+  .food .food__container .food__header {
+    text-align: center;
+    margin-bottom: 6.4rem;
+  }
 }
-.food__container .food__header .food-pattern {
-  padding-top: 1rem;
-  padding-bottom: 4.5rem;
+@media (min-width: 1025px) and (min-width: 768px) and (max-width: 1024px) {
+  .food .food__container .food__header {
+    text-align: center;
+    max-width: 44.6rem;
+    margin-right: auto;
+    margin-bottom: 5.6rem;
+    margin-left: auto;
+  }
 }
-.food__container .food__header .food__heading {
-  padding: 0.5rem 6rem;
-}
-.food__container .food__header .food__text {
-  padding: 0 6rem;
-}
-.food__container .food__items {
-  min-height: 131rem;
-  margin-top: 2rem;
-  padding: 0 5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-}
-.food__container .food__items .food__item {
-  height: 42rem;
-  margin-bottom: 4rem;
-  border-bottom: 1px solid #5c6779;
-}
-.food__container .food__items .food__item:last-of-type {
-  border-bottom: none;
-}
-.food__container .food__items .food__item picture .food-photo {
-  box-shadow: 0 7.5rem 10rem -5rem rgba(255, 255, 255, 0.5);
-}
-.food__container .food__items .food__item--heading {
-  margin-top: 4rem;
-}
-.food__container .food__items .food__item--paragraph {
-  padding: 2rem 4.3rem 3rem;
+@media (min-width: 1025px) and (min-width: 1025px) {
+  .food .food__container .food__header {
+    max-width: 44.6rem;
+    transform: translateY(-5.5rem);
+  }
 }
 
 .events {
