@@ -1,64 +1,43 @@
-    
 .food {
-    position: relative;
-    height: 100%;
-    text-align: center;
-    padding: 5rem 0;
+   padding: 7.2rem 2.4rem;
+   
+   @media (min-width: $bp-tablet-start) and (max-width: $bp-tablet-end) {
+       padding: 9.7rem 9.8rem; 
+   }
 
-    &__container {
-        height: 100%;
-        margin: auto;
-        @include flex (column, space-around);
+   @media (min-width: $bp-desktop){
+       padding-top: 20rem;
+       padding-bottom: 12rem;
 
-        .food__header {
-            min-height: 26rem;
-            transform: translateY(-1.2rem);
+       .food__container {
+           max-width: 111rem;
+           margin: 0 auto;
+           @include flex(row, space-between);
+           align-items: flex-start !important;
 
-            .food-pattern {
-                padding-top: 1rem;
-                padding-bottom: 4.5rem;
-            }
+           .food__header {
+               text-align: center;
+               margin-bottom: 6.4rem;
 
-            .food__heading {
-                padding: 0.5rem 6rem;
-            }
+               @media (min-width: $bp-tablet-start) and (max-width: $bp-tablet-end) {
+                   text-align: center;
+                   max-width: 44.6rem;
+                   margin-right: auto;
+                   margin-bottom: 5.6rem;
+                   margin-left: auto;
+               }
 
-            .food__text {
-                padding: 0 6rem;
-            }
-        }
+               @media (min-width: $bp-desktop) {
+                   max-width: 44.6rem;
+                   transform: translateY(-5.5rem);
+               }
 
-        .food__items {
-            min-height: 131rem;
-            margin-top: 2rem;
-            padding: 0 5rem;
-            @include flex (column, space-around);
-
-            .food__item {
-                height: 42rem;
-                margin-bottom: 4rem;
-                border-bottom: 1px solid $secondary-shuttle-gray;
-
-                &:last-of-type {
-                    border-bottom: none;
-                }
-                
-                picture .food-photo {
-                    -webkit-box-shadow: $bshadow-4;
-                    box-shadow: $bshadow-4;
-                }
-
-                &--heading {
-                    margin-top: 4rem;
-                }
-
-                &--paragraph {
-                    padding: 2rem 4.3rem 3rem;
-                }
-            }
-        }
+           }
+       }
     }
+
 }
+
 
     
     

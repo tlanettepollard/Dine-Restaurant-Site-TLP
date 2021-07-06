@@ -1,17 +1,19 @@
 .features {
-    background-color: $color-white;
-    text-align: center;
-
+    //min-height: 140rem;
+    text-align: center; 
     background-repeat: no-repeat;
+
+    @media (min-width: $bp-tablet-end) {
+       text-align: left;
+    }
 
     @media (min-width: $bp-tablet-start) and (max-width: $bp-tablet-end) {
         background-position-y: 10rem, bottom;
         background-position-x: -67vw, 52vw;
         background-image: url(/images/patterns/pattern-curve-top-right.svg), url(/images/patterns/pattern-curve-top-left.svg);
     }
-
     @media (min-width: $bp-desktop) {
-        background-image: url(/images/patterns/pattern-curve-top-right.svg), url(/images/patterns/pattern-curve-top-left.svg);
+        background-image: url(/images/patterns/pattern-curve-bottom-right.svg), url(/images/patterns/pattern-curve-top-left.svg);
         background-position-y: 24.2rem, bottom;
         background-position-x: left, right;
     }
@@ -23,18 +25,14 @@
             padding: 0 9.7rem 12rem;
         }
 
-        @media (min-width: $bp-desktop) {
+        @media (min-width: $bp-desktop){
             max-width: 111rem;
             margin: 0 auto;
         }
 
-        .features__enjoyable,
-        .features__locally {
-            height: 68.3rem;
-        }
-
         .features__enjoyable {
-            margin-bottom: .8rem;
+            @media (max-width: $bp-mobile){ margin-bottom: .8rem;
+            }
 
             @media (min-width: $bp-tablet-start) and (max-width: $bp-tablet-end) {
                 margin-bottom: 2.4rem;
@@ -44,13 +42,12 @@
                 @include flex(row, space-between);
                 margin-bottom: -2.9rem;
             }
-
         }
 
         .features__locally {
             position: relative;
 
-            @media (min-width: $bp-desktop){
+            @media (min-width: $bp-desktop) {
                 @include flex(row-reverse, space-between);
             }
 
@@ -61,20 +58,131 @@
                     top: 22.8rem;
                     transform: translateX(5.8rem);
                 }
+
                 @media (min-width: $bp-desktop) {
                     display: block;
-                    right: 0; 
+                    right: 0;
                     top: 36rem;
                     transform: translateX(11.4rem);
                 }
             }
-        } 
-        
-        
+        }
 
+        .features__card {
+            width: 100%;
+            box-shadow: $bshadow-1;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            @media (min-width: $bp-desktop){
+                width: 54rem;
+                height: 72rem;
+            } 
+            
+            .features__image-enjoyable { 
+                background-position: center center;
+                min-height: 40rem;
+
+                @media (max-width: $bp-mobile) {
+                    background-image: url(/images/homepage/enjoyable-place-mobile@2x.jpg);
+                }
+
+                @media (min-width: $bp-tablet-start) and (max-width: $bp-tablet-end) {
+                    min-height: 40rem;
+                    background-image: url(/images/homepage/enjoyable-place-tablet@2x.jpg);
+                }
+
+                @media (min-width: $bp-desktop) {
+                    width: 54rem;
+                    min-height: 72rem;
+                    background-image: url(/images/homepage/enjoyable-place-desktop@2x.jpg);
+                }
+            }
+
+            .features__image-locally {
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                min-height: 40rem;
+
+                @media (max-width: $bp-mobile) {
+                    background-image: url(/images/homepage/locally-sourced-mobile@2x.jpg);
+                }
+
+                @media (min-width: $bp-tablet-start) and (max-width: $bp-tablet-end){
+                    min-height: 36rem;
+                    background-image: url(/images/homepage/locally-sourced-tablet@2x.jpg);
+                }
+
+                @media (min-width: $bp-desktop) {
+                    width: 54rem;
+                    min-height: 72rem;
+                    background-image: url(/images/homepage/locally-sourced-desktop@2x.jpg);
+                }
+            }
+        }
+
+        .card-one {
+            transform: translateY(-7.2rem);
+
+            @media (min-width: $bp-tablet-start) and (max-width: $bp-tablet-end) {
+                transform: translateY(-9.6rem);
+            }
+
+            @media (min-width: $bp-desktop) {
+                transform: translateY(-7rem);
+            }  
+        }
+
+        .card-two {
+            @media (min-width: $bp-desktop){
+                transform: translateY(8rem);
+            }
+        }
+
+        .features__content {
+            @media (max-width: $bp-mobile) {
+                margin-top: 4.8rem;
+            }
+
+            @media (min-width: $bp-tablet-start) and (max-width: $bp-tablet-end) {
+                margin-top: 5.6rem;
+            }
+
+            @media (min-width: $bp-desktop) {
+                max-width: 44.5rem;
+            }
+
+            &-pattern {
+                margin-bottom: 2rem;
+            }
+
+            .features__title {
+                margin-bottom: 1.6rem;
+
+                @media (min-width: $bp-tablet-start) and (max-width: $bp-tablet-end) {
+                    margin-top: 3.2rem;
+                }
+
+                @media (min-width: $bp-desktop) {
+                    margin-top: 4.8rem;
+                }
+            }
+        }
+
+        .content-one {
+            @media (max-width: $bp-mobile) {
+                transform: translateY(-7.2rem);
+            }
+
+            @media (min-width: $bp-tablet-start) and (max-width: $bp-tablet-end) {
+                transform: translateY(-9.6rem);
+            }
+
+            @media (min-width: $bp-desktop) {
+                transform: translateY(-4rem);
+            }
+        }
     }
-
-    
-
 
 }
