@@ -34,20 +34,42 @@
 
             &:not(:last-child) {
                 margin-bottom: 2.4rem;
-                border-bottom: 1px solid $secondary-shuttle-gray;
+                border-bottom: 1px solid white;
             }
 
             &-image{
                 margin: 0 auto;
                 max-width: 32.7rem;
                 background-repeat: no-repeat;
-                background-size: contain;
+                background-size: cover;
+                background-position: center;
                 position: relative;
                 @media (max-width: $bp-mobile) {
                     width: 100%;
                     height: 24.5rem;
                 }
+                @media (min-width: $bp-tablet-start) {
+                    width: 12.8rem;
+                    height: 9.6rem;
+                    &::after {
+                        content: '';
+                        width: 3.2rem;
+                        height: 1px;
+                        background-color: $primary-beaver;
+                        position: absolute;
+                        right: 0;
+                        top: 1.6rem;
+                        transform: translateX(3.2rem);
+                    }
+                }
+
+                &--salmon {
+                    @media (max-width: $bp-mobile) {
+                        background-image: url(/images/homepage/salmon-mobile.jpg);
+                    }
+                }
             }
+            
         }
     }
 }
