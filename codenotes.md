@@ -999,7 +999,7 @@ Hero Photo Desktop media="(max-width: 139.9rem)
         <img src="/images/homepage/hero-bg-mobile.jpg" class="hero__bg" alt="Home Hero background" />
       </picture> -->
 
-
+Food 
 <!--<picture>
                 <source srcset="/images/homepage/salmon-desktop-tablet.jpg 1x, 
                 /images/homepage/salmon-desktop-tablet@2x.jpg 2x" media="(min-width: 99.2rem)"/>
@@ -1007,3 +1007,19 @@ Hero Photo Desktop media="(max-width: 139.9rem)
                 /images/homepage/salmon-mobile@2x.jpg 2x" media="(min-width: 30rem)"/>
                 <img class="food-photo" src="/images/homepage/salmon-mobile.jpg" alt="Salmon"/>
             </picture>-->
+
+            <picture>
+                  <source srcset="/images/homepage/beef-desktop-tablet.jpg 1x, 
+                  /images/homepage/beef-desktop-tablet@2x.jpg 2x" media="(min-width: 99.2rem)"/>
+                  <source srcset="/images/homepage/beef-mobile.jpg 1x, 
+                  /images/homepage/beef-mobile@2x.jpg 2x" media="(min-width: 30rem)"/>
+                  <img class="food-photo" src="/images/homepage/beef-mobile.jpg" alt="Beef"/>
+                </picture>
+
+                <picture>
+                <source srcset="/images/homepage/chocolate-desktop-tablet.jpg 1x, 
+               /images/homepage/chocolate-desktop-tablet@2x.jpg 2x" media="(min-width: 99.2rem)"/>
+                <source srcset="/images/homepage/ chocolate-mobile.jpg 1x, 
+                /images/homepage/chocolate-mobile@2x.jpg 2x" media="(min-width: 30rem)"/>
+                <img class="food-photo" src="/images/homepage/chocolate-mobile.jpg" alt="Chocolate"/>
+              </picture>
