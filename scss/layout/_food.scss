@@ -1,42 +1,25 @@
 .food {
-   padding: 7.2rem 2.4rem;
-   
-   @media (min-width: $bp-tablet-start) and (max-width: $bp-tablet-end) {
-       padding: 9.7rem 9.8rem; 
-   }
 
-   @media (min-width: $bp-desktop){
-       padding-top: 20rem;
-       padding-bottom: 12rem;
+    .food__item-image {
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 25rem;
+        width: 32.7rem;
 
-       .food__container {
-           max-width: 111rem;
-           margin: 0 auto;
-           @include flex(row, space-between);
-           align-items: flex-start !important;
-
-           .food__header {
-               text-align: center;
-               margin-bottom: 6.4rem;
-
-               @media (min-width: $bp-tablet-start) and (max-width: $bp-tablet-end) {
-                   text-align: center;
-                   max-width: 44.6rem;
-                   margin-right: auto;
-                   margin-bottom: 5.6rem;
-                   margin-left: auto;
-               }
-
-               @media (min-width: $bp-desktop) {
-                   max-width: 44.6rem;
-                   transform: translateY(-5.5rem);
-               }
-
-           }
-       }
     }
+    .food__item-image--salmon {
+        @media (max-width: $bp-mobile) {
+            background-image: url(/images/homepage/salmon-mobile@2x.jpg);
+            height: 24.5rem;
+            width: 32.7rem;
 
+        }
+    }
+    
 }
+
+
+
 
 
     
