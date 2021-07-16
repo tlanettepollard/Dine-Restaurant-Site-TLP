@@ -1,20 +1,79 @@
-.food {
+.food { 
+    text-align: center;
+    min-height: 172rem;
+    padding: 5rem 0;
+    margin: 3rem 0;
 
-    .food__item-image {
-        background-repeat: no-repeat;
-        background-size: cover;
-        min-height: 25rem;
-        width: 32.7rem;
+    &__container {
+        max-width: 111rem;
+        height: 157.6rem;
+        margin: 0 auto;
+        @include flex (column, space-around);
+    }  
+
+    &__header {
+        margin-bottom: 6.4rem;
+    }
+
+    &__heading {
+        margin-top: 3.2rem;
+        margin-bottom: 1.6rem;
+    }
+
+    &__items {
 
     }
-    .food__item-image--salmon {
-        @media (max-width: $bp-mobile) {
-            background-image: url(/images/homepage/salmon-mobile@2x.jpg);
-            height: 24.5rem;
-            width: 32.7rem;
 
+    &__item {
+
+        &:not(:last-child) {
+            margin-bottom: 2.6rem;
+            border-bottom: 1px solid $secondary-shuttle-gray;
+            padding-bottom: 2.4rem;
         }
+
+        &-image {
+            margin: 0 auto;
+            max-width: 32.7rem;
+            background-repeat: no-repeat;
+            background-size: center center;
+            position: relative;
+            @media (max-width: $bp-mobile) {
+                height: 24.5rem;
+                width: 100%;
+            }
+
+            &--salmon {
+                @media (max-width: $bp-mobile) {
+                    width: 32.7rem;
+                    height: 24.5rem;
+                    background-image: url(/images/homepage/salmon-mobile.jpg);
+                }
+                @media (min-width: $bp-tablet-start) {
+                    width: 12.7rem;
+                    height: 9.3rem;
+                    background-image: url(/images/homepage/salmon-desktop-tablet.jpg);
+                }
+            }
+
+            &--mignon {
+                @media (max-width: $bp-mobile) {
+                    width: 32.7rem;
+                    height: 24.5rem;
+                    background-image: url(/images/homepage/beef-mobile.jpg);
+                }
+
+                @media (min-width: $bp-tablet-start) {
+                    width: 12.7rem;
+                    height: 9.3rem;
+                    background-image: url(/images/homepage/beef-desktop-tablet.jpg);
+                }
+            }
+        }
+
+
     }
+
     
 }
 
