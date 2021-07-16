@@ -1,6 +1,8 @@
 .food { 
+    text-align: center;
     @media (max-width: $bp-mobile) {
         padding: 7.2rem 2.4rem;
+        height: 172rem;
     }
 
     @media (min-width: $bp-tablet-start) and (max-width: $bp-tablet-end) {
@@ -20,7 +22,19 @@
     }  
 
     &__header {
-        margin-bottom: 2.4rem;
+        @media (max-width: $bp-mobile) {
+            margin-bottom: 6.4rem;
+        }
+        @media (min-width: $bp-tablet-start) and (max-width: $bp-tablet-end) {
+            max-width: 44.5rem;
+            margin-right: auto;
+            margin-bottom: 5.6rem;
+            margin-left: auto;
+        }
+        @media (min-width: $bp-desktop) {
+            max-width: 44.5rem;
+            transform: translateY(-5.5rem);
+        }  
     }
 
     &__heading {
