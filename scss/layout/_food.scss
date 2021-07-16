@@ -1,18 +1,26 @@
 .food { 
-    text-align: center;
-    min-height: 172rem;
-    padding: 5rem 0;
-    margin: 3rem 0;
+    @media (max-width: $bp-mobile) {
+        padding: 7.2rem 2.4rem;
+    }
+
+    @media (min-width: $bp-tablet-start) and (max-width: $bp-tablet-end) {
+        padding: 9.6rem 0;
+    }
+
+    @media (min-width: $bp-desktop) {
+        padding-top: 20rem;
+        padding-bottom: 12rem;
+    }
 
     &__container {
         max-width: 111rem;
-        min-height: 157.6rem;
+        //min-height: 172rem;
         margin: 0 auto;
-        @include flex (column, space-around);
+        @include flex (column, space-between);
     }  
 
     &__header {
-        margin-bottom: 6.4rem;
+        margin-bottom: 2.4rem;
     }
 
     &__heading {
@@ -21,16 +29,14 @@
     }
 
     &__items {
-        margin-bottom: 15rem;
+        @media (max-width: $bp-mobile){
+            min-height: 120rem;
+            @include flex(column, space-between);
+        }
+        
     }
 
     &__item {
-
-        &:not(:last-child) {
-            margin-bottom: 2.6rem;
-            border-bottom: 1px solid $secondary-shuttle-gray;
-            padding-bottom: 3.4rem;
-        }
 
         &-image {
             margin: 0 auto;
@@ -86,6 +92,9 @@
             }
         }
 
+        &__text {
+            padding-top: 2.4rem;
+        }
 
     }
 
