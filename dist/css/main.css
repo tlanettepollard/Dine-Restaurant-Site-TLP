@@ -517,7 +517,7 @@ body {
 }
 .food__container {
   max-width: 111rem;
-  height: 157.6rem;
+  min-height: 157.6rem;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -531,10 +531,13 @@ body {
   margin-top: 3.2rem;
   margin-bottom: 1.6rem;
 }
+.food__items {
+  margin-bottom: 15rem;
+}
 .food__item:not(:last-child) {
   margin-bottom: 2.6rem;
   border-bottom: 1px solid #5c6779;
-  padding-bottom: 2.4rem;
+  padding-bottom: 3.4rem;
 }
 .food__item-image {
   margin: 0 auto;
@@ -575,6 +578,20 @@ body {
     width: 12.7rem;
     height: 9.3rem;
     background-image: url(/images/homepage/beef-desktop-tablet.jpg);
+  }
+}
+@media (max-width: 767px) {
+  .food__item-image--mousse {
+    width: 32.7rem;
+    height: 24.5rem;
+    background-image: url(/images/homepage/chocolate-mobile.jpg);
+  }
+}
+@media (min-width: 768px) {
+  .food__item-image--mousse {
+    width: 12.7rem;
+    height: 9.3rem;
+    background-image: url(/images/homepage/chocolate-desktop-tablet.jpg);
   }
 }
 

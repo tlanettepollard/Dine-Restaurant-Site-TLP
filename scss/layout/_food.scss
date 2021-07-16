@@ -6,7 +6,7 @@
 
     &__container {
         max-width: 111rem;
-        height: 157.6rem;
+        min-height: 157.6rem;
         margin: 0 auto;
         @include flex (column, space-around);
     }  
@@ -21,7 +21,7 @@
     }
 
     &__items {
-
+        margin-bottom: 15rem;
     }
 
     &__item {
@@ -29,7 +29,7 @@
         &:not(:last-child) {
             margin-bottom: 2.6rem;
             border-bottom: 1px solid $secondary-shuttle-gray;
-            padding-bottom: 2.4rem;
+            padding-bottom: 3.4rem;
         }
 
         &-image {
@@ -68,6 +68,21 @@
                     height: 9.3rem;
                     background-image: url(/images/homepage/beef-desktop-tablet.jpg);
                 }
+            }
+
+            &--mousse {
+                @media (max-width: $bp-mobile) {
+                    width: 32.7rem;
+                    height: 24.5rem;
+                    background-image: url(/images/homepage/chocolate-mobile.jpg);
+                }
+
+                @media (min-width: $bp-tablet-start) {
+                    width: 12.7rem;
+                    height: 9.3rem;
+                    background-image: url(/images/homepage/chocolate-desktop-tablet.jpg);
+                }
+                
             }
         }
 
