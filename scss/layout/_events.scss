@@ -51,7 +51,8 @@
 
     .event__photos {
         width: 100%;
-        
+        background-repeat: no-repeat;
+        background-size: center center;
 
         @media (max-width: $bp-mobile) {
             height: 40rem;
@@ -70,8 +71,6 @@
         }
 
         &--family {
-            background-repeat: no-repeat;
-            background-size: center center;
             @media (max-width: $bp-mobile) {
                 background-image: url(/images/homepage/family-gathering-mobile.jpg);
                 height: 40rem;
@@ -97,8 +96,6 @@
         }
 
         &--special {
-            background-repeat: no-repeat;
-            background-size: center center;
             @media (max-width: $bp-mobile) {
                 background-image: url(/images/homepage/special-events-mobile.jpg);
                 height: 40rem;
@@ -123,8 +120,6 @@
         }
 
         &--social {
-            background-repeat: no-repeat;
-            background-size: center center;
             @media (max-width: $bp-mobile) {
                 background-image: url(/images/homepage/social-events-mobile.jpg);
                 height: 40rem;
