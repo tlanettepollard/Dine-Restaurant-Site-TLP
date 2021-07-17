@@ -747,6 +747,23 @@ body {
 .events__container .event__photos {
   position: relative;
   margin-top: 2rem;
+  height: 39.9rem;
+  width: 32.7rem;
+  background-repeat: no-repeat;
+  background-size: center center;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .events__container .event__photos {
+    width: 57.7rem;
+    height: 36.3rem;
+  }
+}
+@media (max-width: 767px) {
+  .events__container .event__photos--family {
+    background-image: url(/images/homepage/family-gathering-mobile.jpg);
+    height: 39.9rem;
+    width: 32.7rem;
+  }
 }
 .events__container .event__photo {
   display: none;
@@ -809,6 +826,7 @@ body {
     align-items: center;
     max-width: 68.9rem;
     margin: 0 auto;
+    padding: 0;
   }
 }
 .events__container .events__slider .events__slider--list .event__item {
