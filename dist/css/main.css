@@ -766,7 +766,7 @@ body {
 .events .event__photos {
   width: 100%;
   background-repeat: no-repeat;
-  background-size: center center;
+  background-size: cover;
 }
 @media (max-width: 767px) {
   .events .event__photos {
