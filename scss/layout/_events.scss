@@ -94,7 +94,66 @@
             
             
         }
+
+        &--special {
+            @media (max-width: $bp-mobile) {
+                background-image: url(/images/homepage/special-events-mobile.jpg);
+                height: 40rem;
+                width: 32.7rem;
+                margin: 0 auto;
+            }
+
+            @media (min-width: $bp-tablet-start) and (max-width: $bp-tablet-end) {
+                background-image: url(/images/homepage/special-events-tablet.jpg);
+                height: 36.3rem;
+                width: 57.7rem;
+                margin: 0 auto;
+            }
+
+            @media (min-width: $bp-desktop) {
+                background-image: url(/images/homepage/special-events-desktop.jpg);
+                height: 60rem;
+                width: 54.2rem;
+                margin: 0 auto;
+            }
+
+        }
+
+        &--social {
+            @media (max-width: $bp-mobile) {
+                background-image: url(/images/homepage/social-events-mobile.jpg);
+                height: 40rem;
+                width: 32.7rem;
+                margin: 0 auto;
+            }
+
+            @media (min-width: $bp-tablet-start) and (max-width: $bp-tablet-end) {
+                background-image: url(/images/homepage/social-events-tablet.jpg);
+                height: 36.3rem;
+                width: 57.7rem;
+                margin: 0 auto;
+            }
+
+            @media (min-width: $bp-desktop) {
+                background-image: url(/images/homepage/social-events-desktop.jpg);
+                height: 60rem;
+                width: 54.2rem;
+                margin: 0 auto;
+            }
+        }
     }
+
+    .event__photo {
+        display: none;
+        box-shadow: $bshadow-1;
+    }
+
+    .event__photo--active {
+        display: inline-block; 
+        //margin: 4rem 0;
+        z-index: 1;
+    }
+
 
     &__slider {
         @media (min-width: $bp-tablet-start) and (max-width: $bp-tablet-end) {
