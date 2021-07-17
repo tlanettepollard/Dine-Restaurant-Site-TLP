@@ -725,6 +725,12 @@ body {
     background-position-x: -35rem;
   }
 }
+.events__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
 @media (min-width: 1025px) {
   .events__container {
     max-width: 111rem;
@@ -752,10 +758,68 @@ body {
     transform: translate(-5.8rem, -3.8rem);
   }
 }
+.events .event__photos {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: center center;
+}
 @media (max-width: 767px) {
-  .events__slider {
-    max-width: 32.6rem;
+  .events .event__photos {
+    height: 40rem;
+    width: 32.7rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .events .event__photos {
+    height: 36.3rem;
+    width: 57.7rem;
     margin: 0 auto;
+  }
+}
+@media (min-width: 1025px) {
+  .events .event__photos {
+    height: 60rem;
+    width: 54.2rem;
+  }
+}
+@media (max-width: 767px) {
+  .events .event__photos--family {
+    background-image: url(/images/homepage/family-gathering-mobile.jpg);
+    height: 40rem;
+    width: 32.7rem;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .events .event__photos--family {
+    background-image: url(/images/homepage/family-gathering-tablet.jpg);
+    height: 36.3rem;
+    width: 57.7rem;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1025px) {
+  .events .event__photos--family {
+    background-image: url(/images/homepage/family-gathering-desktop.jpg);
+    height: 60rem;
+    width: 54.2rem;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .events__slider {
+    max-width: 68.9rem;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1025px) {
+  .events__slider {
+    max-width: 54.2rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .events__slider--list {
+    max-width: 68.9rem;
   }
 }
 
