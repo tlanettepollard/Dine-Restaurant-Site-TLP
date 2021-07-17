@@ -615,8 +615,6 @@ body {
 .food__item-image {
   margin: 0 auto;
   max-width: 32.7rem;
-  background-repeat: no-repeat;
-  background-size: center center;
   position: relative;
 }
 @media (max-width: 767px) {
@@ -641,6 +639,11 @@ body {
     transform: translateX(3.2rem);
   }
 }
+.food__item-image--salmon {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 @media (max-width: 767px) {
   .food__item-image--salmon {
     width: 32.7rem;
@@ -655,6 +658,11 @@ body {
     background-image: url(/images/homepage/salmon-desktop-tablet.jpg);
   }
 }
+.food__item-image--mignon {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 @media (max-width: 767px) {
   .food__item-image--mignon {
     width: 32.7rem;
@@ -668,6 +676,11 @@ body {
     height: 9.3rem;
     background-image: url(/images/homepage/beef-desktop-tablet.jpg);
   }
+}
+.food__item-image--mousse {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 @media (max-width: 767px) {
   .food__item-image--mousse {
@@ -765,8 +778,6 @@ body {
 }
 .events .event__photos {
   width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 @media (max-width: 767px) {
   .events .event__photos {
@@ -786,6 +797,11 @@ body {
     height: 60rem;
     width: 54.2rem;
   }
+}
+.events .event__photos--family {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 @media (max-width: 767px) {
   .events .event__photos--family {
@@ -811,6 +827,11 @@ body {
     margin: 0 auto;
   }
 }
+.events .event__photos--special {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 @media (max-width: 767px) {
   .events .event__photos--special {
     background-image: url(/images/homepage/special-events-mobile.jpg);
@@ -834,6 +855,11 @@ body {
     width: 54.2rem;
     margin: 0 auto;
   }
+}
+.events .event__photos--social {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 @media (max-width: 767px) {
   .events .event__photos--social {
