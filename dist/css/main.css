@@ -1174,16 +1174,19 @@ body {
 }
 @media (max-width: 767px) {
   .bk__main .bk__header {
+    height: 60rem;
     background-image: url(/images/booking/hero-bg-mobile@2x.jpg);
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   .bk__main .bk__header {
+    height: 60rem;
     background-image: url(/images/booking/hero-bg-tablet@2x.jpg);
   }
 }
 @media (min-width: 1025px) {
   .bk__main .bk__header {
+    height: 60rem;
     background-image: url(/images/booking/hero-bg-desktop@2x.jpg);
   }
 }
@@ -1219,6 +1222,11 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+@media (min-width: 1025px) {
+  .bk__main .reservation {
+    height: 32rem;
+  }
 }
 .bk__main .reservation__container {
   height: 58.5rem;
