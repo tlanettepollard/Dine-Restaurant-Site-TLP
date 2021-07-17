@@ -52,7 +52,7 @@
     .event__photos {
         width: 100%;
         background-repeat: no-repeat;
-        background-size: center center;
+        background-size: cover;
 
         @media (max-width: $bp-mobile) {
             height: 40rem;
