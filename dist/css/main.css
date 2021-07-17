@@ -725,6 +725,39 @@ body {
     background-position-x: -35rem;
   }
 }
+@media (min-width: 1025px) {
+  .events__container {
+    max-width: 111rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.events-floating--lines {
+  z-index: 1;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .events-floating--lines {
+    display: block;
+    position: absolute;
+    transform: translate(-5.8rem, -3.8rem);
+  }
+}
+@media (min-width: 1025px) {
+  .events-floating--lines {
+    display: block;
+    position: absolute;
+    transform: translate(-5.8rem, -3.8rem);
+  }
+}
+@media (max-width: 767px) {
+  .events__slider {
+    max-width: 32.6rem;
+    margin: 0 auto;
+  }
+}
 
 .cta {
   height: 32.8rem;
