@@ -83,8 +83,6 @@
         &-image {
             margin: 0 auto;
             max-width: 32.7rem;
-            background-repeat: no-repeat;
-            background-size: center center;
             position: relative;
             @media (max-width: $bp-mobile) {
                 height: 24.5rem;
@@ -108,6 +106,9 @@
             }
 
             &--salmon {
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
                 @media (max-width: $bp-mobile) {
                     width: 32.7rem;
                     height: 24.5rem;
@@ -121,6 +122,9 @@
             }
 
             &--mignon {
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
                 @media (max-width: $bp-mobile) {
                     width: 32.7rem;
                     height: 24.5rem;
@@ -135,6 +139,9 @@
             }
 
             &--mousse {
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
                 @media (max-width: $bp-mobile) {
                     width: 32.7rem;
                     height: 24.5rem;
