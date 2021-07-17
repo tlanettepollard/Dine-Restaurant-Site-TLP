@@ -765,8 +765,6 @@ body {
 }
 .events .event__photos {
   width: 100%;
-  background-repeat: no-repeat;
-  background-size: center center;
 }
 @media (max-width: 767px) {
   .events .event__photos {
@@ -786,6 +784,10 @@ body {
     height: 60rem;
     width: 54.2rem;
   }
+}
+.events .event__photos--family {
+  background-repeat: no-repeat;
+  background-size: center center;
 }
 @media (max-width: 767px) {
   .events .event__photos--family {
@@ -811,6 +813,10 @@ body {
     margin: 0 auto;
   }
 }
+.events .event__photos--special {
+  background-repeat: no-repeat;
+  background-size: center center;
+}
 @media (max-width: 767px) {
   .events .event__photos--special {
     background-image: url(/images/homepage/special-events-mobile.jpg);
@@ -834,6 +840,10 @@ body {
     width: 54.2rem;
     margin: 0 auto;
   }
+}
+.events .event__photos--social {
+  background-repeat: no-repeat;
+  background-size: center center;
 }
 @media (max-width: 767px) {
   .events .event__photos--social {
