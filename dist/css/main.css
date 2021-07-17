@@ -459,7 +459,7 @@ body {
 }
 @media (min-width: 1025px) {
   .features__container .card-two {
-    transform: translateY(8rem);
+    transform: translateY(15rem);
   }
 }
 @media (max-width: 767px) {
@@ -506,6 +506,11 @@ body {
 @media (min-width: 1025px) {
   .features__container .content-one {
     transform: translateY(-4rem);
+  }
+}
+@media (min-width: 1025px) {
+  .features__container .content-two {
+    transform: translateY(8rem);
   }
 }
 
@@ -755,7 +760,7 @@ body {
   .events-floating--lines {
     display: block;
     position: absolute;
-    transform: translate(-5.8rem, -3.8rem);
+    transform: translate(-5.8rem, -30.8rem);
   }
 }
 .events .event__photos {
@@ -1011,8 +1016,21 @@ body {
   justify-content: center;
   align-items: center;
 }
+@media (min-width: 1025px) {
+  .cta__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
 .cta__content--heading {
   padding: 2rem;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .cta__content--heading {
+    padding: 3rem;
+  }
 }
 
 .footer {
@@ -1025,12 +1043,60 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+@media (min-width: 768px) and (max-width: 1024px) {
+  .footer {
+    height: 40rem;
+    width: 100%;
+  }
+}
+@media (min-width: 1025px) {
+  .footer {
+    height: 24rem;
+  }
+}
 .footer__container {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   height: 100%;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .footer__container {
+    width: 100%;
+    margin-left: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    align-items: flex-start;
+  }
+}
+@media (min-width: 1025px) {
+  .footer__container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-items: flex-start;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .footer__container--info {
+    margin-left: 12rem;
+    text-align: left;
+  }
+}
+@media (min-width: 1025px) {
+  .footer__container--info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 67rem;
+    text-align: left;
+  }
 }
 .footer__container--logo, .footer__container--address, .footer__container--hours {
   padding-bottom: 2rem;

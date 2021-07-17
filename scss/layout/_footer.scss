@@ -5,9 +5,43 @@
     text-align: center;
     @include flex (column, space-between);
 
+    @media (min-width: $bp-tablet-start) and (max-width: $bp-tablet-end) {
+        height: 40rem;
+        width: 100%;
+    }
+
+    @media (min-width: $bp-desktop) {
+        height: 24rem;
+    }
+
     &__container {
         @include flex(column, space-around);
         height: 100%;
+
+        @media (min-width: $bp-tablet-start) and (max-width: $bp-tablet-end) {
+            width: 100%;
+            margin-left: 4rem;
+            @include flex (row, flex-start);
+            align-items: flex-start;
+        }
+
+        @media (min-width: $bp-desktop) {
+            width: 100%;
+            @include flex (row, space-around);
+            align-items: flex-start;
+        }
+        &--info {
+            @media (min-width: $bp-tablet-start) and (max-width: $bp-tablet-end) {
+                margin-left: 12rem;
+                text-align: left;
+            }
+
+            @media (min-width: $bp-desktop) {
+                @include flex (row, space-between);
+                width: 67rem;
+                text-align: left;
+            }
+        }
 
         &--logo,
         &--address,
