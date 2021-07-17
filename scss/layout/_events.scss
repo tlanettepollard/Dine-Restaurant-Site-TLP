@@ -1,12 +1,40 @@
 .events {
     position: relative;
     height: 100%;
-    width: 37.5rem;
+    //width: 37.5rem;
     margin: auto;
+
+    @media (max-width: $bp-mobile) {
+        padding: 8rem 2.4rem 12.4rem;
+    }
+
+    @media (max-width: $bp-tablet-end) {
+        text-align: center;
+    }
+
+    @media (min-width: $bp-tablet-start) and (max-width: $bp-tablet-end) {
+        padding: 12rem 0;
+        background-image: url(/images/patterns/pattern-curve-top-right.svg);
+        background-repeat: no-repeat;
+        background-position-x: -69vw;
+    }
+
+    @media (min-width: $bp-desktop) {
+        padding: 16rem 0;
+        background-repeat: no-repeat;
+        background-image: url(/images/patterns/pattern-curve-top-right.svg);
+        background-position-x: -35rem;
+    }
 
     &__container {
         @include flex (column, space-between);
         padding-bottom: 6rem;
+
+        @media (min-width: $bp-desktop){
+            max-width: 111rem;
+            margin: 0 auto;
+            @include flex  (row, space-between);
+        }
 
             .event__photos  {
             position: relative;
@@ -28,10 +56,16 @@
 
         .events__slider {
             margin-top: 3rem;
+
+
             .events__slider--list {
                 text-transform: uppercase;
                 position: relative;
                 margin-bottom: 3rem;
+
+                @media (min-width: $bp-tablet-start) and (max-width: $bp-tablet-end) {
+                    @include flex(row, space-between);
+                }
 
                 .event__item {
                     text-align: center;

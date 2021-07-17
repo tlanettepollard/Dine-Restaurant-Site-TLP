@@ -371,7 +371,7 @@ body {
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
-  .features__container .features__locally .floating-lines {
+  .features__container .features__locally .features-floating--lines {
     display: block;
     right: 0;
     top: 22.8rem;
@@ -379,7 +379,7 @@ body {
   }
 }
 @media (min-width: 1025px) {
-  .features__container .features__locally .floating-lines {
+  .features__container .features__locally .features-floating--lines {
     display: block;
     right: 0;
     top: 36rem;
@@ -699,8 +699,33 @@ body {
 .events {
   position: relative;
   height: 100%;
-  width: 37.5rem;
   margin: auto;
+}
+@media (max-width: 767px) {
+  .events {
+    padding: 8rem 2.4rem 12.4rem;
+  }
+}
+@media (max-width: 1024px) {
+  .events {
+    text-align: center;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .events {
+    padding: 12rem 0;
+    background-image: url(/images/patterns/pattern-curve-top-right.svg);
+    background-repeat: no-repeat;
+    background-position-x: -69vw;
+  }
+}
+@media (min-width: 1025px) {
+  .events {
+    padding: 16rem 0;
+    background-repeat: no-repeat;
+    background-image: url(/images/patterns/pattern-curve-top-right.svg);
+    background-position-x: -35rem;
+  }
 }
 .events__container {
   display: flex;
@@ -708,6 +733,16 @@ body {
   justify-content: space-between;
   align-items: center;
   padding-bottom: 6rem;
+}
+@media (min-width: 1025px) {
+  .events__container {
+    max-width: 111rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 .events__container .event__photos {
   position: relative;
@@ -730,6 +765,14 @@ body {
   text-transform: uppercase;
   position: relative;
   margin-bottom: 3rem;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .events__container .events__slider .events__slider--list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 .events__container .events__slider .events__slider--list .event__item {
   text-align: center;

@@ -51,7 +51,7 @@
                 @include flex(row-reverse, space-between);
             }
 
-            .floating-lines {
+            .features-floating--lines {
                 @media (min-width: $bp-tablet-start) and (max-width: $bp-tablet-end) {
                     display: block;
                     right: 0;
