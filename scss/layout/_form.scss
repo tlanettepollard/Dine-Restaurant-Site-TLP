@@ -12,14 +12,17 @@
         background-position: center;
 
         @media (max-width: $bp-mobile) {
+            height: 60rem;
             background-image: url(/images/booking/hero-bg-mobile@2x.jpg);
         }
 
         @media (min-width: $bp-tablet-start) and (max-width: $bp-tablet-end)  {
+            height: 60rem;
             background-image: url(/images/booking/hero-bg-tablet@2x.jpg);
         }
 
         @media (min-width: $bp-desktop) {
+            height: 60rem;
             background-image: url(/images/booking/hero-bg-desktop@2x.jpg);
         }
 
@@ -56,10 +59,18 @@
         min-height: 53.4rem;
         color: $primary-cod-gray;
         @include flex(column, center);
+        
+        @media (min-width: $bp-desktop) {
+            height: 32rem;
+        }
 
         &__container {
             height: 58.5rem;
             max-width: 54rem;
+
+            @media (min-width: $bp-desktop) {
+                
+            }
         }
         &__form {
             height: 58.5rem;
