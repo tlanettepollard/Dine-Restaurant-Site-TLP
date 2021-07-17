@@ -43,7 +43,23 @@
 
             .event__photo {
             display: none;
+            width: 100%;
             box-shadow: $bshadow-1;
+            
+            @media (max-width: $bp-mobile) {
+                height: 40rem;
+            }
+
+            @media (min-width: $bp-tablet-start) and (max-width: $bp-tablet-end) {
+                height: 36rem;
+                width: 57.3rem;
+                margin: 0 auto;
+            }
+
+            @media (min-width: $bp-desktop) {
+                height: 60rem;
+                width: 54rem;
+            }
         }
 
             .event__photo--active {
@@ -57,20 +73,32 @@
         .events__slider {
             margin-top: 3rem;
 
+            @media (min-width: $bp-tablet-start) and (max-width: $bp-tablet-end) {
+                @include flex (column, space-around);
+                max-width: 68.9rem;
+                margin: 0 auto;
+            }
+
+            @media (min-width: $bp-desktop) {
+                margin-top: 7.8rem;
+            }
+
 
             .events__slider--list {
                 text-transform: uppercase;
                 position: relative;
                 margin-bottom: 3rem;
-
+                cursor: pointer;
+                
                 @media (min-width: $bp-tablet-start) and (max-width: $bp-tablet-end) {
-                    @include flex(row, space-between);
+                    @include flex (row, space-between);
+                    max-width: 68.9rem;
+                    margin: 0 auto;
                 }
 
                 .event__item {
                     text-align: center;
                     opacity: 0.5;
-                    cursor: pointer;
                     padding: 2rem 0;
                     margin: auto;
                     // -webkit-transition: transform 0.5s 0s ease-in;

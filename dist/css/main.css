@@ -750,7 +750,26 @@ body {
 }
 .events__container .event__photo {
   display: none;
+  width: 100%;
   box-shadow: 0 7.5rem 10rem -5rem rgba(56, 66, 85, 0.5);
+}
+@media (max-width: 767px) {
+  .events__container .event__photo {
+    height: 40rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .events__container .event__photo {
+    height: 36rem;
+    width: 57.3rem;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1025px) {
+  .events__container .event__photo {
+    height: 60rem;
+    width: 54rem;
+  }
 }
 .events__container .event__photo--active {
   max-width: 40rem;
@@ -761,10 +780,26 @@ body {
 .events__container .events__slider {
   margin-top: 3rem;
 }
+@media (min-width: 768px) and (max-width: 1024px) {
+  .events__container .events__slider {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 68.9rem;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1025px) {
+  .events__container .events__slider {
+    margin-top: 7.8rem;
+  }
+}
 .events__container .events__slider .events__slider--list {
   text-transform: uppercase;
   position: relative;
   margin-bottom: 3rem;
+  cursor: pointer;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   .events__container .events__slider .events__slider--list {
@@ -772,12 +807,13 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    max-width: 68.9rem;
+    margin: 0 auto;
   }
 }
 .events__container .events__slider .events__slider--list .event__item {
   text-align: center;
   opacity: 0.5;
-  cursor: pointer;
   padding: 2rem 0;
   margin: auto;
   transition: transform 0.5s 0s ease-in;
