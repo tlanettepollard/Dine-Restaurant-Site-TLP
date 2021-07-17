@@ -874,6 +874,12 @@ body {
 @media (min-width: 1025px) {
   .events__slider {
     max-width: 54.2rem;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    margin-left: 12.6rem;
   }
 }
 .events__slider--list {
@@ -887,7 +893,13 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    max-width: 68.9rem;
+    width: 68.9rem;
+  }
+}
+@media (min-width: 1025px) {
+  .events__slider--list {
+    width: 100%;
+    margin-top: 2rem;
   }
 }
 .events__slider--list .event__item {
@@ -898,6 +910,14 @@ body {
   margin: auto;
   transition: transform 0.5s 0s ease-in;
 }
+@media (min-width: 1025px) {
+  .events__slider--list .event__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
 .events__slider--list .event__item--active {
   color: #242b37;
   opacity: 1;
@@ -905,6 +925,11 @@ body {
 }
 .events__slider--list .text-2 {
   margin-bottom: 0.5rem;
+}
+@media (min-width: 1025px) {
+  .events__slider--list .text-2 {
+    text-align: left;
+  }
 }
 .events__slider--list .event__line {
   width: 4.8rem;
@@ -917,6 +942,56 @@ body {
   background-color: #9e7166;
   visibility: visible;
   z-index: -5;
+}
+@media (min-width: 1025px) {
+  .events__slider--list .event__line--active {
+    width: 9.5rem;
+    height: 0.05rem;
+    opacity: 0.8;
+    transform: translateX(-37.5rem);
+  }
+}
+.events__slider .event__content {
+  display: none;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .events__slider .event__content {
+    max-width: 47rem;
+    margin: 0 auto;
+  }
+}
+.events__slider .event__content--title {
+  padding: 2rem 1rem;
+}
+@media (min-width: 1025px) {
+  .events__slider .event__content--title {
+    text-align: left;
+  }
+}
+.events__slider .event__content--text {
+  padding: 2.5rem 0;
+}
+@media (min-width: 1025px) {
+  .events__slider .event__content--text {
+    text-align: left;
+  }
+}
+.events__slider .event__content--active {
+  display: block;
+  text-align: center;
+}
+.events__slider .event__button {
+  margin-top: 1rem;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .events__slider .event__button {
+    margin-top: 2rem;
+  }
+}
+@media (min-width: 1025px) {
+  .events__slider .event__button {
+    margin: 3rem 0;
+  }
 }
 
 .cta {
