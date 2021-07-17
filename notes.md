@@ -76,6 +76,8 @@ https://dev.to/paul_duvall/sass-and-media-queries-hb2
 
 07/05/2021: Took a break to complete a Codepen challenge. I keep learning from this project about SASS and nesting. I referred to zuohlizhu's frontendmentor challenges for guidance. I ended up adding the photos as background images. 
 
+07/17/2021: I'm back. Learning a lot about spacing and using media queries set to mobile. 
+
 ************************
 Reservations.scss
 .reservation {

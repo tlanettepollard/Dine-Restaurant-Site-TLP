@@ -48,7 +48,7 @@
             All our ingredients come directly from our farm or local fishery. So you can be sure that you’re eating the freshest, most sustainable food.</p> 
           </div>
           <!--<img class="curve-left curve" src="/images/patterns/pattern-curve-top-left.svg" alt="Curve top left" />-->
-          <img class="floating-lines" src="/images/patterns/pattern-lines.svg" alt="lines" />
+          <img class="features-floating--lines floating-lines" src="/images/patterns/pattern-lines.svg" alt="lines" />
         </div> 
       </div><!-- .features__container -->
     </section><!-- .features -->
@@ -102,39 +102,15 @@
 
     <section class="events">
       <div class="events__container">
-        <img class="curve-left curve" src="/images/patterns/pattern-curve-top-left.svg" alt="Curve top left" />
-        <img class="lines" src="/images/patterns/pattern-lines.svg" alt="lines" />
+        <!--<img class="curve-left curve" src="/images/patterns/pattern-curve-top-left.svg" alt="Curve top left" />-->
+        <img class="events-floating--lines floating-lines" src="/images/patterns/pattern-lines.svg" alt="float lines" />
+
         <div class="event__photos">
-          <picture>
-            <source srcset="/images/homepage/family-gathering-desktop.jpg 1x,
-               /images/homepage/family-gathering-desktop@2x.jpg 2x" media="(min-width: 120rem)">
-            <source srcset="/images/homepage/family-gathering-tablet.jpg 1x, 
-               /images/homepage/family-gathering-tablet@2x.jpg 2x" media="(min-width: 76.8rem)">
-            <source srcset="/images/homepage/family-gathering-mobile.jpg 1x,
-                /images/homepage/family-gathering-mobile@2x.jpg 2x" media="(min-width: 30rem)">
-            <img class="event__photo event__photo--active" id="photo-1" src="/images/homepage/family-gathering-mobile.jpg" alt="Family Gathering">
-          </picture> 
-
-          <picture>
-            <source srcset="/images/homepage/special-events-desktop.jpg 1x,
-              /images/homepage/special-events-desktop@2x.jpg 2x" media="(min-width: 120rem)">
-            <source srcset="/images/homepage/special-events-tablet.jpg 1x, 
-              /images/homepage/special-events-tablet@2x.jpg 2x" media="(min-width: 76.8rem)">
-            <source srcset="/images/homepage/special-events-mobile.jpg 1x,
-              /images/homepage/special-events-mobile@2x.jpg 2x" media="(min-width: 30rem)">
-              <img class="event__photo" id="photo-2" src="/images/homepage/special-events-mobile.jpg" alt="Special Events">
-          </picture>
-
-          <picture>
-            <source srcset="/images/homepage/social-events-desktop.jpg 1x,
-              /images/homepage/social-events-desktop@2x.jpg 2x" media="(min-width: 120rem)">
-            <source srcset="/images/homepage/social-events-tablet.jpg 1x, 
-               /images/homepage/social-events-tablet@2x.jpg 2x" media="(min-width: 76.8rem)">
-            <source srcset="/images/homepage/social-events-mobile.jpg 1x,
-               /images/homepage/social-events-mobile@2x.jpg 2x" media="(min-width: 30rem)">
-               <img class="event__photo" id="photo-3" src="/images/homepage/social-events-mobile.jpg" alt="Social Events">
-          </picture>
+          <div class="event__photo event__photo--active event__photos--family" id="photo-1"></div>
+          <div class="event__photo event__photos--special" id="photo-2"></div>
+          <div class="event__photo event__photos--social" id="photo-3"></div>
         </div><!-- .event__photos -->
+
         <section class="events__slider">
           <div class="events__slider--list">
             <div class="event__item event__item--active" id="event-1">
@@ -151,7 +127,7 @@
             </div>
           </div> <!-- .events__list -->
                     
-          <div>
+          <div class="event__contents">
             <div class="event__content event__content--active" id="content-1">
               <h2 class="event__content--title heading-2-r">Family Gathering</h2>
               <p class="event__content--text text-2">We love catering for entire families. So please bring everyone along for a special meal with your loved ones. We’ll provide a memorable experience for all.</p>
@@ -166,9 +142,10 @@
               <h2 class="event__content--title heading-2-r">Social Events</h2>
               <p class="event__content--text text-2">  Are you looking to have a larger social event? No problem! We’re more than happy to cater for big parties. We’ll work with you to make your event a hit with everyone.  </p>
             </div>
+            <a class="button button--dark event__button" href="/booking.html">Book a table </a>
           </div>
         </section> <!-- .events__slider -->
-        <a class="button button--dark event__button" href="/booking.html">Book a table </a>
+        
       </div><!-- .events__container -->      
     </section><!-- .events -->
 
@@ -186,15 +163,17 @@
         <a href="/index.html">
           <img src="/images/logo.svg" alt="Dine logo"></a>
       </div>
-      <div class="footer__container--address">
-        <p class="text-2 white">Marthwaite, Sedbergh</p> 
-        <p class="text-2 white">Cumbria</p> 
-        <p class="text-2 white">+00 44 123 4567</p>
-      </div>
-      <div class="footer__container--hours">
-        <p class="text-2 white">Open Times</p>
-        <p class="text-2 white">Mon - Fri: 09:00 AM - 10:00 PM</p> 
-        <p class="text-2 white">Sat - Sun: 09:00 AM - 11:30 PM</p>
+      <div class="footer__container--info">
+        <div class="footer__container--address">
+          <p class="text-2 white">Marthwaite, Sedbergh</p> 
+          <p class="text-2 white">Cumbria</p> 
+          <p class="text-2 white">+00 44 123 4567</p>
+        </div>
+        <div class="footer__container--hours">
+          <p class="text-2 white">Open Times</p>
+          <p class="text-2 white">Mon - Fri: 09:00 AM - 10:00 PM</p> 
+          <p class="text-2 white">Sat - Sun: 09:00 AM - 11:30 PM</p>
+        </div>
       </div>
     </section>
         

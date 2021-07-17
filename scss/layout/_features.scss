@@ -51,7 +51,7 @@
                 @include flex(row-reverse, space-between);
             }
 
-            .floating-lines {
+            .features-floating--lines {
                 @media (min-width: $bp-tablet-start) and (max-width: $bp-tablet-end) {
                     display: block;
                     right: 0;
@@ -136,7 +136,7 @@
 
         .card-two {
             @media (min-width: $bp-desktop){
-                transform: translateY(8rem);
+                transform: translateY(15rem);
             }
         }
 
@@ -181,6 +181,12 @@
 
             @media (min-width: $bp-desktop) {
                 transform: translateY(-4rem);
+            }
+        }
+
+        .content-two {
+            @media (min-width: $bp-desktop) {
+                transform: translateY(8rem);
             }
         }
     }
