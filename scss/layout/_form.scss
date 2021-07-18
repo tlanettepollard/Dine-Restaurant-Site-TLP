@@ -48,13 +48,14 @@
             background-image: url(/images/patterns/pattern-curve-bottom-right.svg);
         }
 
-        .reservation__form {
+        .form {
             background-color: $color-white;
             box-shadow: $bshadow-1;
             position: relative;
             padding: 3rem;
-            margin-bottom: 8rem;
+            margin-bottom: 5rem;
             transform: translateY(-10rem);
+            //@include flex (column, center);
 
             @media (max-width: $bp-mobile) {
                 width: 32.7rem;
@@ -71,6 +72,17 @@
                 min-height: 56rem;
 
             }
+
+            &__input {
+                border: none;
+                border-bottom: 1px solid $secondary-ebony-clay;
+                font-size: 1.8rem;
+                line-height: 2.8rem;
+                letter-spacing: -0.0225rem;
+                color: inherit;
+                cursor: pointer;
+            }
+
             
         }
 

@@ -1200,31 +1200,40 @@ body {
     background-image: url(/images/patterns/pattern-curve-bottom-right.svg);
   }
 }
-.booking .reservation__container .reservation__form {
+.booking .reservation__container .form {
   background-color: #ffffff;
   box-shadow: 0 7.5rem 10rem -5rem rgba(56, 66, 85, 0.5);
   position: relative;
   padding: 3rem;
-  margin-bottom: 8rem;
+  margin-bottom: 5rem;
   transform: translateY(-10rem);
 }
 @media (max-width: 767px) {
-  .booking .reservation__container .reservation__form {
+  .booking .reservation__container .form {
     width: 32.7rem;
     min-height: 58.5rem;
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
-  .booking .reservation__container .reservation__form {
+  .booking .reservation__container .form {
     width: 54rem;
     min-height: 54.5rem;
   }
 }
 @media (min-width: 1025px) {
-  .booking .reservation__container .reservation__form {
+  .booking .reservation__container .form {
     width: 54rem;
     min-height: 56rem;
   }
+}
+.booking .reservation__container .form__input {
+  border: none;
+  border-bottom: 1px solid #242b37;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  letter-spacing: -0.0225rem;
+  color: inherit;
+  cursor: pointer;
 }
 
 .bk__footer {
