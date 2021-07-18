@@ -1,11 +1,10 @@
-.bk__main {
+.booking {
     position: relative;
-    width: 100%;
 
     .bk__header {
+        width: 100%;
         height: 60rem;
-        position: relative;
-        @include flex (column, center);
+        @include flex (column, flex-start);
         text-align: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -16,9 +15,9 @@
             background-image: url(/images/booking/hero-bg-mobile@2x.jpg);
         }
 
-        @media (min-width: $bp-tablet-start) and (max-width: $bp-tablet-end)  {
+        @media (min-width: $bp-tablet-start) and (max-width: $bp-tablet-end) {
             height: 60rem;
-            background-image: url(/images/booking/hero-bg-tablet@2x.jpg);
+            background-image:url(/images/booking/hero-bg-tablet@2x.jpg);
         }
 
         @media (min-width: $bp-desktop) {
@@ -26,191 +25,51 @@
             background-image: url(/images/booking/hero-bg-desktop@2x.jpg);
         }
 
-        &--container {
-            min-width: 32.7rem;
-            height: 100%;
-            @include flex (column, center);
-            row-gap: 2rem;
-            padding: 2rem 0 auto;
-
-            .bk__header--logo {
-                transform: translateY(-8rem);
-            }
-            
-            .bk__header--title {
-                transform: translateY(-5rem);
-                margin: 0 auto;
-            }
-
-            .bk__header--text {
-                transform: translateY(-4rem);
-                padding: 0 4rem;
-            }
-
-            .bk__header--button {
-                margin-bottom: 5rem;
-            }
-        }
-
     }
 
-    .reservation {
+    .form__container {
         position: relative;
-        min-height: 53.4rem;
-        color: $primary-cod-gray;
-        @include flex(column, center);
-        
+        width: 100%;
+        background-color: $color-white;
+
+        @media (max-width: $bp-mobile) {
+            height: 53.5rem;
+        }
+
+        @media (min-width: $bp-tablet-start) and (max-width: $bp-tablet-end) {
+            height: 43.3rem;
+        }
+
         @media (min-width: $bp-desktop) {
             height: 32rem;
         }
+        
+        .form {
+            box-shadow: $bshadow-1;
+            background-color: $color-white;
+            position: relative;
+            margin: auto;
 
-        &__container {
-            height: 58.5rem;
-            max-width: 54rem;
+            @media (max-width: $bp-mobile) {
+                height: 58.5rem;
+                width: 32.7rem;
+                transform: translateY(-10rem);
+                
+            }
+
+            @media (min-width: $bp-tablet-start) and (max-width: $bp-tablet-end) {
+                height: 54.5rem;
+                width: 54rem;
+                transform: translateY(-22rem);
+            }
 
             @media (min-width: $bp-desktop) {
-                
+                height: 56rem;
+                width: 54rem;
+                transform: translateX(20rem) translateY(-32rem);
             }
         }
-        &__form {
-            height: 58.5rem;
-            max-width: 32.7rem;
-            padding: 3rem;
-            margin-bottom: 10rem;
-            background: $color-white;
-            transform: translateY(-10rem);
-            @include flex (column, center);
-        }
 
-        .form {
-            &__input {
-               border: none;
-               border-bottom: 1px solid $secondary-ebony-clay;
-               font-size: 1.8rem;
-               line-height: 2.8rem;
-               letter-spacing: -0.0225rem; 
-               color: inherit;
-               cursor: pointer;
-            }
-
-            &__input::placeholder {
-                font-size: inherit;
-                line-height: inherit;
-                letter-spacing: inherit;
-                color: inherit;
-            }
-
-            &__field {
-                margin: 0 auto;
-                margin-bottom: 3.2rem;
-            }
-
-            &__field--text {
-                width: 100%;
-
-                .form__input {
-                    display: block;
-                    width: 100%;
-                    height: 4.5rem;
-                    padding: 0.5rem 0;
-                }
-            }
-
-            &__field--number {
-                width: 100%;
-                height: 8.1rem;
-                position: relative;
-
-                label {
-                    color: inherit;
-                    font-family: inherit;
-                    font-size: 1.8rem;
-                    line-height: 2.8rem;
-                    letter-spacing: -0.0225rem;
-                    text-align: left;
-                    //margin-right: 20rem;
-                }
-                .form__field-box {
-                    position: relative;
-                    @include flex (row, center);
-
-                    .form__input {
-                        width: 30%;
-                        padding: 0.5rem;
-                        margin: 0 0.3rem;
-                        text-align: left; 
-                        @include flex(row, space-between); 
-                    
-                        select {
-                            appearance: none;
-                            max-width: 30rem;
-                            height: 3rem;
-                            padding-left: .5rem;
-                            line-height: 2.8rem;
-                            font-size: inherit;
-                            font-weight: $weight-regular;
-                            border: none;
-                            border-bottom: 1px solid $secondary-ebony-clay;
-                            cursor: pointer;
-                        }
-
-                        .arrow-down {
-                            transform: rotate(0deg);
-                            transition: all 1.5s ease-in-out;
-                        }
-
-                        .arrow-down.active {
-                            transform: rotate(180deg);
-                            transition: all 1.5s ease-in-out;
-                        }
-                    }
-                
-            
-                }
-            }  
-
-            &__field--people {
-                width: 100%;
-                text-align: center;
-                border: none;
-                vertical-align: middle;
-
-                .form__input {
-                    width: 70%;
-                    text-align: center;
-                    border: none;
-                    vertical-align: middle;
-                }
-            }
-            &__message {
-                display: block;
-                visibility: hidden;
-                font-weight: $weight-bold;
-                padding-top: .7rem;
-                font-size: 1rem;
-                text-align: left;
-                color: $color-error;
-            }
-
-            &__message--error {
-                visibility: visible;
-            }
-
-            &__input--error {
-                border-bottom: 1px solid $color-error;
-                color: $color-error;
-            }
-
-            .icon-count {
-                cursor: pointer;
-                width: 1.5rem;
-                vertical-align: middle;
-                padding: 1rem;
-            }
-
-            
-        }
-        
     }
 }
 
@@ -223,6 +82,10 @@
     text-align: center;
     color: $color-white;
     @include flex (column, space-between);
+
+    @media (min-width: $bp-desktop) {
+        height: 24rem;
+    }
 
     &--container {
         @include flex(column, space-around);

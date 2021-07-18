@@ -24,37 +24,37 @@ const iconMinus = document.getElementById('icon-minus');
 const iconPlus = document.getElementById('icon-plus');
 
 function showMsgAlert (input) {
-    input.className = 'form__input form__input--error';
+    input.className = 'input-box';
 
     if (input === formName || input === formEmail) {
       let formField = input.parentElement;
-      let errorMessage = formField.querySelector('.form__message');
-      errorMessage.className = 'form__message form__message--error';
+      let errorMessage = formField.querySelector('.error-message');
+      errorMessage.className = 'error-message';
       errorMessage.innerText = 'This field is required';
     } else if (input === month || input === day || input === year){
-      let errorMessage = date.querySelector('.form__message');
-      errorMessage.className = 'form__message form__message--error';
+      let errorMessage = date.querySelector('.error-message');
+      errorMessage.className = 'error-message';
       errorMessage.innerText = 'This field is incomplete';
     } else if (input === hour || input === min) {
-      let errorMessage = time.querySelector('form__message');
-      errorMessage.className = 'form__message form__message--error';
+      let errorMessage = time.querySelector('error-message');
+      errorMessage.className = 'error-message';
       errorMessage.innerText = 'This field is incomplete';
     }
 }
 
 function removeMsgAlert(input){
-  input.className = 'form__input';
+  input.className = 'input-box';
 
   if (input === formName || input === formEmail) {
     let formField = input.parentElement;
-    let errorMessage = formField.querySelector('.form__message');
-    errorMessage.className = 'form__message';
+    let errorMessage = formField.querySelector('.error-message');
+    errorMessage.className = 'error-message';
   } else if (input === month || input === day || input || year){
-    let errorMessage = date.querySelector('.form__message');
-    errorMessage.className = 'form__message';
+    let errorMessage = date.querySelector('.error-message');
+    errorMessage.className = 'error-message';
   } else if (input === hour || input === min) {
-    let errorMessage = time.querySelector('.form__message');
-    errorMessage.className = 'form__message';
+    let errorMessage = time.querySelector('.error-message');
+    errorMessage.className = 'error-message';
   }
 }
 
