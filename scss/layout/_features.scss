@@ -3,7 +3,7 @@
     text-align: center; 
     background-repeat: no-repeat;
 
-    @media (min-width: $bp-tablet-end) {
+    @media (min-width: $bp-desktop) {
        text-align: left;
     }
 
@@ -76,54 +76,53 @@
 
             @media (min-width: $bp-desktop){
                 width: 54rem;
-                height: 72rem;
+                min-height: 72rem;
             } 
             
             .features__image-enjoyable { 
                 background-position: center center;
-                height: 40.3rem;
-                width: 32.7rem;
+                min-height: 40.3rem;
 
                 @media (max-width: $bp-mobile) {
                     background-image: url(/images/homepage/enjoyable-place-mobile@2x.jpg);
                 }
 
                 @media (min-width: $bp-tablet-start) and (max-width: $bp-tablet-end) {
-                    height: 36.7rem;
-                    width: 57.3rem;
+                    min-height: 36rem;
                     background-image: url(/images/homepage/enjoyable-place-tablet@2x.jpg);
-
+                    
                 }
 
                 @media (min-width: $bp-desktop) {
-                    width: 54rem;
-                    height: 72rem;
+                    min-height: 72rem;
                     background-image: url(/images/homepage/enjoyable-place-desktop@2x.jpg);
                 }
+
             }
 
             .features__image-locally {
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position: center;
-                height: 40.3rem;
-                width: 32.7rem;
+                min-height: 40.3rem;
+               
 
                 @media (max-width: $bp-mobile) {
                     background-image: url(/images/homepage/locally-sourced-mobile@2x.jpg);
+                    
                 }
 
                 @media (min-width: $bp-tablet-start) and (max-width: $bp-tablet-end){
-                    height: 36.7rem;
-                    width: 57.3rem;
+                    min-height: 36.7rem;
                     background-image: url(/images/homepage/locally-sourced-tablet@2x.jpg);
                 }
 
                 @media (min-width: $bp-desktop) {
-                    width: 54rem;
-                    height: 72rem;
+                    //width: 54rem;
+                    min-height: 72rem;
                     background-image: url(/images/homepage/locally-sourced-desktop@2x.jpg);
                 }
+
             }
         }
 
