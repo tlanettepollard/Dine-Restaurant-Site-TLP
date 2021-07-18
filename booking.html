@@ -10,19 +10,19 @@
   <link rel="stylesheet" href="/dist/css/main.css">
 </head>
 <body>
-  <main role="main" class="bk__main">
-    <header class="bk__header">
-      <div class="bk__header--container">
-        <img class="bk__header--logo logo" src="../images/logo.svg" alt="Dine logo" />
-        <h2 class="bk__header--title heading-2-r">Reservations
-        </h2>
-        <p class="bk__header--text text-2">We can’t wait to host you. If you have any special requirements please feel free to call on the phone number below. We’ll be happy to accommodate you.</p>
-        <a class="button bk__header--button" href="/booking.html">Reserve a Place </a>
-      </div><!-- .bk-header__container -->
-    </header>
+  <main role="main">
+    <section class="booking">
+      <header class="bk__header">
+        <div class="bk__header--container">
+          <img class="bk__header--logo logo" src="../images/logo.svg" alt="Dine logo" />
+          <h2 class="bk__header--title heading-2-r">Reservations
+          </h2>
+          <p class="bk__header--text text-2">We can’t wait to host you. If you have any special requirements please feel free to call on the phone number below. We’ll be happy to accommodate you.</p>
+          <a class="button bk__header--button" href="/booking.html">Reserve a Place </a>
+        </div><!-- .bk-header__container -->
+      </header>
 
-    <section class="reservation">
-      <div class="reservation__container">
+      <section class="reservation__container">
         <div class="reservation__form">
           <form id="form" class="form">
             <div class="form__field form__field--text">
@@ -49,20 +49,20 @@
               <label for="time">Pick a time</label>
               <span class="form__message">Error Message</span>
               <div class="form__field-box">
-                  <input type="number" name="hour" aria-label="hour" id="hour" placeholder="00" min="0" max="12" class="form__input hour">
-                  <input type="number" name="min" aria-label="min" id="min" placeholder="00" min="0" max="59" class="form__input minute">
+                <input type="number" name="hour" aria-label="hour" id="hour" placeholder="00" min="0" max="12" class="form__input hour">
+                <input type="number" name="min" aria-label="min" id="min" placeholder="00" min="0" max="59" class="form__input minute">
                   
-                  <div class="form__input form__input--arrow" id="arrow" for="am-pm">
-                    <select name="am-pm" id="select">
-                      <optgroup>
-                         <option id="form__option" value="arrow-down" selected>AM
-                         </option>
-                         <option id="form__option" value="arrow-down">PM</option>
-                      </optgroup>
-                      <label for="select"></label>
-                    </select>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="11" class="arrow-down" id="icon"><path fill="none" stroke="#9E7F66" stroke-width="2" d="M1 1l8 8 8-8"/></svg>
-                  </div><!-- .form__input -->
+                <div class="form__input form__input--arrow" id="arrow" for="am-pm">
+                  <select name="am-pm" id="select">
+                    <optgroup>
+                      <option id="form__option" value="arrow-down" selected>AM
+                      </option>
+                      <option id="form__option" value="arrow-down">PM</option>
+                    </optgroup>
+                    <label for="select"></label>
+                  </select>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="11" class="arrow-down" id="icon"><path fill="none" stroke="#9E7F66" stroke-width="2" d="M1 1l8 8 8-8"/></svg>
+                </div><!-- .form__input -->
               </div><!-- .form__field-box -->
             </div><!-- .form__field -->
 
@@ -77,7 +77,7 @@
         </div>
         <img class="curve curve-right" src="/images/patterns/pattern-curve-top-right.svg" alt="Curve top right">
       </div><!-- .reservation__container -->
-    </section><!-- .reservation -->
+    </section><!-- .booking -->
   </main>
 
   <footer class=" bk__footer footer">

@@ -1,8 +1,49 @@
-.bk__main {
+.booking {
     position: relative;
-    width: 100%;
 
-    
+    .bk__header {
+        height: 60rem;
+        @include flex (column, center);
+        text-align: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        @media (max-width: $bp-mobile) {
+            height: 60rem;
+            background-image: url(/images/booking/hero-bg-mobile@2x.jpg);
+        }
+
+        @media (min-width: $bp-tablet-start) and (max-width: $bp-tablet-end) {
+            height: 60rem;
+            background-image:url(/images/booking/hero-bg-tablet@2x.jpg);
+        }
+
+        @media (min-width: $bp-desktop) {
+            height: 60rem;
+            background-image: url(/images/booking/hero-bg-desktop@2x.jpg);
+        }
+
+    }
+
+    .reservation__container {
+        position: relative;
+        background-color: $color-white;
+
+        @media (max-width: $bp-mobile) {
+            height: 53.4rem;
+        }
+
+        @media (min-width: $bp-tablet-start) and (max-width: $bp-tablet-end) {
+            height: 43.5rem;
+        }
+
+        @media (min-width: $bp-desktop) {
+            height: 32rem;
+            background-repeat: no-repeat;
+            background-image: url(/images/patterns/pattern-curve-bottom-right.svg);
+        }
+    }
 }
 
 
