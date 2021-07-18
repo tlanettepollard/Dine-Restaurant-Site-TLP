@@ -56,17 +56,31 @@
 
     .reservation {
         position: relative;
-        min-height: 53.4rem;
+        height: 53.4rem;
         color: $primary-cod-gray;
         @include flex(column, center);
+        background-color: $color-white;
+
+        @media (min-width: $bp-tablet-start) and (max-width: $bp-tablet-end) {
+            height: 43.5rem;
+        }
         
         @media (min-width: $bp-desktop) {
             height: 32rem;
+            background-repeat: no-repeat;
+            background-image: url(/images/patterns/pattern-curve-bottom-right.svg);
         }
 
         &__container {
             height: 58.5rem;
             max-width: 54rem;
+
+            @media (max-width: $bp-mobile) {
+                text-align: center;
+                padding-top: 5.6rem;
+                padding-right: 2.4rem;
+                padding-left: 2.4rem;
+            }
 
             @media (min-width: $bp-desktop) {
                 

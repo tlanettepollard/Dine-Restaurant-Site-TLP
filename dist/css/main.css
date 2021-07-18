@@ -1200,21 +1200,37 @@ body {
 }
 .bk__main .reservation {
   position: relative;
-  min-height: 53.4rem;
+  height: 53.4rem;
   color: #111111;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #ffffff;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .bk__main .reservation {
+    height: 43.5rem;
+  }
 }
 @media (min-width: 1025px) {
   .bk__main .reservation {
     height: 32rem;
+    background-repeat: no-repeat;
+    background-image: url(/images/patterns/pattern-curve-bottom-right.svg);
   }
 }
 .bk__main .reservation__container {
   height: 58.5rem;
   max-width: 54rem;
+}
+@media (max-width: 767px) {
+  .bk__main .reservation__container {
+    text-align: center;
+    padding-top: 5.6rem;
+    padding-right: 2.4rem;
+    padding-left: 2.4rem;
+  }
 }
 .bk__main .reservation__form {
   height: 58.5rem;
