@@ -22,34 +22,55 @@
         </div><!-- .bk-header__container -->
       </header>
 
-      <section class="reservation__container">
+      <section class="form__container">
         <form id="form" class="form">
           <div class="form__field form__field--text">
-            <input type="text" name="name" id="name" placeholder="Name" aria-label="name" class="form__input">
-            <span class="form__message">Error Message</span>
+            <label class="sr-only" for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="Name" aria-label="name" class="input-box">
+            <p class="error-message">Error Message</p>
           </div> <!-- .form__field -->
 
           <div class="form__field form__field--text">
-            <input type="email" name="email" id="email" placeholder="Email" aria-label="email" class="form__input">
-            <span class="form__message">Error Message</span>
+            <label class="sr-only" for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Email" aria-label="email" class="input-box">
+            <p class="error-message">Error Message</p>
           </div> <!-- .form__field -->
 
-          <div class="form__field form__field--number" id="date">
-            <label for="date">Pick a date</label>
-            <span class="form__message">Error Message</span>
-            <div class="form__field-box date">
-              <input type="number" name="month" aria-label="month" id="month" placeholder="MM" min="0" max="12" class="form__input">
-              <input type="number" name="day" aria-label="day" id="day" placeholder="DD" min="0" max="31" class="form__input">
-              <input type="year" name="year" aria-label="year" id="year" placeholder="YYYY" min="2020" class="form__input">
+          <div class="form__field--datetime" id="date">
+            <div class="datetime-field-container">
+              <p class="datetime-field-name">Pick a date</p>
+              <p class="error-message">Error Message</p>
+            </div>
+            <div class="input-containers">
+              <div class="input-container">
+                <label class="sr-only" for="month">Month</label>
+                <input type="text" name="month" aria-label="month" id="month" placeholder="MM" maxlength="2" class="input-box input-box--small">
+              </div>
+              <div class="input-container">
+                <label class="sr-only" for="month">Day</label>
+                <input type="text" name="day" aria-label="day" id="day" placeholder="DD" maxlength="2" class="input-box input-box--small">
+              </div>
+              <div class="input-container">
+                <label class="sr-only" for="year">year</label>
+                <input type="text" name="year" aria-label="year" id="year" placeholder="YYYY" maxlength="4" class="input-box input-box--large">
+              </div>
             </div> 
-          </div><!-- .form__field -->
+          </div><!-- .form__field--datetime -->
                        
-          <div class="form__field form__field--number" id="time">
-            <label for="time">Pick a time</label>
-            <span class="form__message">Error Message</span>
-            <div class="form__field-box">
-              <input type="number" name="hour" aria-label="hour" id="hour" placeholder="00" min="0" max="12" class="form__input hour">
-              <input type="number" name="min" aria-label="min" id="min" placeholder="00" min="0" max="59" class="form__input minute">
+          <div class="form__field--datetime" id="time">
+            <div class="datetime-field-container">
+              <p class="datetime-field-name">Pick a time</p>
+              <p class="error-message">Error Message</p>
+            </div>
+            <div class="input-containers">
+              <div class="input-container">
+                <label class="sr-only" for="hour">Hour</label>
+                <input type="text" name="hour" aria-label="hour" id="hour" placeholder="00" maxlength="2" class="input-box input-box--small">
+              </div>
+              <div class="input-container">
+                <label class="sr-only" for="hour">Minute</label>
+                <input type="text" name="minute" aria-label="minute" id="minute" placeholder="00" maxlength="2" class="input-box input-box--small">
+              </div><!-- .form__field--datetime -->
                   
               <div class="form__input form__input--arrow" id="arrow" for="am-pm">
                 <select name="am-pm" id="select">
