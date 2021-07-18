@@ -72,7 +72,7 @@
                 <input type="text" name="minute" aria-label="minute" id="minute" placeholder="00" maxlength="2" class="input-box input-box--small">
               </div><!-- .form__field--datetime -->
                   
-              <div class="form__input form__input--arrow" id="arrow" for="am-pm">
+              <div class="form__dropdown" id="arrow" for="am-pm">
                 <select name="am-pm" id="select">
                   <optgroup>
                     <option id="form__option" value="arrow-down" selected>AM
@@ -82,14 +82,20 @@
                   <label for="select"></label>
                 </select>
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="11" class="arrow-down" id="icon"><path fill="none" stroke="#9E7F66" stroke-width="2" d="M1 1l8 8 8-8"/></svg>
-              </div><!-- .form__input -->
-            </div><!-- .form__field-box -->
-          </div><!-- .form__field -->
+              </div><!-- .form__dropdown -->
+            </div><!-- .input-containers -->
+          </div><!-- .form__field--datetime -->
 
-          <div class="form__field form__field--people">
-            <svg xmlns="http://www.w3.org/2000/svg" width="7" height="3"><path fill="#9E7F66" d="M6.425 2.977V.601H.629v2.376z" class="icon-count" id="icon-minus"/></svg> 
-            <input type="text" name="people" aria-label="people" id="people" placeholder="4 people" value="4 people" min="0" class="form__input">
-            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="11"><path fill="#9E7F66" d="M6.227 10.156V6.727h3.429V4.342H6.227V.913H3.842v3.429H.413v2.385h3.429v3.429z" class="icon-count" id="icon-plus"/></svg>
+          <div class="form__number--people">
+            <button class="form__number--button">
+              <span class="sr-only">minus</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="7" height="3"><path fill="#9E7F66" d="M6.425 2.977V.601H.629v2.376z" class="icon-count" id="icon-minus"/></svg> 
+            </button>
+            <span id="people" class="number-people">4</span> 
+            <button class="form__number--button">
+              <span class="sr-only">plus</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="10" height="11"><path fill="#9E7F66" d="M6.227 10.156V6.727h3.429V4.342H6.227V.913H3.842v3.429H.413v2.385h3.429v3.429z" class="icon-count" id="icon-plus"/></svg>
+            </button>
           </div><!-- .form__field -->
           <button type="submit" class="button button--dark button--submit">Make Reservation</button>
         </form>
