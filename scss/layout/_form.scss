@@ -29,6 +29,8 @@
     .reservation__container {
         position: relative;
         background-color: $color-white;
+        @include flex (column, center);
+        width: 100%;
 
         @media (max-width: $bp-mobile) {
             height: 53.4rem;
@@ -43,6 +45,26 @@
             background-repeat: no-repeat;
             background-image: url(/images/patterns/pattern-curve-bottom-right.svg);
         }
+
+        .reservation__form {
+            background-color: $color-white;
+            box-shadow: $bshadow-1;
+            position: relative;
+            padding: 3rem;
+            margin-bottom: 10rem;
+
+            @media (max-width: $bp-mobile) {
+                max-width: 32.7rem;
+            }
+
+            @media (min-width: $bp-tablet-start) and (max-width: $bp-tablet-end) {
+                max-width: 54rem;
+            }
+
+            @media (min-width: $bp-desktop)
+            
+        }
+
     }
 }
 

@@ -1175,6 +1175,11 @@ body {
 .booking .reservation__container {
   position: relative;
   background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 @media (max-width: 767px) {
   .booking .reservation__container {
@@ -1191,6 +1196,23 @@ body {
     height: 32rem;
     background-repeat: no-repeat;
     background-image: url(/images/patterns/pattern-curve-bottom-right.svg);
+  }
+}
+.booking .reservation__container .reservation__form {
+  background-color: #ffffff;
+  box-shadow: 0 7.5rem 10rem -5rem rgba(56, 66, 85, 0.5);
+  position: relative;
+  padding: 3rem;
+  margin-bottom: 10rem;
+}
+@media (max-width: 767px) {
+  .booking .reservation__container .reservation__form {
+    max-width: 32.7rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .booking .reservation__container .reservation__form {
+    max-width: 54rem;
   }
 }
 
