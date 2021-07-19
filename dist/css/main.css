@@ -136,6 +136,18 @@ body {
   }
 }
 
+.sr-only {
+  padding: 0;
+  width: 0.1rem;
+  height: 0.1rem;
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(0px 0px 99.9% 99.9%);
+          clip-path: inset(0px 0px 99.9% 99.9%);
+  overflow: hidden;
+  border: 0;
+}
+
 h1,
 h2,
 h3,
@@ -229,6 +241,19 @@ body {
   font-weight: 400;
   line-height: 2.8rem;
   letter-spacing: 0.019rem;
+}
+
+.form-text {
+  font-size: 1.8rem;
+  line-height: 1.556;
+  letter-spacing: -0.22px;
+  color: #111111;
+}
+.form-text--regular {
+  font-weight: 300;
+}
+.form-text--bold {
+  font-weight: 700;
 }
 
 /* Layout */

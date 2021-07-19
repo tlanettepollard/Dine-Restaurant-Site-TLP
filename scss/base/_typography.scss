@@ -95,3 +95,16 @@ body {
     line-height: 2.8rem;
     letter-spacing: .019rem;
 }
+
+.form-text {
+    font-size: 1.8rem;
+    line-height: 1.556;
+    letter-spacing: -0.22px;
+    color: $primary-cod-gray;
+    &--regular {
+        font-weight: $weight-light;
+    }
+    &--bold {
+        font-weight: $weight-bold;
+    }
+}
