@@ -18,60 +18,95 @@
         @media (min-width: $bp-tablet-start) and (max-width: $bp-tablet-end) {
             height: 60rem;
             background-image:url(/images/booking/hero-bg-tablet@2x.jpg);
+            
         }
 
         @media (min-width: $bp-desktop) {
             height: 60rem;
             background-image: url(/images/booking/hero-bg-desktop@2x.jpg);
+            @include flex (row, flex-start);
+            text-align: left;
+        }
+
+        &--container {
+            height: 39rem;
+            max-width: 34rem;
+            margin-top: 4rem;
+            padding: 0 1rem;
+            @include flex (column, space-between);
+
+            @media (min-width: $bp-tablet-start) and (max-width: $bp-tablet-end) {
+                max-width: 69rem;
+                justify-content: space-evenly;
+                
+            }
+
+            @media (min-width: $bp-desktop) {
+                max-width: 45rem;
+                justify-content: space-evenly;
+                align-items: flex-start;
+            }
+        }
+
+        &--logo {
+
+        }
+
+        &--text {
+            font-size: 1.4rem !important;
+        }
+
+        &--button {
+            @media (min-width: $bp-tablet-start) {
+                display: none;
+            }
         }
 
     }
 
     .form__container {
         position: relative;
-        width: 100%;
-        background-color: $color-white;
-
         @media (max-width: $bp-mobile) {
-            height: 53.5rem;
+            height: 53.4rem;
         }
 
         @media (min-width: $bp-tablet-start) and (max-width: $bp-tablet-end) {
-            height: 43.3rem;
+            height: 43.5rem;
         }
 
         @media (min-width: $bp-desktop) {
             height: 32rem;
+            background-repeat: no-repeat;
+            background-image: url(/images/patterns/pattern-curve-bottom-right.svg);
         }
-        
+
         .form {
-            box-shadow: $bshadow-1;
             background-color: $color-white;
-            position: relative;
-            margin: auto;
+            box-shadow: $bshadow-1;
+            margin: 0 auto;
 
             @media (max-width: $bp-mobile) {
+                max-width: 40rem;
                 height: 58.5rem;
-                width: 32.7rem;
                 transform: translateY(-10rem);
-                
             }
-
-            @media (min-width: $bp-tablet-start) and (max-width: $bp-tablet-end) {
-                height: 54.5rem;
+            @media (min-width: $bp-tablet-start) {
                 width: 54rem;
-                transform: translateY(-22rem);
+                height: 54.5rem;
+                transform: translateY(-25.4rem);
             }
 
             @media (min-width: $bp-desktop) {
                 height: 56rem;
-                width: 54rem;
-                transform: translateX(20rem) translateY(-32rem);
+                transform: translateX(28rem) translateY(-35rem);
             }
         }
-
     }
+
+    
 }
+
+
 
 
 

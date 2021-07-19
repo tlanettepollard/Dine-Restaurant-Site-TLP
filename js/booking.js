@@ -29,15 +29,15 @@ function showMsgAlert (input) {
     if (input === formName || input === formEmail) {
       let formField = input.parentElement;
       let errorMessage = formField.querySelector('.error-message');
-      errorMessage.className = 'error-message';
+      errorMessage.className = 'error-message error-message--text';
       errorMessage.innerText = 'This field is required';
     } else if (input === month || input === day || input === year){
       let errorMessage = date.querySelector('.error-message');
-      errorMessage.className = 'error-message';
+      errorMessage.className = 'error-message error-message--text';
       errorMessage.innerText = 'This field is incomplete';
     } else if (input === hour || input === min) {
       let errorMessage = time.querySelector('error-message');
-      errorMessage.className = 'error-message';
+      errorMessage.className = 'error-message error-message--text';
       errorMessage.innerText = 'This field is incomplete';
     }
 }

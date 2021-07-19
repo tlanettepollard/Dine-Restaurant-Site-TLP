@@ -1054,3 +1054,166 @@ Events
                /images/homepage/social-events-mobile@2x.jpg 2x" media="(min-width: 30rem)">
                <img class="event__photo event__photo--social" id="photo-3" src="/images/homepage/social-events-mobile.jpg" alt="Social Events">
           </picture>
+
+
+Form Zuolizhu
+.form__container {
+        position: relative;
+        width: 100%;
+        background-color: $color-white;
+
+        @media (max-width: $bp-mobile) {
+            height: 53.5rem;
+        }
+
+        @media (min-width: $bp-tablet-start) and (max-width: $bp-tablet-end) {
+            height: 43.3rem;
+        }
+
+        @media (min-width: $bp-desktop) {
+            height: 32rem;
+        }
+        
+        .form {
+            box-shadow: $bshadow-1;
+            background-color: $color-white;
+            position: relative;
+            margin: auto;
+
+            @media (max-width: $bp-mobile) {
+                height: 58.5rem;
+                width: 32.7rem;
+                transform: translateY(-10rem);
+                
+            }
+
+            @media (min-width: $bp-tablet-start) and (max-width: $bp-tablet-end) {
+                height: 54.5rem;
+                width: 54rem;
+                transform: translateY(-22rem);
+            }
+
+            @media (min-width: $bp-desktop) {
+                height: 56rem;
+                width: 54rem;
+                transform: translateX(20rem) translateY(-32rem);
+            }
+
+            .error-message {
+                display: block;
+                font-size: 1rem;
+                font-weight: $weight-bold;
+                line-height: 1.2;
+                padding-top: .7rem;
+                text-align: left;
+                letter-spacing: -0.012rem;
+                color: $color-error;
+                visibility: hidden;
+
+                &--text {
+                    visibility: visible;
+                }
+            }
+
+            &__field {
+                &--text {
+                    margin-bottom: 3.2rem;
+                }
+            }
+
+            &__field--datetime {
+                margin-bottom: 3.2rem;
+
+                @media (max-width: $bp-mobile) {
+                    @include flex (column, space-between);
+                }
+
+                @media (min-width: $bp-tablet-start) {
+                    @include flex (row, space-between);
+                }
+
+                .input-containers {
+                    @include flex (row, space-between);
+                    @media (min-width: $bp-tablet-start) {
+                        width: 28.9rem;
+                    }
+                }
+
+                .input-box {
+                    width: 100%;
+                    caret-color: $primary-beaver;
+                    opacity: 0.5;
+                    border: none;
+                    padding-left: 1.6rem;
+                    padding-bottom: 1.6rem;
+                    border-bottom: 1px solid #8e8e8e;
+                    transition: $transition-2, border-color, $transition-2, opacity;
+                    cursor: pointer;
+                    &:focus {
+                        opacity: 1;
+                        border-bottom: 1px solid $primary-cod-gray;
+                        outline: none;
+                        &::placeholder {
+                            opacity: 1;
+                        }
+                    }
+                    &::placeholder {
+                        color: $primary-cod-gray;
+                        opacity: 0.5;
+                        transition: $transition-2 opacity;
+                    }
+
+                    &--small {
+                        @media (max-width: $bp-mobile) {
+                            width: 7.3rem;
+                        }
+                        @media (min-width: $bp-tablet-start) {
+                            width: 8rem;
+                        }
+                    }
+
+                    &--large {
+                        @media (max-width: $bp-mobile) {
+                            width: 8.8rem;
+                        }
+                        @media (min-width: $bp-tablet-start) {
+                            width: 9.7rem;
+                        }
+                    }
+                }
+                
+            }
+
+            &__number-people {
+                @include flex (row, space-between);
+                padding-bottom: 1.6rem;
+                border-bottom: 1px solid $primary-cod-gray;
+                margin-bottom: 3.2rem;
+
+                @media (max-width: $bp-mobile) {
+                    padding-left: 1rem;
+                    padding-right: 1rem;
+                }
+
+                @media (min-width: $bp-tablet-start) {
+                    padding-left: 2.2rem;
+                    padding-right: 2.2rem;
+                }
+            }
+
+        }
+
+        .date-field--name {
+            @media (max-width: $bp-mobile) {
+                margin-bottom: .8rem;
+            }
+        }
+
+
+    }
+
+    &__dropdown {
+        @media (max-width: $bp-mobile) {
+            width: 8.8rem;
+        }
+    }

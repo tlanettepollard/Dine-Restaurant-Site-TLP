@@ -78,7 +78,7 @@ body {
     text-align: center;
     color: $color-white;
     border: 1px solid $color-white;
-    transition: $transition;
+    transition: $transition-1;
 
     &:hover,
     &:active {
@@ -131,4 +131,16 @@ body {
     @media (min-width: $bp-desktop) {
         max-width: 44.7rem;
     }
+}
+
+
+.sr-only {
+    padding: 0;
+    width: .1rem;
+    height: .1rem;
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(0px 0px  99.9% 99.9%);
+    overflow: hidden;
+    border: 0;
 }
