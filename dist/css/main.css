@@ -1279,12 +1279,13 @@ body {
 @media (min-width: 768px) {
   .booking .form__container .form {
     width: 54rem;
-    height: 56rem;
-    transform: translateY(-12.4rem);
+    height: 54.5rem;
+    transform: translateY(-25.4rem);
   }
 }
 @media (min-width: 1025px) {
   .booking .form__container .form {
+    height: 56rem;
     transform: translateX(28rem) translateY(-35rem);
   }
 }

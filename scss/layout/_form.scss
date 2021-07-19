@@ -38,7 +38,7 @@
             @media (min-width: $bp-tablet-start) and (max-width: $bp-tablet-end) {
                 max-width: 69rem;
                 justify-content: space-evenly;
-                //
+                
             }
 
             @media (min-width: $bp-desktop) {
@@ -92,11 +92,12 @@
             }
             @media (min-width: $bp-tablet-start) {
                 width: 54rem;
-                height: 56rem;
-                transform: translateY(-12.4rem);
+                height: 54.5rem;
+                transform: translateY(-25.4rem);
             }
 
             @media (min-width: $bp-desktop) {
+                height: 56rem;
                 transform: translateX(28rem) translateY(-35rem);
             }
         }
