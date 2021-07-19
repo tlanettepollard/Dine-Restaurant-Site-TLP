@@ -1327,6 +1327,26 @@ body {
     align-items: center;
   }
 }
+.booking .form__container .form__field--datetime .input-containers {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .booking .form__container .form__field--datetime .input-containers {
+    width: 28.9rem;
+  }
+}
+.booking .form__container .form__field--datetime .input-box {
+  width: 100%;
+  caret-color: #9e7166;
+  opacity: 0.5;
+  border: none;
+  padding-left: 1.6rem;
+  padding-bottom: 1.6rem;
+  border-bottom: 1px solid #8e8e8e;
+}
 .booking .form__container .form__number-people {
   display: flex;
   flex-direction: row;
@@ -1346,6 +1366,11 @@ body {
   .booking .form__container .form__number-people {
     padding-left: 2.2rem;
     padding-right: 2.2rem;
+  }
+}
+@media (max-width: 767px) {
+  .booking .form__container .date-field--name {
+    margin-bottom: 0.8rem;
   }
 }
 
