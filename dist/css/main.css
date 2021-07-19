@@ -1244,6 +1244,9 @@ body {
     display: none;
   }
 }
+.booking .form__container {
+  position: relative;
+}
 @media (max-width: 767px) {
   .booking .form__container {
     height: 53.4rem;
@@ -1257,6 +1260,32 @@ body {
 @media (min-width: 1025px) {
   .booking .form__container {
     height: 32rem;
+    background-repeat: no-repeat;
+    background-image: url(/images/patterns/pattern-curve-bottom-right.svg);
+  }
+}
+.booking .form__container .form {
+  background-color: #ffffff;
+  box-shadow: 0 7.5rem 10rem -5rem rgba(56, 66, 85, 0.5);
+  margin: 0 auto;
+}
+@media (max-width: 767px) {
+  .booking .form__container .form {
+    max-width: 40rem;
+    height: 58.5rem;
+    transform: translateY(-10rem);
+  }
+}
+@media (min-width: 768px) {
+  .booking .form__container .form {
+    width: 54rem;
+    height: 56rem;
+    transform: translateY(-12.4rem);
+  }
+}
+@media (min-width: 1025px) {
+  .booking .form__container .form {
+    transform: translateX(28rem) translateY(-35rem);
   }
 }
 

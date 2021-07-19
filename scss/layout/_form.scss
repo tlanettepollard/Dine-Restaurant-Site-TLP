@@ -65,7 +65,7 @@
     }
 
     .form__container {
-
+        position: relative;
         @media (max-width: $bp-mobile) {
             height: 53.4rem;
         }
@@ -76,6 +76,29 @@
 
         @media (min-width: $bp-desktop) {
             height: 32rem;
+            background-repeat: no-repeat;
+            background-image: url(/images/patterns/pattern-curve-bottom-right.svg);
+        }
+
+        .form {
+            background-color: $color-white;
+            box-shadow: $bshadow-1;
+            margin: 0 auto;
+
+            @media (max-width: $bp-mobile) {
+                max-width: 40rem;
+                height: 58.5rem;
+                transform: translateY(-10rem);
+            }
+            @media (min-width: $bp-tablet-start) {
+                width: 54rem;
+                height: 56rem;
+                transform: translateY(-12.4rem);
+            }
+
+            @media (min-width: $bp-desktop) {
+                transform: translateX(28rem) translateY(-35rem);
+            }
         }
     }
 
