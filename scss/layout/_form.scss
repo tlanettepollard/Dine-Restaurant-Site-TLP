@@ -25,6 +25,18 @@
             background-image: url(/images/booking/hero-bg-desktop@2x.jpg);
         }
 
+        &--container {
+            height: 39rem;
+            max-width: 34rem;
+            margin-top: 4rem;
+            padding: 0 1rem;
+            @include flex (column, space-between);
+        }
+
+        &--text {
+            font-size: 1.4rem !important;
+        }
+
     }
 
     .form__container {

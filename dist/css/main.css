@@ -1183,6 +1183,19 @@ body {
     background-image: url(/images/booking/hero-bg-desktop@2x.jpg);
   }
 }
+.booking .bk__header--container {
+  height: 39rem;
+  max-width: 34rem;
+  margin-top: 4rem;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.booking .bk__header--text {
+  font-size: 1.4rem !important;
+}
 .booking .form__container {
   position: relative;
   width: 100%;
