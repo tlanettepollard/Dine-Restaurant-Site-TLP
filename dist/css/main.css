@@ -1344,6 +1344,37 @@ body {
     width: 28.9rem;
   }
 }
+.booking .form__container .input-containers .input-box {
+  border: none;
+  opacity: 0.5;
+  padding-left: 1.6rem;
+  padding-bottom: 1.6rem;
+  border-bottom: 1px solid #242b37;
+  cursor: pointer;
+}
+.booking .form__container .input-containers .input-box:focus {
+  opacity: 1;
+  border-bottom: 1px solid #111111;
+  outline: none;
+}
+.booking .form__container .input-containers .input-box:focus::-moz-placeholder {
+  opacity: 1;
+}
+.booking .form__container .input-containers .input-box:focus:-ms-input-placeholder {
+  opacity: 1;
+}
+.booking .form__container .input-containers .input-box:focus::placeholder {
+  opacity: 1;
+}
+.booking .form__container .input-containers .input-box::-moz-placeholder {
+  opacity: 0.5;
+}
+.booking .form__container .input-containers .input-box:-ms-input-placeholder {
+  opacity: 0.5;
+}
+.booking .form__container .input-containers .input-box::placeholder {
+  opacity: 0.5;
+}
 @media (max-width: 767px) {
   .booking .form__container .input-containers .input-box {
     width: 8.6rem;
@@ -1352,6 +1383,42 @@ body {
 @media (min-width: 768px) {
   .booking .form__container .input-containers .input-box {
     width: 9.6rem;
+  }
+}
+.booking .form__container .error-message {
+  line-height: 1.2;
+  margin-top: 1rem;
+  padding-left: 1.6rem;
+  letter-spacing: -0.012rem;
+  color: #B54949;
+  display: none;
+}
+.booking .form__container .error-message.show {
+  display: block;
+}
+.booking .form__container .datetime-field-container {
+  margin-bottom: 3.2rem;
+}
+@media (max-width: 767px) {
+  .booking .form__container .datetime-field-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-self: flex-start !important;
+  }
+}
+@media (min-width: 768px) {
+  .booking .form__container .datetime-field-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+@media (min-width: 768px) {
+  .booking .form__container .datetime-field-container .datetime-field--name {
+    padding-top: 3rem;
   }
 }
 
