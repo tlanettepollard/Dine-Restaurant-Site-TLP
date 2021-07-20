@@ -84,15 +84,18 @@
             background-color: $color-white;
             box-shadow: $bshadow-1;
             margin: 0 auto;
+            text-align: left;
 
             @media (max-width: $bp-mobile) {
                 max-width: 40rem;
                 height: 58.5rem;
+                padding: 3.2rem;
                 transform: translateY(-10rem);
             }
             @media (min-width: $bp-tablet-start) {
                 width: 54rem;
                 height: 54.5rem;
+                padding: 4.8rem;
                 transform: translateY(-25.4rem);
             }
 
@@ -100,7 +103,64 @@
                 height: 56rem;
                 transform: translateX(28rem) translateY(-35rem);
             }
+
+            &__field {
+                &--text {
+                    margin-bottom: 3.2rem;
+                }
+
+                &--datetime {
+                    margin-bottom: 3.2rem;
+                    @media (max-width: $bp-mobile) {
+                        @include flex (column, space-between);
+                    }
+
+                    @media (min-width: $bp-tablet-start) {
+                        @include flex (row, space-between);
+                    }
+
+                }
+
+
+            }
+
+            &__number-people {
+                @include flex (row, space-between);
+                padding-bottom: 1.6rem;
+                border-bottom: 1px solid $primary-cod-gray;
+                margin-bottom: 3.2rem;
+
+                @media (max-width: $bp-mobile) {
+                    padding: 0 1rem;
+                }
+                @media (min-width: $bp-tablet-start) {
+                    padding: 0 2.2rem;
+                }
+            }
+
         }
+
+        .input-containers {
+            @include flex(row, space-between);
+
+            @media (min-width: $bp-tablet-start) {
+                width: 28.9rem;
+            }
+
+            .input-box {
+                @media (max-width: $bp-mobile) {
+                    width: 8.6rem;
+                }
+
+                @media (min-width: $bp-tablet-start) {
+                    width: 9.6rem;
+                }
+                
+            }
+        }
+
+        
+
     }
 
     
