@@ -103,7 +103,10 @@
                 height: 56rem;
                 transform: translateX(28rem) translateY(-35rem);
             }
-
+            label {
+                width: 33rem;
+            }
+            
             &__field {
                 &--text {
                     margin-bottom: 3.2rem;

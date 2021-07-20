@@ -1292,6 +1292,9 @@ body {
     transform: translateX(28rem) translateY(-35rem);
   }
 }
+.booking .form__container .form label {
+  width: 33rem;
+}
 .booking .form__container .form__field--text {
   margin-bottom: 3.2rem;
 }
