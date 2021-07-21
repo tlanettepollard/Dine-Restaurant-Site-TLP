@@ -1268,11 +1268,13 @@ body {
   background-color: #ffffff;
   box-shadow: 0 7.5rem 10rem -5rem rgba(56, 66, 85, 0.5);
   margin: 0 auto;
+  text-align: left;
 }
 @media (max-width: 767px) {
   .booking .form__container .form {
     max-width: 40rem;
     height: 58.5rem;
+    padding: 3.2rem;
     transform: translateY(-10rem);
   }
 }
@@ -1280,6 +1282,7 @@ body {
   .booking .form__container .form {
     width: 54rem;
     height: 54.5rem;
+    padding: 4.8rem;
     transform: translateY(-25.4rem);
   }
 }
@@ -1287,6 +1290,167 @@ body {
   .booking .form__container .form {
     height: 56rem;
     transform: translateX(28rem) translateY(-35rem);
+  }
+}
+.booking .form__container .form label {
+  width: 33rem;
+}
+.booking .form__container .form__field--text {
+  margin-bottom: 3.2rem;
+}
+.booking .form__container .form__field--datetime {
+  margin-bottom: 1.2rem;
+}
+@media (max-width: 767px) {
+  .booking .form__container .form__field--datetime {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+@media (min-width: 768px) {
+  .booking .form__container .form__field--datetime {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.booking .form__container .form__number-people {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1.6rem;
+  border-bottom: 1px solid #111111;
+  margin-bottom: 3.2rem;
+}
+@media (max-width: 767px) {
+  .booking .form__container .form__number-people {
+    padding: 0 1rem;
+  }
+}
+@media (min-width: 768px) {
+  .booking .form__container .form__number-people {
+    padding: 0 2.2rem;
+  }
+}
+.booking .form__container .form__dropdown {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 8rem;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+.booking .form__container .form__dropdown select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  height: 4rem;
+  padding-left: 0.5rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  border: none;
+  border-bottom: 1px solid #242b37;
+}
+.booking .form__container .form__dropdown--arrow {
+  position: relative;
+  border-bottom: none;
+}
+.booking .form__container .form__dropdown--arrow .active {
+  transform: rotate(180deg);
+}
+.booking .form__container .input-containers {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .booking .form__container .input-containers {
+    width: 28.9rem;
+  }
+}
+.booking .form__container .input-containers .input-box {
+  border: none;
+  opacity: 0.5;
+  padding-left: 1.6rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  vertical-align: middle;
+  border-bottom: 1px solid #242b37;
+  cursor: pointer;
+}
+.booking .form__container .input-containers .input-box:focus {
+  opacity: 1;
+  border-bottom: 1px solid #111111;
+  outline: none;
+}
+.booking .form__container .input-containers .input-box:focus::-moz-placeholder {
+  opacity: 1;
+}
+.booking .form__container .input-containers .input-box:focus:-ms-input-placeholder {
+  opacity: 1;
+}
+.booking .form__container .input-containers .input-box:focus::placeholder {
+  opacity: 1;
+}
+.booking .form__container .input-containers .input-box::-moz-placeholder {
+  opacity: 0.5;
+}
+.booking .form__container .input-containers .input-box:-ms-input-placeholder {
+  opacity: 0.5;
+}
+.booking .form__container .input-containers .input-box::placeholder {
+  opacity: 0.5;
+}
+@media (max-width: 767px) {
+  .booking .form__container .input-containers .input-box {
+    width: 8.6rem;
+  }
+}
+@media (min-width: 768px) {
+  .booking .form__container .input-containers .input-box {
+    width: 9.6rem;
+  }
+}
+.booking .form__container .error-message {
+  line-height: 1.2;
+  margin-top: 1rem;
+  padding-left: 1.6rem;
+  letter-spacing: -0.012rem;
+  color: #B54949;
+  display: none;
+}
+.booking .form__container .error-message.show {
+  display: block;
+}
+.booking .form__container .datetime-field-container {
+  margin-bottom: 3.2rem;
+}
+@media (max-width: 767px) {
+  .booking .form__container .datetime-field-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-self: flex-start !important;
+  }
+}
+@media (min-width: 768px) {
+  .booking .form__container .datetime-field-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+@media (min-width: 768px) {
+  .booking .form__container .datetime-field-container .datetime-field--name {
+    padding-top: 3rem;
   }
 }
 
