@@ -1217,3 +1217,48 @@ Form Zuolizhu
             width: 8.8rem;
         }
     }
+
+
+
+    .input-containers {
+            @include flex(row, space-between);
+
+            @media (min-width: $bp-tablet-start) {
+                width: 28.9rem;
+            }
+
+            /*.input-box {
+                border: none;
+                opacity: 0.5;
+                padding-left: 1.6rem;
+                padding-bottom: 1rem;
+                padding-top: 1rem;
+                vertical-align: middle;
+                border-bottom: 1px solid $secondary-ebony-clay;
+                cursor: pointer;
+
+                &:focus {
+                    opacity: 1;
+                    border-bottom: 1px solid $primary-cod-gray;
+                    outline: none;
+                    &::placeholder {
+                        opacity: 1;
+                    }
+                }
+
+                &::placeholder {
+                    opacity: 0.5;
+                }
+
+                @media (max-width: $bp-mobile) {
+                    width: 8.6rem;
+                }
+
+                @media (min-width: $bp-tablet-start) {
+                    width: 9.6rem;
+                }     
+            } */
+
+
+
+        }
