@@ -11,7 +11,7 @@
 * {
   margin: 0;
   padding: 0;
-  outline: 1px solid black;
+  /*outline: 1px solid black;*/
 }
 
 *,
@@ -1387,6 +1387,9 @@ body {
   .booking .form__container .form__number-people {
     padding: 0 2.2rem;
   }
+}
+.booking .form__container .form__number-people .form__number--button {
+  border: none;
 }
 .booking .form__container .form__dropdown {
   display: flex;
