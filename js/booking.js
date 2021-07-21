@@ -36,7 +36,7 @@ function showMsgAlert (input) {
       errorMessage.className = 'error-message error-message--text';
       errorMessage.innerText = 'This field is incomplete';
     } else if (input === hour || input === min) {
-      let errorMessage = time.querySelector('error-message');
+      let errorMessage = time.querySelector('.error-message');
       errorMessage.className = 'error-message error-message--text';
       errorMessage.innerText = 'This field is incomplete';
     }

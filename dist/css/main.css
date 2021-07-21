@@ -1226,7 +1226,7 @@ body {
 @media (min-width: 768px) and (max-width: 1024px) {
   .booking .bk__header--container {
     max-width: 69rem;
-    justify-content: space-evenly;
+    justify-content: center;
   }
 }
 @media (min-width: 1025px) {
@@ -1236,8 +1236,23 @@ body {
     align-items: flex-start;
   }
 }
+@media (min-width: 768px) and (max-width: 1024px) {
+  .booking .bk__header--logo {
+    transform: translateX(-30rem) translateY(-15rem);
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .booking .bk__header--title {
+    margin-top: -8rem;
+  }
+}
 .booking .bk__header--text {
   font-size: 1.4rem !important;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .booking .bk__header--text {
+    padding: 0 11rem;
+  }
 }
 @media (min-width: 768px) {
   .booking .bk__header--button {
@@ -1254,7 +1269,7 @@ body {
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   .booking .form__container {
-    height: 43.5rem;
+    height: 45rem;
   }
 }
 @media (min-width: 1025px) {
@@ -1283,7 +1298,7 @@ body {
     width: 54rem;
     height: 54.5rem;
     padding: 4.8rem;
-    transform: translateY(-25.4rem);
+    transform: translateY(-24.4rem);
   }
 }
 @media (min-width: 1025px) {
@@ -1297,12 +1312,13 @@ body {
 }
 .booking .form__container .form__field--text {
   margin-bottom: 2.2rem;
+  padding-left: 2rem;
   border: none;
   border-bottom: 1px solid #242b37;
 }
 .booking .form__container .form__field .input-box {
   border: none;
-  width: 31rem;
+  width: 100%;
   color: inherit;
   line-height: 2.8 !important;
   cursor: pointer;
@@ -1349,6 +1365,7 @@ body {
   .booking .form__container .form__field--datetime .input-containers {
     width: 65%;
     align-items: baseline;
+    margin-left: 6.5rem;
   }
 }
 .booking .form__container .form__field--datetime .input-containers .input-container {
@@ -1418,6 +1435,8 @@ body {
   transform: rotate(180deg);
 }
 .booking .form__container .error-message {
+  display: block;
+  visibility: hidden;
   line-height: 1.2;
   margin-top: 1rem;
   padding-left: 1.6rem;
@@ -1425,8 +1444,14 @@ body {
   color: #B54949;
   display: none;
 }
-.booking .form__container .error-message.show {
-  display: block;
+.booking .form__container .error-message--text {
+  visibility: visible;
+}
+.booking .icon-count {
+  cursor: pointer;
+  width: 1.5rem;
+  vertical-align: middle;
+  padding: 1rem;
 }
 
 .bk__footer {
