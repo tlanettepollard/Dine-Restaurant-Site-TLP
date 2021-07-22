@@ -1453,6 +1453,10 @@ body {
   vertical-align: middle;
   padding: 1rem;
 }
+.booking .number-people {
+  text-align: center;
+  border: none;
+}
 
 .bk__footer {
   height: 60rem;

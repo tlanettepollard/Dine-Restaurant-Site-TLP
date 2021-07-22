@@ -11,7 +11,7 @@ const year = document.getElementById('year');
 
 const time = document.getElementById('time');
 const hour = document.getElementById('hour');
-const min = document.getElementById('min');
+const min = document.getElementById('minute');
 
 const icon = document.getElementById('icon');
 //const select = document.getElementById('select');
