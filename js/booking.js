@@ -24,7 +24,7 @@ const iconMinus = document.getElementById('icon-minus');
 const iconPlus = document.getElementById('icon-plus');
 
 function showMsgAlert (input) {
-    input.className = 'input-box';
+    input.className = 'input-box input-box--error';
 
     if (input === formName || input === formEmail) {
       let formField = input.parentElement;
