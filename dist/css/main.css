@@ -11,7 +11,7 @@
 * {
   margin: 0;
   padding: 0;
-  /*outline: 1px solid black;*/
+  outline: 1px solid black;
 }
 
 *,
@@ -1386,6 +1386,10 @@ body {
   border-bottom: 1px solid #242b37;
   cursor: pointer;
 }
+.booking .form__container .form__field--datetime .input-containers .input-container .input-box--error {
+  border-bottom: 0.1rem solid #B54949;
+  color: #B54949;
+}
 .booking .form__container .form__number-people {
   display: flex;
   flex-direction: row;
@@ -1442,7 +1446,6 @@ body {
   padding-left: 1.6rem;
   letter-spacing: -0.012rem;
   color: #B54949;
-  display: none;
 }
 .booking .form__container .error-message--text {
   visibility: visible;
@@ -1452,6 +1455,10 @@ body {
   width: 1.5rem;
   vertical-align: middle;
   padding: 1rem;
+}
+.booking .number-people {
+  text-align: center;
+  border: none;
 }
 
 .bk__footer {

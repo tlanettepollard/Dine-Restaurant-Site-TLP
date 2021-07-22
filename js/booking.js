@@ -11,7 +11,7 @@ const year = document.getElementById('year');
 
 const time = document.getElementById('time');
 const hour = document.getElementById('hour');
-const min = document.getElementById('min');
+const min = document.getElementById('minute');
 
 const icon = document.getElementById('icon');
 //const select = document.getElementById('select');
@@ -24,7 +24,7 @@ const iconMinus = document.getElementById('icon-minus');
 const iconPlus = document.getElementById('icon-plus');
 
 function showMsgAlert (input) {
-    input.className = 'input-box';
+    input.className = 'input-box input-box--error';
 
     if (input === formName || input === formEmail) {
       let formField = input.parentElement;
