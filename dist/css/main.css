@@ -1285,6 +1285,87 @@ body {
   margin: 0 auto;
   text-align: left;
 }
+@media (max-width: 767px) {
+  .booking .form__container .form {
+    max-width: 40rem;
+    height: 58.5rem;
+    padding: 3.2rem;
+    transform: translateY(-10rem);
+  }
+}
+@media (min-width: 768px) {
+  .booking .form__container .form {
+    width: 54rem;
+    height: 54.5rem;
+    padding: 4.8rem;
+    transform: translateY(-24.4rem);
+  }
+}
+@media (min-width: 1025px) {
+  .booking .form__container .form {
+    height: 56rem;
+    transform: translateX(28rem) translateY(-35rem);
+  }
+}
+.booking .form__container .form label {
+  width: 33rem;
+}
+.booking .form__container .form__field--text {
+  margin-bottom: 2.2rem;
+  padding-left: 2rem;
+  border: none;
+  border-bottom: 1px solid #242b37;
+}
+.booking .form__container .form__field .input-box {
+  border: none;
+  width: 100%;
+  color: inherit;
+  line-height: 2.8 !important;
+  cursor: pointer;
+}
+.booking .form__container .form__field .input-box .input-box::-moz-placeholder {
+  color: inherit;
+}
+.booking .form__container .form__field .input-box .input-box:-ms-input-placeholder {
+  color: inherit;
+}
+.booking .form__container .form__field .input-box .input-box::placeholder {
+  color: inherit;
+}
+.booking .form__container .form__field--datetime {
+  width: 100%;
+  height: 8.3rem;
+  position: relative;
+  margin-bottom: 2rem;
+}
+@media (min-width: 768px) {
+  .booking .form__container .form__field--datetime {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.booking .form__container .form__field--datetime .input-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  .booking .form__container .form__field--datetime .input-container {
+    width: 100%;
+  }
+}
+.booking .form__container .form__field--datetime .input-container .input-box {
+  border: none;
+  width: 8.4rem;
+}
+@media (min-width: 768px) {
+  .booking .form__container .form__field--datetime .input-container .input-box {
+    width: 9.7rem;
+  }
+}
 
 .bk__footer {
   height: 60rem;

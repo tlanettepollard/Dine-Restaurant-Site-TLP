@@ -78,6 +78,8 @@ https://dev.to/paul_duvall/sass-and-media-queries-hb2
 
 07/17/2021: I'm back. Learning a lot about spacing and using media queries set to mobile. 
 
+07/23/2021: Learned a lot about using transform and translate to move elements along the x and y axis of a page.
+
 ************************
 Reservations.scss
 .reservation {
