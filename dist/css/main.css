@@ -1431,13 +1431,13 @@ body {
 }
 .booking .form__container .form__number-people .number-people {
   text-align: center;
-  margin: 0 1.5rem;
+  margin: 0 1.2rem;
   border: none;
   padding-bottom: 1rem;
 }
 @media (min-width: 768px) {
   .booking .form__container .form__number-people .number-people {
-    margin: 0 5rem;
+    margin: 0 6rem;
   }
 }
 .booking .form__container .error-message {
