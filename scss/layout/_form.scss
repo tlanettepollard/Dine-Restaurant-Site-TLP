@@ -117,6 +117,7 @@
             }
 
             &__field {
+                margin: auto;
                 &--text {
                     margin-bottom: 2.2rem;
                     padding-left: 2rem;
@@ -136,36 +137,69 @@
                 }
 
                 &--datetime {
-                    width: 100%;
+                    width: 25.6rem;
                     height: 8.3rem;
                     position: relative;
+                    margin: auto;
                     margin-bottom: 2rem;
 
                     @media (min-width: $bp-tablet-start) {
                         @include flex (row, space-between);
+                        width: 44.4rem;
                     }
                     
                     .input-container {
                         @include flex (row, space-between);
                         @media (max-width: $bp-mobile){
-                            width: 100%;
-                            
-                        
+                            width: 100%;   
                         }
                             
                         .input-box {
                             border: none;
-                            width: 8.4rem;
+                            width: 7.4rem;
+                            margin-left: 0.5rem;
+                            padding: 0.5rem;
+                            text-align: center;
+                            border-bottom: 1px solid $secondary-ebony-clay;
+                            cursor: pointer;
 
 
                             @media (min-width: $bp-tablet-start){
-                                width: 9.7rem;
+                                width: 8rem;
                             }
                         }
                     }
-                }
+
+                }// form__field--datetime
 
             }// form__field
+
+            &__dropdown {
+                @include flex (row, space-between);
+                width: 8rem;
+                padding-left: 0.3rem;
+                cursor: pointer;
+                border-bottom: 1px solid $secondary-ebony-clay;
+                
+                select {
+                    appearance: none;
+                    height: 4rem;
+                    padding-left: 0.5rem;
+                    font-size: 1.6rem;
+                    font-weight: $weight-regular;
+                    border: none;
+                    cursor: pointer;
+                }
+
+                &--arrow {
+                    position: relative;
+                }
+
+                &--arrow .active {
+                    transform: rotate(180deg);
+                }
+                
+            }
         }// form
     }// form__container
     
