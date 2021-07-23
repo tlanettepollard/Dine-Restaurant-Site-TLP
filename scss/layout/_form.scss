@@ -154,6 +154,7 @@
                     
                     .input-container {
                         @include flex (row, space-between);
+                        margin-top: -1rem;
                         @media (max-width: $bp-mobile){
                             width: 100%;   
                         }
@@ -170,6 +171,7 @@
 
                             @media (min-width: $bp-tablet-start){
                                 width: 8rem;
+                                margin-left: 1rem;
                             }
                         }
                     }
@@ -184,6 +186,11 @@
                 padding-left: 0.3rem;
                 cursor: pointer;
                 border-bottom: 1px solid $secondary-ebony-clay;
+
+                 @media (min-width: $bp-tablet-start) {
+                     margin-left: 1rem;
+                 }
+                
                 
                 select {
                     appearance: none;
@@ -193,6 +200,9 @@
                     font-weight: $weight-regular;
                     border: none;
                     cursor: pointer;
+                    @media (min-width: $bp-tablet-start) {
+                        padding-left: 1rem;
+                    }
                 }
 
                 &--arrow {
@@ -202,6 +212,10 @@
                 &--arrow .active {
                     transform: rotate(180deg);
                 }
+
+                .arrow-down {
+                    margin-right: 0.5rem;
+                }
                 
             }// form__dropdown
 
@@ -209,10 +223,13 @@
                 border: none;
                 text-align: center;
                 margin-bottom: 2rem;
+                border-bottom: 1px solid $secondary-ebony-clay;
 
                 .number-people {
                     text-align: center;
-                    margin: 0 1rem;
+                    margin: 0 1.5rem;
+                    border: none;
+                    padding-bottom: 1rem;
                     @media (min-width: $bp-tablet-start){
                         margin: 0 5rem;
                     }

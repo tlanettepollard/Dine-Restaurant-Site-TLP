@@ -11,7 +11,7 @@
 * {
   margin: 0;
   padding: 0;
-  outline: 1px solid black;
+  /*outline: 1px solid black;*/
 }
 
 *,
@@ -1361,6 +1361,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin-top: -1rem;
 }
 @media (max-width: 767px) {
   .booking .form__container .form__field--datetime .input-container {
@@ -1379,6 +1380,7 @@ body {
 @media (min-width: 768px) {
   .booking .form__container .form__field--datetime .input-container .input-box {
     width: 8rem;
+    margin-left: 1rem;
   }
 }
 .booking .form__container .form__dropdown {
@@ -1391,6 +1393,11 @@ body {
   cursor: pointer;
   border-bottom: 1px solid #242b37;
 }
+@media (min-width: 768px) {
+  .booking .form__container .form__dropdown {
+    margin-left: 1rem;
+  }
+}
 .booking .form__container .form__dropdown select {
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -1402,20 +1409,31 @@ body {
   border: none;
   cursor: pointer;
 }
+@media (min-width: 768px) {
+  .booking .form__container .form__dropdown select {
+    padding-left: 1rem;
+  }
+}
 .booking .form__container .form__dropdown--arrow {
   position: relative;
 }
 .booking .form__container .form__dropdown--arrow .active {
   transform: rotate(180deg);
 }
+.booking .form__container .form__dropdown .arrow-down {
+  margin-right: 0.5rem;
+}
 .booking .form__container .form__number-people {
   border: none;
   text-align: center;
   margin-bottom: 2rem;
+  border-bottom: 1px solid #242b37;
 }
 .booking .form__container .form__number-people .number-people {
   text-align: center;
-  margin: 0 1rem;
+  margin: 0 1.5rem;
+  border: none;
+  padding-bottom: 1rem;
 }
 @media (min-width: 768px) {
   .booking .form__container .form__number-people .number-people {
