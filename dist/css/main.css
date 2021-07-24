@@ -1498,7 +1498,6 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  /* Attribution */
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   .bk__footer {
@@ -1508,7 +1507,7 @@ body {
 }
 @media (min-width: 1025px) {
   .bk__footer {
-    height: 24rem;
+    height: 30rem;
   }
 }
 .bk__footer--container {
@@ -1530,7 +1529,56 @@ body {
     align-items: flex-start;
   }
 }
-.bk__footer .attribution {
+@media (min-width: 1025px) {
+  .bk__footer--container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .bk__footer--container-info {
+    margin-left: 20rem;
+    text-align: left;
+  }
+}
+@media (min-width: 1025px) {
+  .bk__footer--container-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 67rem;
+    transform: translateX(-12rem);
+    text-align: left;
+  }
+}
+.bk__footer--container-logo, .bk__footer--container-address, .bk__footer--container-hours {
+  padding-bottom: 2rem;
+}
+.bk__footer .copyright-footer {
+  width: 100%;
+  /* Attribution */
+}
+@media (min-width: 1025px) {
+  .bk__footer .copyright-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.bk__footer .copyright-footer .homepage-link a {
+  font-size: 1.4rem;
+  color: #ffffff;
+  margin-top: 5rem;
+  padding: 0.5rem 0;
+}
+.bk__footer .copyright-footer .attribution {
   position: relative;
   margin-top: 5rem;
   padding: 5px 0;
@@ -1538,14 +1586,10 @@ body {
   text-align: center;
   color: #5c6779;
 }
-.bk__footer .attribution a {
+.bk__footer .copyright-footer .attribution a {
   color: #9e7166;
   margin-top: 2rem;
 }
-.bk__footer .attribution a:hover {
-  color: #ffffff;
-}
-.bk__footer .homepage-link a {
-  font-size: 1.4rem;
+.bk__footer .copyright-footer .attribution a:hover {
   color: #ffffff;
 }/*# sourceMappingURL=main.css.map */

@@ -304,7 +304,7 @@
     }
 
     @media (min-width: $bp-desktop) {
-        height: 24rem;
+        height: 30rem;
 
     }
 
@@ -321,29 +321,68 @@
             align-items: flex-start;
         }
 
+        @media (min-width: $bp-desktop) {
+            width: 100%;
+            @include flex (row, space-around);
+            align-items: flex-start;
+            margin-bottom: 2rem;
+        }
+
+        &-info {
+            @media (min-width: $bp-tablet-start) and (max-width: $bp-tablet-end) {
+                margin-left: 20rem;
+                text-align: left;
+            }
+
+            @media (min-width: $bp-desktop) {
+                @include flex (row, space-around);
+                width: 67rem;
+                transform: translateX(-12rem);
+                text-align: left;
+            }
+        }
+
+        &-logo,
+        &-address,
+        &-hours {
+            padding-bottom: 2rem;
+        }
+
     }
 
-    /* Attribution */
-    .attribution {
-        position: relative;
-        margin-top: 5rem;
-        padding: 5px 0;
-        font-size: 11px;
-        text-align: center;
-        color: $secondary-shuttle-gray;
-    }
+    .copyright-footer {
+        width: 100%;
+        @media (min-width: $bp-desktop){
+            @include flex (row, space-between);
+        }
+    
 
-    .attribution a {
-        color: $primary-beaver;
-        margin-top: 2rem;
-    }
+        .homepage-link a {
+            font-size: 1.4rem;
+            color: $color-white;
+            margin-top: 5rem;
+            padding: .5rem 0;
+        
+        }
 
-    .attribution a:hover {
-        color: $color-white;
-    }
+        /* Attribution */
+        .attribution {
+            position: relative;
+            margin-top: 5rem;
+            padding: 5px 0;
+            font-size: 11px;
+            text-align: center;
+            color: $secondary-shuttle-gray;
+        }
 
-    .homepage-link a {
-        font-size: 1.4rem;
-        color: $color-white;
+        .attribution a {
+            color: $primary-beaver;
+            margin-top: 2rem;
+        }
+
+        .attribution a:hover {
+            color: $color-white;
+        }
+
     }
 }
