@@ -1225,6 +1225,7 @@ body {
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   .booking .bk__header--container {
+    margin-top: 6rem;
     max-width: 69rem;
     justify-content: center;
   }
@@ -1234,6 +1235,7 @@ body {
     max-width: 45rem;
     justify-content: space-evenly;
     align-items: flex-start;
+    margin-left: 8rem;
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -1241,18 +1243,37 @@ body {
     transform: translateX(-30rem) translateY(-15rem);
   }
 }
+@media (min-width: 1025px) {
+  .booking .bk__header--logo {
+    transform: translateY(-14rem);
+  }
+}
+.booking .bk__header--title {
+  margin-top: -5rem;
+}
 @media (min-width: 768px) and (max-width: 1024px) {
   .booking .bk__header--title {
     margin-top: -8rem;
   }
 }
+@media (min-width: 1025px) {
+  .booking .bk__header--title {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+  }
+}
 .booking .bk__header--text {
   font-size: 1.4rem !important;
+  margin-top: -5rem;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   .booking .bk__header--text {
+    margin-top: 1rem;
     padding: 0 11rem;
   }
+}
+.booking .bk__header--button {
+  transform: translateY(-5rem);
 }
 @media (min-width: 768px) {
   .booking .bk__header--button {
@@ -1287,10 +1308,10 @@ body {
 }
 @media (max-width: 767px) {
   .booking .form__container .form {
-    max-width: 40rem;
+    max-width: 37.5rem;
     height: 58.5rem;
-    padding: 3.2rem;
-    transform: translateY(-10rem);
+    padding: 3.6rem;
+    transform: translateY(-13rem);
   }
 }
 @media (min-width: 768px) {
@@ -1305,6 +1326,7 @@ body {
   .booking .form__container .form {
     height: 56rem;
     transform: translateX(28rem) translateY(-35rem);
+    z-index: 2;
   }
 }
 .booking .form__container .form label {
@@ -1431,7 +1453,7 @@ body {
 }
 .booking .form__container .form__number-people .number-people {
   text-align: center;
-  margin: 0 1.2rem;
+  margin: 0 0.5rem;
   border: none;
   padding-bottom: 1rem;
 }
@@ -1457,6 +1479,12 @@ body {
   cursor: pointer;
   width: 1.5rem;
   padding: 1rem;
+}
+.booking .form__floating-lines {
+  display: block;
+  transform: translateX(57rem) translateY(-40rem);
+  position: absolute;
+  z-index: -1;
 }
 
 .bk__footer {
