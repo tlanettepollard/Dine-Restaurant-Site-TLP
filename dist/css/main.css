@@ -1494,12 +1494,17 @@ body {
   margin: 0 auto;
   padding: 8rem 2.4rem;
   text-align: center;
-  color: #ffffff;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   /* Attribution */
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .bk__footer {
+    height: 40rem;
+    width: 100%;
+  }
 }
 @media (min-width: 1025px) {
   .bk__footer {
@@ -1511,9 +1516,19 @@ body {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  width: 90vw;
   height: 100%;
   text-transform: uppercase;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .bk__footer--container {
+    width: 100%;
+    margin-left: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    align-items: flex-start;
+  }
 }
 .bk__footer .attribution {
   position: relative;
@@ -1528,5 +1543,9 @@ body {
   margin-top: 2rem;
 }
 .bk__footer .attribution a:hover {
+  color: #ffffff;
+}
+.bk__footer .homepage-link a {
+  font-size: 1.4rem;
   color: #ffffff;
 }/*# sourceMappingURL=main.css.map */
