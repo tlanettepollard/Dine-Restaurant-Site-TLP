@@ -276,11 +276,13 @@
 
     }// form__container
     
-    .form__floating-lines {
-        display: block;
-        transform: translateX(57rem) translateY(-40rem);
-        position: absolute;
-        z-index: -1;
+    .form-floating--lines {
+        @media (min-width: $bp-desktop) {
+            display: block;
+            transform: translateX(57rem) translateY(-40rem);
+            position: absolute;
+            z-index: -1;
+        }
     }
     
 } //booking

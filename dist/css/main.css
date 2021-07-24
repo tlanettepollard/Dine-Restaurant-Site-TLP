@@ -1480,11 +1480,13 @@ body {
   width: 1.5rem;
   padding: 1rem;
 }
-.booking .form__floating-lines {
-  display: block;
-  transform: translateX(57rem) translateY(-40rem);
-  position: absolute;
-  z-index: -1;
+@media (min-width: 1025px) {
+  .booking .form-floating--lines {
+    display: block;
+    transform: translateX(57rem) translateY(-40rem);
+    position: absolute;
+    z-index: -1;
+  }
 }
 
 .bk__footer {
