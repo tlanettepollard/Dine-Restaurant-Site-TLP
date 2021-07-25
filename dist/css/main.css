@@ -1352,6 +1352,11 @@ body {
   color: inherit;
   line-height: 2.8 !important;
   cursor: pointer;
+  /* &:focus {
+       opacity: 1;
+       border-bottom: 1px solid $primary-cod-gray;
+       outline: none;
+   }*/
 }
 .booking .form__container .form__field .input-box .input-box::-moz-placeholder {
   color: inherit;
@@ -1478,6 +1483,23 @@ body {
 }
 .booking .form__container .error-message--text {
   visibility: visible;
+}
+.booking .form__container .input-box--error {
+  opacity: 1;
+  border-bottom: 1px solid #B54949;
+}
+.booking .form__container .input-box--error::-moz-placeholder {
+  color: #B54949;
+}
+.booking .form__container .input-box--error:-ms-input-placeholder {
+  color: #B54949;
+}
+.booking .form__container .input-box--error::placeholder {
+  color: #B54949;
+}
+.booking .form__container .datetime-field-name.error {
+  opacity: 1;
+  color: #B54949;
 }
 .booking .form__container .icon-count {
   margin: auto;
