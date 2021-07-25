@@ -3,6 +3,7 @@
 const form = document.getElementById('form');
 const formName = document.getElementById('name');
 const formEmail = document.getElementById('email');
+const dateTimeFields = document.querySelectorAll('.datetime-field-name');
 
 const date = document.getElementById('date');
 const month = document.getElementById('month');
@@ -14,8 +15,6 @@ const hour = document.getElementById('hour');
 const min = document.getElementById('minute');
 
 const icon = document.getElementById('icon');
-//const select = document.getElementById('select');
-//const option = document.getElementById('form__option');
 const arrow = document.getElementById('arrow');
 
 // Variables for Number Picker
@@ -33,12 +32,15 @@ function showMsgAlert (input) {
       errorMessage.innerText = 'This field is required';
     } else if (input === month || input === day || input === year){
       let errorMessage = date.querySelector('.error-message');
+      dateTimeFields[0].classList.add('error');
       errorMessage.className = 'error-message error-message--text';
       errorMessage.innerText = 'This field is incomplete';
     } else if (input === hour || input === min) {
       let errorMessage = time.querySelector('.error-message');
+      dateTimeFields[1].classList.add('error');
       errorMessage.className = 'error-message error-message--text';
       errorMessage.innerText = 'This field is incomplete';
+    
     }
 }
 
