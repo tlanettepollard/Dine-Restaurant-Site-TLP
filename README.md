@@ -1,8 +1,8 @@
-# Dine-Restaurant-Site-TLP
+# Frontend Mentor - Dine-Restaurant-Site-TLP
 Frontend Mentor Challenge: Multipage Dine Restaurant Site with form validation. 
 
 
-This is a solution to the [Clock app challenge on Frontend Mentor]. Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Multipage Dine Restaurant Site challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/dine-restaurant-website-yAt7Vvxt7/hub/dine-restaurant-website-kHPDTFLP8). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 ## Table of contents
 
@@ -18,8 +18,6 @@ This is a solution to the [Clock app challenge on Frontend Mentor]. Frontend Men
 - [Author]
 - [Acknowledgments]
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -33,22 +31,33 @@ Users should be able to:
 - Be shown the correct greeting and background image based on the time of day they're visiting the site
 - Generate random programming quotes by clicking the refresh icon near the quote
 
-### Screenshot
+### Screenshots
+Desktop Home and Booking pages
+![Dine Home Page - Desktop](images/screenshots/DineHomeDesktop.jpg)
+![Dine Booking Page - Desktop](images/screenshots/DineBookingDesktop.jpg)
+***
 
-(img)
+iPad Home and Booking pages
+![Dine Home Page - iPad](images/screenshots/DineHomeIPad.jpg)
+![Dine Booking Page - iPad](images/screenshots/DineBookingIPad.jpg)
+***
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
+iPhone 6/7/8 Home and Booking pages
+![Dine Home Page - iPhone 6/7/8](images/screenshots/DineHomeIPhone678.jpg)
+![Dine Booking Page - iPhone 6/7/8](images/screenshots/DineBookingIPhone678.jpg)
+***
 
-Alternatively, you can use a tool like [FireShot] to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
+I have included two screen shots of four devices: 
+* iPhone 6/7/8 (375x667)
+* iPad (768x1024)
+* Laptop (1280x950)
 
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+I used an awesome open-source devtool app called [Responsively](https://opencollective.com/responsively). It allowed me to see the calculator on different sized devices live while I was editing. You can inspect the code and take screen shots.  I also used the [Photoscape app](http://www.photoscape.org/ps/main/index.php). It's a free photo editing app (you can pay for extras). I was able to combine screenshots of each area of my Dine webpages and resize the final photo. 
 
 ### Links
 
-- Solution URL: [Add solution URL here]
-- Live Site URL: [Add live site URL here]
+- Solution URL: Here's my solution link - [Add solution URL here]
+- Live Site URL: Here's my finished site - [Dine Restaurant](https://dine-restaurant-site-tlp.vercel.app/)
 
 ## My process
 
