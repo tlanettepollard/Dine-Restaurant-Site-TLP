@@ -32,18 +32,21 @@ Users should be able to:
 - Generate random programming quotes by clicking the refresh icon near the quote
 
 ### Screenshots
-Desktop Home and Booking pages
+#### Desktop Home and Booking pages
 ![Dine Home Page - Desktop](images/screenshots/DineHomeDesktop.jpg)
+***
 ![Dine Booking Page - Desktop](images/screenshots/DineBookingDesktop.jpg)
 ***
 
-iPad Home and Booking pages
+#### iPad Home and Booking pages
 ![Dine Home Page - iPad](images/screenshots/DineHomeIPad.jpg)
+***
 ![Dine Booking Page - iPad](images/screenshots/DineBookingIPad.jpg)
 ***
 
-iPhone 6/7/8 Home and Booking pages
+#### iPhone 6/7/8 Home and Booking pages
 ![Dine Home Page - iPhone 6/7/8](images/screenshots/DineHomeIPhone678.jpg)
+***
 ![Dine Booking Page - iPhone 6/7/8](images/screenshots/DineBookingIPhone678.jpg)
 ***
 
