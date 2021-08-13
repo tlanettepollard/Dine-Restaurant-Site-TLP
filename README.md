@@ -69,32 +69,46 @@ I used an awesome open-source devtool app called [Responsively](https://opencoll
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
-- [React] - JS library
-- [Next.js] - React framework
-- [Styled Components] - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+- [Sass](https://sass-lang.com/)
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+I learned that inserting pictures as a background-image gives you more flexibility in placement on the page. I used media queries to insert different sized images. I also learned about using transform/translate to position elements instead of using margin. 
 
-To see how you can add code snippets, see below:
+My code snippets, see below:
 
-<h1>Some HTML code I'm proud of</h1>
-.proud-of-this-css {
-  color: papayawhip;
-}
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
+```css
+.hero {
+    width: 100vw;
+    height: 74.8rem;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    padding-top: 23.2rem;
+    padding-right: 2.4rem;
+    padding-left: 2.4rem;
+    
+    background-image: url(/images/homepage/hero-bg-mobile@2x.jpg);
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide] to learn more.
+    @media (min-width: $bp-tablet-start) {
+        height: 92.2rem;
+        padding-top: 37.4rem;
+        background-image: url(/images/homepage/hero-bg-tablet@2x.jpg);
+    }
+    
+    @media (min-width: $bp-desktop) {
+        height: 82rem;
+        padding-top: 6.5rem;
+        padding-left: 15.5rem;
+        text-align: left;
+        background-image: url(/images/homepage/hero-bg-desktop@2x.jpg);
+    }
+ }
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
-
+```
 ### Continued development
 
 Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
