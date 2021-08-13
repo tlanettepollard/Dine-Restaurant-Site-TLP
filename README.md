@@ -111,27 +111,25 @@ My code snippets, see below:
 ```
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+I will continue to focus on CSS positioning elements, understanding absolute/relative positioning, and working with pseudo-elements (::before and ::after).  
 
 ### Useful resources
 
-- [Example resource 1] - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2] - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+I used a lot of references and resources in addition to Google and StackOverflow to build my restaurant page. 
+* [CSS-Tricks - Rems & Ems](https://css-tricks.com/rems-ems/) - Reviewed how to use responsive sizing specifically for font sizes.
+* [Stack Overflow](http://www.regular-expressions.info/) - Using regular expressions to check email address validity.
+* [Sass and Media Queries - What You Can and Can't Do](https://designshack.net/articles/css/sass-and-media-queries-what-you-can-and-cant-do/) - Reviewed using Sass and media queries
+* [CSS Media Queries, Breakpoints, Media Types](https://www.freecodecamp.org/news/css-media-queries-breakpoints-media-types-standard-resolutions-and-more/),
+[Sass and Media Queries](https://dev.to/paul_duvall/sass-and-media-queries-hb2) - Used to adjust my media queries by using a mixin with a range of sizes.
 
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 
 ## Author
 
-- Website - [Add your name here]
-- Frontend Mentor - [@yourusername]
-- Twitter - [@yourusername]
+- Website - [T.Lanette Pollard](https://tlp-portfolio.vercel.app/)
+- Frontend Mentor - [@TLanetteRose](https://www.frontendmentor.io/profile/TLanetteRose)
+- Twitter - [@TpLanetteNBCT](https://twitter.com/TpLanetteNBCT)
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+* [Zuoli Z](https://github.com/zuolizhu/frontendmentor_challenges) - I reviewed this web designer's code to understand how to handle the three different sizes of each image. 
