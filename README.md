@@ -132,6 +132,4 @@ I used a lot of references and resources in addition to Google and StackOverflow
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+* [Zuoli Z](https://github.com/zuolizhu/frontendmentor_challenges) - I reviewed this web designer's code to understand how to handle the three different sizes of each image. 
