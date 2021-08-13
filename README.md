@@ -59,7 +59,7 @@ I used an awesome open-source devtool app called [Responsively](https://opencoll
 
 ### Links
 
-- Solution URL: Here's my solution link - [Add solution URL here]
+- Solution URL: Here's my solution link - [Dine Restaurant Solution](https://www.frontendmentor.io/solutions/dine-restaurant-website-wsass-and-vanilla-js-c_Ld2tBOo)
 - Live Site URL: Here's my finished site - [Dine Restaurant](https://dine-restaurant-site-tlp.vercel.app/)
 
 ## My process
