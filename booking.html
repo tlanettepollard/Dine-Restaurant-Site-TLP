@@ -10,11 +10,12 @@
   <link rel="stylesheet" href="/dist/css/main.css">
 </head>
 <body>
+  <div class="wrapper">
   <main role="main">
     <section class="booking">
       <header class="bk__header">
         <div class="bk__header--container">
-          <img class="bk__header--logo logo" src="../images/logo.svg" alt="Dine logo" />
+          <img class="bk__header--logo logo" src="../images/logo.svg" alt="Welcome to Dine Restaurant" />
           <h2 class="bk__header--title heading-2-r">Reservations
           </h2>
           <p class="bk__header--text text-2">We can’t wait to host you. If you have any special requirements please feel free to call on the phone number below. We’ll be happy to accommodate you.</p>
@@ -26,13 +27,13 @@
         <form id="form" class="form">
           <div class="form__field form__field--text">
             <label class="sr-only" for="name">Name</label>
-            <input type="text" name="name" id="name" placeholder="Name" aria-label="name" class="input-box form-text form-text--regular">
+            <input type="text" name="name" id="name" placeholder="Name" aria-label="name" class="input-box form-text form-text--regular" />
             <p class="error-message">Error Message</p>
           </div> <!-- .form__field -->
 
           <div class="form__field form__field--text">
             <label class="sr-only" for="email">Email</label>
-            <input type="email" name="email" id="email" placeholder="Email" aria-label="email" class="input-box form-text form-text--regular">
+            <input type="email" name="email" id="email" placeholder="Email" aria-label="email" class="input-box form-text form-text--regular" />
             <p class="error-message">Error Message</p>
           </div> <!-- .form__field -->
 
@@ -41,13 +42,13 @@
             <p class="error-message">Error Message</p>
             <div class="input-container">
               <label class="sr-only" for="month">Month</label>
-              <input type="text" name="month" aria-label="month" id="month" placeholder="MM" maxlength="2" class="input-box form-text form-text--regular">
+              <input type="number" name="month" aria-label="month" id="month" placeholder="MM" min="01" max="12" class="input-box form-text form-text--regular" />
               
               <label class="sr-only" for="month">Day</label>
-              <input type="text" name="day" aria-label="day" id="day" placeholder="DD" maxlength="2" class="input-box form-text form-text--regular">
+              <input type="number" name="day" aria-label="day" id="day" placeholder="DD" min="01" max="31" class="input-box form-text form-text--regular" />
               
-              <label class="sr-only" for="year">year</label>
-              <input type="text" name="year" aria-label="year" id="year" placeholder="YYYY" maxlength="4" class="input-box form-text form-text--regular"> 
+              <label class="sr-only" for="year">Year</label>
+              <input type="number" name="year" aria-label="year" id="year" placeholder="YYYY" min="2021" class="input-box form-text form-text--regular" /> 
             </div> <!-- .input-container -->
           </div><!-- .form__field--datetime -->
                        
@@ -56,10 +57,10 @@
             <p class="error-message">Error Message</p>
             <div class="input-container">
               <label class="sr-only" for="hour">Hour</label>
-              <input type="text" name="hour" aria-label="hour" id="hour" placeholder="00" maxlength="2" class="input-box form-text form-text--regular">
+              <input type="number" name="hour" aria-label="hour" id="hour" placeholder="09" min="00" max="11" class="input-box form-text form-text--regular"/>
               
               <label class="sr-only" for="hour">Minute</label>
-              <input type="text" name="minute" aria-label="minute" id="minute" placeholder="00" maxlength="2" class="input-box form-text form-text--regular">
+              <input type="number" name="minutes" aria-label="minutes" id="minute" placeholder="00" min="00" max="59" class="input-box form-text form-text--regular" />
 
               <div class="form__dropdown form__dropdown--arrow" id="arrow" for="am-pm">
                 <select name="am-pm" id="select">
@@ -84,7 +85,7 @@
           </div><!-- .form__number-people -->
           <button type="submit" class="button button--dark button--submit">Make Reservation</button>
         </form>
-        <img class="form-floating--lines floating-lines" src="/images/patterns/pattern-lines.svg" alt="lines">
+        <img class="form-floating--lines floating-lines" src="/images/patterns/pattern-lines.svg" alt="">
       <section><!-- .reservation__container -->
     </section><!-- .booking -->
   </main>
@@ -92,7 +93,9 @@
   <footer class=" bk__footer footer">
     <div class="bk__footer--container">
       <div class="bk__footer--container-logo">
-        <img src="../images/logo.svg" alt="Dine logo">
+        <a href="index.html">
+          <img src="../images/logo.svg" alt="Welcome to Dine Restaurant">
+        </a>
       </div>
       <div class="bk__footer--container-info">
         <div class="bk__footer--container-address">
@@ -108,16 +111,13 @@
       </div>
     </div>
     <div class="copyright-footer">
-      <div>
-        <p class="homepage-link white"><a href="index.html">Dine Homepage</a></p>
-      </div>
       <div class="attribution">Challenge by 
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
         Coded by <a href="https://github.com/TLanetteRose">T.Lanette</a>.
       </div>
     </div>
   </footer>
-
+  </div>
 </body>
 <script src="/js/booking.js"></script>
 <script src="https://kit.fontawesome.com/6dba2ff605.js" crossorigin="anonymous"></script>
